@@ -23,7 +23,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build all Sphinx docs
+      - name: Build top-level homepage docs
+        run: |
+          # 构建根目录（顶层首页），输出到 docs_build 根目录
+          sphinx-build -b html . docs_build
+
+      - name: Build all platform Sphinx docs
         run: |
           for dir in platform/*/*; do
             echo "Building $dir"
