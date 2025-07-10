@@ -3,7 +3,7 @@ name: Build and Deploy Sphinx Docs
 on:
   push:
     branches:
-      - main  # 主分支名字，根据你仓库调整
+      - main
 
 jobs:
   build-deploy:
@@ -23,17 +23,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build top-level homepage docs
+      - name: Build top-level homepage
         run: |
-          # 构建根目录（顶层首页），输出到 docs_build 根目录
-          sphinx-build -b html . docs_build
+          sphinx-build -b html . docs_build_homepage
 
-      - name: Build all platform Sphinx docs
+      - name: Build all platform docs
         run: |
           for dir in platform/*/*; do
             echo "Building $dir"
-            sphinx-build -b html "$dir" "docs_build/${dir#platform/}"
+            outdir="docs_build/${dir#platform/}"
+            sphinx-build -b html "$dir" "$outdir"
           done
+
+      - name: Merge homepage and platform docs
+        run: |
+          mkdir -p docs_build
+          cp -r docs_build_homepage/* docs_build/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
