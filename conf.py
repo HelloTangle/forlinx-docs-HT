@@ -1,18 +1,12 @@
-# -- Path setup --------------------------------------------------------------
-
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
-# -- Project information -----------------------------------------------------
-
-project = 'ROCKCHIP RK3568 Documentation'
+project = 'Forlinx Embedded Documentation'
 author = 'Forlinx Embedded'
 
-# -- General configuration ---------------------------------------------------
-
 extensions = [
-    'myst_parser',         # 支持 Markdown
+    'myst_parser',  # 支持 Markdown
 ]
 
 templates_path = ['_templates']
@@ -23,22 +17,18 @@ source_suffix = {
     '.md': 'markdown',
 }
 
-# -- Options for HTML output -------------------------------------------------
-
 html_theme = 'sphinx_rtd_theme'
-
 html_static_path = ['_static']
 
 html_css_files = [
     'custom.css',
 ]
 
-
-# Logo (如果有，放在 _static 目录)
+# Logo 文件放在 _static 文件夹，确保路径正确
 html_logo = '_static/forlinx-logo.png'
 
+# 主题选项，根据需要调整
 html_theme_options = {
     'logo_only': True,
     'display_version': False,
 }
-
