@@ -1,4 +1,4 @@
-name: Deploy Sphinx Docs
+name: Build and Deploy Docs
 
 on:
   push:
@@ -13,29 +13,32 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: Setup Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      run: pip install -r requirements.txt
 
-    - name: Copy static assets to each platform
-      run: |
-        python scripts/copy_static_to_platforms.py
+    # 这里不生成首页index.rst，首页用你自己维护的
 
-    - name: Build all platform docs
+    - name: Build platform docs
       run: |
         for dir in platform/*/*; do
           if [ -f "$dir/conf.py" ]; then
             echo "Building $dir"
             outdir="docs_build/${dir#platform/}"
-            sphinx-build -b html -c . "$dir" "$outdir"
+            sphinx-build -b html -c "$dir" "$dir" "$outdir"
           fi
         done
+
+    # 不构建首页，只要确认首页静态文件放入docs_build根目录下
+    - name: Copy manually maintained root index.html and assets
+      run: |
+        cp index.html docs_build/
+        # 如果首页有静态文件夹，也复制过去，比如 _static
+        cp -r _static docs_build/ || true
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
