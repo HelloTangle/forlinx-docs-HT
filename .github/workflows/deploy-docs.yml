@@ -21,8 +21,12 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    # 这里不生成首页index.rst，首页用你自己维护的
+    # 构建首页 index.rst
+    - name: Build root index.rst (homepage)
+      run: |
+        sphinx-build -b html -c . ./ ./docs_build
 
+    # 构建各平台文档
     - name: Build platform docs
       run: |
         for dir in platform/*/*; do
@@ -32,13 +36,6 @@ jobs:
             sphinx-build -b html -c "$dir" "$dir" "$outdir"
           fi
         done
-
-    # 不构建首页，只要确认首页静态文件放入docs_build根目录下
-    - name: Copy manually maintained root index.html and assets
-      run: |
-        cp index.html docs_build/
-        # 如果首页有静态文件夹，也复制过去，比如 _static
-        cp -r _static docs_build/ || true
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
