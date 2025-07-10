@@ -1,9 +1,7 @@
-ROCKCHIP RK3568 Documentation
-=============================
+RK3568
+======
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-Welcome to the documentation of ROCKCHIP RK3568 Documentation.
-
+   index

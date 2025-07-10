@@ -1,9 +1,7 @@
-NXP IMX8MP Documentation
-========================
+IMX8MP
+======
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-Welcome to the documentation of NXP IMX8MP Documentation.
-
+   index

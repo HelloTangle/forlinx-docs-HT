@@ -1,1 +1,0 @@
-Place your logo.png image here
