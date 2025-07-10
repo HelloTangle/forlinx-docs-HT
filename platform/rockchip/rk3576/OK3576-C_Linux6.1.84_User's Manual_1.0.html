@@ -19,9 +19,7 @@
       <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="RK3588" href="../rk3588/index.html" />
-    <link rel="prev" title="RK3576" href="index.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,168 +42,145 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Brands and Platforms</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../nxp/index.html">NXP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nxp/imx8mp/index.html">IMX8MP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nxp/imx9352/index.html">IMX9352</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">ROCKCHIP</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../rk3568/index.html">RK3568</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">RK3576</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">00 OK3576-C_Linux6.1.84_用户使用手册</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">免责声明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">概述</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">适用范围</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">更新记录</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ok3576">01_OK3576开发板介绍</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id5">1.1 OK3576开发板简介</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#linux-6-1-84">1.2 Linux 6.1.84系统软件资源介绍</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#emmc">1.3 eMMC存储器分区表</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">00 OK3576-C_Linux6.1.84_用户使用手册</a></li>
+<li><a class="reference internal" href="#id1">免责声明</a></li>
+<li><a class="reference internal" href="#id2">概述</a></li>
+<li><a class="reference internal" href="#id3">适用范围</a></li>
+<li><a class="reference internal" href="#id4">更新记录</a></li>
+<li><a class="reference internal" href="#ok3576">01_OK3576开发板介绍</a><ul>
+<li><a class="reference internal" href="#id5">1.1 OK3576开发板简介</a></li>
+<li><a class="reference internal" href="#linux-6-1-84">1.2 Linux 6.1.84系统软件资源介绍</a></li>
+<li><a class="reference internal" href="#emmc">1.3 eMMC存储器分区表</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">02_快速开机启动</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id7">2.1 开机前的准备</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8">2.2 调试串口驱动安装</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">2.3 串口登录方式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id13">2.4 系统关闭</a></li>
+<li><a class="reference internal" href="#id6">02_快速开机启动</a><ul>
+<li><a class="reference internal" href="#id7">2.1 开机前的准备</a></li>
+<li><a class="reference internal" href="#id8">2.2 调试串口驱动安装</a></li>
+<li><a class="reference internal" href="#id9">2.3 串口登录方式</a><ul>
+<li><a class="reference internal" href="#id10">2.3.1 串口连接设置</a><ul>
+<li><a class="reference internal" href="#id11"></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id14">03_OK3576平台界面功能使用及测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id15">3.1 桌面功能测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id27">3.2 命令行功能测试</a></li>
+<li><a class="reference internal" href="#id12">2.3.2 串口登录常见问题</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id40">04_OK3576平台多媒体测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id41">4.1 音频和视频播放体验</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id44">4.2 视频硬编码</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id45">4.3 视频硬解码</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id49">4.4 摄像头测试</a></li>
+<li><a class="reference internal" href="#id13">2.4 系统关闭</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id59">05_烧写系统</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#otg">5.1 OTG烧写系统</a></li>
+<li><a class="reference internal" href="#id14">03_OK3576平台界面功能使用及测试</a><ul>
+<li><a class="reference internal" href="#id15">3.1 桌面功能测试</a><ul>
+<li><a class="reference internal" href="#id16">3.1.1  界面功能简介</a></li>
+<li><a class="reference internal" href="#id17">3.1.2  浏览器测试</a></li>
+<li><a class="reference internal" href="#id18">3.1.3  播放音乐测试</a></li>
+<li><a class="reference internal" href="#id19">3.1.4  播放视频测试</a></li>
+<li><a class="reference internal" href="#g-5g">3.1.5  4G/5G 测试</a></li>
+<li><a class="reference internal" href="#id20">3.1.6  看门狗测试</a></li>
+<li><a class="reference internal" href="#id21">3.1.7  串口测试</a></li>
+<li><a class="reference internal" href="#id22">3.1.8  背光测试</a></li>
+<li><a class="reference internal" href="#id23">3.1.9  按键测试</a></li>
+<li><a class="reference internal" href="#rtc">3.1.10  RTC测试</a></li>
+<li><a class="reference internal" href="#id24">3.1.11  网络配置测试</a></li>
+<li><a class="reference internal" href="#id25">3.1.12  数据库测试</a></li>
+<li><a class="reference internal" href="#id26">3.1.13  系统信息测试</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#id27">3.2 命令行功能测试</a><ul>
+<li><a class="reference internal" href="#id28">3.2.1  系统信息查询</a></li>
+<li><a class="reference internal" href="#id29">3.2.2  调频测试</a></li>
+<li><a class="reference internal" href="#id30">3.2.3  温度测试</a></li>
+<li><a class="reference internal" href="#ddr">3.2.4  DDR测试</a></li>
+<li><a class="reference internal" href="#id31">3.2.5  看门狗测试</a></li>
+<li><a class="reference internal" href="#id32">3.2.6  RTC功能测试</a></li>
+<li><a class="reference internal" href="#id33">3.2.7  按键测试</a></li>
+<li><a class="reference internal" href="#id34">3.2.8  以太网配置</a></li>
+<li><a class="reference internal" href="#uart-485">3.2.9  UART 485测试</a></li>
+<li><a class="reference internal" href="#adc">3.2.10  ADC测试</a></li>
+<li><a class="reference internal" href="#tf">3.2.11  TF卡测试</a></li>
+<li><a class="reference internal" href="#id35">3.2.12  eMMC 测试</a></li>
+<li><a class="reference internal" href="#usb">3.2.13  USB鼠标测试</a></li>
+<li><a class="reference internal" href="#usb3-0">3.2.14  USB3.0</a></li>
+<li><a class="reference internal" href="#type-c">3.2.15  TYPE-C 测试</a></li>
+<li><a class="reference internal" href="#wifi">3.2.16  WIFI 测试</a></li>
+<li><a class="reference internal" href="#id36">3.2.17  蓝牙测试</a></li>
+<li><a class="reference internal" href="#id37">3.2.18  4G/5G</a></li>
+<li><a class="reference internal" href="#id38">3.2.19  放/录音测试</a><ul>
+<li><a class="reference internal" href="#id39">3.2.19.1  查看声卡</a></li>
+<li><a class="reference internal" href="#hdmi">3.2.19.2  HDMI 播放声音</a></li>
+<li><a class="reference internal" href="#speaker-headphone">3.2.19.3  Speaker Headphone 播放声音</a></li>
+<li><a class="reference internal" href="#mic">3.2.19.4  MIC输入</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../rk3588/index.html">RK3588</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../rk3568/index.html">RK3568</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">RK3576</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">00 OK3576-C_Linux6.1.84_用户使用手册</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">免责声明</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">概述</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">适用范围</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">更新记录</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ok3576">01_OK3576开发板介绍</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">1.1 OK3576开发板简介</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#linux-6-1-84">1.2 Linux 6.1.84系统软件资源介绍</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#emmc">1.3 eMMC存储器分区表</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">02_快速开机启动</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id7">2.1 开机前的准备</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">2.2 调试串口驱动安装</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id9">2.3 串口登录方式</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id10">2.3.1 串口连接设置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">2.3.2 串口登录常见问题</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#id13">2.4 系统关闭</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id14">03_OK3576平台界面功能使用及测试</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id15">3.1 桌面功能测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id16">3.1.1  界面功能简介</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id17">3.1.2  浏览器测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id18">3.1.3  播放音乐测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id19">3.1.4  播放视频测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#g-5g">3.1.5  4G/5G 测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id20">3.1.6  看门狗测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id21">3.1.7  串口测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id22">3.1.8  背光测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id23">3.1.9  按键测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rtc">3.1.10  RTC测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id24">3.1.11  网络配置测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id25">3.1.12  数据库测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id26">3.1.13  系统信息测试</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#id27">3.2 命令行功能测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id28">3.2.1  系统信息查询</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id29">3.2.2  调频测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id30">3.2.3  温度测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ddr">3.2.4  DDR测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id31">3.2.5  看门狗测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id32">3.2.6  RTC功能测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id33">3.2.7  按键测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id34">3.2.8  以太网配置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#uart-485">3.2.9  UART 485测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#adc">3.2.10  ADC测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tf">3.2.11  TF卡测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id35">3.2.12  eMMC 测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#usb">3.2.13  USB鼠标测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#usb3-0">3.2.14  USB3.0</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#type-c">3.2.15  TYPE-C 测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#wifi">3.2.16  WIFI 测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id36">3.2.17  蓝牙测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id37">3.2.18  4G/5G</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id38">3.2.19  放/录音测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#lcd">3.2.20  LCD 背光调节</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#can">3.2.21  CAN测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pcie">3.2.22  PCIE测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rknpu">3.2.23  RKNPU测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sqlite3">3.2.24  SQLite3测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#gpio">3.2.25  GPIO测试</a></li>
+<li><a class="reference internal" href="#lcd">3.2.20  LCD 背光调节</a></li>
+<li><a class="reference internal" href="#can">3.2.21  CAN测试</a></li>
+<li><a class="reference internal" href="#pcie">3.2.22  PCIE测试</a></li>
+<li><a class="reference internal" href="#rknpu">3.2.23  RKNPU测试</a></li>
+<li><a class="reference internal" href="#sqlite3">3.2.24  SQLite3测试</a></li>
+<li><a class="reference internal" href="#gpio">3.2.25  GPIO测试</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id40">04_OK3576平台多媒体测试</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id41">4.1 音频和视频播放体验</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#gst-play">4.1.1使用gst-play播放器播放视频和音频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#gst-launch">4.1.2使用gst-launch 播放视频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id42">4.1.3使用gst-launch 播放音频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id43">4.1.4使用gst-launch 播放视频和音频</a></li>
+<li><a class="reference internal" href="#id40">04_OK3576平台多媒体测试</a><ul>
+<li><a class="reference internal" href="#id41">4.1 音频和视频播放体验</a><ul>
+<li><a class="reference internal" href="#gst-play">4.1.1使用gst-play播放器播放视频和音频</a></li>
+<li><a class="reference internal" href="#gst-launch">4.1.2使用gst-launch 播放视频</a></li>
+<li><a class="reference internal" href="#id42">4.1.3使用gst-launch 播放音频</a></li>
+<li><a class="reference internal" href="#id43">4.1.4使用gst-launch 播放视频和音频</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id44">4.2 视频硬编码</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#h-264">4.2.1视频硬编码H.264</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#h-265">4.2.2视频硬编码H.265</a></li>
+<li><a class="reference internal" href="#id44">4.2 视频硬编码</a><ul>
+<li><a class="reference internal" href="#h-264">4.2.1视频硬编码H.264</a></li>
+<li><a class="reference internal" href="#h-265">4.2.2视频硬编码H.265</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id45">4.3 视频硬解码</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#h264">4.3.1解码并播放H264格式视频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id46">4.3.2解码并播放H264格式视频带音频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#h265">4.3.3解码并播放H265格式视频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id47">4.3.4解码并播放H265格式视频带音频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#vp9">4.3.5 解码并播放 VP9 格式视频</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id48">4.3.6 解码并播放 VP9 格式视频带音频</a></li>
+<li><a class="reference internal" href="#id45">4.3 视频硬解码</a><ul>
+<li><a class="reference internal" href="#h264">4.3.1解码并播放H264格式视频</a></li>
+<li><a class="reference internal" href="#id46">4.3.2解码并播放H264格式视频带音频</a></li>
+<li><a class="reference internal" href="#h265">4.3.3解码并播放H265格式视频</a></li>
+<li><a class="reference internal" href="#id47">4.3.4解码并播放H265格式视频带音频</a></li>
+<li><a class="reference internal" href="#vp9">4.3.5 解码并播放 VP9 格式视频</a></li>
+<li><a class="reference internal" href="#id48">4.3.6 解码并播放 VP9 格式视频带音频</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id49">4.4 摄像头测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#uvc-camera">4.4.1 UVC Camera测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ov13855">4.4.2  OV13855测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ov5645">4.2.3 OV5645 测试</a></li>
+<li><a class="reference internal" href="#id49">4.4 摄像头测试</a><ul>
+<li><a class="reference internal" href="#uvc-camera">4.4.1 UVC Camera测试</a><ul>
+<li><a class="reference internal" href="#id50"><strong>4.4.1.1摄像头识别检测和格式支持查询</strong></a></li>
+<li><a class="reference internal" href="#id51"><strong>4.4.1.2摄像头采集格式查询和修改</strong></a></li>
+<li><a class="reference internal" href="#id52"><strong>4.4.1.3摄像头图像预览和拍照</strong></a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#ov13855">4.4.2  OV13855测试</a><ul>
+<li><a class="reference internal" href="#id53">**4.4.2.1 摄像头识别检测和格式支持查询 **</a></li>
+<li><a class="reference internal" href="#id54"><strong>4.4.2.2 摄像头预览</strong></a></li>
+<li><a class="reference internal" href="#id55"><strong>4.4.2.3 摄像头拍照</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id59">05_烧写系统</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#otg">5.1 OTG烧写系统</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id60">5.1.1 OTG驱动安装</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id61">5.1.2 OTG完全烧写测试</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id62">5.2 TF 卡烧写系统</a></li>
+<li><a class="reference internal" href="#ov5645">4.2.3 OV5645 测试</a><ul>
+<li><a class="reference internal" href="#id56"><strong>4.2.3.1、摄像头识别检测</strong></a></li>
+<li><a class="reference internal" href="#id57"><strong>4.2.3.2、查看支持格式</strong></a></li>
+<li><a class="reference internal" href="#id58"><strong>4.2.3.3、摄像头预览</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../rk3588/index.html">RK3588</a></li>
+<li><a class="reference internal" href="#id59">05_烧写系统</a><ul>
+<li><a class="reference internal" href="#otg">5.1 OTG烧写系统</a><ul>
+<li><a class="reference internal" href="#id60">5.1.1 OTG驱动安装</a></li>
+<li><a class="reference internal" href="#id61">5.1.2 OTG完全烧写测试</a><ul>
+<li><a class="reference internal" href="#rkdevtool"><strong>5.1.2.1 RKDevTool烧写测试</strong></a></li>
 </ul>
-
+</li>
+<li><a class="reference internal" href="#id62">5.2 TF 卡烧写系统</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
         </div>
       </div>
     </nav>
@@ -220,8 +195,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">ROCKCHIP</a></li>
-          <li class="breadcrumb-item"><a href="index.html">RK3576</a></li>
       <li class="breadcrumb-item active">00 OK3576-C_Linux6.1.84_用户使用手册</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/platform/rockchip/rk3576/OK3576-C_Linux6.1.84_User&#39;s Manual_1.0.md.txt" rel="nofollow"> View page source</a>
@@ -2662,10 +2635,7 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="RK3576" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../rk3588/index.html" class="btn btn-neutral float-right" title="RK3588" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
