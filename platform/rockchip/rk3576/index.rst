@@ -1,9 +1,7 @@
-ROCKCHIP RK3576 Documentation
-=============================
+RK3576
+======
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-Welcome to the documentation of ROCKCHIP RK3576 Documentation.
-
+   OK3576-C_Linux6.1.84_User's Manual_1.0

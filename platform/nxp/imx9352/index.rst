@@ -1,9 +1,7 @@
-NXP IMX9352 Documentation
-=========================
+IMX9352
+=======
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-Welcome to the documentation of NXP IMX9352 Documentation.
-
+   index
