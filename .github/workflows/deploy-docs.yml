@@ -1,4 +1,4 @@
-name: Build and Deploy Sphinx Docs
+name: Deploy Sphinx Docs
 
 on:
   push:
@@ -6,44 +6,40 @@ on:
       - main
 
 jobs:
-  build-deploy:
+  build-docs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
-      - name: Build top-level homepage
-        run: |
-          sphinx-build -b html . docs_build_homepage
+    - name: Copy static assets to each platform
+      run: |
+        python scripts/copy_static_to_platforms.py
 
-      - name: Build all platform docs
-        run: |
-          for dir in platform/*/*; do
+    - name: Build all platform docs
+      run: |
+        for dir in platform/*/*; do
+          if [ -f "$dir/conf.py" ]; then
             echo "Building $dir"
             outdir="docs_build/${dir#platform/}"
-            sphinx-build -b html "$dir" "$outdir"
-          done
+            sphinx-build -b html -c . "$dir" "$outdir"
+          fi
+        done
 
-      - name: Merge homepage and platform docs
-        run: |
-          mkdir -p docs_build
-          cp -r docs_build_homepage/* docs_build/
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs_build
-          publish_branch: gh-pages
-          force_orphan: true
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs_build
+        publish_branch: gh-pages
