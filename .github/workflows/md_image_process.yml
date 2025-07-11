@@ -1,0 +1,54 @@
+name: Process Markdown Images on Push
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'platform/**/**/*.md'
+
+jobs:
+  process-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 保证能推送时使用完整历史
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Get list of changed markdown files
+        id: changed_files
+        run: |
+          echo "::group::Detect changed .md files"
+          git fetch origin main
+          # 获取本次 push 里变动的md文件（相对路径）
+          changed=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' || true)
+          echo "Changed md files:"
+          echo "$changed"
+          echo "::endgroup::"
+          echo "::set-output name=files::$changed"
+
+      - name: Process changed markdown files
+        if: steps.changed_files.outputs.files != ''
+        run: |
+          echo "${{ steps.changed_files.outputs.files }}" > changed_md_files.txt
+          python ./scripts/process_md_images.py changed_md_files.txt
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Auto-update local image paths for changed md files"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
