@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>00 OK3576-C_Linux6.1.84_用户使用手册 &mdash; ROCKCHIP RK3576 Documentation  documentation</title>
+  <title>1. 00 OK3576-C_Linux6.1.84_用户使用手册 &mdash; ROCKCHIP RK3576 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=e1c0ea0a" />
@@ -20,7 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="RK3576" href="index.html" /> 
+    <link rel="prev" title="RK3576 Manuals" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -33,6 +33,7 @@
           
           <a href="index.html">
             
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -42,138 +43,139 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">00 OK3576-C_Linux6.1.84_用户使用手册</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id1">免责声明</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id2">概述</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id3">适用范围</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id4">更新记录</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#ok3576">01_OK3576开发板介绍</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id5">1.1 OK3576开发板简介</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#linux-6-1-84">1.2 Linux 6.1.84系统软件资源介绍</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#emmc">1.3 eMMC存储器分区表</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 00 OK3576-C_Linux6.1.84_用户使用手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">2. 免责声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">3. 概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3">4. 适用范围</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id4">5. 更新记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ok3576">6. 01_OK3576开发板介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id5">6.1. 1.1 OK3576开发板简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux-6-1-84">6.2. 1.2 Linux 6.1.84系统软件资源介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emmc">6.3. 1.3 eMMC存储器分区表</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#id6">02_快速开机启动</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id7">2.1 开机前的准备</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">2.2 调试串口驱动安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">2.3 串口登录方式</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id10">2.3.1 串口连接设置</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id11"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id6">7. 02_快速开机启动</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id7">7.1. 2.1 开机前的准备</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">7.2. 2.2 调试串口驱动安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">7.3. 2.3 串口登录方式</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">7.3.1. 2.3.1 串口连接设置</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id11">7.3.1.1. </a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id12">2.3.2 串口登录常见问题</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">7.3.2. 2.3.2 串口登录常见问题</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id13">2.4 系统关闭</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">7.4. 2.4 系统关闭</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#id14">03_OK3576平台界面功能使用及测试</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id15">3.1 桌面功能测试</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id16">3.1.1  界面功能简介</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id17">3.1.2  浏览器测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id18">3.1.3  播放音乐测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id19">3.1.4  播放视频测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#g-5g">3.1.5  4G/5G 测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id20">3.1.6  看门狗测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id21">3.1.7  串口测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id22">3.1.8  背光测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id23">3.1.9  按键测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rtc">3.1.10  RTC测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id24">3.1.11  网络配置测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id25">3.1.12  数据库测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id26">3.1.13  系统信息测试</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id14">8. 03_OK3576平台界面功能使用及测试</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id15">8.1. 3.1 桌面功能测试</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">8.1.1. 3.1.1  界面功能简介</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">8.1.2. 3.1.2  浏览器测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">8.1.3. 3.1.3  播放音乐测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">8.1.4. 3.1.4  播放视频测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-5g">8.1.5. 3.1.5  4G/5G 测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">8.1.6. 3.1.6  看门狗测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">8.1.7. 3.1.7  串口测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">8.1.8. 3.1.8  背光测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">8.1.9. 3.1.9  按键测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc">8.1.10. 3.1.10  RTC测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">8.1.11. 3.1.11  网络配置测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">8.1.12. 3.1.12  数据库测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">8.1.13. 3.1.13  系统信息测试</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id27">3.2 命令行功能测试</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id28">3.2.1  系统信息查询</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id29">3.2.2  调频测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id30">3.2.3  温度测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ddr">3.2.4  DDR测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id31">3.2.5  看门狗测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id32">3.2.6  RTC功能测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id33">3.2.7  按键测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id34">3.2.8  以太网配置</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#uart-485">3.2.9  UART 485测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adc">3.2.10  ADC测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tf">3.2.11  TF卡测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id35">3.2.12  eMMC 测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usb">3.2.13  USB鼠标测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usb3-0">3.2.14  USB3.0</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#type-c">3.2.15  TYPE-C 测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wifi">3.2.16  WIFI 测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id36">3.2.17  蓝牙测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id37">3.2.18  4G/5G</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id38">3.2.19  放/录音测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id39">3.2.19.1  查看声卡</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#hdmi">3.2.19.2  HDMI 播放声音</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#speaker-headphone">3.2.19.3  Speaker Headphone 播放声音</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#mic">3.2.19.4  MIC输入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">8.2. 3.2 命令行功能测试</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id28">8.2.1. 3.2.1  系统信息查询</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">8.2.2. 3.2.2  调频测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">8.2.3. 3.2.3  温度测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ddr">8.2.4. 3.2.4  DDR测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">8.2.5. 3.2.5  看门狗测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id32">8.2.6. 3.2.6  RTC功能测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id33">8.2.7. 3.2.7  按键测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id34">8.2.8. 3.2.8  以太网配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uart-485">8.2.9. 3.2.9  UART 485测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adc">8.2.10. 3.2.10  ADC测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf">8.2.11. 3.2.11  TF卡测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id35">8.2.12. 3.2.12  eMMC 测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb">8.2.13. 3.2.13  USB鼠标测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb3-0">8.2.14. 3.2.14  USB3.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#type-c">8.2.15. 3.2.15  TYPE-C 测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi">8.2.16. 3.2.16  WIFI 测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id36">8.2.17. 3.2.17  蓝牙测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id37">8.2.18. 3.2.18  4G/5G</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id38">8.2.19. 3.2.19  放/录音测试</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id39">8.2.19.1. 3.2.19.1  查看声卡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hdmi">8.2.19.2. 3.2.19.2  HDMI 播放声音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#speaker-headphone">8.2.19.3. 3.2.19.3  Speaker Headphone 播放声音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mic">8.2.19.4. 3.2.19.4  MIC输入</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#lcd">3.2.20  LCD 背光调节</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#can">3.2.21  CAN测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pcie">3.2.22  PCIE测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rknpu">3.2.23  RKNPU测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sqlite3">3.2.24  SQLite3测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gpio">3.2.25  GPIO测试</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#id40">04_OK3576平台多媒体测试</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id41">4.1 音频和视频播放体验</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#gst-play">4.1.1使用gst-play播放器播放视频和音频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gst-launch">4.1.2使用gst-launch 播放视频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id42">4.1.3使用gst-launch 播放音频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id43">4.1.4使用gst-launch 播放视频和音频</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id44">4.2 视频硬编码</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#h-264">4.2.1视频硬编码H.264</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#h-265">4.2.2视频硬编码H.265</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id45">4.3 视频硬解码</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#h264">4.3.1解码并播放H264格式视频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id46">4.3.2解码并播放H264格式视频带音频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#h265">4.3.3解码并播放H265格式视频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id47">4.3.4解码并播放H265格式视频带音频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#vp9">4.3.5 解码并播放 VP9 格式视频</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id48">4.3.6 解码并播放 VP9 格式视频带音频</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id49">4.4 摄像头测试</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#uvc-camera">4.4.1 UVC Camera测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id50"><strong>4.4.1.1摄像头识别检测和格式支持查询</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id51"><strong>4.4.1.2摄像头采集格式查询和修改</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id52"><strong>4.4.1.3摄像头图像预览和拍照</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#ov13855">4.4.2  OV13855测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id53">**4.4.2.1 摄像头识别检测和格式支持查询 **</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id54"><strong>4.4.2.2 摄像头预览</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id55"><strong>4.4.2.3 摄像头拍照</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#ov5645">4.2.3 OV5645 测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id56"><strong>4.2.3.1、摄像头识别检测</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id57"><strong>4.2.3.2、查看支持格式</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id58"><strong>4.2.3.3、摄像头预览</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lcd">8.2.20. 3.2.20  LCD 背光调节</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can">8.2.21. 3.2.21  CAN测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcie">8.2.22. 3.2.22  PCIE测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rknpu">8.2.23. 3.2.23  RKNPU测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sqlite3">8.2.24. 3.2.24  SQLite3测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpio">8.2.25. 3.2.25  GPIO测试</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#id40">9. 04_OK3576平台多媒体测试</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id41">9.1. 4.1 音频和视频播放体验</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gst-play">9.1.1. 4.1.1使用gst-play播放器播放视频和音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gst-launch">9.1.2. 4.1.2使用gst-launch 播放视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id42">9.1.3. 4.1.3使用gst-launch 播放音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id43">9.1.4. 4.1.4使用gst-launch 播放视频和音频</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#id59">05_烧写系统</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#otg">5.1 OTG烧写系统</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id60">5.1.1 OTG驱动安装</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id61">5.1.2 OTG完全烧写测试</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#rkdevtool"><strong>5.1.2.1 RKDevTool烧写测试</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id44">9.2. 4.2 视频硬编码</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#h-264">9.2.1. 4.2.1视频硬编码H.264</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#h-265">9.2.2. 4.2.2视频硬编码H.265</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id62">5.2 TF 卡烧写系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id45">9.3. 4.3 视频硬解码</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#h264">9.3.1. 4.3.1解码并播放H264格式视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id46">9.3.2. 4.3.2解码并播放H264格式视频带音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#h265">9.3.3. 4.3.3解码并播放H265格式视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id47">9.3.4. 4.3.4解码并播放H265格式视频带音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vp9">9.3.5. 4.3.5 解码并播放 VP9 格式视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id48">9.3.6. 4.3.6 解码并播放 VP9 格式视频带音频</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id49">9.4. 4.4 摄像头测试</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#uvc-camera">9.4.1. 4.4.1 UVC Camera测试</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id50">9.4.1.1. <strong>4.4.1.1摄像头识别检测和格式支持查询</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id51">9.4.1.2. <strong>4.4.1.2摄像头采集格式查询和修改</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id52">9.4.1.3. <strong>4.4.1.3摄像头图像预览和拍照</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ov13855">9.4.2. 4.4.2  OV13855测试</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id53">9.4.2.1. **4.4.2.1 摄像头识别检测和格式支持查询 **</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id54">9.4.2.2. <strong>4.4.2.2 摄像头预览</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id55">9.4.2.3. <strong>4.4.2.3 摄像头拍照</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ov5645">9.4.3. 4.2.3 OV5645 测试</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id56">9.4.3.1. <strong>4.2.3.1、摄像头识别检测</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id57">9.4.3.2. <strong>4.2.3.2、查看支持格式</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id58">9.4.3.3. <strong>4.2.3.3、摄像头预览</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id59">10. 05_烧写系统</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#otg">10.1. 5.1 OTG烧写系统</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id60">10.1.1. 5.1.1 OTG驱动安装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id61">10.1.2. 5.1.2 OTG完全烧写测试</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rkdevtool">10.1.2.1. <strong>5.1.2.1 RKDevTool烧写测试</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id62">10.1.3. 5.2 TF 卡烧写系统</a></li>
 </ul>
 </li>
 </ul>
@@ -194,7 +196,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">00 OK3576-C_Linux6.1.84_用户使用手册</li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>00 OK3576-C_Linux6.1.84_用户使用手册</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/OK3576-C_Linux6.1.84_User&#39;s Manual_1.0.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -205,18 +207,18 @@
            <div itemprop="articleBody">
              
   <section id="ok3576-c-linux6-1-84">
-<h1>00 OK3576-C_Linux6.1.84_用户使用手册<a class="headerlink" href="#ok3576-c-linux6-1-84" title="Link to this heading"></a></h1>
+<h1><span class="section-number">1. </span>00 OK3576-C_Linux6.1.84_用户使用手册<a class="headerlink" href="#ok3576-c-linux6-1-84" title="Link to this heading"></a></h1>
 <p>版本：V1.0<br />
 发布日期：2025.01.23<br />
 文件密级：□绝密 □秘密 □内部资料 ■公开免责声明</p>
 </section>
 <section id="id1">
-<h1>免责声明<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<h1><span class="section-number">2. </span>免责声明<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。</p>
 <p>保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。</p>
 </section>
 <section id="id2">
-<h1>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<h1><span class="section-number">3. </span>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
 <p><font style="color:#333333;">本手册以使用户快速熟悉产品，了解接口功能和测试方法为目的，主要讲述了开发板接口功能的测试，烧写镜像方法，以及使用过程中出现的一些问题如何排查。在测试过程中，对一些命令进行了注释，方便</font>用户理解，以实用够用为主。涉及到内核编译、相关应用编译方法，开发环境搭建等请参考飞凌提供的《OK3576-C Linux用户编译手册》</p>
 <p>本手册一共分为6部分：</p>
 <ul class="simple">
@@ -276,11 +278,11 @@ mlan                  466944  1 moal
 </ul>
 </section>
 <section id="id3">
-<h1>适用范围<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<h1><span class="section-number">4. </span>适用范围<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
 <p>本文主要适用于飞凌OK3576-C平台Linux6.1.84操作系统，其他平台也可以参考，但是不同平台之间会存在差异，需客户自行修改以适应自己的使用。</p>
 </section>
 <section id="id4">
-<h1>更新记录<a class="headerlink" href="#id4" title="Link to this heading"></a></h1>
+<h1><span class="section-number">5. </span>更新记录<a class="headerlink" href="#id4" title="Link to this heading"></a></h1>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p><strong>日期</strong></p></th>
@@ -301,9 +303,9 @@ mlan                  466944  1 moal
 </table>
 </section>
 <section id="ok3576">
-<h1>01_OK3576开发板介绍<a class="headerlink" href="#ok3576" title="Link to this heading"></a></h1>
+<h1><span class="section-number">6. </span>01_OK3576开发板介绍<a class="headerlink" href="#ok3576" title="Link to this heading"></a></h1>
 <section id="id5">
-<h2>1.1 OK3576开发板简介<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<h2><span class="section-number">6.1. </span>1.1 OK3576开发板简介<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>RK3576是基于ARM64架构的低功耗高性能处理器，它包括4核Cortex-A53和4核Conrtex-A72以及独立的NEON协处理器和神经网络加上处理器NPU，可应用于计算机、手机、个人移动互联网，数字多媒体设备。</p>
 <p>飞凌OK3576-C开发平台核心板和底板采用接插件的连接方式。</p>
 <ul class="simple">
@@ -312,7 +314,7 @@ mlan                  466944  1 moal
 <p>本软件手册中不再对硬件参数进行叙述，在参考本手册进行软件开发前请阅读“OK3576-C _硬件手册”，以了解产品命名规则和您所使用产品的硬件配置信息，这样有助于您对本产品的使用。</p>
 </section>
 <section id="linux-6-1-84">
-<h2>1.2 Linux 6.1.84系统软件资源介绍<a class="headerlink" href="#linux-6-1-84" title="Link to this heading"></a></h2>
+<h2><span class="section-number">6.2. </span>1.2 Linux 6.1.84系统软件资源介绍<a class="headerlink" href="#linux-6-1-84" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>设备</strong></p></th>
@@ -413,7 +415,7 @@ mlan                  466944  1 moal
 </table>
 </section>
 <section id="emmc">
-<h2>1.3 eMMC存储器分区表<a class="headerlink" href="#emmc" title="Link to this heading"></a></h2>
+<h2><span class="section-number">6.3. </span>1.3 eMMC存储器分区表<a class="headerlink" href="#emmc" title="Link to this heading"></a></h2>
 <p>下面表格是Linux操作系统的eMMC存储器分区信息（计算时一个块大小为512bit）：</p>
 <table class="docutils align-default">
 <thead>
@@ -484,9 +486,9 @@ mlan                  466944  1 moal
 </section>
 </section>
 <section id="id6">
-<h1>02_快速开机启动<a class="headerlink" href="#id6" title="Link to this heading"></a></h1>
+<h1><span class="section-number">7. </span>02_快速开机启动<a class="headerlink" href="#id6" title="Link to this heading"></a></h1>
 <section id="id7">
-<h2>2.1 开机前的准备<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<h2><span class="section-number">7.1. </span>2.1 开机前的准备<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>OK3576开发板有串口登录方式，系统开机前硬件准备：</p>
 <ul class="simple">
 <li><p>12V-3A DC电源线</p></li>
@@ -498,15 +500,15 @@ mlan                  466944  1 moal
 </ul>
 </section>
 <section id="id8">
-<h2>2.2 调试串口驱动安装<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<h2><span class="section-number">7.2. </span>2.2 调试串口驱动安装<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <p>OK3576-C平台调试串口使用的是Type-C接口，板载USB转UART芯片，无需客户购买USB转串口调试工具，使用极其简单方便。</p>
 <p>安装驱动请使用用户资料\Linux\工具\目录下提供的驱动包DriverAssitant_v5.1.1.zip进行装。</p>
 <p>解压完成后直接运行DriverInstall.exe，为确保安装最新的驱动，请先点击驱动卸载，再驱动安装。</p>
 </section>
 <section id="id9">
-<h2>2.3 串口登录方式<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<h2><span class="section-number">7.3. </span>2.3 串口登录方式<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <section id="id10">
-<h3>2.3.1 串口连接设置<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<h3><span class="section-number">7.3.1. </span>2.3.1 串口连接设置<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>说明：</strong></p></li>
 <li><p><strong>串口设置：波特率115200、数据位8、停止位1、无校验位、无流控制</strong></p></li>
@@ -519,7 +521,7 @@ mlan                  466944  1 moal
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214204934-9bb8a98b-75fb-4a89-bba4-b1acbe4a0c5c.png" /></p>
 <p>**步骤3：**上述设置完成后可以在Saved Sessions输入电脑使用的COM口，下图以COM3为例，将设置保存，之后再打开串口时，直接点击保存的端口号即可。</p>
 <section id="id11">
-<h4><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214205145-e2882ae8-1022-497a-95ea-aa583a02e011.png" /><a class="headerlink" href="#id11" title="Link to this heading"></a></h4>
+<h4><span class="section-number">7.3.1.1. </span><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214205145-e2882ae8-1022-497a-95ea-aa583a02e011.png" /><a class="headerlink" href="#id11" title="Link to this heading"></a></h4>
 <p>**步骤4：**打开开发板的电源开关，串口会有打印信息输出，用户名forlinx，密码forlinx（无root权限），如果需要使用root登录则用户名和密码分别为root，root。</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>input-event-daemon: Adding device: /dev/input/event9...
 input-event-daemon: Start listening on 12 devices...
@@ -535,28 +537,28 @@ forlinx@ok3576-buildroot:~$
 </section>
 </section>
 <section id="id12">
-<h3>2.3.2 串口登录常见问题<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<h3><span class="section-number">7.3.2. </span>2.3.2 串口登录常见问题<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <p>电脑端口没有串口的可以通过USB转串口线与开发板连接，使用USB转串口线接需要安装对应的驱动程序。</p>
 <p>建议使用质量好串口线以避免出现乱码情况。</p>
 </section>
 </section>
 <section id="id13">
-<h2>2.4 系统关闭<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<h2><span class="section-number">7.4. </span>2.4 系统关闭<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
 <p>一般情况下直接关闭电源即可，如果有数据存储、功能使用等操作，操作过程中不要随意断电，以防出现文件不可逆损坏，只能重新烧写固件。未确保数据完全写入，可输入 sync 命令完成数据同步后再关闭电源。</p>
 </section>
 </section>
 <section id="id14">
-<h1>03_OK3576平台界面功能使用及测试<a class="headerlink" href="#id14" title="Link to this heading"></a></h1>
+<h1><span class="section-number">8. </span>03_OK3576平台界面功能使用及测试<a class="headerlink" href="#id14" title="Link to this heading"></a></h1>
 <p><font style="color:#000000;">OK3576</font>平台<font style="color:#000000;">对Qt的支持非常完善</font>，下面是演示桌面。</p>
 <section id="id15">
-<h2>3.1 桌面功能测试<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
+<h2><span class="section-number">8.1. </span>3.1 桌面功能测试<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
 <section id="id16">
-<h3>3.1.1  界面功能简介<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.1. </span>3.1.1  界面功能简介<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
 <p>开发板启动后桌面显示如下：</p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214226389-cb589c33-ad7c-4423-92a9-ae02f7955765.png" /></p>
 </section>
 <section id="id17">
-<h3>3.1.2  浏览器测试<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.2. </span>3.1.2  浏览器测试<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">“DemoBrowser”是一款简单实用的网络浏览器，在使用时请保证网络通畅，访问外网前需保证dns可用，浏览器启动时默认访问飞凌嵌入式官方网站。</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214226648-2771740f-da63-4879-9913-03ba40e64139.png" /></p>
 <p>应用图标</p>
@@ -566,7 +568,7 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">通过上方导航栏 File-&gt;Quit 退出该浏览器。</font></p>
 </section>
 <section id="id18">
-<h3>3.1.3  播放音乐测试<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.3. </span>3.1.3  播放音乐测试<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
 <p>“<font style="color:#000000;">musicplayer”</font>是一款简单的音频测试应用，可用来测试声卡功能是否正常，也可用来作为一款简单的音频播放器。</p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214227676-b80f741f-452d-458d-8b73-d80b67053e45.png" /></p>
 <p>应用图标</p>
@@ -574,7 +576,7 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">点击左下角的按钮，选择测试音频 /userdata/piano2-CoolEdit.mp3。</font></p>
 </section>
 <section id="id19">
-<h3>3.1.4  播放视频测试<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.4. </span>3.1.4  播放视频测试<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">点击桌面图标进入打开视频播放器qplayer。</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214228266-4c65bcfc-5268-4aa0-9b4e-5d9913205fc3.png" /></p>
 <p>应用图标</p>
@@ -582,7 +584,7 @@ forlinx@ok3576-buildroot:~$
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214228874-3e037ce1-6b1a-4f20-b5b0-15b80728f417.png" /> <strong><font style="color:#000000;">注意：测试视频文件所在目录：</font></strong><font style="color:#000000;">/media/forlinx/video/*.mp4</font></p>
 </section>
 <section id="g-5g">
-<h3>3.1.5  4G/5G 测试<a class="headerlink" href="#g-5g" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.5. </span>3.1.5  4G/5G 测试<a class="headerlink" href="#g-5g" title="Link to this heading"></a></h3>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214229079-150b5f1d-396b-45b4-bf86-03973e783ed9.png" /> 注意：此测试需要插入可上网的<font style="color:#000000;">SIM</font>卡，具体操作描述可以参考本手册的命令行功能测试<font style="color:#000000;">5G</font>章节。</p>
 <p><font style="color:#000000;">“4G/5G”测试程序用于测试OK3576外置5G模块(RM500U)。测试前请将开发板断电，接入5G模块，插入SIM卡，启动开发板打开测试应用。</font></p>
 <p><font style="color:#000000;">同时该测试支持4G模组（EM05-CE），在断电情况下插入4G模组和SIM卡，上电系统启动后打开测试应用。</font></p>
@@ -592,7 +594,7 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">点击Start按钮，程序将自动进入拨号流程并获取IP设置DNS等，耐心等待几秒钟后，当屏幕输出IP地址后，退出当前应用。进入DemoBrowser网络浏览器进行测试，若打开应用能够正常访问飞凌嵌入式官方网站，说明此时已连接成功。</font></p>
 </section>
 <section id="id20">
-<h3>3.1.6  看门狗测试<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.6. </span>3.1.6  看门狗测试<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">“WatchDog”是用来测试看门狗功能是否正常的应用</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214229698-74c9df3e-0602-4147-b1cc-a78adc7a5c61.png" /></p>
 <p>应用图标</p>
@@ -600,7 +602,7 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">点击start，默认打开喂狗功能，定时喂狗，此时系统不会重启。取消勾选 </font>feed dog<font style="color:#000000;">时，倒计时</font>10s<font style="color:#000000;">，系统进入重启。说明看门狗功能正常。</font></p>
 </section>
 <section id="id21">
-<h3>3.1.7  串口测试<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.7. </span>3.1.7  串口测试<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">点击桌面图标可以使用它来测试OK3576板载UART接口。</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214230115-11c45bee-6ecb-4993-8d4e-c9a0ac17a51e.png" /></p>
 <p>应用图标</p>
@@ -618,7 +620,7 @@ forlinx@ok3576-buildroot:~$
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214231146-3cc00089-94c7-4f31-b058-143861a549f5.png" /></p>
 </section>
 <section id="id22">
-<h3>3.1.8  背光测试<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.8. </span>3.1.8  背光测试<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">“BackLight”是lcd背光调整应用：</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214231371-bcbdb36a-6185-48fa-befb-cc14ebce017b.png" /></p>
 <p>应用图标</p>
@@ -627,7 +629,7 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">拖动界面中的滑块即可设置lcd背光亮度。</font></p>
 </section>
 <section id="id23">
-<h3>3.1.9  按键测试<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.9. </span>3.1.9  按键测试<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">“Keypad”用于测试平台自带按键是否可用：</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214231838-9a47e29c-e792-46a9-ad17-e8ee94d589f0.png" /></p>
 <p>应用图标</p>
@@ -635,7 +637,7 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">OK3576平台默认将4个物理按键 V+、V-、MENU、ESC 分别配置为音量+键、音量-键，Menu、返回键。当按下按键时测试应用中的对应按键会变为蓝色，说明按键功能正常。</font></p>
 </section>
 <section id="rtc">
-<h3>3.1.10  RTC测试<a class="headerlink" href="#rtc" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.10. </span>3.1.10  RTC测试<a class="headerlink" href="#rtc" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">通过“RTC”应用，可查看和设置当前的系统时间：</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214232233-c20b7acc-55c0-45d7-b50a-3149c846ea40.png" /></p>
 <p>应用图标</p>
@@ -644,7 +646,7 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">点击 Auto，网络对时，点击 apply，对时成功。</font></p>
 </section>
 <section id="id24">
-<h3>3.1.11  网络配置测试<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.11. </span>3.1.11  网络配置测试<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">OK3568可通过“Network”网络配置应用来选择 dhcp 和 static 两种模式，static 模式可配置 ip 地址、子网掩码、网关、DNS。</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214232653-722a1602-c466-446c-9b06-565a0da24c53.png" /></p>
 <p><font style="color:#000000;">应用图标</font></p>
@@ -656,14 +658,14 @@ forlinx@ok3576-buildroot:~$
 <p><font style="color:#000000;">注：在STATIC模式下设置的ip等信息会被保存至系统的相关配置文件中，因此每次重启都会使用本次设置的网络信息；而在DHCP模式下配置的网络信息则不需注意这一点，每次重新启动都会动态分配一次ip地址。</font></p>
 </section>
 <section id="id25">
-<h3>3.1.12  数据库测试<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.12. </span>3.1.12  数据库测试<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">点击桌面图标可以使用Sqlite测试数据库。</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233115-c6117ccb-4349-43f0-a2b9-4dce83d63b3f.png" /></p>
 <p>应用图标</p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233314-9eec2afa-69fb-475e-8c48-2d07a32cbf70.png" /></p>
 </section>
 <section id="id26">
-<h3>3.1.13  系统信息测试<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.1.13. </span>3.1.13  系统信息测试<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">点击桌面图标可以显示系统相关信息。</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233537-637e2d41-ae39-4173-b3d6-2e064206ac66.png" /></p>
 <p>应用图标</p>
@@ -671,10 +673,10 @@ forlinx@ok3576-buildroot:~$
 </section>
 </section>
 <section id="id27">
-<h2>3.2 命令行功能测试<a class="headerlink" href="#id27" title="Link to this heading"></a></h2>
+<h2><span class="section-number">8.2. </span>3.2 命令行功能测试<a class="headerlink" href="#id27" title="Link to this heading"></a></h2>
 <p>OK3576平台内置了丰富的命令行工具可供用户使用。</p>
 <section id="id28">
-<h3>3.2.1  系统信息查询<a class="headerlink" href="#id28" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.1. </span>3.2.1  系统信息查询<a class="headerlink" href="#id28" title="Link to this heading"></a></h3>
 <p>查看内核和cpu信息，输入如下命令</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# uname -a
 Linux ok3576-buildroot 6.1.75 #4 SMP Wed Jul 24 09:06:40 CST 2024 aarch64 GNU/Linux
@@ -731,7 +733,7 @@ _=/usr/bin/env
 </div>
 </section>
 <section id="id29">
-<h3>3.2.2  调频测试<a class="headerlink" href="#id29" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.2. </span>3.2.2  调频测试<a class="headerlink" href="#id29" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>说明：四核A53分别是cpu0、cpu1、cpu2、cpu3; 四核A72分别是cpu5、cpu6、cpu7、cpu8。此过程以cpu0为例操作，实际过程cpu1、cpu2、cpu3会同时改变； 操作cpu4， cpu5、cpu6、cpu7也会同时改变。</strong></p></li>
 </ul>
@@ -764,7 +766,7 @@ root@ok3576-buildroot:/# echo 2016000&gt; /sys/devices/system/cpu/cpu0/cpufreq/s
 </div>
 </section>
 <section id="id30">
-<h3>3.2.3  温度测试<a class="headerlink" href="#id30" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.3. </span>3.2.3  温度测试<a class="headerlink" href="#id30" title="Link to this heading"></a></h3>
 <p>查看温度值：</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# cat /sys/class/thermal/thermal_zone0/temp
 45307
@@ -773,7 +775,7 @@ root@ok3576-buildroot:/# echo 2016000&gt; /sys/devices/system/cpu/cpu0/cpufreq/s
 <p>温度值即为45.3℃。</p>
 </section>
 <section id="ddr">
-<h3>3.2.4  DDR测试<a class="headerlink" href="#ddr" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.4. </span>3.2.4  DDR测试<a class="headerlink" href="#ddr" title="Link to this heading"></a></h3>
 <p>使用memtester做内存压力测试。</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# memtester 100M 1
 memtester version 4.5.1_20231020 (32-bit)
@@ -820,7 +822,7 @@ Status: PASS.
 </div>
 </section>
 <section id="id31">
-<h3>3.2.5  看门狗测试<a class="headerlink" href="#id31" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.5. </span>3.2.5  看门狗测试<a class="headerlink" href="#id31" title="Link to this heading"></a></h3>
 <p>看门狗是嵌入式系统中经常用到的功能，OK3576中看门狗的设备节点为/dev/watchdog 。本测试提供了两种测试程序，用户根据实际情况选择一种测试。</p>
 <ul class="simple">
 <li><p>启动看门狗，设置复位时间10s，并定时喂狗</p></li>
@@ -844,7 +846,7 @@ Watchdog Ticking Away!
 </div>
 </section>
 <section id="id32">
-<h3>3.2.6  RTC功能测试<a class="headerlink" href="#id32" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.6. </span>3.2.6  RTC功能测试<a class="headerlink" href="#id32" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>注意：确保板子上已经安装了纽扣电池，并且电池电压正常</strong></p></li>
 </ul>
@@ -864,7 +866,7 @@ Mon Dec 12 17:23:50 UTC 2022
 </div>
 </section>
 <section id="id33">
-<h3>3.2.7  按键测试<a class="headerlink" href="#id33" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.7. </span>3.2.7  按键测试<a class="headerlink" href="#id33" title="Link to this heading"></a></h3>
 <p>使用fltest_keytest命令行工具进行按键测试，目前fltest_keytest支持底板上4个按键VOL+、VOL-、MENU、ESC的测试，键码分别为115、114、139、158</p>
 <p>执行如下命令：</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# fltest_keytest
@@ -883,7 +885,7 @@ key158 Released                                                        // ESC re
 </div>
 </section>
 <section id="id34">
-<h3>3.2.8  以太网配置<a class="headerlink" href="#id34" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.8. </span>3.2.8  以太网配置<a class="headerlink" href="#id34" title="Link to this heading"></a></h3>
 <p>OK3576-C板载两个千兆网卡，插入网线连接网络的情况下，eth0默认配置了静态IP，eth1默认使用动态分配IP策略。</p>
 <p>查看eth0、eth1配置文件， 配置文件的路径为：/etc/network/interfaces.d/eth0，设置静态ip的配置内容为：</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>auto eth0
@@ -928,7 +930,7 @@ root@ok3576-buildroot:/# ifup -a
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943410-b812b136-2db4-42a4-ba63-223022d3ab38.png" /></p>
 </section>
 <section id="uart-485">
-<h3>3.2.9  UART 485测试<a class="headerlink" href="#uart-485" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.9. </span>3.2.9  UART 485测试<a class="headerlink" href="#uart-485" title="Link to this heading"></a></h3>
 <p>OK3576平台底板原理图中标示引出的UART0、UART4、UART5、UART6共4路串口，其中UART0为调试串口，UART4为蓝牙串口，UART5、UART6为485串口。</p>
 <table class="docutils align-default">
 <thead>
@@ -974,7 +976,7 @@ root@ok3576-buildroot:~# echo 111111 &gt; /dev/ttyS6     //发送数据
 </div>
 </section>
 <section id="adc">
-<h3>3.2.10  ADC测试<a class="headerlink" href="#adc" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.10. </span>3.2.10  ADC测试<a class="headerlink" href="#adc" title="Link to this heading"></a></h3>
 <p>OK3576-C开发板内部提供了8路ADC，在P18端口留出saradc2、 saradc4、saradc5、saradc6、saradc7通道，可以使用跳线帽连接旁边的可调电阻进行测试。ADC引脚硬件图如下，当前芯片使用1.8V参考电压对应 12 位ADC最大值4096。选择 saradc4进行测试，使用跳线帽连接P18端口的3、4引脚。</p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214234240-0c30d0ad-ed41-40ae-aaa4-96e802c801ef.png" /></p>
 <p>测试可调电阻数值</p>
@@ -985,7 +987,7 @@ root@ok3576-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 </div>
 </section>
 <section id="tf">
-<h3>3.2.11  TF卡测试<a class="headerlink" href="#tf" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.11. </span>3.2.11  TF卡测试<a class="headerlink" href="#tf" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>说明：</strong></p></li>
 <li><p><strong>TF卡挂载目录为/mnt/sdcard/，支持热插拔。</strong></p></li>
@@ -1023,7 +1025,7 @@ root@ok3576-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 </ul>
 </section>
 <section id="id35">
-<h3>3.2.12  eMMC 测试<a class="headerlink" href="#id35" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.12. </span>3.2.12  eMMC 测试<a class="headerlink" href="#id35" title="Link to this heading"></a></h3>
 <p>OK3576平台eMMC默认运行于HS400模式200MHz时钟，下面简单测试eMMC的读写速度，以读写ext4文件系统为例。</p>
 <p>写入测试：</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# dd if=/dev/zero of=/test bs=1M count=500 conv=fsync
@@ -1044,13 +1046,13 @@ root@ok3576-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 </div>
 </section>
 <section id="usb">
-<h3>3.2.13  USB鼠标测试<a class="headerlink" href="#usb" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.13. </span>3.2.13  USB鼠标测试<a class="headerlink" href="#usb" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">将USB鼠标接入OK3576平台的usb接口，使用dmesg命令， 串口终端的打印信息如下：</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214234692-556d9d00-2631-418f-8313-eac623091c54.png" /></p>
 <p><font style="color:#000000;">此时在屏幕上出现箭头光标，鼠标已可正常使用。</font></p>
 </section>
 <section id="usb3-0">
-<h3>3.2.14  USB3.0<a class="headerlink" href="#usb3-0" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.14. </span>3.2.14  USB3.0<a class="headerlink" href="#usb3-0" title="Link to this heading"></a></h3>
 <p>OK3576底板使用USB3.0集线器分出3路USB3.0 host，可以连接USB鼠标、 USB键盘、U盘等设备， 并支持以上设备的热插拔。 这里用挂载U盘为例进行演示， 目前U盘测试支持到32G， 32G以上并未测试。</p>
 <p>终端会打印关于U盘的信息，由于存在很多种U盘，显示的信息可能会有差别：</p>
 <ol class="arabic simple">
@@ -1091,7 +1093,7 @@ root@ok3576-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 </ul>
 </section>
 <section id="type-c">
-<h3>3.2.15  TYPE-C 测试<a class="headerlink" href="#type-c" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.15. </span>3.2.15  TYPE-C 测试<a class="headerlink" href="#type-c" title="Link to this heading"></a></h3>
 <p>OK3576-C包含1个TYPE-C接口，TYPE-C HOST/DEVICE模式自动识别。Device模式可以用它来进行刷机，ADB文件传输、调试，Host模式使用TYPE-C转Host线可以插入普通的USB 设备。</p>
 <p>Device 模式<font style="color:#000000;">：</font></p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214235121-28bd722d-f2f4-4e7f-8f27-7b7e00f4a327.png" /></p>
@@ -1100,7 +1102,7 @@ root@ok3576-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214235339-827c7321-d7c6-4cf1-8168-b3b267af2053.png" /></p>
 </section>
 <section id="wifi">
-<h3>3.2.16  WIFI 测试<a class="headerlink" href="#wifi" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.16. </span>3.2.16  WIFI 测试<a class="headerlink" href="#wifi" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>说明：</strong></p></li>
 <li><p><strong>由于网络环境的不同，所以在您做本实验时，请根据实际情况进行设置。</strong></p></li>
@@ -1200,7 +1202,7 @@ adding dns 222.222.222.222
 <p>rtt min/avg/max/mdev = 33.612/88.201/142.135/44.306 ms</p>
 </section>
 <section id="id36">
-<h3>3.2.17  蓝牙测试<a class="headerlink" href="#id36" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.17. </span>3.2.17  蓝牙测试<a class="headerlink" href="#id36" title="Link to this heading"></a></h3>
 <p>OK3576开发板中底板AW-CM358模块，集成了蓝牙功能，本节演示使用手机与开发板之间通过蓝牙进行数据传输，支持蓝牙5.0。 注意在测试蓝牙之前需要线按照前一节“WiFi测试”将WiFi模块和固件加载完成</p>
 <p>1、启动蓝牙</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# hciattach /dev/ttyS4 any 115200 flow
@@ -1336,7 +1338,7 @@ Authorize service
 <p>开发板蓝牙连接到手机端显示为蓝牙耳机。</p>
 </section>
 <section id="id37">
-<h3>3.2.18  4G/5G<a class="headerlink" href="#id37" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.18. </span>3.2.18  4G/5G<a class="headerlink" href="#id37" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>说明：</strong></p></li>
 <li><p><strong>使用物联网卡测试时，需确认模组固件版本，低版本固件不支持，需升级</strong>EC05<strong>固件</strong></p></li>
@@ -1412,10 +1414,10 @@ rtt min/avg/max/mdev = 62.606/68.624/79.164/7.477 ms
 </div>
 </section>
 <section id="id38">
-<h3>3.2.19  放/录音测试<a class="headerlink" href="#id38" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.19. </span>3.2.19  放/录音测试<a class="headerlink" href="#id38" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">OK3576提供NAU88C22YG芯片1路标准3.5mm音频插座1个XH2.0-2P 白色插座 P25 引出和1个PH2.0-4P白色插座P48引出,可驱动8Ω 喇叭，最高输出功率为 1W，在进行放音测试前，请将准备好的耳机插入听筒接口，或将扬声器插入底板上的对应插槽上进行测试。</font></p>
 <section id="id39">
-<h4>3.2.19.1  查看声卡<a class="headerlink" href="#id39" title="Link to this heading"></a></h4>
+<h4><span class="section-number">8.2.19.1. </span>3.2.19.1  查看声卡<a class="headerlink" href="#id39" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# aplay -l   //查看声卡
 **** List of PLAYBACK Hardware Devices ****
 card 0: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau8822-hifi-0 [dailink-multicodecs nau8822-hifi-0]
@@ -1428,13 +1430,13 @@ card 1: rockchiphdmi [rockchip-hdmi], device 0: rockchip-hdmi i2s-hifi-0 [rockch
 </div>
 </section>
 <section id="hdmi">
-<h4>3.2.19.2  HDMI 播放声音<a class="headerlink" href="#hdmi" title="Link to this heading"></a></h4>
+<h4><span class="section-number">8.2.19.2. </span>3.2.19.2  HDMI 播放声音<a class="headerlink" href="#hdmi" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink=&quot;alsasink device=plughw:2,0&quot;
 </pre></div>
 </div>
 </section>
 <section id="speaker-headphone">
-<h4>3.2.19.3  Speaker Headphone 播放声音<a class="headerlink" href="#speaker-headphone" title="Link to this heading"></a></h4>
+<h4><span class="section-number">8.2.19.3. </span>3.2.19.3  Speaker Headphone 播放声音<a class="headerlink" href="#speaker-headphone" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# amixer -c 0                           //查询音频参数
 root@ok3576-buildroot:/# amixer -c 0 sset Headphone 63,63      //设置headphone音量
 root@ok3576-buildroot:/# amixer -c 0 sset Speaker 63,63         //设置Speaker音量
@@ -1444,7 +1446,7 @@ root@ok3576-buildroot:/# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink=
 <p><font style="color:#000000;">不插耳机，声音从Speaker接口播放，接上喇叭即可听到声音。将耳机插到Headphone接口，声音从耳机播放。</font></p>
 </section>
 <section id="mic">
-<h4>3.2.19.4  MIC输入<a class="headerlink" href="#mic" title="Link to this heading"></a></h4>
+<h4><span class="section-number">8.2.19.4. </span>3.2.19.4  MIC输入<a class="headerlink" href="#mic" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# arecord -l 
 **** List of CAPTURE Hardware Devices ****
 card 0: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau8822-hifi-0 [dailink-multicodecs nau8822-hifi-0]
@@ -1460,7 +1462,7 @@ root@ok3576-buildroot:/# aplay -D plughw:0,0 test1.wav   //使用 Speaker Headph
 </section>
 </section>
 <section id="lcd">
-<h3>3.2.20  LCD 背光调节<a class="headerlink" href="#lcd" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.20. </span>3.2.20  LCD 背光调节<a class="headerlink" href="#lcd" title="Link to this heading"></a></h3>
 <p>背光的亮度设置范围为（0–255），255表示亮度最高，0表示关闭背光亮度。在mipi dsi0上接上mipi屏幕后，上电启动。进入系统后在终端输入如下命令进行背光测试。</p>
 <p>1、查看支持背光型号</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# ls /sys/class/backlight
@@ -1483,7 +1485,7 @@ backlight 显示当前支持屏背光型号
 </div>
 </section>
 <section id="can">
-<h3>3.2.21  CAN测试<a class="headerlink" href="#can" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.21. </span>3.2.21  CAN测试<a class="headerlink" href="#can" title="Link to this heading"></a></h3>
 <p>OK3576-C平台有两路CAN总线接口，CAN 连线方式： CAN 的 H 端子与其它 CAN 设备 H 端连接；CAN的 L 端子与其它 CAN 设备 L 端子连接。</p>
 <p>短接CAN0和CAN1，如图：</p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214235546-083fb982-828e-4f08-98bb-8f9e5a3b1438.png" /></p>
@@ -1590,7 +1592,7 @@ root@ok3576-buildroot:/# echo 4096 &gt; /sys/class/net/can1/tx_queue_len
 </div>
 </section>
 <section id="pcie">
-<h3>3.2.22  PCIE测试<a class="headerlink" href="#pcie" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.22. </span>3.2.22  PCIE测试<a class="headerlink" href="#pcie" title="Link to this heading"></a></h3>
 <p>OK3576-C板卡有1个PCIE2.0接口</p>
 <p>系统上电前将PCIE模块插入底板PCIE卡槽。上电后启动后，通过lspci可以看到对应设备枚举成功。</p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943487-9822bb85-9d61-4acb-8392-9d56dbe2f1da.png" /></p>
@@ -1604,7 +1606,7 @@ root@ok3576-buildroot:/# echo 4096 &gt; /sys/class/net/can1/tx_queue_len
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943687-2e1ba45a-1e18-4388-a558-1a0de2c05aa7.png" /></p>
 </section>
 <section id="rknpu">
-<h3>3.2.23  RKNPU测试<a class="headerlink" href="#rknpu" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.23. </span>3.2.23  RKNPU测试<a class="headerlink" href="#rknpu" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">linux文件系统里提供了NPU的演示例程，可以运行测试：</font></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# ./rockchip-test/rockchip_test.sh
 ******************************************************
@@ -1671,7 +1673,7 @@ cmpi             00:37:39-541 {parserDisplayCfg  :095}   pstDisPlayCfg-&gt;bUseR
 </div>
 </section>
 <section id="sqlite3">
-<h3>3.2.24  SQLite3测试<a class="headerlink" href="#sqlite3" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.24. </span>3.2.24  SQLite3测试<a class="headerlink" href="#sqlite3" title="Link to this heading"></a></h3>
 <p>SQLite3是一款轻型的数据库，是遵守ACID的关系型数据库管理系统，占用资源低。OK3576-C开发板移植的是3.21.0版本的sqlit3。</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@rk3576-buildroot:/# sqlite3
 SQLite version 3.36.0 2021-06-18 18:36:39
@@ -1694,7 +1696,7 @@ root@rk3576-buildroot:/#
 </div>
 </section>
 <section id="gpio">
-<h3>3.2.25  GPIO测试<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
+<h3><span class="section-number">8.2.25. </span>3.2.25  GPIO测试<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
 <p>OK3576平台底板原理图中引出扩展IO引脚，位于底板P17</p>
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214236474-4de50a3c-a5f8-4478-bf1f-e47929ad1cc0.png" /></p>
 <p>以GPIO_P17 PIN为例进行测试</p>
@@ -1710,7 +1712,7 @@ root@ok3576-buildroot:/# fltest_extgpio.sh GPIO_P17 0	//GPIO_P17 拉低
 </section>
 </section>
 <section id="id40">
-<h1>04_OK3576平台多媒体测试<a class="headerlink" href="#id40" title="Link to this heading"></a></h1>
+<h1><span class="section-number">9. </span>04_OK3576平台多媒体测试<a class="headerlink" href="#id40" title="Link to this heading"></a></h1>
 <p>OK3576平台音视频部分应用层软件采用的是Gstreamer，支持硬件编解码。本节所有的示例均是基于Gstreamer命令行的形式。如果您需要带界面的播放器，您也可以使用qt的多媒体类，同样支持硬编解，可以参考Qt测试章节。</p>
 <p>OK3576平台内部有一个视频处理单元VPU，支持以下格式的视频硬编解：</p>
 <p>视频解码： H.264, H.265, VP9,AV1,AVS2。</p>
@@ -1763,9 +1765,9 @@ root@ok3576-buildroot:/# fltest_extgpio.sh GPIO_P17 0	//GPIO_P17 拉低
 </tbody>
 </table>
 <section id="id41">
-<h2>4.1 音频和视频播放体验<a class="headerlink" href="#id41" title="Link to this heading"></a></h2>
+<h2><span class="section-number">9.1. </span>4.1 音频和视频播放体验<a class="headerlink" href="#id41" title="Link to this heading"></a></h2>
 <section id="gst-play">
-<h3>4.1.1使用gst-play播放器播放视频和音频<a class="headerlink" href="#gst-play" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.1.1. </span>4.1.1使用gst-play播放器播放视频和音频<a class="headerlink" href="#gst-play" title="Link to this heading"></a></h3>
 <p>Gplay 是基于 Gstreamer 实现的音视频播放器，能够自动根据硬件自动选择合适的插件进行音视频播放，运行也十分简单。</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/#&lt;font style=&quot;color:#0000FF;&quot;&gt; gst-play-1.0 /userdata/1080p_30fps_h265-30S.mp4&lt;/font&gt;
 
@@ -1798,7 +1800,7 @@ Reached end of play list.
 </div>
 </section>
 <section id="gst-launch">
-<h3>4.1.2使用gst-launch 播放视频<a class="headerlink" href="#gst-launch" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.1.2. </span>4.1.2使用gst-launch 播放视频<a class="headerlink" href="#gst-launch" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/#&lt;font style=&quot;color:#0000FF;&quot;&gt; gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink&lt;/font&gt;
 
 //仅播放视频
@@ -1834,7 +1836,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="id42">
-<h3>4.1.3使用gst-launch 播放音频<a class="headerlink" href="#id42" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.1.3. </span>4.1.3使用gst-launch 播放音频<a class="headerlink" href="#id42" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/#&lt;font style=&quot;color:#0000FF;&quot;&gt; gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0&lt;/font&gt;
 
 //仅播放音频
@@ -1866,7 +1868,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="id43">
-<h3>4.1.4使用gst-launch 播放视频和音频<a class="headerlink" href="#id43" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.1.4. </span>4.1.4使用gst-launch 播放视频和音频<a class="headerlink" href="#id43" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/#&lt;font style=&quot;color:#0000FF;&quot;&gt; gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0&lt;/font&gt;
 
 //播放带声音视频文件
@@ -1907,9 +1909,9 @@ Freeing pipeline ...
 </section>
 </section>
 <section id="id44">
-<h2>4.2 视频硬编码<a class="headerlink" href="#id44" title="Link to this heading"></a></h2>
+<h2><span class="section-number">9.2. </span>4.2 视频硬编码<a class="headerlink" href="#id44" title="Link to this heading"></a></h2>
 <section id="h-264">
-<h3>4.2.1视频硬编码H.264<a class="headerlink" href="#h-264" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.2.1. </span>4.2.1视频硬编码H.264<a class="headerlink" href="#h-264" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/#&lt;font style=&quot;color:#0000FF;&quot;&gt; gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=3840,height=2160 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -1939,7 +1941,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="h-265">
-<h3>4.2.2视频硬编码H.265<a class="headerlink" href="#h-265" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.2.2. </span>4.2.2视频硬编码H.265<a class="headerlink" href="#h-265" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/#&lt;font style=&quot;color:#0000FF;&quot;&gt; gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=60/1,width=3840,height=2160 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -1966,9 +1968,9 @@ New clock: GstSystemClock
 </section>
 </section>
 <section id="id45">
-<h2>4.3 视频硬解码<a class="headerlink" href="#id45" title="Link to this heading"></a></h2>
+<h2><span class="section-number">9.3. </span>4.3 视频硬解码<a class="headerlink" href="#id45" title="Link to this heading"></a></h2>
 <section id="h264">
-<h3>4.3.1解码并播放H264格式视频<a class="headerlink" href="#h264" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.3.1. </span>4.3.1解码并播放H264格式视频<a class="headerlink" href="#h264" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0 filesrc location=/userdata/1080p_30fps_h264-30S.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -2002,7 +2004,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="id46">
-<h3>4.3.2解码并播放H264格式视频带音频<a class="headerlink" href="#id46" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.3.2. </span>4.3.2解码并播放H264格式视频带音频<a class="headerlink" href="#id46" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0 filesrc location=/userdata/1080p_30fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -2040,7 +2042,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="h265">
-<h3>4.3.3解码并播放H265格式视频<a class="headerlink" href="#h265" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.3.3. </span>4.3.3解码并播放H265格式视频<a class="headerlink" href="#h265" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -2074,7 +2076,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="id47">
-<h3>4.3.4解码并播放H265格式视频带音频<a class="headerlink" href="#id47" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.3.4. </span>4.3.4解码并播放H265格式视频带音频<a class="headerlink" href="#id47" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt; gst-launch-1.0 filesrc location=/userdata/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink&lt;/font&gt;
 
 Pipeline is PREROLLING ...
@@ -2098,7 +2100,7 @@ New clock: GstAudioSinkClock
 </div>
 </section>
 <section id="vp9">
-<h3>4.3.5 解码并播放 VP9 格式视频<a class="headerlink" href="#vp9" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.3.5. </span>4.3.5 解码并播放 VP9 格式视频<a class="headerlink" href="#vp9" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0 filesrc location=/userdata/1080p_60fps_vp9-30S.mp4  ! qtdemux ! vp9parse ! mppvideodec ! waylandsink&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -2124,7 +2126,7 @@ Execution ended after 0:00:03.189342028
 </div>
 </section>
 <section id="id48">
-<h3>4.3.6 解码并播放 VP9 格式视频带音频<a class="headerlink" href="#id48" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.3.6. </span>4.3.6 解码并播放 VP9 格式视频带音频<a class="headerlink" href="#id48" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/#  &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0 filesrc location=/userdata/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:2,0&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -2157,12 +2159,12 @@ Execution ended after 0:00:00.451334462
 </section>
 </section>
 <section id="id49">
-<h2>4.4 摄像头测试<a class="headerlink" href="#id49" title="Link to this heading"></a></h2>
+<h2><span class="section-number">9.4. </span>4.4 摄像头测试<a class="headerlink" href="#id49" title="Link to this heading"></a></h2>
 <p>OK3576支持OV13855 MIPI摄像头、UVC摄像头，首先来测试一下UVC摄像头，这里以罗技C270进程测试，将USB摄像头插入开发板，将自动安装uvc驱动。</p>
 <section id="uvc-camera">
-<h3>4.4.1 UVC Camera测试<a class="headerlink" href="#uvc-camera" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.4.1. </span>4.4.1 UVC Camera测试<a class="headerlink" href="#uvc-camera" title="Link to this heading"></a></h3>
 <section id="id50">
-<h4><strong>4.4.1.1摄像头识别检测和格式支持查询</strong><a class="headerlink" href="#id50" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.1.1. </span><strong>4.4.1.1摄像头识别检测和格式支持查询</strong><a class="headerlink" href="#id50" title="Link to this heading"></a></h4>
 <p>摄像头识别检测</p>
 <p>root&#64;ok3576-buildroot:/# <font style="color:#0000ff;">v4l2-ctl –list-devices		</font>//查看UVC camera设备结点，可见/dev/video20&amp;21为USB摄像头结点</p>
 <p>UVC Camera (046d:0825) (usb-xhci-hcd.0.auto-1.1):</p>
@@ -2241,7 +2243,7 @@ Execution ended after 0:00:00.451334462
 </div>
 </section>
 <section id="id51">
-<h4><strong>4.4.1.2摄像头采集格式查询和修改</strong><a class="headerlink" href="#id51" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.1.2. </span><strong>4.4.1.2摄像头采集格式查询和修改</strong><a class="headerlink" href="#id51" title="Link to this heading"></a></h4>
 <p>摄像头采集格式查询</p>
 <p>root&#64;ok3576-buildroot:/# <font style="color:#0000ff;">v4l2-ctl -V -d /dev/video20</font></p>
 <p>Format Video Capture:</p>
@@ -2268,7 +2270,7 @@ Execution ended after 0:00:00.451334462
 </div>
 </section>
 <section id="id52">
-<h4><strong>4.4.1.3摄像头图像预览和拍照</strong><a class="headerlink" href="#id52" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.1.3. </span><strong>4.4.1.3摄像头图像预览和拍照</strong><a class="headerlink" href="#id52" title="Link to this heading"></a></h4>
 <p>摄像头图像预览</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0  v4l2src device=/dev/video20 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480  ! waylandsink&lt;/font&gt;
 
@@ -2316,9 +2318,9 @@ Freeing pipeline ...
 </section>
 </section>
 <section id="ov13855">
-<h3>4.4.2  OV13855测试<a class="headerlink" href="#ov13855" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.4.2. </span>4.4.2  OV13855测试<a class="headerlink" href="#ov13855" title="Link to this heading"></a></h3>
 <section id="id53">
-<h4>**4.4.2.1 摄像头识别检测和格式支持查询 **<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.2.1. </span>**4.4.2.1 摄像头识别检测和格式支持查询 **<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
 <p>root&#64;ok3576-buildroot:/#   v4l2-ctl –list-devices</p>
 <p>rkcif (platform:rkcif-mipi-lvds):</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>    /dev/video0
@@ -2366,7 +2368,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="id54">
-<h4><strong>4.4.2.2 摄像头预览</strong><a class="headerlink" href="#id54" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.2.2. </span><strong>4.4.2.2 摄像头预览</strong><a class="headerlink" href="#id54" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0 v4l2src device=/dev/video55 ! video/x-raw, format=NV12, width=1920, height=1080, framerate=30/1 ! waylandsink&lt;/font&gt;
 
 Setting pipeline to PAUSED ...
@@ -2404,7 +2406,7 @@ Redistribute latency...
 </div>
 </section>
 <section id="id55">
-<h4><strong>4.4.2.3 摄像头拍照</strong><a class="headerlink" href="#id55" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.2.3. </span><strong>4.4.2.3 摄像头拍照</strong><a class="headerlink" href="#id55" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3576-buildroot:/# &lt;font style=&quot;color:#0000FF;&quot;&gt;gst-launch-1.0 v4l2src device=/dev/video5 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg&lt;/font&gt;
 
 //摄像头拍照（前置）
@@ -2475,7 +2477,7 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 </section>
 </section>
 <section id="ov5645">
-<h3>4.2.3 OV5645 测试<a class="headerlink" href="#ov5645" title="Link to this heading"></a></h3>
+<h3><span class="section-number">9.4.3. </span>4.2.3 OV5645 测试<a class="headerlink" href="#ov5645" title="Link to this heading"></a></h3>
 <p><strong><font style="color:#000000;">摄像头对应节点</font></strong></p>
 <p>CAM2 ：rkcif-mipi-lvds1</p>
 <p>CAM3 ：rkcif-mipi-lvds2</p>
@@ -2483,7 +2485,7 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 <p>CAM5 ：rkcif-mipi-lvds3</p>
 <p>以测试 CAM5 为例</p>
 <section id="id56">
-<h4><strong>4.2.3.1、摄像头识别检测</strong><a class="headerlink" href="#id56" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.3.1. </span><strong>4.2.3.1、摄像头识别检测</strong><a class="headerlink" href="#id56" title="Link to this heading"></a></h4>
 <p>root&#64;rk3576-buildroot:/#   v4l2-ctl –list-devices</p>
 <p>rkcif (platform:rkcif-mipi-lvds4):</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>    /dev/video44
@@ -2513,7 +2515,7 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 </div>
 </section>
 <section id="id57">
-<h4><strong>4.2.3.2、查看支持格式</strong><a class="headerlink" href="#id57" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.3.2. </span><strong>4.2.3.2、查看支持格式</strong><a class="headerlink" href="#id57" title="Link to this heading"></a></h4>
 <p>root&#64;ok3576-buildroot:/#  v4l2-ctl –list-formats-ext -d /dev/video44</p>
 <p>ioctl: VIDIOC_ENUM_FMT</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>    Type: Video Capture Multiplanar
@@ -2555,7 +2557,7 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 </div>
 </section>
 <section id="id58">
-<h4><strong>4.2.3.3、摄像头预览</strong><a class="headerlink" href="#id58" title="Link to this heading"></a></h4>
+<h4><span class="section-number">9.4.3.3. </span><strong>4.2.3.3、摄像头预览</strong><a class="headerlink" href="#id58" title="Link to this heading"></a></h4>
 <p>root&#64;ok3576-buildroot:/#   <font style="color:#0000ff;">gst-launch-1.0 v4l2src device=/dev/video11 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink</font></p>
 <p>Setting pipeline to PAUSED …</p>
 <p>Using mplane plugin for capture</p>
@@ -2570,14 +2572,14 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 </section>
 </section>
 <section id="id59">
-<h1>05_烧写系统<a class="headerlink" href="#id59" title="Link to this heading"></a></h1>
+<h1><span class="section-number">10. </span>05_烧写系统<a class="headerlink" href="#id59" title="Link to this heading"></a></h1>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>OK3576-C开发板目前支持OTG烧写方式。在用户资料中提供了相应的烧写工具。
 </pre></div>
 </div>
 <section id="otg">
-<h2>5.1 OTG烧写系统<a class="headerlink" href="#otg" title="Link to this heading"></a></h2>
+<h2><span class="section-number">10.1. </span>5.1 OTG烧写系统<a class="headerlink" href="#otg" title="Link to this heading"></a></h2>
 <section id="id60">
-<h3>5.1.1 OTG驱动安装<a class="headerlink" href="#id60" title="Link to this heading"></a></h3>
+<h3><span class="section-number">10.1.1. </span>5.1.1 OTG驱动安装<a class="headerlink" href="#id60" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>路径：OK3576-C（Linux）用户资料\Linux\工具</font>DriverAssitant_v5.11.zip</p></li>
 </ul>
@@ -2588,9 +2590,9 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 <p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214251723-98517c31-82d2-4e6d-9c09-9a214f28b101.png" /></p>
 </section>
 <section id="id61">
-<h3>5.1.2 OTG完全烧写测试<a class="headerlink" href="#id61" title="Link to this heading"></a></h3>
+<h3><span class="section-number">10.1.2. </span>5.1.2 OTG完全烧写测试<a class="headerlink" href="#id61" title="Link to this heading"></a></h3>
 <section id="rkdevtool">
-<h4><strong>5.1.2.1 RKDevTool烧写测试</strong><a class="headerlink" href="#rkdevtool" title="Link to this heading"></a></h4>
+<h4><span class="section-number">10.1.2.1. </span><strong>5.1.2.1 RKDevTool烧写测试</strong><a class="headerlink" href="#rkdevtool" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>路径：OK3576-C（Linux）用户资料\Linux\工具</font> RKDevTool_Release_v3.31.zip</p></li>
 </ul>
@@ -2607,7 +2609,7 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
 </section>
 </section>
 <section id="id62">
-<h3>5.2 TF 卡烧写系统<a class="headerlink" href="#id62" title="Link to this heading"></a></h3>
+<h3><span class="section-number">10.1.3. </span>5.2 TF 卡烧写系统<a class="headerlink" href="#id62" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">烧写 TF 卡制作与烧写测试 </font></p>
 <p><font style="color:#000000;">注意：测试 TF 卡容量最大为 32G，使用 32G 以上 TF 卡可能会烧写失败。 </font></p>
 <p><font style="color:#000000;">将用户资料工具目录的 SDDiskTool_v1.76.zip拷贝到 windows 任意目录。以管理员权限运行 </font></p>
@@ -2635,13 +2637,13 @@ busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root      
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="RK3576" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="RK3576 Manuals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright .</p>
+    <p>&#169; Copyright Forlinx Embedded.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
