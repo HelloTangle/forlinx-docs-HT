@@ -21,7 +21,7 @@ OK3576-C_Linux6.1.84_User's Manual_1.0
 
    OK3576-C_Linux_use
 
-OK3576 Platform Multimedia Test
+OK3576-C Hardware
 =======================================
 
 .. toctree::
@@ -29,4 +29,4 @@ OK3576 Platform Multimedia Test
    :numbered:
    :maxdepth: 1
 
-   OK3576-media
+   OK3576-C_hardware
