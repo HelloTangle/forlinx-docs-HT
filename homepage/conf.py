@@ -35,8 +35,3 @@ html_theme_options = {
 
 }
 
-html_theme_options = {
-    'collapse_navigation': False,  # 默认展开所有一级导航
-    'navigation_depth': 2,         # 显示到第2层目录
-    'titles_only': False,
-}
