@@ -40,3 +40,13 @@ html_theme_options = {
     'navigation_depth': 4,          # 展示的目录层级，建议设为 2~4
     'titles_only': False,           # 显示全部小节标题，不只展示文档标题
 }
+
+html_sidebars = {
+    '**': [
+        'globaltoc.html',
+        'relations.html',
+        'sourcelink.html',
+        'searchbox.html',
+        'footer.html',  # 👈 关键：显式加载我们自定义的 footer 模板
+    ]
+}
