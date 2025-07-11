@@ -7,23 +7,30 @@ Welcome to the official documentation of Forlinx Embedded, covering multiple mai
 Brands and Platform Navigation
 ------------------------------
 
-Rockchip Series
-^^^^^^^^^^^^^^^^
+Brands and Platform Navigation
+------------------------------
 
-- `RK3568 Series <rockchip/rk3568/index.html>`_
-- `RK3576 Series <rockchip/rk3576/index.html>`_
-- `RK3588 Series <rockchip/rk3588/index.html>`_
+.. toctree::
+   :caption: Rockchip Series
+   :maxdepth: 1
 
-NXP Series
-^^^^^^^^^^^^
+   rockchip/rk3568/index
+   rockchip/rk3576/index
+   rockchip/rk3588/index
 
-- `i.MX8M Plus Series <nxp/imx8mp/index.html>`_
-- `i.MX93 Series <nxp/imx9352/index.html>`_
+.. toctree::
+   :caption: NXP Series
+   :maxdepth: 1
 
-Allwinner Series
-^^^^^^^^^^^^^^^^^^
+   nxp/imx8mp/index
+   nxp/imx9352/index
 
-- `T-Series Processor Platforms <allwinner/tseries/index.html>`_ *(Example, adjust as needed)*
+.. toctree::
+   :caption: Allwinner Series
+   :maxdepth: 1
+
+   allwinner/tseries/index
+
 
 Documentation Features
 -----------------------
