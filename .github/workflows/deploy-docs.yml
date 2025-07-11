@@ -22,8 +22,8 @@ jobs:
       run: pip install -r requirements.txt
 
 
-    - name: Preprocess Markdown images (download + replace paths)
-      run: python scripts/process_md_images.py
+  #  - name: Preprocess Markdown images (download + replace paths)
+  #    run: python scripts/process_md_images.py
 
 
     # 构建首页 index.rst
