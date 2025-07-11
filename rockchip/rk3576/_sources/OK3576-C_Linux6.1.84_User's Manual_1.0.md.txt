@@ -145,15 +145,15 @@ OK3576-C平台调试串口使用的是Type-C接口，板载USB转UART芯片，�
 
 **步骤1：**首先需要确认连接电脑的串口端口号，从设备管理器中查看串口端口号，以电脑实际识别的端口号为准。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/77f30f4604c2b8965b807e4ac62efpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/e2277f30f4604c2b8965b807e4ac62ef.png)
 
 **步骤2：**打开putty并设置，serial line根据使用的电脑COM口设置，波特率115200
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/8a98b75fb4a89bba4b1acbe4a0c5cpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/9bb8a98b75fb4a89bba4b1acbe4a0c5c.png)
 
 **步骤3：**上述设置完成后可以在Saved Sessions输入电脑使用的COM口，下图以COM3为例，将设置保存，之后再打开串口时，直接点击保存的端口号即可。
 
-#### ![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/82ae81022497a95eaaa583a02e011png.png)
+#### ![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/e2882ae81022497a95eaaa583a02e011.png)
 **步骤4：**打开开发板的电源开关，串口会有打印信息输出，用户名forlinx，密码forlinx（无root权限），如果需要使用root登录则用户名和密码分别为root，root。
 
 ```plain
@@ -188,31 +188,31 @@ forlinx@ok3576-buildroot:~$
 ### 3.1.1  界面功能简介
 开发板启动后桌面显示如下：
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/89c33ad7c442392a9ae02f7955765png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/cb589c33ad7c442392a9ae02f7955765.png)
 
 ### 3.1.2  浏览器测试
 <font style="color:#000000;">“DemoBrowser”是一款简单实用的网络浏览器，在使用时请保证网络通畅，访问外网前需保证dns可用，浏览器启动时默认访问飞凌嵌入式官方网站。</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/1740fda634879991303ba40e64139png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/2771740fda634879991303ba40e64139.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/0310421a841cc91fbdd11c845aad2png.png)<font style="color:#000000;">注意：如果开发板的时间异常会导致证书问题。使用浏览器后不可以立即关闭电源或者在关闭电源前在命令行使用sync命令，否则可能导致浏览器异常退出，无法正常运行，只能重新烧录解决。</font>
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/0fc0310421a841cc91fbdd11c845aad2.png)<font style="color:#000000;">注意：如果开发板的时间异常会导致证书问题。使用浏览器后不可以立即关闭电源或者在关闭电源前在命令行使用sync命令，否则可能导致浏览器异常退出，无法正常运行，只能重新烧录解决。</font>
 
 <font style="color:#000000;">界面如下：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/557213e494bafb4b86415384ef5afpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/b3d557213e494bafb4b86415384ef5af.png)
 
 <font style="color:#000000;">通过上方导航栏 File->Quit 退出该浏览器。</font>
 
 ### 3.1.3  播放音乐测试
 “<font style="color:#000000;">musicplayer”</font>是一款简单的音频测试应用，可用来测试声卡功能是否正常，也可用来作为一款简单的音频播放器。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/f741f452d458d8b73d80b67053e45png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/b80f741f452d458d8b73d80b67053e45.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/720e817514c57b4cb7c801412097fpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/710720e817514c57b4cb7c801412097f.png)
 
 <font style="color:#000000;">点击左下角的按钮，选择测试音频 /userdata/piano2-CoolEdit.mp3。</font>
 
@@ -221,48 +221,48 @@ forlinx@ok3576-buildroot:~$
 
 
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/5bcfc52684aa09b4e5d9913205fc3png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/4c65bcfc52684aa09b4e5d9913205fc3.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/a5a3fc5e1479f9558d3a78ec57c54png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/40aa5a3fc5e1479f9558d3a78ec57c54.png)
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/37ce16b1a4f20b5b015b80728f417png.png) **<font style="color:#000000;">注意：测试视频文件所在目录：</font>**<font style="color:#000000;">/media/forlinx/video/*.mp4</font>
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/3e037ce16b1a4f20b5b015b80728f417.png) **<font style="color:#000000;">注意：测试视频文件所在目录：</font>**<font style="color:#000000;">/media/forlinx/video/*.mp4</font>
 
 ### 3.1.5  4G/5G 测试
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/b5f1d396b45b4bf8603973e783ed9png.png) 注意：此测试需要插入可上网的<font style="color:#000000;">SIM</font>卡，具体操作描述可以参考本手册的命令行功能测试<font style="color:#000000;">5G</font>章节。
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/150b5f1d396b45b4bf8603973e783ed9.png) 注意：此测试需要插入可上网的<font style="color:#000000;">SIM</font>卡，具体操作描述可以参考本手册的命令行功能测试<font style="color:#000000;">5G</font>章节。
 
 <font style="color:#000000;">“4G/5G”测试程序用于测试OK3576外置5G模块(RM500U)。测试前请将开发板断电，接入5G模块，插入SIM卡，启动开发板打开测试应用。</font>
 
 <font style="color:#000000;">同时该测试支持4G模组（EM05-CE），在断电情况下插入4G模组和SIM卡，上电系统启动后打开测试应用。</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/83dfc46f24a8693d8f0620660106cpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/90283dfc46f24a8693d8f0620660106c.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/9daaa66ac43789bda993ee8294768png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/fe39daaa66ac43789bda993ee8294768.png)
 
 <font style="color:#000000;">点击Start按钮，程序将自动进入拨号流程并获取IP设置DNS等，耐心等待几秒钟后，当屏幕输出IP地址后，退出当前应用。进入DemoBrowser网络浏览器进行测试，若打开应用能够正常访问飞凌嵌入式官方网站，说明此时已连接成功。</font>
 
 ### 3.1.6  看门狗测试
 <font style="color:#000000;">“WatchDog”是用来测试看门狗功能是否正常的应用</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/9df3e06024147b1cca78adc7a5c61png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/74c9df3e06024147b1cca78adc7a5c61.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/9d3e9aa5a43238c0ee6d3c8ff0a3fpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/4d39d3e9aa5a43238c0ee6d3c8ff0a3f.png)
 
 <font style="color:#000000;">点击start，默认打开喂狗功能，定时喂狗，此时系统不会重启。取消勾选 </font>feed dog<font style="color:#000000;">时，倒计时</font>10s<font style="color:#000000;">，系统进入重启。说明看门狗功能正常。</font>
 
 ### 3.1.7  串口测试
 <font style="color:#000000;">点击桌面图标可以使用它来测试OK3576板载UART接口。</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/45bee6ecb49938d4ec9a0ac17a51epng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/11c45bee6ecb49938d4ec9a0ac17a51e.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/6406d950340efa055282f3bdbd8c9png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/3fe6406d950340efa055282f3bdbd8c9.png)
 
 界面展示
 
@@ -270,32 +270,32 @@ forlinx@ok3576-buildroot:~$
 
 <font style="color:#000000;">测试使用UART5、UART6两路RS485对测，测试前需要连接好两路RS485接口A、B引脚，A接A，B接B。两路RS485的底板接口如下：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/dbbafc7474962862829af59f43202png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/fa0dbbafc7474962862829af59f43202.png)
 
 测试方法：
 
 在界面中设置<font style="color:#000000;">ttyS6</font>，波特率<font style="color:#000000;">9600</font>，<font style="color:#000000;">8</font>位数据位，<font style="color:#000000;">1</font>位停止位。最后点击<font style="color:#000000;">open</font>按钮。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/5164e683b4c99887dcb0951b95a68png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/3a35164e683b4c99887dcb0951b95a68.png)
 
 并且使用串口登录到开发板，在串口终端中输入<font style="color:#000000;">echo “forlinx_uart_test.1234567890...” > /dev/ttyS5</font>。<font style="color:#000000;">测试界面会接收到数据：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/b484cf51f440eab6de99b08f789f0png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/56ab484cf51f440eab6de99b08f789f0.png)
 
 在串口终端输出<font style="color:#000000;">cat  /dev/ttyS5</font>，再页面中<font style="color:#000000;">点击send下的输入框，使用键盘输入“abcdefg”，点击send。此时ttyS5可以收到消息。</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/0008994c74f31b058143861a549f5png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/3cc0008994c74f31b058143861a549f5.png)
 
 ### 3.1.8  背光测试
 <font style="color:#000000;">“BackLight”是lcd背光调整应用：</font>
 
 
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/db36a618548fabefbcc14ebce017bpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/bcbdb36a618548fabefbcc14ebce017b.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/b0450b2474a59890e7fe5e532e70apng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/eaeb0450b2474a59890e7fe5e532e70a.png)
 
 应用界面
 
@@ -304,11 +304,11 @@ forlinx@ok3576-buildroot:~$
 ### 3.1.9  按键测试
 <font style="color:#000000;">“Keypad”用于测试平台自带按键是否可用：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/7e29ce79246a9ad17e8ee94d589f0png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/9a47e29ce79246a9ad17e8ee94d589f0.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/21e14d93445f2bc8210b11e44676dpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/ea621e14d93445f2bc8210b11e44676d.png)
 
 <font style="color:#000000;">OK3576平台默认将4个物理按键 V+、V-、MENU、ESC 分别配置为音量+键、音量-键，Menu、返回键。当按下按键时测试应用中的对应按键会变为蓝色，说明按键功能正常。</font>
 
@@ -317,11 +317,11 @@ forlinx@ok3576-buildroot:~$
 
 
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/b7acc55c045d7b50a3149c846ea40png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/c20b7acc55c045d7b50a3149c846ea40.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/07edd590d4183a9ecdc06b348e84epng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/d0707edd590d4183a9ecdc06b348e84e.png)
 
 <font style="color:#000000;">选择 Manual 之后，可手动设置时间，选择 date 和 time，点击 apply，设置完成，安装好 RTC 备用电池的情况下，时间断电重启不丢失。</font>
 
@@ -330,7 +330,7 @@ forlinx@ok3576-buildroot:~$
 ### 3.1.11  网络配置测试
 <font style="color:#000000;">OK3568可通过“Network”网络配置应用来选择 dhcp 和 static 两种模式，static 模式可配置 ip 地址、子网掩码、网关、DNS。</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/a1602c466446c9b06565a0da24c53png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/722a1602c466446c9b06565a0da24c53.png)
 
 <font style="color:#000000;">应用图标</font>
 
@@ -342,7 +342,7 @@ forlinx@ok3576-buildroot:~$
 
 <font style="color:#000000;">输入网址，点击ping键后，左侧提示框中会提示ping的结果，如下：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/916f18e9e44f6b6e9459b1193a296png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/42a916f18e9e44f6b6e9459b1193a296.png)
 
 <font style="color:#000000;">注：在STATIC模式下设置的ip等信息会被保存至系统的相关配置文件中，因此每次重启都会使用本次设置的网络信息；而在DHCP模式下配置的网络信息则不需注意这一点，每次重新启动都会动态分配一次ip地址。</font>
 
@@ -351,20 +351,20 @@ forlinx@ok3576-buildroot:~$
 
 
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/17ccb434943f0a2b94dce83d63b3fpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/c6117ccb434943f0a2b94dce83d63b3f.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/c2afa69fb475e8c482d07a32cbf70png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/9eec2afa69fb475e8c482d07a32cbf70.png)
 
 ### 3.1.13  系统信息测试
 <font style="color:#000000;">点击桌面图标可以显示系统相关信息。</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/e2d41ae394173b3d62e064206ac66png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/637e2d41ae394173b3d62e064206ac66.png)
 
 应用图标
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/dd89b058f4c5dbd509d1df40873c6png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/3ccdd89b058f4c5dbd509d1df40873c6.png)
 
 ## 3.2 命令行功能测试
 OK3576平台内置了丰富的命令行工具可供用户使用。
@@ -660,7 +660,7 @@ root@ok3576-buildroot:/# ifup -a
 
 打流测试
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/2b1362db442a4ba63223022d3ab38png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/b812b1362db442a4ba63223022d3ab38.png)
 
 ### 3.2.9  UART 485测试
 OK3576平台底板原理图中标示引出的UART0、UART4、UART5、UART6共4路串口，其中UART0为调试串口，UART4为蓝牙串口，UART5、UART6为485串口。
@@ -675,7 +675,7 @@ OK3576平台底板原理图中标示引出的UART0、UART4、UART5、UART6共4�
 
 测试使用UART5、UART6两路RS485对测，测试前需要连接好两路RS485接口A、B引脚，A接A，B接B。两路RS485的底板接口如下：
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/e5bd529ce453f966dada949156ff8png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/62fe5bd529ce453f966dada949156ff8.png)
 
 使用两路终端登录开发板，一路UART0 debug调试口，另一路使用SSH登录。
 
@@ -701,7 +701,7 @@ root@ok3576-buildroot:~# echo 111111 > /dev/ttyS6     //发送数据
 ### 3.2.10  ADC测试
 OK3576-C开发板内部提供了8路ADC，在P18端口留出saradc2、 saradc4、saradc5、saradc6、saradc7通道，可以使用跳线帽连接旁边的可调电阻进行测试。ADC引脚硬件图如下，当前芯片使用1.8V参考电压对应 12 位ADC最大值4096。选择 saradc4进行测试，使用跳线帽连接P18端口的3、4引脚。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/0d0aded4140aeaaa496e802c801efpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/0c30d0aded4140aeaaa496e802c801ef.png)
 
 测试可调电阻数值
 
@@ -719,7 +719,7 @@ root@ok3576-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 
 1、上电前将TF卡插入开发板底板的TF卡插槽，上电启动，运行命令dmesg，终端有如下打印信息：
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/4b3fe21084d7d85992eeb49db3c72png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/c664b3fe21084d7d85992eeb49db3c72.png)
 
 2、查看挂载目录：
 
@@ -788,7 +788,7 @@ root@ok3576-buildroot:/# dd if=/test of=/dev/null bs=1M
 ### 3.2.13  USB鼠标测试
 <font style="color:#000000;">将USB鼠标接入OK3576平台的usb接口，使用dmesg命令， 串口终端的打印信息如下：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/d9d002631418f8313eac623091c54png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/556d9d002631418f8313eac623091c54.png)
 
 <font style="color:#000000;">此时在屏幕上出现箭头光标，鼠标已可正常使用。</font>
 
@@ -799,7 +799,7 @@ OK3576底板使用USB3.0集线器分出3路USB3.0 host，可以连接USB鼠标�
 
 1. 开发板启动后，连接USB接口u盘到开发板的USB host接口，默认log打印信息较低，不会有打印信息。可以使用dmesg命令查看，找到u盘相关信息
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/886f614fa43dcabe335fbacf9a1fbpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/671886f614fa43dcabe335fbacf9a1fb.png)
 
 1. 查看挂载目录：
 
@@ -849,13 +849,13 @@ OK3576-C包含1个TYPE-C接口，TYPE-C HOST/DEVICE模式自动识别。Device�
 
 Device 模式<font style="color:#000000;">：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/d722df2f44e7f8f277b7e00f4a327png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/28bd722df2f44e7f8f277b7e00f4a327.png)
 
 Host模式：
 
 接入U盘查看插入信息。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/c7321d7c64cf18168b3b267af2053png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/827c7321d7c64cf18168b3b267af2053.png)
 
 ### 3.2.16  WIFI 测试
 + **说明：**
@@ -1288,7 +1288,7 @@ OK3576-C平台有两路CAN总线接口，CAN 连线方式： CAN 的 H 端子与
 
 短接CAN0和CAN1，如图：
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/fb982828e4f0898bb8f9e5a3b1438png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/083fb982828e4f0898bb8f9e5a3b1438.png)
 
 在开发板终端执行如下命令：
 
@@ -1419,23 +1419,23 @@ OK3576-C板卡有1个PCIE2.0接口
 
 系统上电前将PCIE模块插入底板PCIE卡槽。上电后启动后，通过lspci可以看到对应设备枚举成功。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/2bb859d614acb83929d56dbe2f1dapng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/9822bb859d614acb83929d56dbe2f1da.png)
 
 由于pcie设备类型较多，有可能默认不被内核支持需自行添加编译设备对应的驱动程序。
 
 以pcie硬盘为例，ls /dev 可以看到如下nvme节点：
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/91b418f1d4106a550cfbfdea82f9cpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/c1891b418f1d4106a550cfbfdea82f9c.png)
 
 <font style="color:#000000;">使用dd测试硬盘速率</font>
 
 写入：
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/2eb724803468881df628d2e36bd15png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/7362eb724803468881df628d2e36bd15.png)
 
 读取
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/ba45a1e184388a5581a0de2c05aa7png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/2e1ba45a1e184388a5581a0de2c05aa7.png)
 
 ### 3.2.23  RKNPU测试
 <font style="color:#000000;">linux文件系统里提供了NPU的演示例程，可以运行测试：</font>
@@ -1534,7 +1534,7 @@ root@rk3576-buildroot:/#
 ### 3.2.25  GPIO测试
 OK3576平台底板原理图中引出扩展IO引脚，位于底板P17
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/50a3ca5f84478bf1fe47929ad1cc0png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/4de50a3ca5f84478bf1fe47929ad1cc0.png)
 
 以GPIO_P17 PIN为例进行测试
 
@@ -2407,11 +2407,11 @@ OK3576-C开发板目前支持OTG烧写方式。在用户资料中提供了相应
 
 打开DriverInstall.exe 程序。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/5ec466ec047ed9a8715161a370c5epng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/8975ec466ec047ed9a8715161a370c5e.png)
 
 点击“驱动安装”。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/17c3182d24e6d9c099a214f28b101png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/98517c3182d24e6d9c099a214f28b101.png)
 
 ### 5.1.2 OTG完全烧写测试
 #### **5.1.2.1 RKDevTool烧写测试**
@@ -2424,13 +2424,13 @@ OK3576-C开发板目前支持OTG烧写方式。在用户资料中提供了相应
 
 打开瑞芯微开发工具：
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/fc68a776a4953b536b7b35c6effafpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/5d6fc68a776a4953b536b7b35c6effaf.png)
 
 点击“切换“等待一会进入LOADER设备。根据自己镜像的位置调整镜像路径，然后勾选要更新的镜像，然后点击“执行”按钮进行升级。
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/ec0df048e4a1491708a21b942cdf0png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/763ec0df048e4a1491708a21b942cdf0.png)
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/e701b2b6c45899ab3b1ba0edbbb57png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/4afe701b2b6c45899ab3b1ba0edbbb57.png)
 
 ### 5.2 TF 卡烧写系统
 <font style="color:#000000;">烧写 TF 卡制作与烧写测试 </font>
@@ -2441,17 +2441,17 @@ OK3576-C开发板目前支持OTG烧写方式。在用户资料中提供了相应
 
 <font style="color:#000000;">SD_Firmware_Tool.exe。</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/fc93cb5bf476bbff2ebe975b5ea7bpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/a91fc93cb5bf476bbff2ebe975b5ea7b.png)
 
 <font style="color:#000000;">选择磁盘设备，勾选“固件升级”，并选择 update.img。点击开始创建。</font>
 
 
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/0d473a96143fe84448cc7f9e007acpng.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/8740d473a96143fe84448cc7f9e007ac.png)
 
 
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/e76c3478e41b5bf25b53b68a368d6png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/fcfe76c3478e41b5bf25b53b68a368d6.png)
 
 <font style="color:#000000;">将 TF 卡插入开发板并启动，系统将自动进入烧写流程。烧写完成后屏幕和串口都将提示： </font>
 
@@ -2471,7 +2471,7 @@ OK3576-C开发板目前支持OTG烧写方式。在用户资料中提供了相应
 
 <font style="color:#000000;">烧写状态串口信息：</font>
 
-![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/3acc85556408b9a887b9305caf707png.png)
+![Image](./images/OK3576-C_Linux6.1.84_User's Manual_1.0/d2c3acc85556408b9a887b9305caf707.png)
 
 <font style="color:#000000;">若移除 TF 未自动重启，手动重启也可完成烧写。烧写过程中请耐心等待。</font>
 
