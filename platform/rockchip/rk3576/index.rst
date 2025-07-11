@@ -19,5 +19,5 @@ OK3576-C_Linux6.1.84_User's Manual_1.0
    :numbered:
    :maxdepth: 2
 
-   OK3576-C_Linux6.1.84_User's Manual_1.0
+   OK3576-C_Linux_use
 
