@@ -27,7 +27,7 @@ html_css_files = [
 
 # Logo 文件放在 _static 文件夹，确保路径正确
 html_logo = '_static/forlinx-logo.png'
-html_favicon = '_static/forlinx.ico'
+html_favicon = '_static/forlinx.png'
 
 # 主题选项，根据需要调整
 html_theme_options = {
