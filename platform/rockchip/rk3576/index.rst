@@ -3,7 +3,7 @@
 
    📌 To return to the **main Forlinx documentation site**, visit: 
      
-     `Forlinx Documentation Main Page <https://docs.forlinx.net/forlinx-online-docs/>`_
+     `Forlinx Documentation Main Page <https://hellotangle.github.io/forlinx-docs-HT/>`_
 
 
 
