@@ -28,25 +28,25 @@ RK3576具有高性能的外部存储器接口（LPDDR4/LPDDR4X/LPDDR5），能�
 
 **RK3576处理器框图**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720593601656-0670391a-b653-4230-aede-3ea9e26b9868.png)
+![Image](./images/OK3576C_hardware/0670391ab6534230aede3ea9e26b9868.png)
 
 # 第二章  FET3576-C核心板介绍
 ## 2.1  FET3576-C核心板外观图
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1733456740203-4f819259-1c63-45b2-8917-a806d32b2885.png)
+![Image](./images/OK3576C_hardware/4f8192591c6345b28917a806d32b2885.png)
 
 **核心板正面视图**
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1733456699798-361c5272-c28d-45c5-8b73-ad736e028066.png)
+![Image](./images/OK3576C_hardware/361c5272c28d45c58b73ad736e028066.png)
 
 **核心板反面视图**
 
 ## 
 ## 2.2  FET3576-C 核心板框图
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199723643-67bbd894-eb35-4750-86ac-27181de438c4.png)
+![Image](./images/OK3576C_hardware/67bbd894eb35475086ac27181de438c4.png)
 
 **核心板框图**
 
@@ -55,15 +55,15 @@ RK3576具有高性能的外部存储器接口（LPDDR4/LPDDR4X/LPDDR5），能�
 ## 2.3  FET3576-C核心板尺寸图
 FET3576-C核心板尺寸图如下： 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199723926-1b8554b0-e9fd-4294-a0ba-44d3349e636f.png)
+![Image](./images/OK3576C_hardware/1b8554b0e9fd4294a0ba44d3349e636f.png)
 
 **顶层尺寸图**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724248-c9d3447b-4655-46be-9ad4-38beb6c92363.png)
+![Image](./images/OK3576C_hardware/c9d3447b465546be9ad438beb6c92363.png)
 
 **底层尺寸图**
 
-单位：mm![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724670-67922326-0c33-478e-af0b-7de83224e418.png)
+单位：mm![Image](./images/OK3576C_hardware/679223260c33478eaf0b7de83224e418.png)
 
 结构尺寸：68mm×50mm，尺寸公差±0.15mm；更多详细尺寸请见用户资料dxf结构文件。
 
@@ -75,9 +75,9 @@ FET3576-C核心板尺寸图如下：
 
 用户可以参考开发板设计，在底板使用M2，L=1.5mm的贴片螺母，贴片螺母的规格参见下图
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724879-e1bbcd19-a64f-483a-8ca0-679afb0b8a85.png)
+![Image](./images/OK3576C_hardware/e1bbcd19a64f483a8ca0679afb0b8a85.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199725152-9e128ca2-4ffc-4042-bff0-0c58c7aff308.png)
+![Image](./images/OK3576C_hardware/9e128ca24ffc4042bff00c58c7aff308.png)
 
 
 
@@ -187,13 +187,13 @@ FET3576-C核心板接口资源支持如下表：
 
 ## 2.6  FET3576-C核心板引脚定义
 ### 2.6.1  FET3576-C核心板引脚原理图
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199725381-e97fda68-6e24-4204-ae69-0ad984b42cad.png)
+![Image](./images/OK3576C_hardware/e97fda686e244204ae690ad984b42cad.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199725678-07499dd7-d923-4ece-9bec-4c925c40b2d6.png)
+![Image](./images/OK3576C_hardware/07499dd7d9234ece9bec4c925c40b2d6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199726107-7ffe2b4b-fcd0-4565-9353-3b1efb04dd28.png)
+![Image](./images/OK3576C_hardware/7ffe2b4bfcd0456593533b1efb04dd28.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199726448-23bd375a-3ddb-4c27-9b4f-25c420797a6a.png)
+![Image](./images/OK3576C_hardware/23bd375a3ddb4c279b4f25c420797a6a.png)
 
 
 
@@ -1021,18 +1021,18 @@ FET3576-C核心板接口资源支持如下表：
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/49874024/1733464938859-de566621-a7ee-4edd-b1b0-898d80a41e62.jpeg)
+![Image](./images/OK3576C_hardware/de566621a7ee4eddb1b0898d80a41e62.jpeg)
 
 
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/49874024/1733464952493-ec45bef4-1f29-4fe3-9e46-c17f3993659b.jpeg)
+![Image](./images/OK3576C_hardware/ec45bef41f294fe39e46c17f3993659b.jpeg)
 
 ## 3.2  OK3576-C开发板尺寸图
 OK3576-C开发板和天线板尺寸图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199745059-ff2e0738-1b08-482c-89e1-044c92dccefa.png)
+![Image](./images/OK3576C_hardware/ff2e07381b08482c89e1044c92dccefa.png)
 
 底板PCB尺寸：130mm×190mm，更多详细尺寸请见用户资料dxf文件；
 
@@ -1046,7 +1046,7 @@ OK3576-C开发板和天线板尺寸图如下：
 
 OK3576-C底板预留了2个直径3.2mm散热片的安装孔，用户可以根据现场环境选配安装散热片，散热片和核心板接触面请加一层绝缘的导热硅胶垫。飞凌自选的核心板散热片尺寸为：38mm×38mm×23mm，更多详细尺寸参见下图： 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1721199745766-a366a4ed-569a-4bf9-8fd4-d4273309eb8f.jpeg)![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1721199746034-60073a41-4207-4c70-913a-41aee8bdcb6d.jpeg)
+![Image](./images/OK3576C_hardware/a366a4ed569a4bf98fd4d4273309eb8f.jpeg)![Image](./images/OK3576C_hardware/60073a4142074c70913a41aee8bdcb6d.jpeg)
 
 ## 3.3  底板命名规范
 ABC-D+IK:M
@@ -1115,21 +1115,21 @@ ABC-D+IK:M
 ### 3.5.1  底板电源
 开发板使用12V电源适配器供电，电源接口为DC005规格的插座。拨动开关S1为开发板的电源开关，按照底板丝印指示方向拨动开关控制上下电。S1后级并联TVS管进行静电防护，F1保险丝进行过流保护，D1与F1配合进行防反接保护。VCC12V_DCIN同时给FET3576核心板和底板其他外设进行供电。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201751774-8f0d16a1-4b7c-4f4c-83fa-bcd2938e9030.png)
+![Image](./images/OK3576C_hardware/8f0d16a14b7c4f4c83fabcd2938e9030.png)
 
 VCC12V_DCIN通过U3（DC-DC）降压至VCC_5V，VCC_5V给底板其他外设供电。（这里需要注意12V降5V DC-DC芯片选型时，芯片的输出功率要足够大，建议输出电流6A以上，保证为后级提供足够电流）
 
 核心板通过12V供电正常启动后，通过CARRIER_BOARD_EN引脚输出高电平，来控制U3使能输出VCC_5V电源为开发板的部分外设供电。（该信号电平为3.3V，驱动能力为10K上拉，如果被使能设备使能引脚所需驱动能力超出该范围，则需要添加缓冲器或者门电路用来增加驱动能力，确保核心板和底板上电正常）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201762785-128471a6-a74f-4f27-9a2e-2e18a6d1f500.png)
+![Image](./images/OK3576C_hardware/128471a6a74f4f279a2e2e18a6d1f500.png)
 
 VCC_5V通过U4（DC-DC）降压至VCC_3V3。VCC_3V3电源为开发板的部分设备供电。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201772610-7630fdfd-a1b8-4ce6-adff-7ee928028331.png)
+![Image](./images/OK3576C_hardware/7630fdfda1b84ce6adff7ee928028331.png)
 
 VCC_3V3通过U2（LDO）降压至VCC_1V8。VCC_1V8电源为开发板的部分设备供电。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201782020-4b99d7b6-0835-4ef1-9a88-7be439626779.png)
+![Image](./images/OK3576C_hardware/4b99d7b608354ef19a887be439626779.png)
 
 **注意：**
 
@@ -1140,11 +1140,11 @@ VCC_3V3通过U2（LDO）降压至VCC_1V8。VCC_1V8电源为开发板的部分设
 ### 3.5.2  复位及开关机信号
 RESET_L为核心板复位信号输入，为方便调试，连接到按键上。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201789558-11b99632-bfc0-42ed-97ef-04c08ac8aaaf.png)
+![Image](./images/OK3576C_hardware/11b99632bfc042ed97ef04c08ac8aaaf.png)
 
 PWRON_L为核心板开关机信号输入，为方便调试，连接到按键上。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201797858-4d5fa53c-86e5-4842-b22f-061c06ef68bc.png)
+![Image](./images/OK3576C_hardware/4d5fa53c86e54842b22f061c06ef68bc.png)
 
 ### 3.5.3  Boot配置
 RK3576支持多种启动引导方式，在芯片复位结束后，芯片内部集成的引导代码可以在如下接口设备进行引导，具体引导顺序可根据实际应用需求进行选择：
@@ -1182,11 +1182,11 @@ RK3576的Boot启动顺序可以通过SARADC_VIN0_BOOT Pin（PIN：P1_28）进行
 
 核心板上SARADC_VIN0_BOOT配置为10K上拉，因此核心板默认从eMMC启动。底板可以增加下拉电阻，以实现其他的引导顺序。按照以上Config1设置，OK3576-C将SARADC_VIN0_BOOT通过轻触按键连接至GND，以实现Maskrom mode。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201812443-75639444-b4a1-4617-b923-3b34d6378034.png)
+![Image](./images/OK3576C_hardware/75639444b4a14617b9233b34d6378034.png)
 
 SARADC_VIN1用于对地短路进入Recovery状态，核心板将其用10K电阻上拉至1.8V电源。OK3576-C上，按键阵列采用并联型，可以通过增减按键并调整分压电阻比例来调整输入键值，实现多键输入以满足客户产品需求；设计中建议任意两个按键键值必须大于±35，即中心电压差必须大于123mV。如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201820385-84e45d78-8398-4284-bc6a-116e2ea78d6d.png)
+![Image](./images/OK3576C_hardware/84e45d7883984284bc6a116e2ea78d6d.png)
 
 **注意:**
 
@@ -1199,7 +1199,7 @@ SDMMC0_DET_L（PIN：P3_90）（默认功能为SDMMC_DET）：决定 VCCIO1 电�
 
 FET3576的JTAG功能与SDMMC功能复用在一起，通过SDMMC0_DET_L管脚来切换IOMUX的功能，故该管脚也需要在上电前完成配置，否则JTAG功能无输出会影响到引导阶段的调试，而SDMMC0无输出会影响到SDMMC0 boot功能。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199746968-31a0ba65-3cf8-430b-9802-8456f1540d06.png)
+![Image](./images/OK3576C_hardware/31a0ba653cf8430b98028456f1540d06.png)
 
 1. 该管脚检测为高电平，则对应IO切换到JTAG功能；
 2. 当检测到为低电平（大部分SD卡插入会拉低该管脚，如果不是需要特殊处理），对应IO切换为SDMMC0 功能；
@@ -1230,7 +1230,7 @@ JTAG 接口说明如下表所示：
 
 RK3576的JTAG有2个复用，其中JTAG_TCK_M0/JTAG_TMS_M0位于VCCIO1域，和SDMMC0复用IOMUX；JTAG_TCK_M1/JTAG_TMS_M1位于PMUIO1域，和UART_Debug——UART0_M0复用，IOMUX复用情况如下图所示。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199747347-cfe2f817-3baa-4f5a-a336-290e0a729450.png)
+![Image](./images/OK3576C_hardware/cfe2f8173baa4f5aa336290e0a729450.png)
 
 
 
@@ -1238,7 +1238,7 @@ FET3576的UART Debug默认选择UART0_TX_M0_DEBUG（P2_7）/UART0_RX_M0_DEBUG（
 
 OK3576-C开发板为方便用户调试，使用USB转UART芯片将UART Debug信号转成USB信号，通过Type-C插座引出，用户用USB Type-A转UAB Type-C的线将OK3576-C的P16与PC机连接，安装CP2102驱动即可。原理图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201867275-68baad27-5cec-4f00-baa7-97b0c39bb54c.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201870860-85940f31-576a-4273-adae-6f580311ea22.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201875033-c136cb7b-66f9-493f-aacc-165c9fc08c00.png)
+![Image](./images/OK3576C_hardware/68baad275cec4f00baa797b0c39bb54c.png)![Image](./images/OK3576C_hardware/85940f31576a4273adae6f580311ea22.png)![Image](./images/OK3576C_hardware/c136cb7b66f9493faacc165c9fc08c00.png)
 
 **注意:**
 
@@ -1249,12 +1249,12 @@ OK3576-C开发板为方便用户调试，使用USB转UART芯片将UART Debug信�
 ### 3.5.6  IIC扩展IO
 为了引出更为丰富的接口，底板部分使能和复位信号由IIC转IO芯片U5完成。同时U5空余的部分IO通过P17引出，方便用户扩展，原理如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201881601-4662d734-d2fd-451d-80cc-bcc0f1fec066.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201886109-bd9362fa-fb61-419e-992a-895d40989028.png)
+![Image](./images/OK3576C_hardware/4662d734d2fd451d80ccbcc0f1fec066.png)![Image](./images/OK3576C_hardware/bd9362fafb61419e992a895d40989028.png)
 
 ### 3.5.7  SARADC接口
 OK3576-C通过P18将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7引出，R371为可变电阻，通过将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7与P18的4、6、8、10排针短接，在调整R371可变电阻阻值时，通过ADC可以读取到电压变化。如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201901837-ac8103e9-d74e-4116-ab0b-662e85c48db9.png)
+![Image](./images/OK3576C_hardware/ac8103e9d74e4116ab0b662e85c48db9.png)
 
 **注意:**
 
@@ -1263,7 +1263,7 @@ OK3576-C通过P18将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7引出，R371为可变电阻�
 ### 3.5.8  TF Card
 底板P20为TF Card接口，可以支持系统启动与烧写。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202039748-352d8ac8-e509-4294-ab9d-fb75c37235d9.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202045195-edf162fa-27b5-4aac-94b7-78525498828b.png)
+![Image](./images/OK3576C_hardware/352d8ac8e5094294ab9dfb75c37235d9.png)![Image](./images/OK3576C_hardware/edf162fa27b54aac94b778525498828b.png)
 
 **注意：**
 
@@ -1274,12 +1274,12 @@ OK3576-C通过P18将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7引出，R371为可变电阻�
 ### 3.5.9  RTC电路
 OK3576-C提供一个板载外置RTC功能，以实现更精准计时和更低功耗，原理图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202057366-35d8ae77-2bc0-493d-baa6-06aedee55494.png)
+![Image](./images/OK3576C_hardware/35d8ae772bc0493dbaa606aedee55494.png)
 
 ### 3.5.10  Ethernet电路
 底板支持双路1000/100/10M以太网接口，通过RJ45引出。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202067447-8980d1a7-e5dd-4ae8-a521-9f0b5d81a322.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202074386-8a00c3e7-214e-4476-8e8b-3dc95daaf12d.png)
+![Image](./images/OK3576C_hardware/8980d1a7e5dd4ae8a5219f0b5d81a322.png)![Image](./images/OK3576C_hardware/8a00c3e7214e44768e8b3dc95daaf12d.png)
 
 **<font style="color:#ff0000;">注：</font>**
 
@@ -1328,22 +1328,22 @@ OK3576-C支持两路RS485接口
 
 RS485收发器芯片U8/U9，收发器芯片信号为TDH341S485S，隔离耐压高达5000VDC，总线静电防护能力高达15kV（HBM），＞25Kv/us瞬态抗扰度。同时OK3576-C底板兼容了更高级别的浪涌脉冲群多级防护电路，如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202087352-0400e8b5-6e6f-40ef-859c-3edb71a3575c.png)
+![Image](./images/OK3576C_hardware/0400e8b56e6f40ef859c3edb71a3575c.png)
 
 ### 3.5.12  CAN接口
 OK3576-C板载两个CAN收发器芯片U10、U11，收发器芯片信号为TDH541SCANFD，隔离耐压高达5000VDC，总线静电防护能力高达15kV（HBM），＞25Kv/us瞬态抗扰度。同时OK357-C底板兼容了更高级别的浪涌脉冲群多级防护电路，如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202096016-d2fbac03-0537-4352-a5a8-d71e04c06471.png)
+![Image](./images/OK3576C_hardware/d2fbac0305374352a5a8d71e04c06471.png)
 
 ### 3.5.13  Audio
 OK3576-C板载一个I2S接口的Codec芯片U31，支持MIC输入、耳机输出以及1W 8Ω喇叭输出。原理如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202106750-8143d666-b6b1-4f10-b434-b85c234ec6b9.png)
+![Image](./images/OK3576C_hardware/8143d666b6b14f10b434b85c234ec6b9.png)
 
 ### 3.5.14  4G&5G接口
 OK3576-C集成一个M.2 Key-B接口，兼容4G和5G模块，由于4G和5G模块供电电压不同，因此需要拨动S2，选择相应的供电电压。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202119929-1cd3de75-6490-4bbd-af19-e4439150b9df.png)
+![Image](./images/OK3576C_hardware/1cd3de7564904bbdaf19e4439150b9df.png)
 
 ### 3.5.15  USB2.0/USB3.0_A/Type-C USB3.0电路
 RK3576芯片内置两个USB3 OTG控制器，两个USB3控制器都内嵌了USB2.0 OTG。
@@ -1352,17 +1352,17 @@ RK3576芯片内置两个USB3 OTG控制器，两个USB3控制器都内嵌了USB2.
 
 USB3.2 Gen1x1 OTG0/DP1.4组成Combo PHY，USB3 OTG0控制器与PHY的内部复用图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199749403-c919cbe6-c1e1-4069-9b1b-967b039ca5e8.png)
+![Image](./images/OK3576C_hardware/c919cbe6c1e140699b1b967b039ca5e8.png)
 
 USB3 OTG0控制器支持SS/HS/FS/LS，内嵌的USB2.0（HS/FS/LS）信号采用USB2.0 OTG PHY，信号名见下图的红色方框内；RK3576默认使用该接口做Fireware的Download，应用中请务必要预留出此接口。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/47801913/1735804342116-2dd1e32f-eccf-4125-9764-dee9d1ec2981.png)
+![Image](./images/OK3576C_hardware/2dd1e32feccf41259764dee9d1ec2981.png)
 
 **注意：USB2_OTG0_DP/USB2_OTG0_DM支持Download Firmware，如果产品不用这个接口，在调试与生产过程中必须要预留此接口，注意：USB2_OTG0_VBUSDET也必须连接！**
 
 USB 3.2的SS信号（5Gbps）与DP1.4复用，使用USB/DP的Combo PHY；信号如下图的红色方框内。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199749954-f8cb831b-0c53-4f8e-b8ab-698dd73da5b4.png)
+![Image](./images/OK3576C_hardware/f8cb831b0c534f8eb8ab698dd73da5b4.png)
 
 由于USB3的OTG和USB2.0的OTG是同一个USB3的控制器，因此USB3和USB2.0的OTG只能同时做Device或者做HOST，不能USB3的OTG做HOST，USB2.0的OTG做Device或者USB3 的OTG做Device而USB2.0的OTG做HOST。
 
@@ -1372,23 +1372,23 @@ USB3 OTG0 Controller和DP1.4 Controller通过USB3/DP1.4的Combo PHY组合成一�
 
 配置一：Type-C 4Lane(with DP function)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750214-784ef4f2-cd92-48f7-a2f7-6fb9d1ade09a.png)
+![Image](./images/OK3576C_hardware/784ef4f2cd9248f7a2f76fb9d1ade09a.png)
 
 配置二：USB2.0 OTG+DP1.4 4Lane(Swap OFF)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750576-7b815bee-410a-4b1a-a090-70399bdf21e3.png)
+![Image](./images/OK3576C_hardware/7b815bee410a4b1aa09070399bdf21e3.png)
 
 配置三：USB2.0 OTG+DP1.4 4Lane(Swap ON)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750805-b58f70e5-7c73-4601-aabe-543b544778d8.png)
+![Image](./images/OK3576C_hardware/b58f70e57c734601aabe543b544778d8.png)
 
 配置四：USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap OFF)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751194-8ade452f-cd52-4726-b814-44611043dd94.png)
+![Image](./images/OK3576C_hardware/8ade452fcd524726b81444611043dd94.png)
 
 配置五：USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap ON)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751492-e286b0e5-02c1-4e07-adc6-c020d9e6df67.png)
+![Image](./images/OK3576C_hardware/e286b0e502c14e07adc6c020d9e6df67.png)
 
 **注意：RK3576支持从USB 3.2 Gen1x1 OTG0接口的USB3_OTG0_SSRX1P/N与USB3_OTG0_SSTX1P/N 信号下载固件。需要支持USB3.0升级固件且需要支持2Lane DP时，必须采用USB3.2 Gen1x1 OTG0+DP 2Lane(Swap ON)的方案。**
 
@@ -1396,15 +1396,15 @@ USB3 OTG0 Controller和DP1.4 Controller通过USB3/DP1.4的Combo PHY组合成一�
 
 PCIE1/SATA1/USB3 OTG1组成Comb PHY1，USB3 OTG1控制器与PHY的内部复用图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751928-51d12731-e560-4d7b-a52a-c681951a05e9.png)
+![Image](./images/OK3576C_hardware/51d12731e5604d7ba52ac681951a05e9.png)
 
 USB3 OTG1控制器支持SS/HS/FS/LS，内嵌了USB2.0（HS/FS/LS）信号构成PCIE1/SATA1/USB3 OTG1 COMBO PHY1；管脚分布如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199752262-aab6facb-5535-40f1-a7f8-d5b7b7bc0364.png)
+![Image](./images/OK3576C_hardware/aab6facb553540f1a7f8d5b7b7bc0364.png)
 
 USB20 OTG1 的管脚分配如下图：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/47801913/1735804357399-24df6f6f-007d-4f4d-9c55-255988d5d756.png)
+![Image](./images/OK3576C_hardware/24df6f6f007d4f4d9c55255988d5d756.png)
 
 由于USB3的OTG1和USB2.0的OTG1是同一个USB3的控制器，因此USB3和USB2.0的OTG1 只能同时做Device或者做HOST，不能USB3的OTG做HOST，USB2.0的OTG做Device或者USB3 的OTG做Device而USB2.0的OTG做HOST。
 
@@ -1416,15 +1416,15 @@ PCIE1/SATA1/USB3 OTG1 的 COMBO PHY1 中 USB3 OTG1 的应用方式有如下几�
 
 配置一：USB3.2 Gen1x1 OTG1
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199752841-aed730f1-62db-4d12-8a38-52fb8a1cf90c.png)
+![Image](./images/OK3576C_hardware/aed730f162db4d128a3852fb8a1cf90c.png)
 
 配置二：USB2 OTG1
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199753203-2d61f0bb-3af6-43af-8758-b77777ecff50.png)
+![Image](./images/OK3576C_hardware/2d61f0bb3af643af8758b77777ecff50.png)
 
 配置三：USB2/USB3 不用，PCIE 和 SATA 的具体应用方式详见 PCIE 和 SATA 章节
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199753594-efb29133-8ec0-4630-8581-5b8ee4c453a6.png)
+![Image](./images/OK3576C_hardware/efb291338ec0463085815b8ee4c453a6.png)
 
 
 
@@ -1434,15 +1434,15 @@ FET3576支持一路USB/DP组合接口，支持USB 3.2 Gen1x1，DisplayPort v1.4�
 
 下图是USB3.0 HUB部分的电路：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202138374-a22b9efd-a781-44d3-8876-278dafe21c6b.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202143313-3a9fdba2-8dca-45d3-a91f-3020aa48aa30.png)
+![Image](./images/OK3576C_hardware/a22b9efda78144d38876278dafe21c6b.png)![Image](./images/OK3576C_hardware/3a9fdba28dca45d3a91f3020aa48aa30.png)
 
 额外使用两颗开关电源为USB HUB芯片提供3.3V和1.2V的电源：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202148663-bb14a6cc-1e0f-4a5d-8f44-a7a26f867490.png)
+![Image](./images/OK3576C_hardware/bb14a6cc1e0f4a5d8f44a7a26f867490.png)
 
 USB HUB芯片转出的三路USB3.0接口都搭配USB供电限流开关芯片，为Type-A接口提供稳定的电源和限流保护功能：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202158635-ef0e1468-e024-4363-8e6d-d2c53ba1f647.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202163020-6cabe3c4-fd7c-4d11-b012-479783d692ae.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202167712-ebbdcd11-f4a0-49e7-bf68-18d041efb909.png)
+![Image](./images/OK3576C_hardware/ef0e1468e02443638e6dd2c53ba1f647.png)![Image](./images/OK3576C_hardware/6cabe3c4fd7c4d11b012479783d692ae.png)![Image](./images/OK3576C_hardware/ebbdcd11f4a049e7bf6818d041efb909.png)
 
 **注意： **
 
@@ -1452,11 +1452,11 @@ USB HUB芯片转出的三路USB3.0接口都搭配USB供电限流开关芯片，�
 
 下图是Type-C USB 3.0接口部分的电路：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202186728-edde3b2b-1bfe-403e-aaa2-a203ee2285ff.png)
+![Image](./images/OK3576C_hardware/edde3b2b1bfe403eaaa2a203ee2285ff.png)
 
 上图是Type-C接口CC协议芯片电路，用来支持Type-C正反插识别等功能；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202200685-dce80cc4-edcf-41fa-bce3-fe484ac8b528.png)
+![Image](./images/OK3576C_hardware/dce80cc4edcf41fabce3fe484ac8b528.png)
 
 上图是Type-C USB3.0接口的差分信号电路与ESD防护器件。
 
@@ -1505,15 +1505,15 @@ RK3576芯片拥有2个SATA3.1 控制器，和PCIe以及USB3_OTG1控制器复用C
 
 ·支持eSATA。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199754911-78d25391-5ff3-45fa-adcd-8998e3113de1.png)
+![Image](./images/OK3576C_hardware/78d253915ff345faadcd8998e3113de1.png)
 
 SATA0 控制器使用 Comb PHY0（与 PCIe0 Controller 控制器复用）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199755241-e663e6ee-a918-44d4-b0aa-c2ca9bb67198.png)
+![Image](./images/OK3576C_hardware/e663e6eea91844d4b0aac2ca9bb67198.png)
 
 SATA1 控制器使用 Comb PHY1（与 PCIe1 Controller 控制器以及 USB3_OTG1 控制器复用）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199755468-bc643117-b981-4cfb-a5ec-047f5e5d00c4.png)
+![Image](./images/OK3576C_hardware/bc643117b9814cfba5ec047f5e5d00c4.png)
 
 SATA0/1控制器相关控制IO有： 
 
@@ -1552,25 +1552,25 @@ Combo PHY0、另一个是 PCIe2.1/SATA3.1/USB3.2_Gen1x1 Combo PHY1。
 
 Controller和PHY之间的映射关系图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199755793-9a41442f-01a0-4562-bff9-71b57d527988.png)
+![Image](./images/OK3576C_hardware/9a41442f01a04562bff971b57d527988.png)
 
 PCIe0 控制器(RC)与 SATA0 控制器复用 PCIe2.1/SATA3.1 Combo PHY0；封装管脚如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756173-911020bc-f7d8-463c-9304-cd9fd29d3c50.png)
+![Image](./images/OK3576C_hardware/911020bcf7d8463c9304cd9fd29d3c50.png)
 
 PCIe1 控制器(RC)、SATA1 控制器、USB3 OTG1 控制器复用 PCIe2.1/SATA3.1/USB3.2_Gen1x1 
 
 Combo PHY1；封装管脚如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756431-5d4d4b0f-091e-488f-9928-f8bdc1483b8d.png)
+![Image](./images/OK3576C_hardware/5d4d4b0f091e488f9928f8bdc1483b8d.png)
 
 PCIE0/1_REFCLKP/N 可支持输出也可支持输入，默认输出提供给 EP 设备，如下示意图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756620-4d3bd48a-0664-46d6-980d-fa970165b429.png)
+![Image](./images/OK3576C_hardware/4d3bd48a066446d6980dfa970165b429.png)
 
 PCIE0/1_REFCLKP/N 若做输入时，示意图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756823-3cc4b6a5-4196-4b14-90dc-0f8f1acf2ead.png)
+![Image](./images/OK3576C_hardware/3cc4b6a541964b1490dc0f8f1acf2ead.png)
 
 OK3576-C开发板中有一个PCIe0通道连接PCIe x1插槽支持PCIe2.0×1Lane模式。
 
@@ -1578,15 +1578,15 @@ OK3576-C开发板中有一个PCIe0通道连接PCIe x1插槽支持PCIe2.0×1Lane�
 
 PCIe0 PCIe2.0×1Lane 部分电路如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202231740-e6e4b737-4d27-4b68-8db7-75782f9e0379.png)
+![Image](./images/OK3576C_hardware/e6e4b7374d274b688db775782f9e0379.png)
 
 上图为PCIE接口的12V供电控制电路。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202238663-df64e8e1-d83a-4719-a468-96aefc92538b.png)
+![Image](./images/OK3576C_hardware/df64e8e1d83a4719a46896aefc92538b.png)
 
 上图为PCIE接口3.3V供电与使能控制电路，U42是5V转3.3V降压芯片。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202244991-9a474f67-a819-4c7c-b32b-d96a6dc70390.png)
+![Image](./images/OK3576C_hardware/9a474f67a8194c7cb32bd96a6dc70390.png)
 
 上图是PCIEX1插槽电路设计。
 
@@ -1629,9 +1629,9 @@ PCIe0 PCIe2.0×1Lane 部分电路如下图所示：
 ### 3.5.18  视频输入接口
 FET3576有两个MIPI DPHY CSI RX接口，都支持MIPI V1.2版本，每个通道最大传输速率为 2.5Gbps。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199758122-2786718e-09bf-4970-9dc8-7353e8d55952.png)
+![Image](./images/OK3576C_hardware/2786718e09bf49709dc87353e8d55952.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199758407-470d2d79-7334-4371-98dd-79b73b3b74d3.png)
+![Image](./images/OK3576C_hardware/470d2d797334437198dd79b73b3b74d3.png)
 
 **MIPI DPHY CSI1/2 RX 接口模式支持情况**： 
 
@@ -1642,7 +1642,7 @@ FET3576有两个MIPI DPHY CSI RX接口，都支持MIPI V1.2版本，每个通道
 
 ·MIPI DPHY CSI2_RX_D[1:0]数据参考 MIPI_DPHY_CSI2_RX_CLK
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199758787-79ab42f0-e089-4db2-91fa-9003c8de622d.png)
+![Image](./images/OK3576C_hardware/79ab42f0e0894db291fa9003c8de622d.png)
 
 
 
@@ -1655,13 +1655,13 @@ FET3576有两个MIPI DPHY CSI RX接口，都支持MIPI V1.2版本，每个通道
 
 ·MIPI DPHY CSI4_RX_D[1:0]数据参考 MIPI_DPHY_CSI4_RX_CLK
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759172-54b658d7-1142-4beb-a9b9-c652e4369e07.png)
+![Image](./images/OK3576C_hardware/54b658d711424beba9b9c652e4369e07.png)
 
 **MIPI_DCPHY_CSI_RX接口情况**
 
 FET3576有一个MIPI DCPHY CSI RX Combo PHY；DPHY支持V2.0版本，CPHY支持V1.1版本。DPHY模式有4Lane，最高传输速率4.5Gbps/Lane；CPHY模式有3Trios，最高传输速5.7Gbps/Trio。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759395-33307127-04a8-43c5-b806-0522fbdfa347.png)
+![Image](./images/OK3576C_hardware/3330712704a843c5b8060522fbdfa347.png)
 
 **DPHY和CPHY 配置支持情况： **
 
@@ -1678,7 +1678,7 @@ MIPI DCPHY Combo PHY的TX和RX只能支持同时配置成DPHY TX、DPHY RX模式
 
 
 
-OK3576-C默认配置为5个Camera接口，分别是：MIPI_DPHY_CSI0_RX 4Lane、MIPI_DPHY_CSI1_RX 2Lane、MIPI_DPHY_CSI2_RX 2Lane、MIPI_DPHY_CSI3_RX 2Lane、MIPI_DPHY_CSI4_RX 2Lane。原理如下图：![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202258302-ec68ff4b-9ae4-4f2d-a911-b7f4b046ca1e.png)
+OK3576-C默认配置为5个Camera接口，分别是：MIPI_DPHY_CSI0_RX 4Lane、MIPI_DPHY_CSI1_RX 2Lane、MIPI_DPHY_CSI2_RX 2Lane、MIPI_DPHY_CSI3_RX 2Lane、MIPI_DPHY_CSI4_RX 2Lane。原理如下图：![Image](./images/OK3576C_hardware/ec68ff4b9ae44f2da911b7f4b046ca1e.png)
 
 
 
@@ -1712,7 +1712,7 @@ RK3576芯片的VOP显示输出处理器，它从系统存储器的帧缓冲器�
 
 VOP 和视频接口输出路径图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759959-45e326a1-9929-466e-8fac-cd5697432fa8.png)
+![Image](./images/OK3576C_hardware/45e326a19929466e8faccd5697432fa8.png)
 
 OK3576-C开发板支持DP/MIPI_DSI/HDMI 三种显示输出接口。
 
@@ -1728,7 +1728,7 @@ C-PHY支持V1.1 版本，C-PHY模式有0/1/2 Trio，每个Trio A/B/C 3根线；�
 
 MIPI_CPHY_TX最大分辨率支持2560x1600@60Hz。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199760259-cfa21d5a-79d1-4ac9-b84d-9fa2af27756f.png)
+![Image](./images/OK3576C_hardware/cfa21d5a79d14ac9b84d9fa2af27756f.png)
 
 **DPHY和CPHY配置支持情况**： 
 
@@ -1746,9 +1746,9 @@ MIPI_CPHY_TX_TRIO[2：0]_B， MIPI_CPHY_TX_TRIO[2：0]_C。
 
 OK3576-C开发板的MIPI_DSI接口采用1组时钟通道+ 4组数据通道模式，原理图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199760641-1e606f22-de49-4dd6-8338-f94b39dd59bd.png)
+![Image](./images/OK3576C_hardware/1e606f22de494dd68338f94b39dd59bd.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202280645-6aa529d3-edf1-4a68-a449-d58cacdaa72c.png)
+![Image](./images/OK3576C_hardware/6aa529d3edf14a68a449d58cacdaa72c.png)
 
 **设计时需注意：**
 
@@ -1783,7 +1783,7 @@ HDMI/eDP TX Combo PHY支持以下两个模式：
 1. HDMI TX 模式：最高支持HDMI2.1，支持HDMI FRL模式并向下兼容HDMI TMDS模式，支持RGB/YUV444/YUV422/YUV420(Up to 10bit)格式。
 2. eDP TX模式：最高支持eDP1.3，最大分辨率支持4K@60Hz，支持RGB/YUV444/YUV422(Up to 10bit)格式。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199761057-1144a005-83e0-4e23-8fcc-6e9556a05b60.png)
+![Image](./images/OK3576C_hardware/1144a00583e04e238fcc6e9556a05b60.png)
 
 RK3576支持HDMI2.1并向下HDMI2.0，HDMI1.4兼容，由于HDMI2.1工作在FRL模式，切换到HDMI2.0及以下模式时，工作在TMDS模式，因采用AC耦合电压模式驱动器。
 
@@ -1797,7 +1797,7 @@ RK3576支持HDMI2.1并向下HDMI2.0，HDMI1.4兼容，由于HDMI2.1工作在FRL�
 
 **<font style="color:#ff0000;">1.  如果只需要支持HDMI2.0及以下模式时，Q15，Q16，Q17，Q18也不能省掉，需要保证机器在未开机时，管子不能导通，因为HDMI CTS Test ID 7-3 TMDS Voff测试项目要求在DUT未上电，Voff电压必须在AVcc+-10mV以内，否则这个测试项无法通过。</font>**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202297987-de992835-5881-4d00-ab5d-fc8bedcac83a.png)
+![Image](./images/OK3576C_hardware/de99283558814d00ab5dfc8bedcac83a.png)
 
 FRL模式：在传统的TMDS 架构下，是利用一个独立的通道来传送Clock，但在FRL的架构中，将Clock嵌入在Data的通道中，在Sink端透过Clock Recovery解析出Clock。
 
@@ -1815,7 +1815,7 @@ FRL模式：在传统的TMDS 架构下，是利用一个独立的通道来传送
 
 支持ARC/eARC通过HDMI_TX_SBD_P/ HDMI_TX_SBD_N信号到RK3576内部解析出音频数据。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202307150-b7f2bdbd-166f-4798-b784-9a17203dd130.png)
+![Image](./images/OK3576C_hardware/b7f2bdbd166f4798b7849a17203dd130.png)
 
 HDMI_TX_HPD是HDMI TX控制器复用到普通GPIO上，电平随所在电源域电压，电源域供电电压有更改，外围电路的上拉电阻电源也必须同步调整。
 
@@ -1827,7 +1827,7 @@ CEC协议规定是3.3V电平，但是协议要求，往CEC管脚通过27K电阻�
 
 RK3576 IO Domain在未上电时，如果IO上有电压，IO会存在漏电，比如RK3576已经断电了，然后HDMI线还连接着Sink端（电视或显示器），此时Sink端的CEC有电，会通过HDMI线漏电到RK3576 IO上，会造成CEC漏电超过1.8uA，因此外部需要增加一个隔离电路，R189阻值不得随意修改，需要使用27Kohm，Q19默认选择2SK3018，如果要换其它型号，结电容必须相当，如果用结电容过大，不仅会影响工作，认证也会过不了。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202320753-38f259c4-2220-40d8-8a1f-ee40277c22ba.png)
+![Image](./images/OK3576C_hardware/38f259c4222040d88a1fee40277c22ba.png)
 
 HDMI_TX _SCL/ HDMI_TX _SDA是HDMI TX控制器的I2C/DDC总线，功能复用到普通GPIO上，电平随所在电源域电压，电源域供电电压有更改，外围电路的上拉电阻电源也必须同步调整。
 
@@ -1839,7 +1839,7 @@ D6二极管不得删减，用来防止Sink端漏电到VCC_5V0。
 
 SDA信号电平转换的MOS栅极和电源之间串拉1K，MOS栅极和源极之间并一个100pF改善时序，不得删除。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202333285-d419ab16-f2ea-4ce5-b17d-249c05787ea7.png)
+![Image](./images/OK3576C_hardware/d419ab16f2ea4ce5b17d249c05787ea7.png)
 
 HDMI座子的Pin18电压需保证在4.8-5.3V之间，管脚需放置1uF去耦电容，不得删减，布局时，靠近HDMI座子管脚放置。
 
@@ -1879,15 +1879,15 @@ RK3576支持一个DP1.4 TX PHY（和USB3 OTG0 Combo），最大输出分辨率�
 
 ·支持Multi Stream Transport(MST)。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199761941-a3bc3a45-f2c9-4024-9350-e0a0e32aaf13.png)
+![Image](./images/OK3576C_hardware/a3bc3a45f2c940249350e0a0e32aaf13.png)
 
 ·支持Swap on和Swap off两种模式
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199762249-be61200b-5c45-485e-83fc-3c3a92e83cb3.png)
+![Image](./images/OK3576C_hardware/be61200b5c45485e83fc3c3a92e83cb3.png)
 
 ·支持3 Channels的MST(Multi-Stream Transport)显示。MST支持三屏异显最大能力为：4096x2160@60Hz、2560x1600@60Hz、1920x1080@60Hz。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199762544-9dab7aad-2307-4119-827c-052673fd9e9b.png)
+![Image](./images/OK3576C_hardware/9dab7aad23074119827c052673fd9e9b.png)
 
 与USB引脚复用关系请查看3.5.15章节。
 
@@ -1914,7 +1914,7 @@ RK3576支持一个DP1.4 TX PHY（和USB3 OTG0 Combo），最大输出分辨率�
 ### 3.5.20  WIFI/BT模块电路
 OK3576-C板载一颗海华AW-CM358SM WIFI&BT模块，支持WIFI 2.4G/5G/蓝牙5.0；WIFI/BT天线使用SMA接口引出，SDIO、PDM、UART接口与主控连接。原理图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202359630-dd0cc4f3-fde7-40ce-a1d5-5092fe45265c.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202368754-6ce7b290-8751-4095-91f9-64d2c4b65b6d.png)
+![Image](./images/OK3576C_hardware/dd0cc4f3fde740cea1d55092fe45265c.png)![Image](./images/OK3576C_hardware/6ce7b2908751409591f964d2c4b65b6d.png)
 
 **注意：**
 
@@ -1951,7 +1951,7 @@ I2C总线上需要加上拉电阻，但不要使用多个电阻上拉；
 
 A=21.52mm、B=19.6mm、C=3.2mm、Contacts=100
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720593594270-2f3a8c1f-8bbd-47bf-94dc-b40e4caf90ca.png)
+![Image](./images/OK3576C_hardware/2f3a8c1f8bbd47bf94dcb40e4caf90ca.png)
 
 
 
@@ -1961,7 +1961,7 @@ A=21.52mm、B=19.6mm、C=3.2mm、Contacts=100
 
 A=22.6mm、B=19.6mm、C=3.2mm、D=1.45mm、Contacts=100
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720593594609-450a473a-6dd0-40f8-b83f-ba358030292f.png)
+![Image](./images/OK3576C_hardware/450a473a6dd040f8b83fba358030292f.png)
 
 
 
@@ -1985,7 +1985,7 @@ A=22.6mm、B=19.6mm、C=3.2mm、D=1.45mm、Contacts=100
 3. 待机功率:启动后停留在开机界面时的电流值乘以供电电压。   
 4. 功耗仅供参考
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202497766-6cd40972-6e14-4fb7-87e6-c8ce3ea7d662.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202503901-87b7a821-411b-4fa6-8699-c630c51f72ab.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202510322-2a09a9be-398d-4ed4-9008-33577d403111.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202515344-74ef1fc3-a58b-41da-9d7b-5410cc0ba9eb.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202521283-59e66750-4742-475a-987c-1ecb9645a0fa.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202526484-faf4ae72-40a4-43c0-8ecb-be7972823b48.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202531751-a1fb6b32-5f11-4461-9524-611092751a89.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202537316-20ba5d44-ba45-4012-9c00-cc6e288fb336.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202541259-98cbfc41-35b1-4bd6-b37b-b69a9f03be6e.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202545576-5474d0ba-e918-457a-8603-47cae5ec8c60.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202550616-be59f1df-5d26-4745-9ca8-d20bd1810bf9.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202555786-2a8b6938-e6da-4707-8ec8-3d13fd5550ae.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202560395-cc2a8ca7-9693-4c58-91f6-c6ae3ba5b628.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202565905-2b791e97-81c1-4564-a31e-e136a9fa58da.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202570526-541ed216-c5f5-4e96-b85d-dbedc4714863.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202575346-49db14b2-5ace-48ed-a80b-feee12eb666b.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202581041-938c01c0-b986-4431-98d7-8efab07cf602.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202586705-41cde625-2184-463f-ba3d-48247cf83ec2.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202591441-c5f53746-00e5-4690-a88f-51fa87e83292.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202596564-48011e43-55b8-45f2-83ee-c61b54f07f67.png)
+![Image](./images/OK3576C_hardware/6cd409726e144fb787e6c8ce3ea7d662.png)![Image](./images/OK3576C_hardware/87b7a821411b4fa68699c630c51f72ab.png)![Image](./images/OK3576C_hardware/2a09a9be398d4ed4900833577d403111.png)![Image](./images/OK3576C_hardware/74ef1fc3a58b41da9d7b5410cc0ba9eb.png)![Image](./images/OK3576C_hardware/59e667504742475a987c1ecb9645a0fa.png)![Image](./images/OK3576C_hardware/faf4ae7240a443c08ecbbe7972823b48.png)![Image](./images/OK3576C_hardware/a1fb6b325f1144619524611092751a89.png)![Image](./images/OK3576C_hardware/20ba5d44ba4540129c00cc6e288fb336.png)![Image](./images/OK3576C_hardware/98cbfc4135b14bd6b37bb69a9f03be6e.png)![Image](./images/OK3576C_hardware/5474d0bae918457a860347cae5ec8c60.png)![Image](./images/OK3576C_hardware/be59f1df5d2647459ca8d20bd1810bf9.png)![Image](./images/OK3576C_hardware/2a8b6938e6da47078ec83d13fd5550ae.png)![Image](./images/OK3576C_hardware/cc2a8ca796934c5891f6c6ae3ba5b628.png)![Image](./images/OK3576C_hardware/2b791e9781c14564a31ee136a9fa58da.png)![Image](./images/OK3576C_hardware/541ed216c5f54e96b85ddbedc4714863.png)![Image](./images/OK3576C_hardware/49db14b25ace48eda80bfeee12eb666b.png)![Image](./images/OK3576C_hardware/938c01c0b986443198d78efab07cf602.png)![Image](./images/OK3576C_hardware/41cde6252184463fba3d48247cf83ec2.png)![Image](./images/OK3576C_hardware/c5f5374600e54690a88f51fa87e83292.png)![Image](./images/OK3576C_hardware/48011e4355b845f283eec61b54f07f67.png)
 
 上图仅为示意图，具体连接情况请见源文件原理图。为满足核心板的正常工作，最小系统包括核心板供电电源，系统烧写电路，以及调试串口电路。
 
@@ -2021,23 +2021,23 @@ RK3576具有高性能的外部存储器接口（LPDDR4/LPDDR4X/LPDDR5），能�
 
 **RK3576处理器框图**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720593601656-0670391a-b653-4230-aede-3ea9e26b9868.png)
+![Image](./images/OK3576C_hardware/0670391ab6534230aede3ea9e26b9868.png)
 
 
 
 # 02_FET3576-C核心板介绍
 
 ## 2.1  FET3576-C核心板外观图
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1733456740203-4f819259-1c63-45b2-8917-a806d32b2885.png)
+![Image](./images/OK3576C_hardware/4f8192591c6345b28917a806d32b2885.png)
 
 **核心板正面视图**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1733456699798-361c5272-c28d-45c5-8b73-ad736e028066.png)
+![Image](./images/OK3576C_hardware/361c5272c28d45c58b73ad736e028066.png)
 
 **核心板反面视图**
 
 ## 2.2  FET3576-C 核心板框图
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199723643-67bbd894-eb35-4750-86ac-27181de438c4.png)
+![Image](./images/OK3576C_hardware/67bbd894eb35475086ac27181de438c4.png)
 
 **核心板框图**
 
@@ -2046,15 +2046,15 @@ RK3576具有高性能的外部存储器接口（LPDDR4/LPDDR4X/LPDDR5），能�
 ## 2.3  FET3576-C核心板尺寸图
 FET3576-C核心板尺寸图如下： 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199723926-1b8554b0-e9fd-4294-a0ba-44d3349e636f.png)
+![Image](./images/OK3576C_hardware/1b8554b0e9fd4294a0ba44d3349e636f.png)
 
 **顶层尺寸图**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724248-c9d3447b-4655-46be-9ad4-38beb6c92363.png)
+![Image](./images/OK3576C_hardware/c9d3447b465546be9ad438beb6c92363.png)
 
 **底层尺寸图**
 
-单位：mm![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724670-67922326-0c33-478e-af0b-7de83224e418.png)
+单位：mm![Image](./images/OK3576C_hardware/679223260c33478eaf0b7de83224e418.png)
 
 结构尺寸：68mm×50mm，尺寸公差±0.15mm；更多详细尺寸请见用户资料dxf结构文件。
 
@@ -2066,9 +2066,9 @@ FET3576-C核心板尺寸图如下：
 
 用户可以参考开发板设计，在底板使用M2，L=1.5mm的贴片螺母，贴片螺母的规格参见下图
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724879-e1bbcd19-a64f-483a-8ca0-679afb0b8a85.png)
+![Image](./images/OK3576C_hardware/e1bbcd19a64f483a8ca0679afb0b8a85.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199725152-9e128ca2-4ffc-4042-bff0-0c58c7aff308.png)
+![Image](./images/OK3576C_hardware/9e128ca24ffc4042bff00c58c7aff308.png)
 
 ## 2.4 性能参数
 ### 2.4.1  系统主频
@@ -2176,13 +2176,13 @@ FET3576-C核心板接口资源支持如下表：
 
 ## 2.6  FET3576-C核心板引脚定义
 ### 2.6.1  FET3576-C核心板引脚原理图
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199725381-e97fda68-6e24-4204-ae69-0ad984b42cad.png)
+![Image](./images/OK3576C_hardware/e97fda686e244204ae690ad984b42cad.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880010013-5c67fe3c-b57d-43aa-9263-58904ede537d.png)
+![Image](./images/OK3576C_hardware/5c67fe3cb57d43aa926358904ede537d.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880010095-99350f75-161c-4efb-ad35-10b5b0b7c03a.png)
+![Image](./images/OK3576C_hardware/99350f75161c4efbad3510b5b0b7c03a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199726448-23bd375a-3ddb-4c27-9b4f-25c420797a6a.png)
+![Image](./images/OK3576C_hardware/23bd375a3ddb4c279b4f25c420797a6a.png)
 
 
 
@@ -3001,7 +3001,7 @@ FET3576-C核心板接口资源支持如下表：
 
 ## 2.8  核心板硬件设计说明
    FET3576-C核心板已经将电源、存储电路集成于一个小巧的模块上，所需的外部电路非常简洁，构成一个最小系统只需要 12V 电源、复位按键、烧录SD卡、启动配置即可运行，如下图所示：  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880010160-79133405-fc02-4081-8d90-3c9db15a160c.png)  
+![Image](./images/OK3576C_hardware/79133405fc0240818d903c9db15a160c.png)  
 最小系统原理图可以参见附录四。不过一般情况下，除最小系统外建议连接上一些外部设备，例如调试串口，用来查看打印信息；预留OTG接口，用来输出调试信息。做好这些后，再在此基础上根据飞凌提供的核心板默认接口定义来添加用户需要的功能。
 
 核心板外围电路的设计可参见第三章的3.5节“OK3576-C底板说明”。
@@ -3013,14 +3013,14 @@ FET3576-C核心板接口资源支持如下表：
 ## 3.1  OK3576-C开发板接口图
 飞凌OK3576-C开发平台核心板和底板采用接插件的连接方式，主要接口如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/49874024/1733464938859-de566621-a7ee-4edd-b1b0-898d80a41e62.jpeg)
+![Image](./images/OK3576C_hardware/de566621a7ee4eddb1b0898d80a41e62.jpeg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/49874024/1733464952493-ec45bef4-1f29-4fe3-9e46-c17f3993659b.jpeg)
+![Image](./images/OK3576C_hardware/ec45bef41f294fe39e46c17f3993659b.jpeg)
 
 ## 3.2  OK3576-C开发板尺寸图
 OK3576-C开发板和天线板尺寸图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199745059-ff2e0738-1b08-482c-89e1-044c92dccefa.png)
+![Image](./images/OK3576C_hardware/ff2e07381b08482c89e1044c92dccefa.png)
 
 底板PCB尺寸：130mm×190mm，更多详细尺寸请见用户资料dxf文件；
 
@@ -3034,7 +3034,7 @@ OK3576-C开发板和天线板尺寸图如下：
 
 OK3576-C底板预留了2个直径3.2mm散热片的安装孔，用户可以根据现场环境选配安装散热片，散热片和核心板接触面请加一层绝缘的导热硅胶垫。飞凌自选的核心板散热片尺寸为：38mm×38mm×23mm，更多详细尺寸参见下图： 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1721199745766-a366a4ed-569a-4bf9-8fd4-d4273309eb8f.jpeg)![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1721199746034-60073a41-4207-4c70-913a-41aee8bdcb6d.jpeg)
+![Image](./images/OK3576C_hardware/a366a4ed569a4bf98fd4d4273309eb8f.jpeg)![Image](./images/OK3576C_hardware/60073a4142074c70913a41aee8bdcb6d.jpeg)
 
 ## 3.3  底板命名规范
 ABC-D+IK:M
@@ -3101,21 +3101,21 @@ ABC-D+IK:M
 ### 3.5.1  底板电源
 开发板使用12V电源适配器供电，电源接口为DC005规格的插座。拨动开关S1为开发板的电源开关，按照底板丝印指示方向拨动开关控制上下电。S1后级并联TVS管进行静电防护，F1保险丝进行过流保护，D1与F1配合进行防反接保护。VCC12V_DCIN同时给FET3576核心板和底板其他外设进行供电。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201751774-8f0d16a1-4b7c-4f4c-83fa-bcd2938e9030.png)
+![Image](./images/OK3576C_hardware/8f0d16a14b7c4f4c83fabcd2938e9030.png)
 
 VCC12V_DCIN通过U3（DC-DC）降压至VCC_5V，VCC_5V给底板其他外设供电。（这里需要注意12V降5V DC-DC芯片选型时，芯片的输出功率要足够大，建议输出电流6A以上，保证为后级提供足够电流）
 
 核心板通过12V供电正常启动后，通过CARRIER_BOARD_EN引脚输出高电平，来控制U3使能输出VCC_5V电源为开发板的部分外设供电。（该信号电平为3.3V，驱动能力为10K上拉，如果被使能设备使能引脚所需驱动能力超出该范围，则需要添加缓冲器或者门电路用来增加驱动能力，确保核心板和底板上电正常）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201762785-128471a6-a74f-4f27-9a2e-2e18a6d1f500.png)
+![Image](./images/OK3576C_hardware/128471a6a74f4f279a2e2e18a6d1f500.png)
 
 VCC_5V通过U4（DC-DC）降压至VCC_3V3。VCC_3V3电源为开发板的部分设备供电。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201772610-7630fdfd-a1b8-4ce6-adff-7ee928028331.png)
+![Image](./images/OK3576C_hardware/7630fdfda1b84ce6adff7ee928028331.png)
 
 VCC_3V3通过U2（LDO）降压至VCC_1V8。VCC_1V8电源为开发板的部分设备供电。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201782020-4b99d7b6-0835-4ef1-9a88-7be439626779.png)
+![Image](./images/OK3576C_hardware/4b99d7b608354ef19a887be439626779.png)
 
 **注意：**
 
@@ -3126,18 +3126,18 @@ VCC_3V3通过U2（LDO）降压至VCC_1V8。VCC_1V8电源为开发板的部分设
 ### 3.5.2  复位及开关机信号
 RESET_L为核心板复位信号输入，为方便调试，连接到按键上。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201789558-11b99632-bfc0-42ed-97ef-04c08ac8aaaf.png)
+![Image](./images/OK3576C_hardware/11b99632bfc042ed97ef04c08ac8aaaf.png)
 
 PWRON_L为核心板开关机信号输入，为方便调试，连接到按键上。 
 
 同时PWRON_L信号预留1个2.54mm间距端子座，默认空焊，便于用户扩展。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201797858-4d5fa53c-86e5-4842-b22f-061c06ef68bc.png)  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014438-76daf64a-1cd7-4d02-b290-80fb0cda37d8.png)
+![Image](./images/OK3576C_hardware/4d5fa53c86e54842b22f061c06ef68bc.png)  
+![Image](./images/OK3576C_hardware/76daf64a1cd74d02b29080fb0cda37d8.png)
 
 需要注意核心板连接器P3_10脚的PMIC_VDC信号，该信号可以切换核心板的两种开机模式，上电开机或按键开机；在OK3576-C上通过选焊R331电阻来实现此功能；R331空焊即引脚悬空时，核心板默认上电启动(默认配置)；R331焊接即引脚拉低时，核心板上电不启动，按下PWRON_L按键后启动。  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014514-141723d3-1720-43ad-915f-957437b23552.png)  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014583-06d0eb1f-49fc-42ad-883d-f1c6455c9c1a.png)
+![Image](./images/OK3576C_hardware/141723d3172043ad915f957437b23552.png)  
+![Image](./images/OK3576C_hardware/06d0eb1f49fc42ad883df1c6455c9c1a.png)
 
 ### 3.5.3  Boot配置
 RK3576支持多种启动引导方式，在芯片复位结束后，芯片内部集成的引导代码可以在如下接口设备进行引导，具体引导顺序可根据实际应用需求进行选择：
@@ -3175,11 +3175,11 @@ RK3576的Boot启动顺序可以通过SARADC_VIN0_BOOT Pin（PIN：P1_28）进行
 
 核心板上SARADC_VIN0_BOOT配置为10K上拉，因此核心板默认从eMMC启动。底板可以增加下拉电阻，以实现其他的引导顺序。按照以上Config1设置，OK3576-C将SARADC_VIN0_BOOT通过轻触按键连接至GND，以实现Maskrom mode。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201812443-75639444-b4a1-4617-b923-3b34d6378034.png)
+![Image](./images/OK3576C_hardware/75639444b4a14617b9233b34d6378034.png)
 
 SARADC_VIN1用于对地短路进入Recovery状态，核心板将其用10K电阻上拉至1.8V电源。OK3576-C上，按键阵列采用并联型，可以通过增减按键并调整分压电阻比例来调整输入键值，实现多键输入以满足客户产品需求；设计中建议任意两个按键键值必须大于±35，即中心电压差必须大于123mV。如下图：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014670-c0334437-31a8-4831-8c3a-bca3ff78bb6c.png)
+![Image](./images/OK3576C_hardware/c033443731a848318c3abca3ff78bb6c.png)
 
 **注意:**
 
@@ -3194,7 +3194,7 @@ SDMMC0_DET_L（PIN：P3_90）（默认功能为SDMMC_DET）：决定 VCCIO1 电�
 
 FET3576的JTAG功能与SDMMC功能复用在一起，通过SDMMC0_DET_L管脚来切换IOMUX的功能，故该管脚也需要在上电前完成配置，否则JTAG功能无输出会影响到引导阶段的调试，而SDMMC0无输出会影响到SDMMC0 boot功能。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199746968-31a0ba65-3cf8-430b-9802-8456f1540d06.png)
+![Image](./images/OK3576C_hardware/31a0ba653cf8430b98028456f1540d06.png)
 
 1. 该管脚检测为高电平，则对应IO切换到JTAG功能；
 2. 当检测到为低电平（大部分SD卡插入会拉低该管脚，如果不是需要特殊处理），对应IO切换为SDMMC0 功能；
@@ -3225,7 +3225,7 @@ JTAG 接口说明如下表所示：
 
 RK3576的JTAG有2个复用，其中JTAG_TCK_M0/JTAG_TMS_M0位于VCCIO1域，和SDMMC0复用IOMUX；JTAG_TCK_M1/JTAG_TMS_M1位于PMUIO1域，和UART_Debug——UART0_M0复用，IOMUX复用情况如下图所示。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199747347-cfe2f817-3baa-4f5a-a336-290e0a729450.png)
+![Image](./images/OK3576C_hardware/cfe2f8173baa4f5aa336290e0a729450.png)
 
 
 
@@ -3233,7 +3233,7 @@ FET3576的UART Debug默认选择UART0_TX_M0_DEBUG（P2_7）/UART0_RX_M0_DEBUG（
 
 OK3576-C开发板为方便用户调试，使用USB转UART芯片将UART Debug信号转成USB信号，通过Type-C插座引出，用户用USB Type-A转UAB Type-C的线将OK3576-C的P16与PC机连接，安装CP2102驱动即可。原理图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201867275-68baad27-5cec-4f00-baa7-97b0c39bb54c.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201870860-85940f31-576a-4273-adae-6f580311ea22.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201875033-c136cb7b-66f9-493f-aacc-165c9fc08c00.png)
+![Image](./images/OK3576C_hardware/68baad275cec4f00baa797b0c39bb54c.png)![Image](./images/OK3576C_hardware/85940f31576a4273adae6f580311ea22.png)![Image](./images/OK3576C_hardware/c136cb7b66f9493faacc165c9fc08c00.png)
 
 **注意:**
 
@@ -3244,12 +3244,12 @@ OK3576-C开发板为方便用户调试，使用USB转UART芯片将UART Debug信�
 ### 3.5.6  IIC扩展IO
 为了引出更为丰富的接口，底板部分使能和复位信号由IIC转IO芯片U5完成。同时U5空余的部分IO通过P17引出，方便用户扩展，原理如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201881601-4662d734-d2fd-451d-80cc-bcc0f1fec066.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201886109-bd9362fa-fb61-419e-992a-895d40989028.png)
+![Image](./images/OK3576C_hardware/4662d734d2fd451d80ccbcc0f1fec066.png)![Image](./images/OK3576C_hardware/bd9362fafb61419e992a895d40989028.png)
 
 ### 3.5.7  SARADC接口
 OK3576-C通过P18将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7引出，R371为可变电阻，通过将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7与P18的4、6、8、10排针短接，在调整R371可变电阻阻值时，通过ADC可以读取到电压变化。如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721201901837-ac8103e9-d74e-4116-ab0b-662e85c48db9.png)
+![Image](./images/OK3576C_hardware/ac8103e9d74e4116ab0b662e85c48db9.png)
 
 **注意:**
 
@@ -3258,7 +3258,7 @@ OK3576-C通过P18将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7引出，R371为可变电阻�
 ### 3.5.8  TF Card
 底板P20为TF Card接口，可以支持系统启动与烧写。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202039748-352d8ac8-e509-4294-ab9d-fb75c37235d9.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202045195-edf162fa-27b5-4aac-94b7-78525498828b.png)
+![Image](./images/OK3576C_hardware/352d8ac8e5094294ab9dfb75c37235d9.png)![Image](./images/OK3576C_hardware/edf162fa27b54aac94b778525498828b.png)
 
 **注意：**
 
@@ -3269,12 +3269,12 @@ OK3576-C通过P18将SARADC_VIN2/VIN4/VIN5/VIN6/VIN7引出，R371为可变电阻�
 ### 3.5.9  RTC电路
 OK3576-C提供一个板载外置RTC功能，以实现更精准计时和更低功耗，原理图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202057366-35d8ae77-2bc0-493d-baa6-06aedee55494.png)
+![Image](./images/OK3576C_hardware/35d8ae772bc0493dbaa606aedee55494.png)
 
 ### 3.5.10  Ethernet电路
 底板支持双路1000/100/10M以太网接口，通过RJ45引出。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202067447-8980d1a7-e5dd-4ae8-a521-9f0b5d81a322.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202074386-8a00c3e7-214e-4476-8e8b-3dc95daaf12d.png)
+![Image](./images/OK3576C_hardware/8980d1a7e5dd4ae8a5219f0b5d81a322.png)![Image](./images/OK3576C_hardware/8a00c3e7214e44768e8b3dc95daaf12d.png)
 
 **<font style="color:#ff0000;">注：</font>**
 
@@ -3323,22 +3323,22 @@ OK3576-C支持两路RS485接口
 
 RS485收发器芯片U8/U9，收发器芯片信号为TDH341S485S，隔离耐压高达5000VDC，总线静电防护能力高达15kV（HBM），＞25Kv/us瞬态抗扰度。同时OK3576-C底板兼容了更高级别的浪涌脉冲群多级防护电路，如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202087352-0400e8b5-6e6f-40ef-859c-3edb71a3575c.png)
+![Image](./images/OK3576C_hardware/0400e8b56e6f40ef859c3edb71a3575c.png)
 
 ### 3.5.12  CAN接口
 OK3576-C板载两个CAN收发器芯片U10、U11，收发器芯片信号为TDH541SCANFD，隔离耐压高达5000VDC，总线静电防护能力高达15kV（HBM），＞25Kv/us瞬态抗扰度。同时OK357-C底板兼容了更高级别的浪涌脉冲群多级防护电路，如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202096016-d2fbac03-0537-4352-a5a8-d71e04c06471.png)
+![Image](./images/OK3576C_hardware/d2fbac0305374352a5a8d71e04c06471.png)
 
 ### 3.5.13  Audio
 OK3576-C板载一个I2S接口的Codec芯片U31，支持MIC输入、耳机输出以及1W 8Ω喇叭输出。原理如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202106750-8143d666-b6b1-4f10-b434-b85c234ec6b9.png)
+![Image](./images/OK3576C_hardware/8143d666b6b14f10b434b85c234ec6b9.png)
 
 ### 3.5.14  4G&5G接口
 OK3576-C集成一个M.2 Key-B接口，兼容4G和5G模块，由于4G和5G模块供电电压不同，因此需要拨动S2，选择相应的供电电压。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202119929-1cd3de75-6490-4bbd-af19-e4439150b9df.png)
+![Image](./images/OK3576C_hardware/1cd3de7564904bbdaf19e4439150b9df.png)
 
 ### 3.5.15  USB2.0/USB3.0_A/Type-C USB3.0电路
 RK3576芯片内置两个USB3 OTG控制器，两个USB3控制器都内嵌了USB2.0 OTG。
@@ -3347,17 +3347,17 @@ RK3576芯片内置两个USB3 OTG控制器，两个USB3控制器都内嵌了USB2.
 
 USB3.2 Gen1x1 OTG0/DP1.4组成Combo PHY，USB3 OTG0控制器与PHY的内部复用图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199749403-c919cbe6-c1e1-4069-9b1b-967b039ca5e8.png)
+![Image](./images/OK3576C_hardware/c919cbe6c1e140699b1b967b039ca5e8.png)
 
 USB3 OTG0控制器支持SS/HS/FS/LS，内嵌的USB2.0（HS/FS/LS）信号采用USB2.0 OTG PHY，信号名见下图的红色方框内；RK3576默认使用该接口做Fireware的Download，应用中请务必要预留出此接口。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/47801913/1735804342116-2dd1e32f-eccf-4125-9764-dee9d1ec2981.png)
+![Image](./images/OK3576C_hardware/2dd1e32feccf41259764dee9d1ec2981.png)
 
 **注意：USB2_OTG0_DP/USB2_OTG0_DM支持Download Firmware，如果产品不用这个接口，在调试与生产过程中必须要预留此接口，注意：USB2_OTG0_VBUSDET也必须连接！**
 
 USB 3.2的SS信号（5Gbps）与DP1.4复用，使用USB/DP的Combo PHY；信号如下图的红色方框内。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199749954-f8cb831b-0c53-4f8e-b8ab-698dd73da5b4.png)
+![Image](./images/OK3576C_hardware/f8cb831b0c534f8eb8ab698dd73da5b4.png)
 
 由于USB3的OTG和USB2.0的OTG是同一个USB3的控制器，因此USB3和USB2.0的OTG只能同时做Device或者做HOST，不能USB3的OTG做HOST，USB2.0的OTG做Device或者USB3 的OTG做Device而USB2.0的OTG做HOST。
 
@@ -3367,23 +3367,23 @@ USB3 OTG0 Controller和DP1.4 Controller通过USB3/DP1.4的Combo PHY组合成一�
 
 配置一：Type-C 4Lane(with DP function)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750214-784ef4f2-cd92-48f7-a2f7-6fb9d1ade09a.png)
+![Image](./images/OK3576C_hardware/784ef4f2cd9248f7a2f76fb9d1ade09a.png)
 
 配置二：USB2.0 OTG+DP1.4 4Lane(Swap OFF)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750576-7b815bee-410a-4b1a-a090-70399bdf21e3.png)
+![Image](./images/OK3576C_hardware/7b815bee410a4b1aa09070399bdf21e3.png)
 
 配置三：USB2.0 OTG+DP1.4 4Lane(Swap ON)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750805-b58f70e5-7c73-4601-aabe-543b544778d8.png)
+![Image](./images/OK3576C_hardware/b58f70e57c734601aabe543b544778d8.png)
 
 配置四：USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap OFF)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751194-8ade452f-cd52-4726-b814-44611043dd94.png)
+![Image](./images/OK3576C_hardware/8ade452fcd524726b81444611043dd94.png)
 
 配置五：USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap ON)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751492-e286b0e5-02c1-4e07-adc6-c020d9e6df67.png)
+![Image](./images/OK3576C_hardware/e286b0e502c14e07adc6c020d9e6df67.png)
 
 **注意：RK3576支持从USB 3.2 Gen1x1 OTG0接口的USB3_OTG0_SSRX1P/N与USB3_OTG0_SSTX1P/N 信号下载固件。需要支持USB3.0升级固件且需要支持2Lane DP时，必须采用USB3.2 Gen1x1 OTG0+DP 2Lane(Swap ON)的方案。**
 
@@ -3391,15 +3391,15 @@ USB3 OTG0 Controller和DP1.4 Controller通过USB3/DP1.4的Combo PHY组合成一�
 
 PCIE1/SATA1/USB3 OTG1组成Comb PHY1，USB3 OTG1控制器与PHY的内部复用图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751928-51d12731-e560-4d7b-a52a-c681951a05e9.png)
+![Image](./images/OK3576C_hardware/51d12731e5604d7ba52ac681951a05e9.png)
 
 USB3 OTG1控制器支持SS/HS/FS/LS，内嵌了USB2.0（HS/FS/LS）信号构成PCIE1/SATA1/USB3 OTG1 COMBO PHY1；管脚分布如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199752262-aab6facb-5535-40f1-a7f8-d5b7b7bc0364.png)
+![Image](./images/OK3576C_hardware/aab6facb553540f1a7f8d5b7b7bc0364.png)
 
 USB20 OTG1 的管脚分配如下图：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/47801913/1735804357399-24df6f6f-007d-4f4d-9c55-255988d5d756.png)
+![Image](./images/OK3576C_hardware/24df6f6f007d4f4d9c55255988d5d756.png)
 
 由于USB3的OTG1和USB2.0的OTG1是同一个USB3的控制器，因此USB3和USB2.0的OTG1 只能同时做Device或者做HOST，不能USB3的OTG做HOST，USB2.0的OTG做Device或者USB3 的OTG做Device而USB2.0的OTG做HOST。
 
@@ -3409,15 +3409,15 @@ PCIE1/SATA1/USB3 OTG1 的 COMBO PHY1 中 USB3 OTG1 的应用方式有如下几�
 
 配置一：USB3.2 Gen1x1 OTG1
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199752841-aed730f1-62db-4d12-8a38-52fb8a1cf90c.png)
+![Image](./images/OK3576C_hardware/aed730f162db4d128a3852fb8a1cf90c.png)
 
 配置二：USB2 OTG1
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199753203-2d61f0bb-3af6-43af-8758-b77777ecff50.png)
+![Image](./images/OK3576C_hardware/2d61f0bb3af643af8758b77777ecff50.png)
 
 配置三：USB2/USB3 不用，PCIE 和 SATA 的具体应用方式详见 PCIE 和 SATA 章节
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199753594-efb29133-8ec0-4630-8581-5b8ee4c453a6.png)
+![Image](./images/OK3576C_hardware/efb291338ec0463085815b8ee4c453a6.png)
 
 
 
@@ -3427,17 +3427,17 @@ FET3576支持一路USB/DP组合接口，支持USB 3.2 Gen1x1，DisplayPort v1.4�
 
 下图是USB3.0 HUB部分的电路：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202138374-a22b9efd-a781-44d3-8876-278dafe21c6b.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202143313-3a9fdba2-8dca-45d3-a91f-3020aa48aa30.png)
+![Image](./images/OK3576C_hardware/a22b9efda78144d38876278dafe21c6b.png)![Image](./images/OK3576C_hardware/3a9fdba28dca45d3a91f3020aa48aa30.png)
 
 额外使用两颗开关电源为USB HUB芯片提供3.3V和1.2V的电源：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202148663-bb14a6cc-1e0f-4a5d-8f44-a7a26f867490.png)
+![Image](./images/OK3576C_hardware/bb14a6cc1e0f4a5d8f44a7a26f867490.png)
 
 USB HUB芯片转出的三路USB3.0接口都搭配USB供电限流开关芯片，为Type-A接口提供稳定的电源和限流保护功能：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014743-e19224f0-e518-48b6-bfd0-f2e8018654d7.png)  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014848-bb124fbb-6d57-433b-952f-6a47278b8b9f.png)  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202167712-ebbdcd11-f4a0-49e7-bf68-18d041efb909.png)
+![Image](./images/OK3576C_hardware/e19224f0e51848b6bfd0f2e8018654d7.png)  
+![Image](./images/OK3576C_hardware/bb124fbb6d57433b952f6a47278b8b9f.png)  
+![Image](./images/OK3576C_hardware/ebbdcd11f4a049e7bf6818d041efb909.png)
 
 **注意： **
 
@@ -3447,11 +3447,11 @@ USB HUB芯片转出的三路USB3.0接口都搭配USB供电限流开关芯片，�
 
 下图是Type-C USB 3.0接口部分的电路：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202186728-edde3b2b-1bfe-403e-aaa2-a203ee2285ff.png)
+![Image](./images/OK3576C_hardware/edde3b2b1bfe403eaaa2a203ee2285ff.png)
 
 上图是Type-C接口CC协议芯片电路，用来支持Type-C正反插识别等功能；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202200685-dce80cc4-edcf-41fa-bce3-fe484ac8b528.png)
+![Image](./images/OK3576C_hardware/dce80cc4edcf41fabce3fe484ac8b528.png)
 
 上图是Type-C USB3.0接口的差分信号电路与ESD防护器件。
 
@@ -3498,15 +3498,15 @@ RK3576芯片拥有2个SATA3.1 控制器，和PCIe以及USB3_OTG1控制器复用C
 
 ·支持eSATA。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199754911-78d25391-5ff3-45fa-adcd-8998e3113de1.png)
+![Image](./images/OK3576C_hardware/78d253915ff345faadcd8998e3113de1.png)
 
 SATA0 控制器使用 Comb PHY0（与 PCIe0 Controller 控制器复用）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199755241-e663e6ee-a918-44d4-b0aa-c2ca9bb67198.png)
+![Image](./images/OK3576C_hardware/e663e6eea91844d4b0aac2ca9bb67198.png)
 
 SATA1 控制器使用 Comb PHY1（与 PCIe1 Controller 控制器以及 USB3_OTG1 控制器复用）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199755468-bc643117-b981-4cfb-a5ec-047f5e5d00c4.png)
+![Image](./images/OK3576C_hardware/bc643117b9814cfba5ec047f5e5d00c4.png)
 
 SATA0/1控制器相关控制IO有： 
 
@@ -3543,25 +3543,25 @@ Combo PHY0、另一个是 PCIe2.1/SATA3.1/USB3.2_Gen1x1 Combo PHY1。
 
 Controller和PHY之间的映射关系图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199755793-9a41442f-01a0-4562-bff9-71b57d527988.png)
+![Image](./images/OK3576C_hardware/9a41442f01a04562bff971b57d527988.png)
 
 PCIe0 控制器(RC)与 SATA0 控制器复用 PCIe2.1/SATA3.1 Combo PHY0；封装管脚如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756173-911020bc-f7d8-463c-9304-cd9fd29d3c50.png)
+![Image](./images/OK3576C_hardware/911020bcf7d8463c9304cd9fd29d3c50.png)
 
 PCIe1 控制器(RC)、SATA1 控制器、USB3 OTG1 控制器复用 PCIe2.1/SATA3.1/USB3.2_Gen1x1 
 
 Combo PHY1；封装管脚如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756431-5d4d4b0f-091e-488f-9928-f8bdc1483b8d.png)
+![Image](./images/OK3576C_hardware/5d4d4b0f091e488f9928f8bdc1483b8d.png)
 
 PCIE0/1_REFCLKP/N 可支持输出也可支持输入，默认输出提供给 EP 设备，如下示意图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756620-4d3bd48a-0664-46d6-980d-fa970165b429.png)
+![Image](./images/OK3576C_hardware/4d3bd48a066446d6980dfa970165b429.png)
 
 PCIE0/1_REFCLKP/N 若做输入时，示意图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756823-3cc4b6a5-4196-4b14-90dc-0f8f1acf2ead.png)
+![Image](./images/OK3576C_hardware/3cc4b6a541964b1490dc0f8f1acf2ead.png)
 
 OK3576-C开发板中有一个PCIe0通道连接PCIe x1插槽支持PCIe2.0×1Lane模式。
 
@@ -3569,15 +3569,15 @@ OK3576-C开发板中有一个PCIe0通道连接PCIe x1插槽支持PCIe2.0×1Lane�
 
 PCIe0 PCIe2.0×1Lane 部分电路如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202231740-e6e4b737-4d27-4b68-8db7-75782f9e0379.png)
+![Image](./images/OK3576C_hardware/e6e4b7374d274b688db775782f9e0379.png)
 
 上图为PCIE接口的12V供电控制电路。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202238663-df64e8e1-d83a-4719-a468-96aefc92538b.png)
+![Image](./images/OK3576C_hardware/df64e8e1d83a4719a46896aefc92538b.png)
 
 上图为PCIE接口3.3V供电与使能控制电路，U42是5V转3.3V降压芯片。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202244991-9a474f67-a819-4c7c-b32b-d96a6dc70390.png)
+![Image](./images/OK3576C_hardware/9a474f67a8194c7cb32bd96a6dc70390.png)
 
 上图是PCIEX1插槽电路设计。
 
@@ -3618,9 +3618,9 @@ PCIe0 PCIe2.0×1Lane 部分电路如下图所示：
 ### 3.5.18  视频输入接口
 FET3576有两个MIPI DPHY CSI RX接口，都支持MIPI V1.2版本，每个通道最大传输速率为 2.5Gbps。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199758122-2786718e-09bf-4970-9dc8-7353e8d55952.png)
+![Image](./images/OK3576C_hardware/2786718e09bf49709dc87353e8d55952.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199758407-470d2d79-7334-4371-98dd-79b73b3b74d3.png)
+![Image](./images/OK3576C_hardware/470d2d797334437198dd79b73b3b74d3.png)
 
 **MIPI DPHY CSI1/2 RX 接口模式支持情况**： 
 
@@ -3631,7 +3631,7 @@ FET3576有两个MIPI DPHY CSI RX接口，都支持MIPI V1.2版本，每个通道
 
 ·MIPI DPHY CSI2_RX_D[1:0]数据参考 MIPI_DPHY_CSI2_RX_CLK
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199758787-79ab42f0-e089-4db2-91fa-9003c8de622d.png)
+![Image](./images/OK3576C_hardware/79ab42f0e0894db291fa9003c8de622d.png)
 
 
 
@@ -3644,13 +3644,13 @@ FET3576有两个MIPI DPHY CSI RX接口，都支持MIPI V1.2版本，每个通道
 
 ·MIPI DPHY CSI4_RX_D[1:0]数据参考 MIPI_DPHY_CSI4_RX_CLK
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759172-54b658d7-1142-4beb-a9b9-c652e4369e07.png)
+![Image](./images/OK3576C_hardware/54b658d711424beba9b9c652e4369e07.png)
 
 **MIPI_DCPHY_CSI_RX接口情况**
 
 FET3576有一个MIPI DCPHY CSI RX Combo PHY；DPHY支持V2.0版本，CPHY支持V1.1版本。DPHY模式有4Lane，最高传输速率4.5Gbps/Lane；CPHY模式有3Trios，最高传输速5.7Gbps/Trio。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759395-33307127-04a8-43c5-b806-0522fbdfa347.png)
+![Image](./images/OK3576C_hardware/3330712704a843c5b8060522fbdfa347.png)
 
 **DPHY和CPHY 配置支持情况： **
 
@@ -3666,7 +3666,7 @@ MIPI DCPHY Combo PHY的TX和RX只能支持同时配置成DPHY TX、DPHY RX模式
 1. 支持0/1/2 Trio，每个Trio有Trio_A/Trio_B/Trio_C 3根线，MIPI_CPHY_CSI_RX_TRIO[2:0]_A，MIPI_CPHY_CSI_RX_TRIO[2:0]_B，MIPI_CPHY_CSI_RX_TRIO[2:0]_C。
 
 OK3576-C默认配置为5个Camera接口，分别是：MIPI_DPHY_CSI0_RX 4Lane、MIPI_DPHY_CSI1_RX 2Lane、MIPI_DPHY_CSI2_RX 2Lane、MIPI_DPHY_CSI3_RX 2Lane、MIPI_DPHY_CSI4_RX 2Lane。原理如下图：  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014921-6a929308-80af-491e-a79c-2e7e1ed539b8.png)
+![Image](./images/OK3576C_hardware/6a92930880af491ea79c2e7e1ed539b8.png)
 
 
 
@@ -3700,7 +3700,7 @@ RK3576芯片的VOP显示输出处理器，它从系统存储器的帧缓冲器�
 
 VOP 和视频接口输出路径图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759959-45e326a1-9929-466e-8fac-cd5697432fa8.png)
+![Image](./images/OK3576C_hardware/45e326a19929466e8faccd5697432fa8.png)
 
 OK3576-C开发板支持DP/MIPI_DSI/HDMI 三种显示输出接口。
 
@@ -3715,7 +3715,7 @@ C-PHY支持V1.1 版本，C-PHY模式有0/1/2 Trio，每个Trio A/B/C 3根线；�
 
 MIPI_CPHY_TX最大分辨率支持2560x1600@60Hz。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199760259-cfa21d5a-79d1-4ac9-b84d-9fa2af27756f.png)
+![Image](./images/OK3576C_hardware/cfa21d5a79d14ac9b84d9fa2af27756f.png)
 
 **DPHY和CPHY配置支持情况**： 
 
@@ -3733,9 +3733,9 @@ MIPI_CPHY_TX_TRIO[2：0]_B， MIPI_CPHY_TX_TRIO[2：0]_C。
 
 OK3576-C开发板的MIPI_DSI接口采用1组时钟通道+ 4组数据通道模式，原理图如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199760641-1e606f22-de49-4dd6-8338-f94b39dd59bd.png)
+![Image](./images/OK3576C_hardware/1e606f22de494dd68338f94b39dd59bd.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202280645-6aa529d3-edf1-4a68-a449-d58cacdaa72c.png)
+![Image](./images/OK3576C_hardware/6aa529d3edf14a68a449d58cacdaa72c.png)
 
 **设计时需注意：**
 
@@ -3769,7 +3769,7 @@ HDMI/eDP TX Combo PHY支持以下两个模式：
 1. HDMI TX 模式：最高支持HDMI2.1，支持HDMI FRL模式并向下兼容HDMI TMDS模式，支持RGB/YUV444/YUV422/YUV420(Up to 10bit)格式。
 2. eDP TX模式：最高支持eDP1.3，最大分辨率支持4K@60Hz，支持RGB/YUV444/YUV422(Up to 10bit)格式。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199761057-1144a005-83e0-4e23-8fcc-6e9556a05b60.png)
+![Image](./images/OK3576C_hardware/1144a00583e04e238fcc6e9556a05b60.png)
 
 RK3576支持HDMI2.1并向下HDMI2.0，HDMI1.4兼容，由于HDMI2.1工作在FRL模式，切换到HDMI2.0及以下模式时，工作在TMDS模式，因采用AC耦合电压模式驱动器。
 
@@ -3783,7 +3783,7 @@ RK3576支持HDMI2.1并向下HDMI2.0，HDMI1.4兼容，由于HDMI2.1工作在FRL�
 
 **<font style="color:#ff0000;">1.  如果只需要支持HDMI2.0及以下模式时，Q15，Q16，Q17，Q18也不能省掉，需要保证机器在未开机时，管子不能导通，因为HDMI CTS Test ID 7-3 TMDS Voff测试项目要求在DUT未上电，Voff电压必须在AVcc+-10mV以内，否则这个测试项无法通过。</font>**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202297987-de992835-5881-4d00-ab5d-fc8bedcac83a.png)
+![Image](./images/OK3576C_hardware/de99283558814d00ab5dfc8bedcac83a.png)
 
 FRL模式：在传统的TMDS 架构下，是利用一个独立的通道来传送Clock，但在FRL的架构中，将Clock嵌入在Data的通道中，在Sink端透过Clock Recovery解析出Clock。
 
@@ -3801,7 +3801,7 @@ FRL模式：在传统的TMDS 架构下，是利用一个独立的通道来传送
 
 支持ARC/eARC通过HDMI_TX_SBD_P/ HDMI_TX_SBD_N信号到RK3576内部解析出音频数据。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202307150-b7f2bdbd-166f-4798-b784-9a17203dd130.png)
+![Image](./images/OK3576C_hardware/b7f2bdbd166f4798b7849a17203dd130.png)
 
 HDMI_TX_HPD是HDMI TX控制器复用到普通GPIO上，电平随所在电源域电压，电源域供电电压有更改，外围电路的上拉电阻电源也必须同步调整。
 
@@ -3809,11 +3809,11 @@ HDMI_TX_CEC是HDMI控制器CEC功能复用到普通GPIO上功能，电平随所�
 
 CEC协议规定是3.3V电平，但是协议要求，往CEC管脚通过27K电阻加3.3V电压，漏电不允许超过1.8uA。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014995-370ec6fa-918a-47e7-8d07-ce829b7d9407.png)
+![Image](./images/OK3576C_hardware/370ec6fa918a47e78d07ce829b7d9407.png)
 
 RK3576 IO Domain在未上电时，如果IO上有电压，IO会存在漏电，比如RK3576已经断电了，然后HDMI线还连接着Sink端（电视或显示器），此时Sink端的CEC有电，会通过HDMI线漏电到RK3576 IO上，会造成CEC漏电超过1.8uA，因此外部需要增加一个隔离电路，R189阻值不得随意修改，需要使用27Kohm，Q19默认选择2SK3018，如果要换其它型号，结电容必须相当，如果用结电容过大，不仅会影响工作，认证也会过不了。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202320753-38f259c4-2220-40d8-8a1f-ee40277c22ba.png)
+![Image](./images/OK3576C_hardware/38f259c4222040d88a1fee40277c22ba.png)
 
 HDMI_TX _SCL/ HDMI_TX _SDA是HDMI TX控制器的I2C/DDC总线，功能复用到普通GPIO上，电平随所在电源域电压，电源域供电电压有更改，外围电路的上拉电阻电源也必须同步调整。
 
@@ -3825,7 +3825,7 @@ D6二极管不得删减，用来防止Sink端漏电到VCC_5V0。
 
 SDA信号电平转换的MOS栅极和电源之间串拉1K，MOS栅极和源极之间并一个100pF改善时序，不得删除。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202333285-d419ab16-f2ea-4ce5-b17d-249c05787ea7.png)
+![Image](./images/OK3576C_hardware/d419ab16f2ea4ce5b17d249c05787ea7.png)
 
 HDMI座子的Pin18电压需保证在4.8-5.3V之间，管脚需放置1uF去耦电容，不得删减，布局时，靠近HDMI座子管脚放置。
 
@@ -3862,15 +3862,15 @@ RK3576支持一个DP1.4 TX PHY（和USB3 OTG0 Combo），最大输出分辨率�
 
 ·支持Multi Stream Transport(MST)。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199761941-a3bc3a45-f2c9-4024-9350-e0a0e32aaf13.png)
+![Image](./images/OK3576C_hardware/a3bc3a45f2c940249350e0a0e32aaf13.png)
 
 ·支持Swap on和Swap off两种模式
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199762249-be61200b-5c45-485e-83fc-3c3a92e83cb3.png)
+![Image](./images/OK3576C_hardware/be61200b5c45485e83fc3c3a92e83cb3.png)
 
 ·支持3 Channels的MST(Multi-Stream Transport)显示。MST支持三屏异显最大能力为：4096x2160@60Hz、2560x1600@60Hz、1920x1080@60Hz。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199762544-9dab7aad-2307-4119-827c-052673fd9e9b.png)
+![Image](./images/OK3576C_hardware/9dab7aad23074119827c052673fd9e9b.png)
 
 与USB引脚复用关系请查看3.5.15章节。
 
@@ -3900,8 +3900,8 @@ OK3576-C板载一颗海华AW-CM358SM WIFI&BT模块，支持WIFI 2.4G/5G/蓝牙5.
 注意 ，在低功耗应用场景下，若要实现RK3576休眠再唤醒这个过程中，WIFI模块不重新连接网络，则需要WIFI模块的3.3V与1.8V电源使用输入的12V电源单独供电；可参考OK3576-C这部分设计。  
 
 原理图如下：  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880015089-3f3a60db-fcf3-4af8-a131-e21d92debcda.png)  
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880015165-2e9eb95f-3cb0-41e5-b25f-f9bfeafadf8e.png)
+![Image](./images/OK3576C_hardware/3f3a60dbfcf34af8a131e21d92debcda.png)  
+![Image](./images/OK3576C_hardware/2e9eb95f3cb041e5b25ff9bfeafadf8e.png)
 
 **注意：**
 
@@ -3946,7 +3946,7 @@ I2C总线上需要加上拉电阻，但不要使用多个电阻上拉；
 
 A=21.52mm、B=19.6mm、C=3.2mm、Contacts=100
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720593594270-2f3a8c1f-8bbd-47bf-94dc-b40e4caf90ca.png)
+![Image](./images/OK3576C_hardware/2f3a8c1f8bbd47bf94dcb40e4caf90ca.png)
 
 
 
@@ -3954,7 +3954,7 @@ A=21.52mm、B=19.6mm、C=3.2mm、Contacts=100
 
 A=22.6mm、B=19.6mm、C=3.2mm、D=1.45mm、Contacts=100
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1720593594609-450a473a-6dd0-40f8-b83f-ba358030292f.png)
+![Image](./images/OK3576C_hardware/450a473a6dd040f8b83fba358030292f.png)
 
 
 
@@ -3984,7 +3984,7 @@ A=22.6mm、B=19.6mm、C=3.2mm、D=1.45mm、Contacts=100
 
 # 07_最小系统原理图
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202497766-6cd40972-6e14-4fb7-87e6-c8ce3ea7d662.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202503901-87b7a821-411b-4fa6-8699-c630c51f72ab.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202510322-2a09a9be-398d-4ed4-9008-33577d403111.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202515344-74ef1fc3-a58b-41da-9d7b-5410cc0ba9eb.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202521283-59e66750-4742-475a-987c-1ecb9645a0fa.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202526484-faf4ae72-40a4-43c0-8ecb-be7972823b48.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202531751-a1fb6b32-5f11-4461-9524-611092751a89.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202537316-20ba5d44-ba45-4012-9c00-cc6e288fb336.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202541259-98cbfc41-35b1-4bd6-b37b-b69a9f03be6e.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202545576-5474d0ba-e918-457a-8603-47cae5ec8c60.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202550616-be59f1df-5d26-4745-9ca8-d20bd1810bf9.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202555786-2a8b6938-e6da-4707-8ec8-3d13fd5550ae.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202560395-cc2a8ca7-9693-4c58-91f6-c6ae3ba5b628.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202565905-2b791e97-81c1-4564-a31e-e136a9fa58da.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202570526-541ed216-c5f5-4e96-b85d-dbedc4714863.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202575346-49db14b2-5ace-48ed-a80b-feee12eb666b.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202581041-938c01c0-b986-4431-98d7-8efab07cf602.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202586705-41cde625-2184-463f-ba3d-48247cf83ec2.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202591441-c5f53746-00e5-4690-a88f-51fa87e83292.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202596564-48011e43-55b8-45f2-83ee-c61b54f07f67.png)
+![Image](./images/OK3576C_hardware/6cd409726e144fb787e6c8ce3ea7d662.png)![Image](./images/OK3576C_hardware/87b7a821411b4fa68699c630c51f72ab.png)![Image](./images/OK3576C_hardware/2a09a9be398d4ed4900833577d403111.png)![Image](./images/OK3576C_hardware/74ef1fc3a58b41da9d7b5410cc0ba9eb.png)![Image](./images/OK3576C_hardware/59e667504742475a987c1ecb9645a0fa.png)![Image](./images/OK3576C_hardware/faf4ae7240a443c08ecbbe7972823b48.png)![Image](./images/OK3576C_hardware/a1fb6b325f1144619524611092751a89.png)![Image](./images/OK3576C_hardware/20ba5d44ba4540129c00cc6e288fb336.png)![Image](./images/OK3576C_hardware/98cbfc4135b14bd6b37bb69a9f03be6e.png)![Image](./images/OK3576C_hardware/5474d0bae918457a860347cae5ec8c60.png)![Image](./images/OK3576C_hardware/be59f1df5d2647459ca8d20bd1810bf9.png)![Image](./images/OK3576C_hardware/2a8b6938e6da47078ec83d13fd5550ae.png)![Image](./images/OK3576C_hardware/cc2a8ca796934c5891f6c6ae3ba5b628.png)![Image](./images/OK3576C_hardware/2b791e9781c14564a31ee136a9fa58da.png)![Image](./images/OK3576C_hardware/541ed216c5f54e96b85ddbedc4714863.png)![Image](./images/OK3576C_hardware/49db14b25ace48eda80bfeee12eb666b.png)![Image](./images/OK3576C_hardware/938c01c0b986443198d78efab07cf602.png)![Image](./images/OK3576C_hardware/41cde6252184463fba3d48247cf83ec2.png)![Image](./images/OK3576C_hardware/c5f5374600e54690a88f51fa87e83292.png)![Image](./images/OK3576C_hardware/48011e4355b845f283eec61b54f07f67.png)
 
 上图仅为示意图，具体连接情况请见源文件原理图。为满足核心板的正常工作，最小系统包括核心板供电电源，系统烧写电路，以及调试串口电路。
 

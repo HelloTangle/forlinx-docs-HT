@@ -7,29 +7,27 @@ Welcome to the official documentation of Forlinx Embedded, covering multiple mai
 Brands and Platform Navigation
 ------------------------------
 
-Brands and Platform Navigation
-------------------------------
 
 .. toctree::
    :caption: Rockchip Series
    :maxdepth: 1
 
-   rockchip/rk3568/index
-   rockchip/rk3576/index
-   rockchip/rk3588/index
+   ../rockchip/rk3568/index
+   ../rockchip/rk3576/index
+   ../rockchip/rk3588/index
 
 .. toctree::
    :caption: NXP Series
    :maxdepth: 1
 
-   nxp/imx8mp/index
-   nxp/imx9352/index
+   ../nxp/imx8mp/index
+   ../nxp/imx9352/index
 
 .. toctree::
    :caption: Allwinner Series
    :maxdepth: 1
 
-   allwinner/tseries/index
+   ../allwinner/tseries/index
 
 
 Documentation Features
