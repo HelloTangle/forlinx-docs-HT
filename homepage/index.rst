@@ -39,7 +39,7 @@ Contact Us
 
 If you have any questions, please contact us at:
 
-- Email: support@forlinx.net
+- Email: support@forlinx.com
 - Website: https://www.forlinx.net
 
 ----
