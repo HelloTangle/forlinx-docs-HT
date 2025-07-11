@@ -31,7 +31,7 @@ html_static_path = ['_static']
 
 # Logo (如果有，放在 _static 目录)
 html_logo = '_static/forlinx-logo.png'
-
+html_favicon = '_static/forlinx.ico'
 html_theme_options = {
     'logo_only': True,
     'display_version': False,
