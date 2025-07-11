@@ -8,6 +8,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 project = 'ROCKCHIP RK3568 Documentation'
 author = 'Forlinx Embedded'
+copyright = 'Forlinx Embedded'
 
 # -- General configuration ---------------------------------------------------
 

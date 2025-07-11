@@ -8,6 +8,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 project = 'NXP IMX9352 Documentation'
 author = 'Forlinx Embedded'
+copyright = 'Forlinx Embedded'
 
 # -- General configuration ---------------------------------------------------
 
@@ -30,7 +31,7 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 # Logo (如果有，放在 _static 目录)
-html_logo = '_static/logo.png'
+html_logo = '_static/forlinx-logo.png'
 
 html_theme_options = {
     'logo_only': True,
