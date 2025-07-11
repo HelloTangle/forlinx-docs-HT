@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 project = 'Forlinx Embedded Documentation'
 author = 'Forlinx Embedded'
-copyright = '2025, Forlinx'
+copyright = 'Forlinx Embedded'
 
 extensions = [
     'myst_parser',  # 支持 Markdown
