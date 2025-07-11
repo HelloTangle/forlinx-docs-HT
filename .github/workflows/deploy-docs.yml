@@ -22,9 +22,9 @@ jobs:
       run: pip install -r requirements.txt
 
     # 构建首页 index.rst
-    - name: Build root index.rst (homepage)
+    - name: Build homepage
       run: |
-        sphinx-build -b html -c . ./ ./docs_build
+        sphinx-build -b html ./homepage ./docs_build
 
     # 构建各平台文档
     - name: Build platform docs
