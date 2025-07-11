@@ -35,3 +35,8 @@ html_theme_options = {
 
 }
 
+html_theme_options = {
+    'collapse_navigation': False,   # ❗不折叠，默认全部展开
+    'navigation_depth': 4,          # 展示的目录层级，建议设为 2~4
+    'titles_only': False,           # 显示全部小节标题，不只展示文档标题
+}
