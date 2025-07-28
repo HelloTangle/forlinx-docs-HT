@@ -31,7 +31,7 @@ html_static_path = ['_static']
 
 # Logo (如果有，放在 _static 目录)
 html_logo = '_static/forlinx-logo.png'
-
+html_favicon = '_static/forlinx.png'
 html_theme_options = {
     'logo_only': True,
 }
@@ -39,3 +39,15 @@ html_theme_options = {
 html_css_files = [
     'custom.css',
 ]
+
+html_sidebars = {
+    '**': [
+        'globaltoc.html',
+        'relations.html',
+        'sourcelink.html',
+        'searchbox.html',
+        'footer.html',  # 👈 关键：显式加载我们自定义的 footer 模板
+    ]
+}
+
+html_show_sourcelink = False

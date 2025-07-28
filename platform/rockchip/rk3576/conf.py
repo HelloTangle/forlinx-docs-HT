@@ -39,3 +39,15 @@ html_theme_options = {
 html_css_files = [
     'custom.css',
 ]
+
+html_sidebars = {
+    '**': [
+        'globaltoc.html',
+        'relations.html',
+        'sourcelink.html',
+        'searchbox.html',
+        'footer.html',  # 👈 关键：显式加载我们自定义的 footer 模板
+    ]
+}
+
+html_show_sourcelink = False
