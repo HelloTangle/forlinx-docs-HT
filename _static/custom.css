@@ -25,3 +25,7 @@
     line-height: 1.8;
   }
   
+  /* 扩展主内容区域宽度 */
+.wy-nav-content {
+  max-width: 1200px;  /* 默认是 800px，你可以调到 1000~1400px */
+}
