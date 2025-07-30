@@ -91,3 +91,28 @@ a:hover {
   color: #0071e3 !important;             
   margin-bottom: 0.5em !important;
 }
+
+
+/* 移动端优化：主内容宽度铺满屏幕，避免横向滚动 */
+@media (max-width: 768px) {
+  .wy-nav-content {
+    max-width: 100% !important;
+    padding: 1em !important;
+    box-sizing: border-box;
+  }
+
+  /* 优化目录标题字号 */
+  .rst-content .toctree-wrapper > p {
+    font-size: 18px !important;
+  }
+
+  /* 优化目录链接字号 */
+  .rst-content .toctree-wrapper a {
+    font-size: 14px !important;
+  }
+
+  /* 确保代码块不会溢出横向 */
+  pre {
+    overflow-x: auto;
+  }
+}
