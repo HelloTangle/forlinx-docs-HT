@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux6.1.36_User’s Compilation Manual_V1.0 &mdash; NXP IMX8MP Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=80d5ce09" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Linux6.1.36_User’s Manual_V1.0" href="OK-MX8MPQ-SMARC_Linux_User_Manual.html" />
+   
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Hardware_Manual.html">User’s Hardware Manual_V1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Linux_User_Manual.html">Linux6.1.36_User’s Manual_V1.0</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux6.1.36_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preparation-before-compilation">1. Preparation Before Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description-of-the-environment">1.1 Description of the Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#source-code-description">1.1.1 Source Code Description</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#compilation">1.2 Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rootfs-preparation">1.2.1 Rootfs Preparation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uboot-compilation">1.2.2 Uboot Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernel-compilation">1.2.3 Kernel Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extra-of-kernel-compilation">1.2.4 Extra of Kernel Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-program-compilation">1.2.5 Test Program Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#packaging-flashed-image">1.2.6 Packaging Flashed Image</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NXP IMX8MP Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Linux6.1.36_User’s Compilation Manual_V1.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="linux6-1-36-user-s-compilation-manual-v1-0">
+<h1>Linux6.1.36_User’s Compilation Manual_V1.0<a class="headerlink" href="#linux6-1-36-user-s-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+<section id="preparation-before-compilation">
+<h2>1. Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h2>
+<p>This chapter mainly describes the compilation methods for the source code related to the development board, including the separate compilation of the kernel source code, the compilation of application programs, and the packaging of the flashing image, etc., providing references for users.</p>
+<section id="description-of-the-environment">
+<h3>1.1 Description of the Environment<a class="headerlink" href="#description-of-the-environment" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Development environment OS: 20.04.1-Ubuntu   x86_64</p></li>
+<li><p>Cross-toolchain: aarch64-linux-gnu</p></li>
+<li><p>Development board Bootloader version:U-Boot 2023.04-lf_v2023.04</p></li>
+<li><p>Development Board Kernel: Linux-6.1.36</p></li>
+<li><p>Development board porting QT version: qt6.5.0</p></li>
+</ul>
+<section id="source-code-description">
+<h4>1.1.1 Source Code Description<a class="headerlink" href="#source-code-description" title="Link to this heading"></a></h4>
+<p>Program source code: user data\01-Software Documentation\03-src&amp;img\02-source code                Source Code Description：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>File</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>commit_id.txt</p></td>
+<td><p>Stores the internal git version of the source code for version control</p></td>
+</tr>
+<tr class="row-odd"><td><p>okmx8mp-smarc-uboot.tar.zst</p></td>
+<td><p>Uboot Source Code</p></td>
+</tr>
+<tr class="row-even"><td><p>okmx8mp-smarc-kernel.tar.zst</p></td>
+<td><p>Kernel Source Code</p></td>
+</tr>
+<tr class="row-odd"><td><p>okmx8mp-smarc-kernel-extra.tar.zst</p></td>
+<td><p>Kernel extra module source code</p></td>
+</tr>
+<tr class="row-even"><td><p>forlinx-image-qt6-full-fet-mx8mp-smarc-20240229060101.rootfs.tar.zst</p></td>
+<td><p>Forlinx uses the rootfs package compiled with yocto:</p></td>
+</tr>
+<tr class="row-odd"><td><p>okmx8mp-smarc-rootfs-overlay.tar.zst</p></td>
+<td><p>Customized modification content based on rootfs package for Forlinx.</p></td>
+</tr>
+<tr class="row-even"><td><p>fsl-imx-xwayland-glibc-x86_64-forlinx-image-qt6-full-armv8a-fet-mx8mp-smarc-toolchain-6.1-mickledore.sh</p></td>
+<td><p>The tool chain compiled by yocto is convenient for users to compile QT program.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Files with the md5sum suffix: The md5 value of the file is stored for validation.</p>
+</section>
+</section>
+<section id="compilation">
+<h3>1.2 Compilation<a class="headerlink" href="#compilation" title="Link to this heading"></a></h3>
+<section id="rootfs-preparation">
+<h4>1.2.1 Rootfs Preparation<a class="headerlink" href="#rootfs-preparation" title="Link to this heading"></a></h4>
+<p>Forlinx provides the rootfs package compiled with yocto:<br />
+forlinx-image-qt6-full-fet-mx8mp-smarc-20240229060101.rootfs.tar.zst ，<br />
+Plus, it offers customized modification contents based on the rootfs, okmx8mp-smarc-rootfs-overlay.tar.zst.<br />
+The user can use the above two directories to synthesize rootfs for the OK-MX8MPQ-SMARC development board as follows:<br />
+Environment variables need to be pre-configured ROOTFS _ DIR, OVERLAY _ DIR.<br />
+1. Unzip the rootfs package and the overlay package.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  tar -I zstd -xf forlinx-image-qt6-full-fet-mx8mp-smarc-20240229060101.rootfs.tar.zst -C ${ROOTFS_DIR}
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  tar -I zstd -xf okmx8mp-smarc-rootfs-overlay.tar.zst -C ${OVERLAY_DIR}
+</pre></div>
+</div>
+<p>2. Delete the unused files in the rootfs package.<br />
+The kernel image and device tree in the boot directory within the rootfs package, as well as the kernel modules in the lib/modules directory, are compiled from the kernel code in Yocto and need to be deleted. The kernel file used by the OK - MX8MPQ - SMARC development board is the one compiled in Section 1.2.3.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/okmx8mp-smarc-fs#  rm boot lib/modules/6.1.36* -rf
+</pre></div>
+</div>
+<p>3. Compile the kernel and install the kernel module to the overlay directory. Compile the Forlinx test program and install it to the overlay directory.<br />
+Refer to Sections 1.2. 3, 1.2. 4, 1.2. 5 for this step.<br />
+4. Overwrite the overlay directory to the rootfs directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  cp -a overlay/* ${ROOTFS_DIR}/
+</pre></div>
+</div>
+<p>5. At this point, the rootfs directory is the root file system that will be used.</p>
+</section>
+<section id="uboot-compilation">
+<h4>1.2.2 Uboot Compilation<a class="headerlink" href="#uboot-compilation" title="Link to this heading"></a></h4>
+<p>Uboot is configured as follows:</p>
+<p>Config：okmx8mp-smarc_defconfig</p>
+<p>Cross compilation chain: aarch64-linux-gnu-gcc Arch：arm</p>
+<p>The reference compilation commands are shown below:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/uboot#  make CROSS_COMPILE=aarch64-linux-gnu- ARCH=arm okmx8mp-smarc_defconfig
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/uboot#  make CROSS_COMPILE=aarch64-linux-gnu- -j32 V=0
+</pre></div>
+</div>
+<p>The final generated image file is flash.bin.</p>
+</section>
+<section id="kernel-compilation">
+<h4>1.2.3 Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Link to this heading"></a></h4>
+<p>The kernel is configured as follows:<br />
+config：ok-mx8mp-smarc_defconfig<br />
+dts：ok-mx8mp-smarc.dts、ok-mx8mp-smarc-2gb.dts<br />
+Cross compilation chain:  aarch64-linux-gnu-gcc<br />
+Arch：arm64<br />
+The reference compilation commands are shown below:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/kernel#  make ok-mx8mp-smarc_defconfig ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/kernel#  make ARCH=arm64 -j8 CROSS_COMPILE=aarch64-linux-gnu- dtbs Image
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/kernel#  make ARCH=arm64 -j8 CROSS_COMPILE=aarch64-linux-gnu- modules
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/kernel#  make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- modules_install \
+INSTALL_MOD_PATH=${OVERLAY_DIR}
+</pre></div>
+</div>
+<p>The overlay directory is used to overwrite the rootfs directory, making it easier to replace existing directories and files in the rootfs directory.</p>
+</section>
+<section id="extra-of-kernel-compilation">
+<h4>1.2.4 Extra of Kernel Compilation<a class="headerlink" href="#extra-of-kernel-compilation" title="Link to this heading"></a></h4>
+<p>The reference compilation commands are shown below:<br />
+Environment variables need to be pre-configured KERNEL_DIR，OVERLAY_DIR.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>#cryptodev_1.12-r0
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/cryptodev_1.12-r0#  make KERNEL_DIR=${KERNEL_DIR} ARCH=arm64 \
+CROSS_COMPILE=aarch64-linux-gnu-
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/cryptodev_1.12-r0#  make KERNEL_DIR=${KERNEL_DIR} ARCH=arm64 \
+CROSS_COMPILE=aarch64-linux-gnu- \
+INSTALL_MOD_PATH=${OVERLAY_DIR} modules_install
+
+#jailhouse
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/jailhouse#  make KDIR=${KERNEL_DIR} ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- 
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/jailhouse#  make KDIR=${KERNEL_DIR} ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- \
+INSTALL_MOD_PATH=${OVERLAY_DIR} DESTDIR=${OVERLAY_DIR} modules_install
+
+#kernel-module-isp-vvcam
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/kernel-module-isp-vvcam/vvcam/v4l2#  make KERNEL_SRC=${KERNEL_DIR} ARCH=arm64 \
+CROSS_COMPILE=aarch64-linux-gnu-
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/kernel-module-isp-vvcam/vvcam/v4l2#  make KERNEL_SRC=${KERNEL_DIR} ARCH=arm64 \
+CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=${OVERLAY_DIR} modules_install
+
+#imx-dsp-2.1.5
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/imx-dsp-2.1.5#  ./configure --enable-armv8
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/imx-dsp-2.1.5#  make
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extra/imx-dsp-2.1.5#  make install DESTDIR=${OVERLAY_DIR}
+</pre></div>
+</div>
+</section>
+<section id="test-program-compilation">
+<h4>1.2.5 Test Program Compilation<a class="headerlink" href="#test-program-compilation" title="Link to this heading"></a></h4>
+<p>There are two kinds of test programs provided by Forlinx: Command line and QT.<br />
+Compile the command line test program. The reference command is as follows:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-cmd#  export CC=aarch64-linux-gnu-gcc
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-cmd#  make
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-cmd#  make install INSTALL_PATH=${OVERLAY_DIR}/usr/bin/
+</pre></div>
+</div>
+<p>To compile the QT test program, you need to install the qmake corresponding to the QT version first. Forlinx provides the installation program of qmake and related library files compiled based on yocto:<br />
+fsl-imx-xwayland-glibc-x86_64-forlinx-image-qt6-full-armv8a-fet-mx8mp-smarc-toolchain-6.1-mickledore.sh<br />
+Users can also compile qmake themselves using yocto.<br />
+Install qmake provided by Forlinx</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  ./fsl-imx-xwayland-glibc-x86_64-forlinx-image-qt6-full-armv8a-fet-mx8mp-smarc-toolchain-6.1-mickledore.sh &lt;&lt; EOF
+&gt; 
+&gt; Y
+&gt; EOF
+</pre></div>
+</div>
+<p><strong>Note that the environment variables configured by default for this tool chain can only be used for QT programs. To compile other images, please install the cross-compilation chain yourself.</strong><br />
+The reference compilation commands are shown below:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-qt#  source /opt/fsl-imx-xwayland/6.1-mickledore/environment-setup-armv8a-poky-linux
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-qt#  qmake
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-qt#  make
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-qt#  make install
+</pre></div>
+</div>
+<p>The install default installation directory is target. path =./././overlay/usr/bin/, which is written in the.pro file of each QT test program. Please modify it according to the actual situation.</p>
+</section>
+<section id="packaging-flashed-image">
+<h4>1.2.6 Packaging Flashed Image<a class="headerlink" href="#packaging-flashed-image" title="Link to this heading"></a></h4>
+<p>The following files and directories are required to package the burn image:<br />
+Kernel image and device tree：Image ok-mx8mp-smarc.dtb ok-mx8mp-smarc-2gb.dtb<br />
+Display logo under Uboot ：pic/logo-1280x800.bmp pic/logo-1024x600.bmp<br />
+Rootfs directory: Refer to 1.2.5 to prepare rootfs<br />
+The directory structure is as follows:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  tree  -L 1 images/ pic/ okmx8mp-smarc-fs/
+images/
+├── Image
+├── flash.bin
+├── ok-mx8mp-smarc-2gb.dtb
+└── ok-mx8mp-smarc.dtb
+pic/
+├── logo-1024x600.bmp
+└── logo-1280x800.bmp
+okmx8mp-smarc-fs/
+├── bin
+├── dev
+├── etc
+├── home
+├── lib
+├── media
+├── mnt
+├── opt
+├── proc
+├── run
+├── sbin
+├── srv
+├── sys
+├── tmp
+├── unit_tests
+├── usr
+├── var
+└── www
+
+18 directories, 6 files
+</pre></div>
+</div>
+<p>The reference commands are shown below:<br />
+Before executing the packaging command, it is necessary to set environment variables, such as IMAGE PATH and ROOTFS-PATH. The Images directory in the IMAGE PATH directory stores the Kernel image and device tree, while the pic directory stores the logo; ROOTFS-PATH is the rootfs directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  export IMAGE_PATH=/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  export ROOTFS_PATH=//mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/okmx8mp-smarc-fs
+root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  fakeroot -- ./fakeroot.fs
+</pre></div>
+</div>
+<p>The generated burn image ok8mp-linux-fs.sdcard.a * is stored in the IMAGE PATH/images directory. Please refer to the user manual for the burn image.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
