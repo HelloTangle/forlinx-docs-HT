@@ -1,33 +1,43 @@
 /* Google Fonts 引入，必须放最前面 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&family=Fira+Code&display=swap');
 
-/* 左上角搜索栏背景色 */
+/* 整体背景与字体颜色 - 暗黑主题 */
+body, .wy-body-for-nav, .wy-nav-side, .wy-side-nav-search, .wy-nav-top, .wy-nav-content-wrap {
+  background-color: #121212 !important; /* 主背景：接近黑 */
+  color: #e0e0e0 !important; /* 正文浅灰，避免纯白刺眼 */
+}
+
+/* 左上角搜索栏背景色（深蓝调暗色） */
 .wy-side-nav-search {
-  background-color: #005bac !important; /* 飞凌主蓝 */
+  background-color: #0a3d6e !important;
 }
 
-/* 搜索栏中版本号字体颜色 */
+/* 搜索栏版本号字体颜色 */
 .wy-side-nav-search > div.version {
-  color: white;
+  color: #bbbbbb !important;
 }
 
-/* 侧边栏菜单项 hover 效果 */
+/* 侧边栏菜单项 */
+.wy-menu-vertical a {
+  color: #cccccc !important;
+}
 .wy-menu-vertical a:hover {
-  background-color: #e6f0ff !important;
-  color: #005bac !important;
+  background-color: #1f2a3a !important; /* 深灰蓝 hover */
+  color: #4da3ff !important; /* 高亮蓝 */
 }
 
 /* 扩展主内容区域宽度 */
 .wy-nav-content {
-  max-width: 1200px; /* 默认800px，可调1000~1400px */
+  max-width: 1200px;
+  background-color: #1a1a1a !important; /* 主内容背景深灰 */
+  color: #e0e0e0 !important;
 }
 
-/* 正文字体，主体区域和容器统一 */
+/* 正文字体 */
 body, .rst-content, .wy-nav-content {
   font-family: 'Lato', Arial, sans-serif !important;
   font-size: 16px;
   line-height: 1.7;
-  color: #2c2c2c;
 }
 
 /* 标题字体 */
@@ -39,35 +49,33 @@ body, .rst-content, .wy-nav-content {
 .rst-content h6 {
   font-family: 'Montserrat', 'Lato', sans-serif !important;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #ffffff !important;
   white-space: normal !important;
   word-break: break-word !important;
   overflow-wrap: break-word !important;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 /* 代码字体 */
 code, pre {
   font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace !important;
   font-size: 14px;
-  background-color: #f5f5f5;    /* 浅灰，适合阅读 */
-  color: #333333;               /* 深灰色，替代刺眼的红色 */
+  background-color: #1e1e1e; /* 暗黑 IDE 风格背景 */
+  color: #d4d4d4; /* 浅灰字 */
   padding: 0.2em 0.4em;
   border-radius: 4px;
-  line-height: 1.4;            /* 增加行高，提升阅读舒适度 */
-  white-space: pre-wrap;       /* 支持自动换行 */
-  word-break: break-word;      /* 防止单词过长撑破布局 */
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.05); /* 轻微内阴影，增加层次 */
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.05);
 }
-
 
 /* 链接样式 */
 a {
-  color: #0071e3;
+  color: #4da3ff;
   text-decoration: none;
 }
 a:hover {
+  color: #82cfff;
   text-decoration: underline;
 }
 
@@ -77,58 +85,49 @@ a:hover {
 .rst-content .toctree-wrapper li,
 .rst-content .toctree-wrapper a {
   font-family: 'Lato', Arial, sans-serif !important;
-  font-size: 16px !important;             /* 字号适中 */
-  color: #333333 !important;              /* 深灰，接近苹果正文主色 */
+  font-size: 16px !important;
+  color: #cccccc !important;
   line-height: 1.5 !important;
   text-decoration: none !important;
 }
 
-/* 一级目录（H1）链接加粗加大 */
+/* 一级目录（H1）链接 */
 .rst-content .toctree-wrapper > ul > li > a {
   font-weight: 700 !important;
   font-size: 18px !important;
 }
 
-
-/* 鼠标悬浮时链接颜色 */
+/* 目录 hover */
 .rst-content .toctree-wrapper a:hover {
-  color: #0071e3 !important;     
+  color: #4da3ff !important;
 }
 
-/* 正文内页面目录标题 */
+/* 目录标题 */
 .rst-content .toctree-wrapper > p {
   font-family: 'Montserrat', 'Lato', sans-serif !important;
   font-weight: 600 !important;
   font-size: 24px !important;
-  color: #0071e3 !important;             
-  margin-bottom: 0.5em !important;
+  color: #4da3ff !important;
 }
 
-/* 禁止页面横向滚动（防止内容撑出屏幕） */
+/* 禁止横向滚动 */
 body {
   overflow-x: hidden;
 }
 
-
-/* 移动端优化：主内容宽度铺满屏幕，避免横向滚动 */
+/* 移动端优化 */
 @media (max-width: 768px) {
   .wy-nav-content {
     max-width: 100% !important;
     padding: 1em !important;
-    box-sizing: border-box;
+    background-color: #1a1a1a !important;
   }
-
-  /* 优化目录标题字号 */
   .rst-content .toctree-wrapper > p {
     font-size: 18px !important;
   }
-
-  /* 优化目录链接字号 */
   .rst-content .toctree-wrapper a {
     font-size: 14px !important;
   }
-
-  /* 确保代码块不会溢出横向 */
   pre {
     overflow-x: auto;
   }
