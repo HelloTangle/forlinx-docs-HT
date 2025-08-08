@@ -132,3 +132,31 @@ body {
     overflow-x: auto;
   }
 }
+
+
+/* 调整左侧导航栏展开子菜单背景和文字颜色 */
+.wy-menu-vertical li.current > ul,
+.wy-menu-vertical li.current li.current > ul,
+.wy-menu-vertical li.current li.current,
+.wy-menu-vertical li.current li > a {
+  background-color: #2a2a2a !important;  /* 较深的灰，区别于整体黑色背景 */
+  color: #e0e0e0 !important;             /* 浅灰字，保持可读 */
+}
+
+/* 鼠标悬浮子菜单项背景色加深 */
+.wy-menu-vertical li.current li > a:hover {
+  background-color: #3a3a3a !important;  /* 鼠标hover时更明显的灰色 */
+  color: #4da3ff !important;              /* 高亮蓝 */
+}
+
+/* 默认子菜单项背景色和文字颜色 */
+.wy-menu-vertical li > ul > li > a {
+  background-color: #222222 !important;  /* 深灰色，和主背景区分 */
+  color: #cccccc !important;
+}
+
+/* 鼠标悬浮默认子菜单项 */
+.wy-menu-vertical li > ul > li > a:hover {
+  background-color: #3a3a3a !important;
+  color: #4da3ff !important;
+}
