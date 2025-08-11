@@ -46,7 +46,7 @@ i.MX8M Plus Series
 
    <div class="product-card">
      <a href="nxp/okmx8mpq-c/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="https://www.forlinx.net/file.php?f=product/product_7456.png&t=png&o=product&s=&v=1714440047" alt="OKMX8MP-C" class="product-image" />
+       <img src="https://www.forlinx.net/file.php?f=product/product_7454.png&t=png&o=product&s=&v=1714439635" alt="OKMX8MP-C" class="product-image" />
      </a>
      <h3 class="product-title">OKMX8MP-C</h3>
      <div class="btn-group">
@@ -57,7 +57,7 @@ i.MX8M Plus Series
 
    <div class="product-card">
      <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="https://www.forlinx.net/file.php?f=product/product_8385.png&t=png&o=product&s=&v=1746598984" alt="OK-MX8MPQ-SMARC" class="product-image" />
+       <img src="https://www.forlinx.net/file.php?f=product/product_8387.png&t=png&o=product&s=&v=1746838302" alt="OK-MX8MPQ-SMARC" class="product-image" />
      </a>
      <h3 class="product-title">OK-MX8MPQ-SMARC</h3>
      <div class="btn-group">
