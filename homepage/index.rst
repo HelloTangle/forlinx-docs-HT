@@ -57,7 +57,7 @@ i.MX8M Plus Series
 
    <div class="product-card">
      <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="./homepage/images/nxp/OK-MX8MPQ-SMARC.png" alt="OK-MX8MPQ-SMARC" class="product-image" />
+       <img src="_static/images/nxp/OK-MX8MPQ-SMARC.png" alt="OK-MX8MPQ-SMARC" class="product-image" />
      </a>
      <h3 class="product-title">OK-MX8MPQ-SMARC</h3>
      <div class="btn-group">
