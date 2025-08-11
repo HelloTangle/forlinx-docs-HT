@@ -29,39 +29,10 @@ RK3576 Series
 
 RK3568 Series
 --------------
-
-.. raw:: html
-
-   <div class="products-container">
-
-   <div class="product-card">
-     <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" title="docs">
-       <img src="https://www.forlinx.net/file.php?f=product/product_5720.png&t=png&o=product&s=&v=1650786256" alt="OK3568 som" class="product-image" />
-     </a>
-     <h3 class="product-title">OK3568-C</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/ok3568" target="_blank" rel="noopener noreferrer" class="btn btn-website">官网</a>
-       <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" class="btn btn-doc">文档</a>
-     </div>
-   </div>
-
-   <div class="product-card">
-     <a href="https://forlinxembedded.github.io/platform/nxp/imx8mp/" target="_blank" rel="noopener noreferrer" title="文档">
-       <img src="https://www.forlinx.net/file.php?f=product/product_5720.png&t=png&o=product&s=&v=1650786256" alt="OKMX8MP-C" class="product-image" />
-     </a>
-     <h3 class="product-title">OKMX8MP-C</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/okmx8mp" target="_blank" rel="noopener noreferrer" class="btn btn-website">官网</a>
-       <a href="https://forlinxembedded.github.io/platform/nxp/imx8mp/" target="_blank" rel="noopener noreferrer" class="btn btn-doc">文档</a>
-     </div>
-   </div>
-   </div>
-
-
 - OK3568-C Manual
   ⏳ Documentation coming soon.
 
-
+----
 
 NXP Series
 ================
@@ -69,13 +40,44 @@ NXP Series
 i.MX8M Plus Series
 ------------------
 
-- OKMX8MP-C Manual
-- `OKMX8MP-SMARC Manual <nxp/okmx8mp-smarc/index.html>`_
+.. raw:: html
+
+   <div class="products-container">
+
+   <div class="product-card">
+     <a href="nxp/okmx8mpq-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="https://www.forlinx.net/file.php?f=product/product_7454.png&t=png&o=product&s=&v=1714439635" alt="OKMX8MP-C" class="product-image" />
+     </a>
+     <h3 class="product-title">OKMX8MP-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/fetmx8mp-c-system-on-module-119.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="nxp/okmx8mpq-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+   <div class="product-card">
+     <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="https://www.forlinx.net/file.php?f=product/product_5720.png&t=png&o=product&s=&v=1650786256" alt="OK-MX8MPQ-SMARC" class="product-image" />
+     </a>
+     <h3 class="product-title">OK-MX8MPQ-SMARC</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+   </div>
+
+
+
+- `OKMX8MP-C Manual <nxp/okmx8mpq-c/index.html>`_
+- `OKMX8MPQ-SMARC Manual <nxp/okmx8mpq-smarc/index.html>`_
 
 i.MX93 Series
 -------------
 - OKMX9352-C Manual
   ⏳ Documentation coming soon.
+
+----
 
 Texas Instruments Series
 ==========================
@@ -86,16 +88,18 @@ AM62x Series
   ⏳ Documentation coming soon.
 
 
+----
+
 Allwinner Series
 ==================
 
 T527 Series
 -------------
-- OK527N-C Manual
-  ⏳ Documentation coming soon.
+- `OK527N-C Manual <allwinner/ok527n-c/index.html>`_
+ 
 
 
-
+----
 
 
 
