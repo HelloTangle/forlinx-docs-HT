@@ -32,28 +32,29 @@ RK3568 Series
 
 .. raw:: html
 
+   <div class="products-container">
 
    <div class="product-card">
      <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" title="docs">
-       <img src="https://www.forlinx.net/file.php?f=product/product_5719.png&t=png&o=product&s=&v=1650785696" alt="OK3568 核心板" class="product-image" />
+       <img src="https://www.forlinx.net/file.php?f=product/product_5720.png&t=png&o=product&s=&v=1650786256" alt="OK3568 som" class="product-image" />
      </a>
      <h3 class="product-title">OK3568-C</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/ok3568" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
-       <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
-   </div>
-
-
-   <div class="product-card">
-     <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" title="docs">
-       <img src="https://www.forlinx.net/file.php?f=product/product_5719.png&t=png&o=product&s=&v=1650785696" alt="RK3568 SOM" class="product-image" />
-     </a>
-     <h3 class="product-title">OK3588-C</h3>
      <div class="btn-group">
        <a href="https://www.forlinx.net/ok3568" target="_blank" rel="noopener noreferrer" class="btn btn-website">官网</a>
        <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" class="btn btn-doc">文档</a>
      </div>
+   </div>
+
+   <div class="product-card">
+     <a href="https://forlinxembedded.github.io/platform/nxp/imx8mp/" target="_blank" rel="noopener noreferrer" title="文档">
+       <img src="https://www.forlinx.net/file.php?f=product/product_5720.png&t=png&o=product&s=&v=1650786256" alt="OKMX8MP-C" class="product-image" />
+     </a>
+     <h3 class="product-title">OKMX8MP-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/okmx8mp" target="_blank" rel="noopener noreferrer" class="btn btn-website">官网</a>
+       <a href="https://forlinxembedded.github.io/platform/nxp/imx8mp/" target="_blank" rel="noopener noreferrer" class="btn btn-doc">文档</a>
+     </div>
+   </div>
    </div>
 
 
