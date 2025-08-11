@@ -69,9 +69,6 @@ i.MX8M Plus Series
 
 
 
-- `OKMX8MP-C Manual <nxp/okmx8mpq-c/index.html>`_
-- `OKMX8MPQ-SMARC Manual <nxp/okmx8mpq-smarc/index.html>`_
-
 i.MX93 Series
 -------------
 - OKMX9352-C Manual
@@ -95,7 +92,26 @@ Allwinner Series
 
 T527 Series
 -------------
-- `OK527N-C Manual <allwinner/ok527n-c/index.html>`_
+
+.. raw:: html
+
+   <div class="products-container">
+
+   <div class="product-card">
+     <a href="allwinner/ok527n-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="https://www.forlinx.net/file.php?f=product/product_7168.png&t=png&o=product&s=&v=1706253490" alt="OK527N-C" class="product-image" />
+     </a>
+     <h3 class="product-title">OK527N-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/t527-c-system-on-module-149.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="allwinner/ok527n-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+   </div>
+
+
+
  
 
 
