@@ -228,10 +228,6 @@ body {
   background-color: #545b62;
 }
 
-/* 点击时的轻微缩放反馈 */
-.btn:active {
-  transform: scale(0.97);
-}
 
 
 /* 移动端适配 */
