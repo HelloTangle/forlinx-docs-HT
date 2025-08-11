@@ -33,13 +33,15 @@ RK3568 Series
 .. raw:: html
 
    <div class="product-card">
-     <a href="https://www.forlinx.net/product/125.html" target="_blank" rel="noopener noreferrer" title="官网">
-       <img src="https://www.forlinx.net/file.php?f=product/product_5719.png&t=png&o=product&s=&v=1650785696" alt="RK3568 SOM" class="product-image" />
+     <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" title="文档">
+       <img src="https://www.forlinx.net/file.php?f=product/product_5719.png&t=png&o=product&s=&v=1650785696" alt="Forlinx RK3568 SOM" class="product-image" />
      </a>
      <div class="btn-group">
-       <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Documents</a>
+       <a href="https://www.forlinx.net/ok3568" target="_blank" rel="noopener noreferrer" class="btn btn-website">官网</a>
+       <a href="https://forlinxembedded.github.io/platform/rockchip/rk3568/" target="_blank" rel="noopener noreferrer" class="btn btn-doc">文档</a>
      </div>
    </div>
+
 
 
 - OK3568-C Manual
