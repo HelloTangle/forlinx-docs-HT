@@ -78,10 +78,16 @@ a:hover {
 .rst-content .toctree-wrapper a {
   font-family: 'Lato', Arial, sans-serif !important;
   font-size: 16px !important;             /* 字号适中 */
-  color: #333333 !important;              /* 深灰，接近苹果正文主色 */
+  color: #333333 !important;              /* 深灰 */
   line-height: 1.5 !important;
   text-decoration: none !important;
 }
+
+
+.toctree-caption {
+  display: none;              /* 隐藏正文中的 caption */
+}
+
 
 /* 一级目录（H1）链接加粗加大 */
 .rst-content .toctree-wrapper > ul > li > a {
@@ -133,3 +139,4 @@ body {
     overflow-x: auto;
   }
 }
+
