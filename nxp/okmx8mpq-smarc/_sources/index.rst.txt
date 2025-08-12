@@ -13,11 +13,18 @@
 OKMX8MPQ-SMARC Manual
 ======================
 
+HARDWARE
+------------
+
+
 .. toctree::
    :caption: HARDWARE
    :maxdepth: 2
 
    OK-MX8MPQ-SMARC_Hardware_Manual
+
+SOFTWARE
+------------
 
 .. toctree::
    :caption: SOFTWARE
