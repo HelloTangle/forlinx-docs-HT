@@ -84,9 +84,12 @@ a:hover {
 }
 
 
-.toctree-caption {
-  display: none;              /* 隐藏正文中的 caption */
+/* 隐藏正文中的 toctree caption 标题（保留侧边栏） */
+.rst-content .caption,
+.rst-content .caption-text {
+  display: none !important;
 }
+
 
 
 /* 一级目录（H1）链接加粗加大 */
