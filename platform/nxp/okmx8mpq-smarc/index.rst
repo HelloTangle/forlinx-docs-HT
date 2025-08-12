@@ -8,9 +8,7 @@
    
    `FET-MX8MPQ-SMARC System on Module <https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html>`_
 
-.. raw:: html
 
-   <div class="h2titlecolor">
 
 ======================
 OKMX8MPQ-SMARC Manual
@@ -36,9 +34,6 @@ SOFTWARE
    OK-MX8MPQ-SMARC_Linux_User_Manual
    OK-MX8MPQ-SMARC_Linux_User_Compilation_Manual
 
-.. raw:: html
-
-   </div>
 
 
 ===========
