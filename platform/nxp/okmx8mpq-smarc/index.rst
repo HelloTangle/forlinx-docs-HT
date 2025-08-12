@@ -8,6 +8,9 @@
    
    `FET-MX8MPQ-SMARC System on Module <https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html>`_
 
+.. raw:: html
+
+   <div class="h2titlecolor">
 
 ======================
 OKMX8MPQ-SMARC Manual
@@ -49,3 +52,8 @@ If you have any questions, please contact us at:
 *Thank you for choosing Forlinx Embedded. We're committed to supporting your development journey.*
 
 ----
+
+
+.. raw:: html
+
+   </div>
