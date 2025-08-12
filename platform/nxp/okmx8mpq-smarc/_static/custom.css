@@ -90,6 +90,11 @@ a:hover {
   display: none !important;
 }
 
+/* 仅首页 index.rst 的 H2 变蓝 */
+body[data-page="index"] .rst-content h2 {
+  color: #0071e3 !important; 
+}
+
 
 
 /* 一级目录（H1）链接加粗加大 */
