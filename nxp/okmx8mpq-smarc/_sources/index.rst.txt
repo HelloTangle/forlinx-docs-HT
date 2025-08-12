@@ -36,6 +36,10 @@ SOFTWARE
    OK-MX8MPQ-SMARC_Linux_User_Manual
    OK-MX8MPQ-SMARC_Linux_User_Compilation_Manual
 
+.. raw:: html
+
+   </div>
+
 
 ===========
 Contact Us
@@ -54,6 +58,3 @@ If you have any questions, please contact us at:
 ----
 
 
-.. raw:: html
-
-   </div>
