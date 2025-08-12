@@ -69,6 +69,8 @@ i.MX8M Plus Series
 
 
 
+
+
 i.MX93 Series
 -------------
 - OKMX9352-C Manual
@@ -99,7 +101,7 @@ T527 Series
 
    <div class="product-card">
      <a href="allwinner/ok527n-c/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="https://www.forlinx.net/file.php?f=product/product_7168.png&t=png&o=product&s=&v=1706253490" alt="OK527N-C" class="product-image" />
+       <img src="_static/images/allwinner/OK527N-C.png" alt="OK527N-C" class="product-image" />
      </a>
      <h3 class="product-title">OK527N-C</h3>
      <div class="btn-group">
@@ -109,9 +111,6 @@ T527 Series
    </div>
 
    </div>
-
-
-
  
 
 

@@ -9,7 +9,7 @@
   <title>Linux6.1.36_User’s Manual_V1.0 &mdash; NXP IMX8MP Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=8ec62da1" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=80d5ce09" />
 
   
     <link rel="shortcut icon" href="_static/forlinx.png"/>
@@ -56,6 +56,10 @@
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Linux6.1.36_User’s Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#development-board-description">1. Development Board Description</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ok-mx8mpq-smarc-development-board-description">1.1 OK-MX8MPQ-SMARC Development Board Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#introduction-to-linux-6-1-36-system-software-resources">1.2 Introduction to Linux 6.1.36 System Software Resources</a></li>
@@ -231,6 +235,94 @@
              
   <section id="linux6-1-36-user-s-manual-v1-0">
 <h1>Linux6.1.36_User’s Manual_V1.0<a class="headerlink" href="#linux6-1-36-user-s-manual-v1-0" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>The purpose of this manual is to quickly familiarize the user with the product, the interface functionality, and the test methodology. It mainly introduces the development board’s interface function test, burns images, and troubleshooting methods. In the process of testing, some commands are annotated to facilitate the user’s understanding, mainly for practical use.</p>
+<p>There are total seven parts:</p>
+<ul class="simple">
+<li><p>Chapter 1. provides an overview of the product, briefly introducing the interface resources of the development board, the relevant driver paths in the kernel source code, supported flashing and booting methods, as well as explanations of key sections in the documentation;</p></li>
+<li><p>Chapter 2. is the fast boot/startup of the product, which can adopt two ways of serial port login and network login;</p></li>
+<li><p>Chapter 3. is QT interface function test of the product;</p></li>
+<li><p>Chapter 4. is the command line operation of the product for functional testing;</p></li>
+<li><p>Chapter 5. is the multimedia test of the product, including the playback test of the camera and the video hardware codec test;</p></li>
+<li><p>Chapter 6. is system configuration；</p></li>
+<li><p>Chapter 7. describes the image update for the product, mainly detailing the method of updating the image to the storage device. Users can choose the corresponding flashing method according to their actual situation.</p></li>
+</ul>
+<p>A description of some of the symbols and formats in the manual:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Format</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>⚠️</p></td>
+<td><p>Note or information that requires special attention, be sure to read carefully</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>Indicates the related path.</p></td>
+</tr>
+<tr class="row-even"><td><p><font style="color:blue;">Blue on gray</font></p></td>
+<td><p>Refers to commands entered at the command line(Manual input required).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Black font on gray background</p></td>
+<td><p>Serial port output message after entering a command</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Bold black on gray background</strong></p></td>
+<td><p>Key information in the serial port output message</p></td>
+</tr>
+<tr class="row-odd"><td><p>//</p></td>
+<td><p>Interpretation of input instructions or output information</p></td>
+</tr>
+<tr class="row-even"><td><p>Username&#64;Hostname</p></td>
+<td><p>Root&#64;ok-mx8mpq-smarc:: Development board serial port login account information through which the user can determine the environment for function operation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Example: After inserting the TF card, you can use the “ls” command to view the mounting directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok-mx8mpq-smarc:~# ls /run/media    //List files in the/run/media directory
+Boot-mmcblk2p1  boot-mmcblk1p1
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>root&#64;ok-mx8mpq-smarc：The user name is root, and the host name is ok-mx8mpq-smarc, indicating that the root user is used for operations on the development board.</p></li>
+<li><p>// : Explanation of ls /run/media operation, no input required.</p></li>
+<li><p><font style="color:blue;">ls /run/media</font>: Blue font on a gray background indicating the relevant commands that need to be manually entered.</p></li>
+<li><p>boot-mmcblk1p1: The black font with gray background is the output information after the command is input, and the bold font is the key information, which indicates the mounting directory of the TF card.</p></li>
+</ul>
+</section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This software manual applies to the Forlinx OK-MX8MPQ-SMARC platform Linux6.1.36 operating system.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Date</strong></p></th>
+<th class="head"><p><strong>Manual Version</strong></p></th>
+<th class="head"><p><strong>SoM Version</strong></p></th>
+<th class="head"><p><strong>Carrier Board Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01/04/2025</p></td>
+<td><p>V1.0</p></td>
+<td><p>V1.2</p></td>
+<td><p>V1.1 and Above</p></td>
+<td><p>Linux6.1.36 User’s Manual Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="development-board-description">
 <h2>1. Development Board Description<a class="headerlink" href="#development-board-description" title="Link to this heading"></a></h2>
 <section id="ok-mx8mpq-smarc-development-board-description">

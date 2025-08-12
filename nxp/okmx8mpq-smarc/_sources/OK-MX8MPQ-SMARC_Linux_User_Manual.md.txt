@@ -1,5 +1,63 @@
 # Linux6.1.36_User's Manual_V1.0
 
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
+
+## Copyright
+
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
+
+## Overview
+
+The purpose of this manual is to quickly familiarize the user with the product, the interface functionality, and the test methodology. It mainly introduces the development board's interface function test, burns images, and troubleshooting methods. In the process of testing, some commands are annotated to facilitate the user's understanding, mainly for practical use.
+
+There are total seven parts:
+
++ Chapter 1. provides an overview of the product, briefly introducing the interface resources of the development board, the relevant driver paths in the kernel source code, supported flashing and booting methods, as well as explanations of key sections in the documentation;
++ Chapter 2. is the fast boot/startup of the product, which can adopt two ways of serial port login and network login;
++ Chapter 3. is QT interface function test of the product;
++ Chapter 4. is the command line operation of the product for functional testing;
++ Chapter 5. is the multimedia test of the product, including the playback test of the camera and the video hardware codec test;
++ Chapter 6. is system configuration；
++ Chapter 7. describes the image update for the product, mainly detailing the method of updating the image to the storage device. Users can choose the corresponding flashing method according to their actual situation.
+
+A description of some of the symbols and formats in the manual:
+
+| Format                                        | Meaning                                                      |
+| --------------------------------------------- | ------------------------------------------------------------ |
+| ⚠️                                             | Note or information that requires special attention, be sure to read carefully |
+|                                               | Indicates the related path.                                  |
+| <font style="color:blue;">Blue on gray</font> | Refers to commands entered at the command line(Manual input required). |
+| Black font on gray background                 | Serial port output message after entering a command          |
+| **Bold black on gray background**             | Key information in the serial port output message            |
+| //                                            | Interpretation of input instructions or output information   |
+| Username@Hostname                             | Root@ok-mx8mpq-smarc:: Development board serial port login account information through which the user can determine the environment for function operation. |
+
+Example: After inserting the TF card, you can use the "ls" command to view the mounting directory.
+
+```plain
+root@ok-mx8mpq-smarc:~# ls /run/media    //List files in the/run/media directory
+Boot-mmcblk2p1  boot-mmcblk1p1
+```
+
++ root@ok-mx8mpq-smarc：The user name is root, and the host name is ok-mx8mpq-smarc, indicating that the root user is used for operations on the development board.
++ // : Explanation of ls /run/media operation, no input required.
++ <font style="color:blue;">ls /run/media</font>: Blue font on a gray background indicating the relevant commands that need to be manually entered.
++ boot-mmcblk1p1: The black font with gray background is the output information after the command is input, and the bold font is the key information, which indicates the mounting directory of the TF card.
+
+## Application Scope
+
+This software manual applies to the Forlinx OK-MX8MPQ-SMARC platform Linux6.1.36 operating system.
+
+## Revision History
+
+| **Date**   | **Manual Version** | **SoM Version** | **Carrier Board Version** | **Revision History**                      |
+| ---------- | ------------------ | --------------- | ------------------------- | ----------------------------------------- |
+| 01/04/2025 | V1.0               | V1.2            | V1.1 and Above            | Linux6.1.36 User’s Manual Initial Version |
+
 ## 1. Development Board Description
 
 ### 1.1 OK-MX8MPQ-SMARC Development Board Description
