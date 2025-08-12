@@ -52,6 +52,11 @@ body, .rst-content, .wy-nav-content {
   color: #0071e3 !important;   /* 你想要的蓝色 */
 }
 
+/* 隐藏正文中的 toctree caption 标题（保留侧边栏） */
+.rst-content .caption,
+.rst-content .caption-text {
+  display: none !important;
+}
 
 /* 代码字体 */
 code, pre {
@@ -90,11 +95,7 @@ a:hover {
 }
 
 
-/* 隐藏正文中的 toctree caption 标题（保留侧边栏） */
-.rst-content .caption,
-.rst-content .caption-text {
-  display: none !important;
-}
+
 
 
 
