@@ -1,5 +1,31 @@
 # Linux6.1.36_User's Compilation Manual_V1.0
 
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
+
+## Copyright
+
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
+
+## Overview
+
+This manual is designed to enable users of the Forlinx Embedded development board to quickly understand the compilation process of the products and familiarize themselves with the compilation methods of Forlinx products. The application program needs to be cross-compiled on the  Linux operating system before it can run on the development board. According to the method in the compilation manual, users can compile their own software code through practical operation.
+
+## Application Scope
+
+This software manual applies to the Forlinx OK-MX8MPQ-SMARC platform Linux6.1.36 operating system.
+
+## Revision History
+
+| **Date**   | **Manual Version** | **Revision History**                           |
+| ---------- | ------------------ | ---------------------------------------------- |
+| 01/04/2025 | V1.0               | Linux6.1.36 User’s Compilation Initial Version |
+
+## Overview
+
 ## 1. Preparation Before Compilation
 
 This chapter mainly describes the compilation methods for the source code related to the development board, including the separate compilation of the kernel source code, the compilation of application programs, and the packaging of the flashing image, etc., providing references for users.

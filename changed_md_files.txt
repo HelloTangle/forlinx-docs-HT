@@ -1,1 +1,1 @@
-platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual.md
+platform/allwinner/ok527n-c/OK527N-C_Linux5.15.47_User_Manual.md
