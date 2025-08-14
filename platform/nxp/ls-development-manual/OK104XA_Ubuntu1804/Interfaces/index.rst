@@ -9,18 +9,17 @@
    `LS10XX Series System On Module <https://www.forlinx.net/product-list-170.html>`_
 
 
-======================
-LS Development Manual
-======================
+========================================
+Interfaces
+========================================
 
-OK104XA Ubuntu18.04 
-----------------------
+
 
 .. toctree::
-   :caption: OK104XA Ubuntu18.04
-   :maxdepth: 2
+   :maxdepth: 1
 
-   OK104XA_Ubuntu1804/index
+   OK1046A_Ubuntu
+   
 
 ===========
 Contact Us
