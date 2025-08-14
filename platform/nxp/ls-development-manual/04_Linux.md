@@ -39,11 +39,11 @@ ubuntu和Windows主机之间的文件传输有很多种，安装VMware Tools后�
 
 设置方法如下，点击菜单栏的“虚拟机”，选择“设置”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950783159-aa38c988-c012-4406-8082-6a9a28411890.png)
+![Image](./images/04_Linux/aa38c988c012440680826a9a28411890.png)
 
 点击“选项”，启用“共享文件夹”，设置Windows主机上的共享目录，点击“确定”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950804162-7efbad0f-793c-4665-ba22-9b194e4fd765.png)
+![Image](./images/04_Linux/7efbad0f793c4665ba229b194e4fd765.png)
 
 虚拟机的文件共享设置完成后，将源码包OKT527-linux-sdk1.3.tar.bz2放到Windows主机的共享文件夹中，这里我们命名为share。
 
@@ -172,7 +172,7 @@ forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh
 
 	**QT5WEBENGINE_ENV += NINJAFLAGS="-j8"**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1745800715577-0679cdb4-a7ef-4503-bc58-f08daf758a84.png)
+![Image](./images/04_Linux/0679cdb4a7ef4503bc58f08daf758a84.png)
 
 **继续执行build.sh进行编译即可**
 
@@ -311,42 +311,42 @@ forlinx@ubuntu:~/qtcreator-4.7.0/bin$ sudo ./qtcreator
 
 启动Qt Creator 程序，进入到Qt Creator界面，点击“File”-> “New File or Project”新建一个工程，选择“Application (Qt)”->“Qt Widgets Application”，然后点击右下角的“Choose”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950862335-48648f4d-29e4-48b2-8bec-96a15102c9ca.png)
+![Image](./images/04_Linux/48648f4d29e448b28bec96a15102c9ca.png)
 
 在如下界面中为新建的工程修改名字为“helloworld”，选择安装路径选择/home/forlinx，然后点击“Next”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950877270-ef232c40-5d0d-40bf-8e2e-4d37f996f4d0.png)
+![Image](./images/04_Linux/ef232c405d0d40bf8e2e4d37f996f4d0.png)
 
 选择qmake,点击Next继续。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950886144-54b37456-de62-48c7-b7cc-b2df962488b2.png)
+![Image](./images/04_Linux/54b37456de6248c7b7ccb2df962488b2.png)
 
 在如下界面中，可以按需求修改Class name 和Base class，这里使用默认，然后点击“Next”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950897755-f70676a4-65e7-4835-9c32-b977524dc66d.png)
+![Image](./images/04_Linux/f70676a465e748359c32b977524dc66d.png)
 
 可以选择翻译文件，如果有对多语言支持的需求，可以选择语言。这里使用默认 点击Next
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950910018-0542302c-e7a7-4851-884b-53bd0b717a00.png)
+![Image](./images/04_Linux/0542302ce7a74851884b53bd0b717a00.png)
 
 在如下界面中，选择之前已添加过的“OK527”作为当前工程的kit，然后点击“Next”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950921104-6b1d4af7-5ea5-4eaa-95c6-9402a26bca74.png)
+![Image](./images/04_Linux/6b1d4af75ea54eaa95c69402a26bca74.png)
 
 在如下界面中，点击“Finish”，完成工程的新建：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950932773-3bf58552-1a8c-4ee2-a872-fc9ea2d124ae.png)
+![Image](./images/04_Linux/3bf585521a8c4ee2a872fc9ea2d124ae.png)
 
 新建工程创建完成，即可显示如下窗口：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950947708-0c81ca78-c489-44cd-aff2-714c433cbc67.png)
+![Image](./images/04_Linux/0c81ca78c48944cdaff2714c433cbc67.png)
 
 当程序编写完成后，点击左下角的锤子图标，即可进行交叉编译，将编译好的可执行程序拷贝到开发板，即可进行应用的测试。
 
 ### <font style="color:black;">4.3.4 </font><font style="color:black;"> </font><font style="color:black;">Qt Creator </font><font style="color:black;">常见问题及解决方法</font>
 Ø  从命令行或者快捷方式打开 QtCreator 集成开发环境，启动之后看到类似下面的界面
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950971164-9e266495-0250-4eb7-8f3b-dfb8feadda73.png)
+![Image](./images/04_Linux/9e26649502504eb78f3bdfb8feadda73.png)
 
 左边的设计按钮、项目按钮和构建调试区只有在打开或新建了项目之后才会变得可用。
 
@@ -358,13 +358,13 @@ QtCreator 下方的是定位工具和输出面板，在编写项目代码和运�
 
 Ø   构建调试
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950991143-dd0cec48-825b-49c9-a6a3-fe7388b5959b.png)
+![Image](./images/04_Linux/dd0cec48825b49c9a6a3fe7388b5959b.png)
 
 2.qtcreator调试运行按钮是灰色解决方法如下：
 
 出现这个问题，是因为kits套件中配置C,C++和Qt version时出现了问题，可能是路径有问题，可能是您没有进行过全编译，修改编辑器语言即可。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45417194/1751872642898-3fc9d076-0e87-4113-950a-b8ae7c7b52d3.png)
+![Image](./images/04_Linux/3fc9d0760e874113950ab8ae7c7b52d3.png)
 
 检查方框中的交叉编译器路径配置是否正确。
 

@@ -1,1 +1,1 @@
-platform/allwinner/ok527n-c/OK527N-C_Linux5.15.47_User_Manual.md
+platform/nxp/ls-development-manual/04_Linux.md
