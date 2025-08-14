@@ -18,7 +18,7 @@ OK104XA Ubuntu18.04
 
 .. toctree::
    :caption: OK104XA Ubuntu18.04
-   :maxdepth: 2
+   :maxdepth: 3
 
    OK104XA_Ubuntu1804/index
 
