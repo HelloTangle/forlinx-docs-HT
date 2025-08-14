@@ -1,1 +1,1 @@
-platform/nxp/ls-development-manual/OK104XA_Ubuntu1804/Interfaces/OK1046A_Ubuntu1.md
+platform/nxp/ls-development-manual/OK104XA_Ubuntu1804/Interfaces/Linux.md
