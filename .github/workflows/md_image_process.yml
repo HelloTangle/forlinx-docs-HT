@@ -34,12 +34,13 @@ jobs:
         run: |
           echo "::group::Detect changed .md files"
           git fetch origin main
+          # 获取本次 push 里变动的 md 文件
           changed=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' || true)
           echo "Changed md files:"
           echo "$changed"
           echo "::endgroup::"
 
-          # 写入环境文件，路径用引号包裹，避免非法字符报错
+          # 写入环境变量，双引号包裹路径，避免非法字符
           echo "CHANGED_MD_FILES=\"$changed\"" >> $GITHUB_ENV
 
       # 5️⃣ 处理每个 Markdown 文件
@@ -48,8 +49,7 @@ jobs:
         run: |
           echo "Processing changed markdown files..."
           for f in $CHANGED_MD_FILES; do
-            # 去掉空格和引号
-            file=$(echo $f | tr -d '"')
+            file=$(echo $f | tr -d '"')  # 去掉双引号
             if [ -f "$file" ]; then
               echo "📄 Processing $file"
               python ./scripts/process_md_images.py "$file"
