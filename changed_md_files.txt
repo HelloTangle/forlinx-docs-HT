@@ -1,1 +1,1 @@
-platform/nxp/ls-development-manual/LS104X/LS104XA_Ubuntu18_04/Interfaces/04_Linux.md
+platform/nxp/ls-development-manual/04_Linux.md
