@@ -1,0 +1,552 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.1 编译前的准备 &mdash; NXP IMX8MP Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=8408a61e" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/forlinx.png"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="../../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">OK104XA Ubuntu18.04</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../OK104XA_Ubuntu1804/index.html">OK104XA Ubuntu18.04 Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">NXP IMX8MP Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><font style="color:black;">4.1</font><font style="color:black;">  </font><font style="color:black;">编译前的准备</font></li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>注意：请不要跳过这段话。</p>
+<p>开发环境是开发人员在开发过程当中，所需的软硬件平台。开发环境并不是一个固定的样式，前文中，我们详细讲解一个嵌入式Linux开发环境搭建的方法。您已经对嵌入式开发非常了解的话，可以按照自己的需求来搭建环境。如果遇到一些使用上的问题，您可以从国内一些大Linux论坛和网站搜索相关的信息来解决。本章节提到的操作是在我们提供的开发环境上进行的，经过飞凌的测试，如果对嵌入式开发不是非常熟悉的朋友，建议您使用我们提供的环境。<strong>我们开发环境的普通用户为：forlinx，密码为：forlinx，超级用户为：root，密码为root。</strong></p>
+<section id="id1">
+<h1><font style="color:black;">4.1</font><font style="color:black;">  </font><font style="color:black;">编译前的准备</font><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2><font style="color:black;">4.1.1</font><font style="color:black;">  </font><font style="color:black;">版本说明</font><a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>Ø  虚拟机软件：Vmware15.1.0</p>
+<p>Ø  建议开发环境操作系统：Ubuntu20.04 64 位版</p>
+<p>Ø  交叉工具链：gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu（内核）</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>aarch64-buildroot-linux-gnu_sdk-buildroot（应用）
+</pre></div>
+</div>
+<p>Ø  Bootloader 版本：u-boot-2018.07</p>
+<p>Ø  内核版本：linux-5.15.147</p>
+<p>Ø  开发板QT版本：qt5.15.8</p>
+</section>
+<section id="id3">
+<h2><font style="color:black;">4.1.2</font><font style="color:black;">  </font><font style="color:black;">源码</font><font style="color:black;">拷贝和释放</font><a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>内核源码路径：用户资料\软件资料\2-镜像及源码\1-源码\OKT527-linux-sdk1.3.tar.bz2.**</p>
+<p>1、源码拷贝</p>
+<p>飞凌OKT527-linux-sdk1.3.tar.bz2包括工具链、用户sdk、Linux内核、文件系统、测试程序源码以及一些工具等。</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ mkdir /home/forlinx/work                                            //创建工作路径
+</pre></div>
+</div>
+<p>拷贝源码包到虚拟机 /home/forlinx/work 目录。</p>
+<p>可以直接将电脑上的源码包直接拖拽到虚拟机桌面的文件夹中，或者利用共享文件夹使用命令拷贝，这里着重介绍共享文件夹的使用。</p>
+<p>ubuntu和Windows主机之间的文件传输有很多种，安装VMware Tools后，可以设置虚拟机共享文件夹，将Windows主机的文件目录挂载到ubuntu中，实现文件共享。</p>
+<p>设置方法如下，点击菜单栏的“虚拟机”，选择“设置”。</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/aa38c988c012440680826a9a28411890.png" /></p>
+<p>点击“选项”，启用“共享文件夹”，设置Windows主机上的共享目录，点击“确定”。</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/7efbad0f793c4665ba229b194e4fd765.png" /></p>
+<p>虚拟机的文件共享设置完成后，将源码包OKT527-linux-sdk1.3.tar.bz2放到Windows主机的共享文件夹中，这里我们命名为share。</p>
+<p>共享文件夹在ubuntu中的挂载目录/mnt/hgfs/share，查看挂载目录下文件。</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ls /mnt/hgfs/share/                                //查看共享目录内文件
+OKT527-linux-sdk1.3.tar.bz2
+</pre></div>
+</div>
+<p>将共享文件夹中的源码拷贝到ubuntu的/home/forlinx/work目录下，进行md5校验：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cp /mnt/hgfs/share/OKT527-linux-sdk1.3.tar.bz2.* /home/forlinx/work/       
+forlinx@ubuntu:~$ cd /home/forlinx/work
+forlinx@ubuntu:~/work$ md5sum OKT527-linux-sdk1.3.tar.bz2.*
+</pre></div>
+</div>
+<p>返回的md5校验码与资料中的校验码一致，即可解压源码：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ cat OKT527-linux-sdk1.3.tar.bz2.0* | tar jxv
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2><font style="color:black;">4.1.3</font><font style="color:black;">  </font><font style="color:black;">源码常见文件路径</font><a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>OK527-C平台，软件配置文件路径（SDK源码OKT527-linux-sdk路径下开始）如下：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>文件类型</p></th>
+<th class="head"><p>路径</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>内核配置文件</p></td>
+<td><p>device/config/chips/t527/configs/okt527/linux-5.15/bsp_defconfig</p></td>
+</tr>
+<tr class="row-odd"><td><p>设备树文件</p></td>
+<td><p>kernel/linux-5.15/bsp/configs/linux-5.15/sun55iw3p1.dtsi</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-C-Common.dtsi</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-C-Linux.dts</p></td>
+</tr>
+<tr class="row-even"><td><p>sysconfig.fex</p></td>
+<td><p>device/config/chips/t527/configs/okt527/sys_config.fex</p></td>
+</tr>
+<tr class="row-odd"><td><p>文件系统源文件</p></td>
+<td><p>文件添加路径<br/>buildroot/buildroot-202205/board/forlinx/okt527/fs-overlay/<br/>最终打包路径<br/>out/t527/okt527/buildroot/buildroot/target</p></td>
+</tr>
+<tr class="row-even"><td><p>uboot环境变量设置文件</p></td>
+<td><p>device/config/chips/t527/configs/okt527/buildroot/env.cfg   如果需要修改或者添加默认的环境变量，可修改该文件。</p></td>
+</tr>
+</tbody>
+</table>
+<p>OK527-C平台，测试程序路径（SDK源码OKT527-linux-sdk路径下开始）如下：</p>
+<p>Ø    platform/framework/auto/cmd_demo     命令行测试程序源码目录</p>
+<p>Ø    platform/framework/auto/qt_demo       Qt测试程序源码目录</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p>源码路径</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>qt-demo</p></td>
+<td><p>4G</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/4g</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>ADC</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/adc</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>背光</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/backlight</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>SQL</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/books</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>浏览器</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/browser</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>camera测试</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/camera</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>录音</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/fltest_qt_audiorecorder</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>音频播放</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/fltest_qt_musicplayer</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>按键测试</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/keypad</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>桌面</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/matrix-browser</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>网络配置</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/network</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>ping</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/ping_test</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/qopenglwidget</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>rtc</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/rtc</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>Spi</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/spitest</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>串口测试</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/terminal</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>看门狗</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/watchdog</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>WiFi</p></td>
+<td><p>platform/forlinx/forlinx_qt_demo/wifi</p></td>
+</tr>
+<tr class="row-even"><td><p>cmd-demo</p></td>
+<td><p>视频硬解码</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/decoderTest</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>视频硬编码</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/encoder_test</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>清屏</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fbinit_test</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>GPADC</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fltest_adc</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>背光</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fltest_backlight</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>按键测试</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fltest_keytest</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>SPI测试</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fltest_spidev_test</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>UART</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fltest_uarttest</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>USB摄像头</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fltest_usbcam</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>看门狗</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/fltest_watchdog</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>ec20 4G</p></td>
+<td><p>platform/forlinx/forlinx_cmd_demo/quectelCM</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>wifi</p></td>
+<td><p>platform/forlinx/overlay_rootfs/usr/bin/fltest_wifi.sh</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>Wifi-ap</p></td>
+<td><p>platform/forlinx/overlay_rootfs/usr/bin/fltest_hostap.sh</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>gpio</p></td>
+<td><p>platform/forlinx/overlay_rootfs/usr/bin/fltest_gpio.sh</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>桌面</p></td>
+<td><p>platform/forlinx/overlay_rootfs/etc/init.d/S60Matrix_Browser</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id5">
+<h1><font style="color:black;">4.2</font><font style="color:black;">  </font><font style="color:black;">源码编译</font><a class="headerlink" href="#id5" title="Link to this heading"></a></h1>
+<section id="id6">
+<h2><font style="color:black;">4.2.1</font><font style="color:black;">  </font><font style="color:black;">全编译</font><a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p>全编译是指对源码的统一编译，包括内核源码、库文件、应用、文件系统打包等。</p>
+<p>首先选择配置：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/work/OKT527-linux-sdk                    //进入源码路径
+forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh config                    //执行配置命令
+</pre></div>
+</div>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh config
+========ACTION List: mk_config ;========
+options : 
+All available board:
+   0. okt527
+Choice [okt527]: 
+Setup BSP files
+.
+
+…
+
+</pre></div>
+</div>
+<p>运行编译脚本进行全编译：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh
+</pre></div>
+</div>
+<p><strong>注：若编译qt_webengine卡顿报错，请更换性能更强的主机运行虚拟机环境；</strong></p>
+<p><strong>或者</strong></p>
+<p><strong>删除 OKT527-linux-sdk1.3/out/t527/okt527/buildroot/buildroot/build/qt5webengine-5.15.8/ 目录</strong></p>
+<p><strong>并切换到OKT527-linux-sdk1.3/buildroot/buildroot-202205/package/qt5/qt5webengine目录</strong></p>
+<p><strong>修改qt5webengine.mk文件，将</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**QT5WEBENGINE_ENV += NINJAFLAGS=&quot;-j32&quot;**
+</pre></div>
+</div>
+<p><strong>修改为</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**QT5WEBENGINE_ENV += NINJAFLAGS=&quot;-j8&quot;**
+</pre></div>
+</div>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/0679cdb4a7ef4503bc58f08daf758a84.png" /></p>
+<p><strong>继续执行build.sh进行编译即可</strong></p>
+<p>源码编译完成后需要生成镜像，将编译生成的各种文件和配置文件进行打包。</p>
+<p>执行打包命令生成镜像文件：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh pack
+
+…
+
+Dragon execute image.cfg SUCCESS !
+----------image is at----------
+
+655M    ~/work/OKT527-linux-sdk/out/t527_linux_okt527_uart0.img
+
+pack finish
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h2><font style="color:black;">4.2.2</font><font style="color:black;">  </font><font style="color:black;">单独编译内核</font><font style="color:black;">设备树</font><a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p>单独编译内核只针对内核源码进行编译，影响驱动，适用于仅修改内核时进行编译。</p>
+<p>按照前文方法选择配置后：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/work/OKT527-linux-sdk
+forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh kernel                    //执行编译内核命令
+
+…
+
+Copy modules to target ...
+15985 blocks
+28830 blocks
+bootimg_build
+Copy boot.img to output directory ...
+
+sun55iw3p1 compile all(Kernel+modules+boot.img) successful
+
+…
+
+forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh pack
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h2><font style="color:black;">4.2.3</font><font style="color:black;">  </font><font style="color:black;">单独编译测试程序</font><a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<p>在单独修改测试程序时，可以只编译测试程序，减少编译量。</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/work/OKT527-linux-sdk
+forlinx@ubuntu:~/work/OKT527-linux-sdk$ source .buildconfig              //进行编译前的配置
+forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./platform/forlinx/build.sh
+</pre></div>
+</div>
+</section>
+<section id="uboot">
+<h2><font style="color:black;">4.2.4  单独编译uboot</font><a class="headerlink" href="#uboot" title="Link to this heading"></a></h2>
+<p>单独编译uboot使用如下命令。</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh brandy
+forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh pack
+</pre></div>
+</div>
+<p>注：uboot内容不开源，单独编译时会报错，忽略即可。</p>
+</section>
+<section id="id9">
+<h2><font style="color:black;">4.2.5  单独编译文件系统</font><a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<p>全编译过程中是不会编译文件系统的，需要单独对文件系统进行修改和编译。我们进入到文件系统目录下，进行编译和配置修改。</p>
+<p>编译指令如下，使用buildroot-202205下的编译脚本进行编译。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk/buildroot/buildroot-202205$<span class="w"> </span>./build.sh
+</pre></div>
+</div>
+<p>如果想修改配置，可按照如下方式修改。修改完成后使用上述指令编译。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk/buildroot/buildroot-202205$<span class="w"> </span>make<span class="w"> </span>OKT527-C-Linux_defconfig<span class="w"> </span><span class="nv">ARCH</span><span class="o">=</span>arm64<span class="w">					</span>//读取当前配置
+forlinx@ubuntu:~/work/OKT527-linux-sdk/buildroot/buildroot-202205$<span class="w"> </span>make<span class="w"> </span>menuconfig<span class="w">	</span>//进入图形配置界面修改配置
+forlinx@ubuntu:~/work/OKT527-linux-sdk/buildroot/buildroot-202205$<span class="w"> </span>cp<span class="w"> </span>../../out/t527/okt527/buildroot/buildroot/.config<span class="w"> </span>configs/OKT527-C-Linux_defconfig<span class="w">		</span>//保存修改的内容为默认配置
+</pre></div>
+</div>
+</section>
+<section id="okt527-linux-sdk">
+<h2><font style="color:black;">4.2.6  清除OKT527-linux-sdk</font><a class="headerlink" href="#okt527-linux-sdk" title="Link to this heading"></a></h2>
+<p>该操作清除所有中间文件。但不影响源文件，包括已经有改动的源文件。</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/work/OKT527-linux-sdk
+forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh clean                            //执行清除命令
+</pre></div>
+</div>
+</section>
+<section id="logo">
+<h2><font style="color:black;">4.2.7  更换启动 logo</font><a class="headerlink" href="#logo" title="Link to this heading"></a></h2>
+<p>替换device/config/chips/t527/boot-resource/boot-resource/bootlogo.bmp</p>
+<p>图片使用bmp格式，720x480分辨率，文件名为“bootlogo.bmp”。</p>
+<p>重新打包镜像</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh pack
+</pre></div>
+</div>
+</section>
+<section id="id10">
+<h2><font style="color:black;">4.2.8 单独更新固件</font><a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<p>编译镜像后可以单独更新uboot、设备树和内核，从out/pack_out/中拷贝uboot、设备树文件boot_package.fex和内核文件boot.fex。</p>
+<p>这里使用U盘测试，文件放在U盘中，挂载到/run/media/sda1/ 。也可以网口传输文件到开发板</p>
+<p>uboot和设备树更新</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>dd if=/run/media/sda1/boot_package.fex of=/dev/mmcblk0 seek=32800
+dd if=/run/media/sda1/boot_package.fex of=/dev/mmcblk0 seek=24576
+</pre></div>
+</div>
+<p>内核更新</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>dd if=/run/media/sda1/boot.fex of=/dev/mmcblk0p3 conv=fsync
+</pre></div>
+</div>
+<p>暂不支持文件系统整个更新，如有需要，可以U盘或者ssh传输所需的文件</p>
+</section>
+</section>
+<section id="qt">
+<h1><font style="color:black;">4.3</font><font style="color:black;">  </font><font style="color:black;">Qt</font><font style="color:black;">配置及使用</font><a class="headerlink" href="#qt" title="Link to this heading"></a></h1>
+<p>飞凌提供的OKT527-linux-sdk1.3.tar.bz2中提供了Qt5.15.8的完整开发依赖环境,我们的开发环境已经装好了Qt Creator5.12.9，请自行按照前文方法自行搭建Qt Creator5.15.8环境</p>
+<section id="id11">
+<h2><font style="color:black;">4.3.1</font><font style="color:black;">  </font><font style="color:black;">安装</font><font style="color:black;">OKT527-linux-sdk</font><a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
+<p>请先参考第三章进行SDK的安装和全编译。</p>
+</section>
+<section id="qt-creator">
+<h2><font style="color:black;">4.3.2</font><font style="color:black;">  </font><font style="color:black;">Qt Creator </font><font style="color:black;">环境</font><font style="color:black;">配置</font><a class="headerlink" href="#qt-creator" title="Link to this heading"></a></h2>
+<p>请先参考第三章进行安装和配置。</p>
+</section>
+<section id="id12">
+<h2><font style="color:black;">4.3.3</font><font style="color:black;">  </font><font style="color:black;">Qt Creator </font><font style="color:black;">开发示例</font><a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<p>打开Qt Creator软件。</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/Qt5.12.9/Tools/QtCreator/bin/
+forlinx@ubuntu:~/qtcreator-4.7.0/bin$ sudo ./qtcreator
+</pre></div>
+</div>
+<p>启动Qt Creator 程序，进入到Qt Creator界面，点击“File”-&gt; “New File or Project”新建一个工程，选择“Application (Qt)”-&gt;“Qt Widgets Application”，然后点击右下角的“Choose”：</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/48648f4d29e448b28bec96a15102c9ca.png" /></p>
+<p>在如下界面中为新建的工程修改名字为“helloworld”，选择安装路径选择/home/forlinx，然后点击“Next”：</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/ef232c405d0d40bf8e2e4d37f996f4d0.png" /></p>
+<p>选择qmake,点击Next继续。</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/54b37456de6248c7b7ccb2df962488b2.png" /></p>
+<p>在如下界面中，可以按需求修改Class name 和Base class，这里使用默认，然后点击“Next”：</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/f70676a465e748359c32b977524dc66d.png" /></p>
+<p>可以选择翻译文件，如果有对多语言支持的需求，可以选择语言。这里使用默认 点击Next</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/0542302ce7a74851884b53bd0b717a00.png" /></p>
+<p>在如下界面中，选择之前已添加过的“OK527”作为当前工程的kit，然后点击“Next”：</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/6b1d4af75ea54eaa95c69402a26bca74.png" /></p>
+<p>在如下界面中，点击“Finish”，完成工程的新建：</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/3bf585521a8c4ee2a872fc9ea2d124ae.png" /></p>
+<p>新建工程创建完成，即可显示如下窗口：</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/0c81ca78c48944cdaff2714c433cbc67.png" /></p>
+<p>当程序编写完成后，点击左下角的锤子图标，即可进行交叉编译，将编译好的可执行程序拷贝到开发板，即可进行应用的测试。</p>
+</section>
+<section id="id13">
+<h2><font style="color:black;">4.3.4 </font><font style="color:black;"> </font><font style="color:black;">Qt Creator </font><font style="color:black;">常见问题及解决方法</font><a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<p>Ø  从命令行或者快捷方式打开 QtCreator 集成开发环境，启动之后看到类似下面的界面</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/9e26649502504eb78f3bdfb8feadda73.png" /></p>
+<p>左边的设计按钮、项目按钮和构建调试区只有在打开或新建了项目之后才会变得可用。</p>
+<p>QtCreator 下方的是定位工具和输出面板，在编写项目代码和运行、调试程序时会使用到。输出面板包括七个，分别是问题（项目构建时的问题）、Search Results（搜索项目文件内容）、应用程序输出（运行和调试信息显示）、编译输出（编译、链接命令及其输出信息）、QML/JS Console（QML 命令窗口）、概要信息（项目信息摘要）、Version Control（版本控制系统）。</p>
+<ol class="arabic simple">
+<li><p>点击左下角锤子的按键，发现没有编译信息，解决方法如下：</p></li>
+</ol>
+<p>我们默认输出面板选择的是1问题（Issues)，如果您需要查看编译信息，您需要在输出面板位置选择4编译输出（compile output) 。</p>
+<p>Ø   构建调试</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/dd0cec48825b49c9a6a3fe7388b5959b.png" /></p>
+<p>2.qtcreator调试运行按钮是灰色解决方法如下：</p>
+<p>出现这个问题，是因为kits套件中配置C,C++和Qt version时出现了问题，可能是路径有问题，可能是您没有进行过全编译，修改编辑器语言即可。</p>
+<p><img alt="Image" src="LS104X/LS104XA_Ubuntu18_04/Interfaces/images/04_Linux/3fc9d0760e874113950ab8ae7c7b52d3.png" /></p>
+<p>检查方框中的交叉编译器路径配置是否正确。</p>
+<p>我们配置的路径具体配置方法参考<a class="reference external" href="https://forlinx-book.yuque.com/pxh4d1/xrit1g/4065557d050f94a9c309bdd354805839#KyF8n">3.4  Qt编译环境的配置</a>章节。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
