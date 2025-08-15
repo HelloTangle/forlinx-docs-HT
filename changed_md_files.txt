@@ -1,1 +1,1 @@
-platform/nxp/ls-development-manual/OK1046A_Ubuntu18_04_Ethernet.md
+platform/nxp/ls-development-manual/04_Linux.md
