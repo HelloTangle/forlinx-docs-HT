@@ -77,11 +77,9 @@ def process_md_file(md_path: Path):
         img_name = get_clean_filename(img_url)
         save_path = target_dir / img_name
 
-        # 网络图片
         if img_url.startswith(('http://', 'https://')):
             success = download_image(img_url, save_path)
         else:
-            # 本地图片
             abs_path = (md_path.parent / img_url).resolve() if not os.path.isabs(img_url) else Path(img_url)
             if abs_path.exists():
                 success = copy_local_image(abs_path, save_path)
@@ -100,23 +98,30 @@ def process_md_file(md_path: Path):
     print("✅ 已保存并更新图片路径")
 
 def main():
-    # 如果传了参数，则按参数文件列表处理
     md_files = []
+
     if len(sys.argv) > 1:
+        # workflow 传过来的参数直接是文件路径列表
         for arg in sys.argv[1:]:
-            for line in Path(arg).read_text(encoding='utf-8').splitlines():
-                path = Path(line.strip())
-                if path.exists() and path.suffix == '.md':
-                    md_files.append(path)
-                else:
-                    print(f"⚠️ 参数不是有效 Markdown 文件: {line}")
+            path = Path(arg.strip())
+            if path.exists() and path.suffix == '.md':
+                md_files.append(path)
+            else:
+                print(f"⚠️ 参数不是有效 Markdown 文件: {arg}")
     else:
         # 没传参数则扫描整个仓库
         md_files = list(ROOT_DIR.rglob('*.md'))
 
+    if not md_files:
+        print("🔹 未找到可处理的 Markdown 文件")
+        return
+
     print(f"🔎 共找到 {len(md_files)} 个 Markdown 文件")
     for md in md_files:
-        process_md_file(md)
+        try:
+            process_md_file(md)
+        except Exception as e:
+            print(f"❌ 处理 {md} 时发生错误: {e}")
 
 if __name__ == "__main__":
     main()
