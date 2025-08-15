@@ -34,6 +34,8 @@ html_logo = '_static/forlinx-logo.png'
 html_favicon = '_static/forlinx.png'
 html_theme_options = {
     'logo_only': True,
+    'collapse_navigation': False,  # 不自动折叠
+    'navigation_depth': 2,         # 左侧目录展开到第 2 级
 }
 
 html_css_files = [
