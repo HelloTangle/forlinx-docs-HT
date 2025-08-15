@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'platform/**/**/*.md'  # 只触发 markdown 文件变动
+      - 'platform/**/**/*.md'  # 只触发 Markdown 文件变动
 
 jobs:
   process-images:
@@ -29,32 +29,32 @@ jobs:
         run: pip install requests
 
       # 4️⃣ 获取本次 push 的 Markdown 文件
-      - name: Get list of changed markdown files
-        id: changed_files
+      - name: Detect changed Markdown files
+        id: detect_md
         run: |
           echo "::group::Detect changed .md files"
           git fetch origin main
-          # 获取本次 push 里变动的 md 文件
           changed=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' || true)
           echo "Changed md files:"
           echo "$changed"
           echo "::endgroup::"
 
-          # 写入环境变量，双引号包裹路径，避免非法字符
-          echo "CHANGED_MD_FILES=\"$changed\"" >> $GITHUB_ENV
+          # 将多行路径写入环境变量，避免 Invalid format
+          echo "CHANGED_MD_FILES<<EOF" >> $GITHUB_ENV
+          echo "$changed" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       # 5️⃣ 处理每个 Markdown 文件
-      - name: Process changed markdown files
+      - name: Process changed Markdown files
         if: env.CHANGED_MD_FILES != ''
         run: |
-          echo "Processing changed markdown files..."
+          echo "Processing changed Markdown files..."
           for f in $CHANGED_MD_FILES; do
-            file=$(echo $f | tr -d '"')  # 去掉双引号
-            if [ -f "$file" ]; then
-              echo "📄 Processing $file"
-              python ./scripts/process_md_images.py "$file"
+            if [ -f "$f" ]; then
+              echo "📄 Processing $f"
+              python ./scripts/process_md_images.py "$f"
             else
-              echo "⚠️ File not found: $file"
+              echo "⚠️ File not found: $f"
             fi
           done
 
@@ -68,3 +68,5 @@ jobs:
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        
