@@ -7,13 +7,14 @@ from pathlib import Path
 from urllib.parse import urlparse
 import time
 
+# 根目录
 ROOT_DIR = Path('.')
 IMAGES_DIR_NAME = 'images'
 
 # 改进正则：支持 <...>、title、空格路径
 IMG_REGEX = re.compile(r'!\[.*?\]\(\s*<?(?P<url>[^)\s]+(?:\s[^)]*)?)>?\s*\)')
 
-def get_clean_filename(url: str):
+def get_clean_filename(url: str) -> str:
     """提取安全文件名"""
     path = urlparse(url).path if url.startswith(('http://', 'https://')) else url
     raw_name = os.path.basename(path)
@@ -22,8 +23,8 @@ def get_clean_filename(url: str):
     safe_name = re.sub(r'[^\w]', '_', name_part)[-64:]
     return safe_name + ext
 
-def download_image(url: str, save_path: Path):
-    """下载网络图片，带重试"""
+def download_image(url: str, save_path: Path) -> bool:
+    """下载网络图片，带重试和 User-Agent"""
     if save_path.exists():
         print(f"✅ 已存在: {save_path}")
         return True
@@ -31,17 +32,16 @@ def download_image(url: str, save_path: Path):
     for attempt in range(3):
         try:
             print(f"⬇️ 下载 {url} -> {save_path}")
-            r = requests.get(url, timeout=30)
+            r = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
             r.raise_for_status()
-            with open(save_path, 'wb') as f:
-                f.write(r.content)
+            save_path.write_bytes(r.content)
             return True
         except Exception as e:
             print(f"⚠️ 下载失败 ({attempt+1}/3) {url}: {e}")
             time.sleep(5)
     return False
 
-def copy_local_image(src_path: Path, save_path: Path):
+def copy_local_image(src_path: Path, save_path: Path) -> bool:
     """复制本地图片"""
     try:
         if save_path.exists():
@@ -55,6 +55,7 @@ def copy_local_image(src_path: Path, save_path: Path):
         return False
 
 def process_md_file(md_path: Path):
+    """处理单个 Markdown 文件"""
     print(f"\n📄 处理文件: {md_path}")
     if not md_path.exists():
         print(f"⚠️ 文件不存在: {md_path}")
@@ -67,8 +68,9 @@ def process_md_file(md_path: Path):
         return
 
     md_name = md_path.stem
-    target_dir = md_path.parent / IMAGES_DIR_NAME / md_name
+    target_dir = (md_path.parent / IMAGES_DIR_NAME / md_name).resolve()
     target_dir.mkdir(parents=True, exist_ok=True)
+    print(f"📂 创建目录: {target_dir}")
 
     def repl(match):
         img_url = match.group('url').strip()
@@ -88,7 +90,6 @@ def process_md_file(md_path: Path):
                 success = False
 
         if success:
-            # 替换为仓库相对路径
             rel_path = f"./{IMAGES_DIR_NAME}/{md_name}/{img_name}"
             return f"![Image]({rel_path})"
         else:
@@ -100,14 +101,15 @@ def process_md_file(md_path: Path):
 
 def main():
     # 如果传了参数，则按参数文件列表处理
+    md_files = []
     if len(sys.argv) > 1:
-        md_files = []
         for arg in sys.argv[1:]:
-            path = Path(arg.strip())
-            if path.exists() and path.suffix == '.md':
-                md_files.append(path)
-            else:
-                print(f"⚠️ 参数不是有效 Markdown 文件: {arg}")
+            for line in Path(arg).read_text(encoding='utf-8').splitlines():
+                path = Path(line.strip())
+                if path.exists() and path.suffix == '.md':
+                    md_files.append(path)
+                else:
+                    print(f"⚠️ 参数不是有效 Markdown 文件: {line}")
     else:
         # 没传参数则扫描整个仓库
         md_files = list(ROOT_DIR.rglob('*.md'))

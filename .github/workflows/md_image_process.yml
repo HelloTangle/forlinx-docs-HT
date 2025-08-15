@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'platform/**/**/*.md'  # 只触发 markdown 文件变动
+      paths:
+        - 'platform/**/**/*.md'  # 只触发 markdown 文件变动
 
 jobs:
   process-images:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 确保能获取完整历史
+          fetch-depth: 0  # 保证能获取完整历史
 
       # 2️⃣ 设置 Python
       - name: Setup Python
@@ -28,32 +28,31 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      # 4️⃣ 获取本次 push 的 Markdown 文件
+      # 4️⃣ 获取本次 push 的 Markdown 文件，写入临时文件
       - name: Get list of changed markdown files
-        id: changed_files
         run: |
           echo "::group::Detect changed .md files"
           git fetch origin main
-          changed=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' || true)
-          echo "Changed md files:"
-          echo "$changed"
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' > changed_md_files.txt || true
+          echo "Changed Markdown files:"
+          cat changed_md_files.txt
           echo "::endgroup::"
-          # 使用新的写法输出变量
-          echo "files=$changed" >> $GITHUB_OUTPUT
 
       # 5️⃣ 处理每个 Markdown 文件
       - name: Process changed markdown files
-        if: steps.changed_files.outputs.files != ''
         run: |
-          echo "Processing changed markdown files..."
-          for f in ${{ steps.changed_files.outputs.files }}; do
-            if [ -f "$f" ]; then
-              echo "📄 Processing $f"
-              python ./scripts/process_md_images.py "$f"
-            else
-              echo "⚠️ File not found: $f"
-            fi
-          done
+          if [ -f changed_md_files.txt ]; then
+            while read f; do
+              if [ -f "$f" ]; then
+                echo "📄 Processing $f"
+                python ./scripts/process_md_images.py "$f"
+              else
+                echo "⚠️ File not found: $f"
+              fi
+            done < changed_md_files.txt
+          else
+            echo "⚠️ No changed Markdown files found"
+          fi
 
       # 6️⃣ 提交并推送更新
       - name: Commit and push changes
