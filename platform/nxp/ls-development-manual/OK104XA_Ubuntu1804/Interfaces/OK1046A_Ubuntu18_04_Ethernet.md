@@ -1,64 +1,78 @@
-# <font style="color:rgb(38, 38, 38);">免责声明</font>
-<font style="color:rgb(38, 38, 38);">本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。 </font>
-
-<font style="color:rgb(38, 38, 38);">保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。</font>
-
-# **适用范围**
-本文主要适用于飞凌LS1046平台Ubuntu18.04系统，其他平台也可以参考，但是不同平台之间会存在差异，需要客户自行修改以适应自己的使用。
-
-# **<font style="color:rgb(0,0,0);">更新记录</font>**
-| **日期** | **手册版本** | **更新内容** |
-| --- | --- | --- |
-| 20220511 | V1.0 | 初版 |
 
 
-# 1.修改Serdes配置方案
-客户在使用LS1046实际开发过程中需要用到不同的SerDes配置方案，本文主要讲述软件上的修改。
+# Interfaces
 
-由于LS104x系列开发板引入了【复位控制字】Reset configuration word (RCW)的配置方法，通过这种配置方法客户可以方便的进行引脚的功能定义，也就是实现引脚的PinMUX功能。
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
-LS104x平台所特有的SerDes Module也是要通过RCW来进行配置，从而将不同的SerDes通道选择为不同的功能。以LS1046A为例，可配置的两路SerDes有：
+## Copyright
+
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
+
+## **Application Scope**
+
+This software manual is designed for the LS1046 platform running Ubuntu 18.04. While other platforms may also reference this manual, there could be differences that require adjustments for the specific use.
+
+# **Revision History**
+
+| **Date** | **Version** | **Revision H** |
+|----------|----------|----------|
+| 11/05/2022 | V1.0| Initial Version|
+
+## 1\. SerDes Configuration Scheme Modification
+
+During the development process using LS1046, it is necessary to utilize various SerDes configuration schemes. This manual primarily discusses the software modifications.
+
+Since the LS104x series development boards adopt the configuration method of the 【Reset configuration word】 (RCW), this method enables convenient definition of pin functions, i.e., realizes the PinMUX function of pins.
+
+The SerDes Module unique to the LS104x platform also needs to be configured via RCW to assign different functions to different SerDes channels. 
+
+Taking the LS1046A as an example, the two configurable SerDes are:
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1721975449529-ed2ec306-a89e-414f-885b-54f6e3cb0f00.png)
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1721975410147-9f322c8f-c0b7-4e01-91e5-933c00d44fbd.png)
 
-但是这个被称为RCW的配置方法还有很多客户还不是很了解，所以本文以一个LS1046A的实际需求为例，来详细说明一下修改的过程以供客户后续定制参考。
+However, the configuration method called RCW is not well - known. So, this manual takes an actual requirement of the LS1046A as an example to elaborate on the modification process for subsequent customization reference.
 
-飞凌的OK1046A-C开发板提供了两种SerDes配置方案，分别为：1040_5559和1133_5559，与上表功能对应可以看到这两种SerDes的功能分别为：
+ Forlinx offers two SerDes configuration schemes, namely 1040\_5559 and 1133\_5559. Corresponding to the functions in the above table, the functions of these two SerDes are respectively:
 
-1040_5559：
+1040\_5559：
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1721975533908-74841a28-9af7-46cd-b37b-dccc04a84f5d.png)
 
-<font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">可以看到，有一个</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">XFI for MAC 9</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">，一个</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">QSGMII for MAC6</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">，</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">MAC5</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">，</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">MAC10</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">，</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">MAC1</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">，另外有三个</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">PCIe x1</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">接口。</font>
+You can see that there is one XFI for MAC 9, one QSGMII for MAC6, MAC5, MAC10, and MAC1, and in addition, there are three PCIe x1 interfaces.
 
-1133_5559：
+1133\_5559：
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1721975596632-96a31e09-0af0-44d5-9f17-314d686f4c7c.png)
 
-可以看到，有一个XFI for MAC 9，一个XFI for MAC10，一个SGMII for MAC5，一个SGMII for MAC6，另外有三个PCIe x1接口。
+You can see that there is one XFI for MAC 9, one XFI for MAC10, one SGMII for MAC5, one SGMII for MAC6, and in addition, there are three PCIe x1 interfaces.
 
-这时，如果我们有一个项目需求，需要5个网口：其中一个是核心板自带的RGMII网口，另外要SerDes引出的四个SGMII网口，这时我们发现上面飞凌提供的两种SerDes配置都不满足我们的要求，然后经过查阅SerDes配置表，发现1333_5a59可以满足我们的要求：
+At this time, if a project requires 5 network ports: one is the RGMII network port built - in the SoM, and the other four are SGMII network ports led out by SerDes. It is found that the two SerDes configurations provided by Forlinx do not meet the requirements. Then, after consulting the SerDes configuration table, it is found that 1333\_5a59 can meet the requirements:
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1721975646431-b9af15a9-e581-4ab5-972f-92414ae3c442.png)
 
-<font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">那么接下来我们就以此为例进行配置的修改</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">。</font>
+<font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">Then, the configuration modification will be carried out with this as an example.</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">。</font>
 
-<font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">我们先整理一下我们的项目中</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">PHY</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">与</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">MAC</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">的对应关系：</font>
+First, sort out the corresponding relationship between PHY and MAC in the project:
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1721975678982-0734fd2f-9f91-420a-b1b1-29faa41b2a61.png)
 
-首先我们需要知道，飞凌的OK1046A-C的两种RCW的文件在源码中的位置为：
+First of all, it is necessary to know that the locations of the two RCW files of OK1046A - C in the source code are:
 
-flexbuild/packages/firmware/rcw/ls1046ardb/FORLINX/rcw_1800_qspiboot_1040_5559.rcw
+flexbuild/packages/firmware/rcw/ls1046ardb/FORLINX/rcw\_1800\_qspiboot\_1040\_5559.rcw
 
-flexbuild/packages/firmware/rcw/ls1046ardb/FORLINX/rcw_1800_qspiboot_1133_5559.rcw
+flexbuild/packages/firmware/rcw/ls1046ardb/FORLINX/rcw\_1800\_qspiboot\_1133\_5559.rcw
 
-我们为了开发便利，在rcw_1800_qspiboot_1133_5559.rcw的基础上进行修改。
+For the convenience of development, modifications are made based on rcw\_1800\_qspiboot\_1133\_5559.rcw.
 
-## **<font style="color:rgb(0,0,0);">1.</font>****<font style="color:rgb(0,0,0);">1 </font>****<font style="color:rgb(0,0,0);">修改</font>****<font style="color:rgb(0,0,0);">RCW</font>****<font style="color:rgb(0,0,0);">配置</font>**
-首先修改RCW配置为1333_5a59，分别修改SRDS_PRTCL_S1和SRDS_PRTCL_S2的值，此处要将16进制转化为10进制换算，如0x1333的十进制为4915，0x5a59的十进制为23129。
+### **1.1 RCW Configuration Modification**
+
+First, modify the RCW configuration to 1333\_5a59, and respectively modify the values of SRDS\_PRTCL\_S1 and SRDS\_PRTCL\_S2. Here, convert hexadecimal to decimal. For example, the decimal value of 0x1333 is 4915, and the decimal value of 0x5a59 is 23129.
 
 ```plain
 ---a/flexbuild/packages/firmware/rcw/ls1046ardb/FORLINX/rcw_1800_qspiboot_1133_5559.rcw
@@ -78,8 +92,11 @@ SRDS_DIV_PEX_S1=1
 SPI_BASE=2
 ```
 
-## **<font style="color:rgb(0,0,0);">1.2</font>****<font style="color:rgb(0,0,0);"> </font>****<font style="color:rgb(0,0,0);">修改</font>****<font style="color:rgb(0,0,0);">uboot</font>****<font style="color:rgb(0,0,0);">配置</font>**
-先在头文件中添加我们所需的PHY地址的定义，该文件在源码中的位置为：
+### **1.2 Uboot Configuration Modification**
+
+First, add the definition of the required PHY address in the header file. 
+
+The location of this file in the source code is:
 
 flexbuild/packages/firmware/u-boot/include/configs/ls1046ardb.h
 
@@ -100,11 +117,11 @@ flexbuild/packages/firmware/u-boot/include/configs/ls1046ardb.h
 #define QSGMII_PORT2_PHY_ADDR          9
 ```
 
-Uboot的网络初始化代码在源码中的位置为：
+The location of the network initialization code of Uboot in the source code is:
 
 flexbuild/packages/firmware/u-boot/board/freescale/ls1046ardb/eth.c
 
-此时我们要修改网络部分的配置
+At this time, the configuration of the network part needs to be modified.
 
 ```plain
 --- a/board/freescale/ls1046ardb/eth.c
@@ -115,7 +132,7 @@ fm_memac_mdio_init(bis, &dtsec_mdio_info);
 
 
 +       /*
-+       //注释掉对原底板上万兆网的MDIO总线的定义
++       //Comment out the definition of the MDIO bus of the 10 Gigabit network on the original carrier board
         tgec_mdio_info.regs =
                 (struct memac_mdio_controller *)CONFIG_SYS_FM1_TGEC_MDIO_ADDR;
         tgec_mdio_info.name = DEFAULT_FM_TGEC_MDIO_NAME;
@@ -124,40 +141,40 @@ fm_memac_mdio_init(bis, &dtsec_mdio_info);
 
 /* Register the 10G MDIO bus */
 -       fm_memac_mdio_init(bis, &tgec_mdio_info);
-+       //注释掉对原底板上万兆网的MDIO总线的初始化
++       //Comment out the initialization of the MDIO bus for the original 10-gigabit network on the original carrier board
 +       /*fm_memac_mdio_init(bis, &tgec_mdio_info);*/
 
 
 /* Set the two on-board RGMII PHY address */
         fm_info_set_phy_address(FM1_DTSEC3, RGMII_PHY1_ADDR);
 -       fm_info_set_phy_address(FM1_DTSEC4, RGMII_PHY2_ADDR);
-+       //注释掉对原底板上MAC4的RGMII网口的MAC与PHY的绑定
++       //Comment out the binding of MAC and PHY for the RGMII network port of MAC4 on the original carrier board
 +       //fm_info_set_phy_address(FM1_DTSEC4, RGMII_PHY2_ADDR);
 
 
 /* Set the on-board AQ PHY address */
 -       fm_info_set_phy_address(FM1_10GEC1, FM1_10GEC1_PHY_ADDR);
-+       //注释掉对原底板上万兆网口的MAC与PHY的绑定
++       //Comment out the binding of MAC and PHY for the 10-gigabit network port on the carrier board
 +       //fm_info_set_phy_address(FM1_10GEC1, FM1_10GEC1_PHY_ADDR);
 
 
         switch (srds_s1) {
-+       //修改SerDes的SGMII网络相关配置
++       //Modify the SGMII network-related configuration of SerDes
 -       case 0x1133:
 +       case 0x1333:
         /* Set the two on-board SGMII PHY address */
         //fm_info_set_phy_address(FM1_DTSEC5, SGMII_PHY1_ADDR);
-        //关闭MAC5的使能，绑定MAC6与其关联的PHY地址
+        //Disable MAC5 and bind MAC6 to its associated PHY address
 -               fm_disable_port(FM1_DTSEC5);
 -               fm_info_set_phy_address(FM1_DTSEC6, SGMII_PHY2_ADDR);
 -               run_command("setenv serdes1 1133", 0);
 +               fm_disable_port(FM1_DTSEC4);
-+               //绑定MAC10，MAC5，MAC6，MAC2与其关联的PHY地址
++               //Bind MAC10, MAC5, MAC6, and MAC2 to their respective associated PHY addresses
 +               fm_info_set_phy_address(FM1_DTSEC10, SGMII_PHY1_ADDR);
 +               fm_info_set_phy_address(FM1_DTSEC5, SGMII_PHY2_ADDR);
 +               fm_info_set_phy_address(FM1_DTSEC6, SGMII_PHY3_ADDR);
 +               fm_info_set_phy_address(FM1_DTSEC2, SGMII_PHY4_ADDR);
-+               //设置环境变量serdes1为1333
++               //Set the environment variable serdes1 to 1333.
 +               run_command("setenv serdes1 1333", 0);
                 break;
         case 0x1040:
@@ -166,7 +183,7 @@ fm_memac_mdio_init(bis, &dtsec_mdio_info);
                 fm_info_set_mdio(i, dev);
         /* XFI on lane A, MAC 9 */
 +       /*
-+       //注释掉对原底板上万兆网的MDIO总线上对挂载的MAC的注册
++       //Comment out the registration of the mounted MAC on the MDIO bus for the 10-gigabit network on the original carrier board
         dev = miiphy_get_dev_by_name(DEFAULT_FM_TGEC_MDIO_NAME);
         fm_info_set_mdio(FM1_10GEC1, dev);
 -
@@ -175,18 +192,19 @@ fm_memac_mdio_init(bis, &dtsec_mdio_info);
 #endif
 ```
 
-修改完此部分后则Uboot部分对网络配置的代码修改完成。
+After modifying this part, the code modification of the network configuration in the Uboot part is completed.
 
-## **<font style="color:rgb(0,0,0);">1.3</font>****<font style="color:rgb(0,0,0);"> </font>****<font style="color:rgb(0,0,0);">修改设备树</font>**
-**注意：客户在参照修改时应以实际的设备树路径为准。**
+### **1.3 Device Tree Modification**
 
-首先我们需要知道，飞凌的OK1046A-C的两种RCW配置所对应的设备树文件在源码中的位置为：
+**Note: Please refer to the actual device tree path when making modifications.**
+
+First, it is necessary to know the locations of the device tree files corresponding to the two RCW configurations of OK1046A - C in the source code.
 
 flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-sdk-1040-5559.dts
 
 flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-sdk-1133-5559.dts
 
-设备树部分我们也可以基于fsl-ls1046a-rdb-sdk-1133-5559.dts进行修改，首先需要修改设备树的Makefile，增加对我们需要的DTS文件的编译。
+The device tree can also be modified based on fsl-ls1046a-rdb-sdk-1133-5559.dts. First, the Makefile of the device tree needs to be modified to add the compilation of the required DTS file.
 
 ```plain
 --- a/arch/arm64/boot/dts/freescale/Makefile
@@ -201,14 +219,14 @@ dtb-$(CONFIG_ARCH_LAYERSCAPE) += fsl-ls1046a-rdb-usdpaa-1133-5559.dtb
 dtb-$(CONFIG_ARCH_LAYERSCAPE) += fsl-ls1046a-rdb-usdpaa-1040-5559.dtb
 ```
 
-其次我们将dts文件进行复制和重命名，执行命令
+Secondly, copy and rename the dts file, and execute the command.
 
 ```plain
 cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-sdk-1133-5559.dts 
    flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-sdk-1333-5a59.dts
 ```
 
-接下来我们修改fsl-ls1046a-rdb-sdk-1333-5a59.dts文件
+Next, modify the fsl-ls1046a-rdb-sdk-1333-5a59.dts file.
 
 ```plain
 --- arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-sdk-1333-5a59.dts
@@ -216,7 +234,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
 @@ -54,8 +54,9 @@
         };
         
-+       /* 启用MAC2，并将其注册为接口是sgmii，同时PHY地址为sgmii_phy4，即4 */
++       /* Enable MAC2, register it with the interface as SGMII, and set the PHY address to sgmii_phy4 (i.e., 4)
         ethernet@e2000 {
 -               status = "disabled";
 -       };
@@ -231,7 +249,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
         };
 
         
-+       /* 禁用MAC4 */
++       /* Disable MAC4 */
         ethernet@e6000 {
 -               phy-handle = <&rgmii_phy2>;
 -               phy-connection-type = "rgmii-txid";
@@ -239,7 +257,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
         };
 
         
-+       /* 启用MAC5，并将其注册为接口是sgmii，同时PHY地址为sgmii_phy2，即5 */
++       /* Enable MAC5, register it with the SGMII interface, and set the PHY address to sgmii_phy2 (i.e., 5)
          ethernet@e8000 {
 -               status = "disabled";
 -       };
@@ -248,7 +266,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
 +        };
 
 
-+       /* 启用MAC6，并将其注册为接口是sgmii，同时PHY地址为sgmii_phy3，即3 */
++       /* Enable MAC6, register it with the SGMII interface, and set the PHY address to sgmii_phy3 (i.e., 3)
         ethernet@ea000 {
 -               phy-handle = <&sgmii_phy2>;
 +               phy-handle = <&sgmii_phy3>;
@@ -256,7 +274,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
         };
 
         
-+       /* 禁用MAC9，即禁用底板万兆网接口 */
++       /* Disable MAC9, i.e., disable the 10-gigabit network interface on the carrier board */
 -       ethernet@f0000 { /* 10GEC1 */
 -               phy-handle = <&aqr105_phy>;
 -               phy-connection-type = "xgmii";
@@ -265,7 +283,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
         };
 
         
-+       /* 启用MAC10，并将其注册为接口是sgmii，同时PHY地址为sgmii_phy1，即2 */
++       /* Enable MAC10, register it with the SGMII interface, and set the PHY address to sgmii_phy1 (i.e., 2) */
 -       ethernet@f2000 { /* 10GEC2 */
 -               fixed-link = <0 1 1000 0 0>;
 -               phy-connection-type = "xgmii";
@@ -281,7 +299,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
         };
 
         
-+               /* 修改PHY地址 */
++               /* Modify PHY address */
 -               rgmii_phy2: ethernet-phy@2 {
 -                       reg = <0x2>;
 -               };
@@ -304,7 +322,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
          };
 
          
-+       /* 禁用万兆网的MDIO */
++       /* Disable MDIO for 10 Gigabit Network */
 -       mdio@fd000 {
 -               aqr105_phy: ethernet-phy@0 {
 -                       compatible = "ethernet-phy-ieee802.3-c45";
@@ -318,7 +336,7 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
         ethernet@0 {
                 status = "disabled";
         };
-+       /*修改dpaa的配置，禁用掉MAC1，MAC4，MAC9，启用MAC2，MAC3，MAC5，MAC6，MAC10*/
++       /*Modify dpaa configuration, disable MAC1, MAC4 and MAC9, and enable MAC2，MAC3，MAC5，MAC6，MAC10*/
 -       ethernet@1 {
 +       ethernet@3 {
                 status = "disabled";
@@ -335,9 +353,9 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
                 fsl,fman-mac = <&enet7>;
 ```
 
-至此，设备树部分代码修改完成。
+At this point, the code modification of the device tree part is completed.
 
-修改完成的设备树完整源码如下：
+The complete source code of the modified device tree is as follows:
 
 ```plain
 #include "fsl-ls1046a-rdb.dts"
@@ -447,16 +465,17 @@ cp flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ls1046a-rdb-
 };
 ```
 
-## **<font style="color:rgb(0,0,0);">1.4</font>****<font style="color:rgb(0,0,0);"> </font>****<font style="color:rgb(0,0,0);">修改</font>****<font style="color:rgb(0,0,0);">flex-build</font>****<font style="color:rgb(0,0,0);">编译工具</font>**
-由于我们增加了设备树文件并且修改了RCW部分关于SerDes的配置，所以flex-build编译工具在制作烧写镜像的时候会有一些问题，我们需要进行相应的修改。
+### **1.4 Flex - build Compilation Tool Modification**
 
-这一部分主要是uboot会通过读环境变量中的serdes1参数来选择加载对应的dts设备树文件
+Since a device tree file is added and the SerDes configuration in the RCW part is modified, there will be some problems when the flex - build compilation tool creates the burning image, and corresponding modifications are required.
 
-涉及到的文件在源码中的位置为：
+This part mainly involves Uboot selecting and loading the corresponding dts device tree file by reading the serdes1 parameter in the environment variable.
+
+The location of the relevant file in the source code is:
 
 flexbuild/configs/board/ls1046ardb/manifest
 
-修改内容为：
+The modification content is:
 
 ```plain
 --- a/flexbuild/configs/board/ls1046ardb/manifest
@@ -467,13 +486,13 @@ securevalidate_dec="setenv secureboot_validate 'size \$devtype \$devnum:2 /Image
 +distroboot='part uuid $devtype $devnum:3 partuuid3; setenv bootargs console=ttyS0,115200 earlycon=uart8250,mmio,0x21c0500 root=PARTUUID=$partuuid3 rw rootwait $othbootargs; if load $devtype $devnum:2 $load_addr /boot/uEnv.txt; then echo Importing environment from uEnv.txt ...; env import -t $load_addr $filesize; fi; load $devtype $devnum:2 $kernel_addr_r /boot/Image;load $devtype $devnum:2 $fdt_addr_r /boot/fsl-ls1046a-rdb-sdk-$serdes1-5a59.dtb; env exists secureboot && echo validating secureboot && run secureboot_validate;booti $kernel_addr_r - $fdt_addr_r'
 ```
 
-上面的代码修改的内容就在于fsl-ls1046a-rdb-sdk-$serdes1-5559.dtb变为了fsl-ls1046a-rdb-sdk-$serdes1-5a59.dtb，客户可以仔细观察。
+Modify fsl-ls1046a-rdb-sdk-$serdes1-5559.dtb to fsl-ls1046a-rdb-sdk-$serdes1-5a59.dtb.
 
-其次是修改flex-builder源码，将新增加的dtb文件拷贝到生成的镜像路径中
+Secondly, modify the flex - builder source code to copy the newly added dtb file to the generated image path.
 
-涉及到的文件在源码中的位置为：flexbuild/tools/flex-builder
+The location of the relevant file in the source code is: flexbuild/tools/flex - builder
 
-修改内容为：
+The modification content is:
 
 ```plain
 --- a/flexbuild/tools/flex-builder
@@ -488,7 +507,6 @@ cp $FBDIR/build/firmware/u-boot/ls1046ardb/ls1046ardb_boot.scr $FBDIR/build/imag
 cp $FBDIR/build/firmware/u-boot/ls1046ardb/ls1046ardb_update.scr $FBDIR/build/images
 ```
 
-至此，网络部分所有的代码修改完成
+At this point, all the code modifications of the network part are completed.
 
-然后就可以参照软件手册编译章节编译系统，然后使用U盘更新系统即可使用
-
+Then, the system can be compiled by referring to the compilation section of the software manual, and then the system can be updated using a USB flash drive for use.
