@@ -1,62 +1,62 @@
-name: Build Sphinx Docs with Sitemap Index
+name: Build and Deploy Docs  # 工作流名称
 
 on:
   push:
     branches:
-      - main
-    paths:
-      - "platform/**"
+      - main                 # 触发条件：当 main 分支有代码 push 时触发构建和部署
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-docs:
+    runs-on: ubuntu-latest   # 使用最新的 Ubuntu 虚拟环境运行任务
 
     steps:
-      # 1️⃣ 拉取代码
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+      # 拉取仓库代码到 runner 工作目录
 
-      # 2️⃣ 安装 Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+      # 安装 Python 3.11 环境，准备执行 Python 脚本和 Sphinx 构建
 
-      # 3️⃣ 安装依赖
-      - name: Install dependencies
-        run: |
-          pip install sphinx sphinx-rtd-theme sphinx-sitemap myst-parser
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+      # 安装项目中定义的 Python 依赖，比如 sphinx 和主题等
 
-      # 4️⃣ 构建所有子项目 HTML
-      - name: Build all subprojects
-        run: |
-          mkdir -p site
-          for proj in $(find platform -name conf.py -exec dirname {} \;); do
-            echo "Building $proj"
-            sphinx-build -b html "$proj" "$proj/_build/html" || exit 1
-            dest="site/${proj#platform/}"
-            mkdir -p "$dest"
-            cp -r "$proj/_build/html/"* "$dest/"
-          done
+    # - name: Preprocess Markdown images (download + replace paths)
+    #   run: python scripts/process_md_images.py
+    # 可选步骤，处理 Markdown 文件中的远程图片，下载并替换成本地路径，提升文档构建效果
 
-      # 5️⃣ 生成根索引 sitemap_index.xml
-      - name: Generate root sitemap index
-        run: |
-          base_url="https://hellotangle.github.io/forlinx-docs-HT/"
-          index="site/sitemap_index.xml"
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > "$index"
-          echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$index"
-          # 遍历每个子项目已经生成的 sitemap.xml
-          while IFS= read -r sm; do
-            rel="${sm#site/}"
-            echo "  <sitemap><loc>${base_url}${rel}</loc></sitemap>" >> "$index"
-          done < <(find site -type f -name sitemap.xml)
-          echo '</sitemapindex>' >> "$index"
-          echo "Generated $index"
+    - name: Build homepage
+      run: |
+        sphinx-build -b html ./homepage ./docs_build
+      # 使用 Sphinx 构建首页文档，输出目录是 docs_build
 
-      # 6️⃣ 部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+    - name: Build platform docs
+      run: |
+        for dir in platform/*/*; do
+          if [ -f "$dir/conf.py" ]; then
+            echo "Building $dir"
+            outdir="docs_build/${dir#platform/}"
+            sphinx-build -b html -c "$dir" "$dir" "$outdir"
+          fi
+        done
+      # 遍历 platform 目录下的子目录，检测是否包含 conf.py，如果有则分别单独构建
+      # 每个平台文档构建输出到 docs_build/对应路径下，实现多平台文档并存
+
+    - name: Add CNAME file
+      run: echo "docs.forlinx.net" > ./docs_build/CNAME
+      # 关键步骤：写入自定义域名到 docs_build/CNAME 文件
+      # 这样 GitHub Pages 托管时会绑定这个域名，防止被部署覆盖删除
+      # 请把 docs.forlinx.net 换成你自己的域名
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs_build
+        publish_branch: gh-pages
+      # 使用官方维护的 actions-gh-pages 插件，将 docs_build 目录内容推送到 gh-pages 分支
+      # gh-pages 分支是 GitHub Pages 默认的发布分支
+      # 通过 github_token 自动授权推送
