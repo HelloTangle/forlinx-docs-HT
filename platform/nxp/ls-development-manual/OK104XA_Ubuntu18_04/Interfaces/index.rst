@@ -4,8 +4,8 @@ Interfaces
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   OK1046A_Ubuntu18_04_Ethernet
+   OK1046A_Ubuntu18.04_Ethernet
  
 

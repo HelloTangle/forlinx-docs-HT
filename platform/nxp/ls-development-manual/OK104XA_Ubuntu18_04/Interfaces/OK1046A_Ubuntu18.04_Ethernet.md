@@ -1,6 +1,6 @@
 
 
-# Interfaces
+# OK1046A-Ubuntun18.04_Ethernet
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -16,7 +16,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 This software manual is designed for the LS1046 platform running Ubuntu 18.04. While other platforms may also reference this manual, there could be differences that require adjustments for the specific use.
 
-# **Revision History**
+## **Revision History**
 
 | **Date** | **Version** | **Revision H** |
 |----------|----------|----------|
@@ -32,9 +32,9 @@ The SerDes Module unique to the LS104x platform also needs to be configured via 
 
 Taking the LS1046A as an example, the two configurable SerDes are:
 
-![Image](./images/OK1046AUbuntu18_04_Ethernet/1721975449529_ed2ec306_a89e_414f_885b_54f6e3cb0f00.png)
+![Image](./images/OK1046A_Ubuntu18.04_Ethernet/1721975449529_ed2ec306_a89e_414f_885b_54f6e3cb0f00.png)
 
-![Image](./images/OK1046AUbuntu18_04_Ethernet/1721975410147_9f322c8f_c0b7_4e01_91e5_933c00d44fbd.png)
+![Image](./images/OK1046A_Ubuntu18.04_Ethernet/1721975410147_9f322c8f_c0b7_4e01_91e5_933c00d44fbd.png)
 
 However, the configuration method called RCW is not well - known. So, this manual takes an actual requirement of the LS1046A as an example to elaborate on the modification process for subsequent customization reference.
 
@@ -42,25 +42,25 @@ However, the configuration method called RCW is not well - known. So, this manua
 
 1040\_5559：
 
-![Image](./images/OK1046AUbuntu18_04_Ethernet/1721975533908_74841a28_9af7_46cd_b37b_dccc04a84f5d.png)
+![Image](./images/OK1046A_Ubuntu18.04_Ethernet/1721975533908_74841a28_9af7_46cd_b37b_dccc04a84f5d.png)
 
 You can see that there is one XFI for MAC 9, one QSGMII for MAC6, MAC5, MAC10, and MAC1, and in addition, there are three PCIe x1 interfaces.
 
 1133\_5559：
 
-![Image](./images/OK1046AUbuntu18_04_Ethernet/1721975596632_96a31e09_0af0_44d5_9f17_314d686f4c7c.png)
+![Image](./images/OK1046A_Ubuntu18.04_Ethernet/1721975596632_96a31e09_0af0_44d5_9f17_314d686f4c7c.png)
 
 You can see that there is one XFI for MAC 9, one XFI for MAC10, one SGMII for MAC5, one SGMII for MAC6, and in addition, there are three PCIe x1 interfaces.
 
 At this time, if a project requires 5 network ports: one is the RGMII network port built - in the SoM, and the other four are SGMII network ports led out by SerDes. It is found that the two SerDes configurations provided by Forlinx do not meet the requirements. Then, after consulting the SerDes configuration table, it is found that 1333\_5a59 can meet the requirements:
 
-![Image](./images/OK1046AUbuntu18_04_Ethernet/1721975646431_b9af15a9_e581_4ab5_972f_92414ae3c442.png)
+![Image](./images/OK1046A_Ubuntu18.04_Ethernet/1721975646431_b9af15a9_e581_4ab5_972f_92414ae3c442.png)
 
 <font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">Then, the configuration modification will be carried out with this as an example.</font><font style="color:rgb(51,51,51);background-color:rgb(255,255,255);">。</font>
 
 First, sort out the corresponding relationship between PHY and MAC in the project:
 
-![Image](./images/OK1046AUbuntu18_04_Ethernet/1721975678982_0734fd2f_9f91_420a_b1b1_29faa41b2a61.png)
+![Image](./images/OK1046A_Ubuntu18.04_Ethernet/1721975678982_0734fd2f_9f91_420a_b1b1_29faa41b2a61.png)
 
 First of all, it is necessary to know that the locations of the two RCW files of OK1046A - C in the source code are:
 
