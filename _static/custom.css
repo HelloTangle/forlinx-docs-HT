@@ -1,0 +1,251 @@
+/* Google Fonts 引入，必须放最前面 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&family=Fira+Code&display=swap');
+
+/* 左上角搜索栏背景色 */
+.wy-side-nav-search {
+  background-color: #005bac !important; /* 飞凌主蓝 */
+}
+
+/* 搜索栏中版本号字体颜色 */
+.wy-side-nav-search > div.version {
+  color: white;
+}
+
+/* 侧边栏菜单项 hover 效果 */
+.wy-menu-vertical a:hover {
+  background-color: #e6f0ff !important;
+  color: #005bac !important;
+}
+
+/* 扩展主内容区域宽度 */
+.wy-nav-content {
+  max-width: 1200px; /* 默认800px，可调1000~1400px */
+}
+
+/* 正文字体，主体区域和容器统一 */
+body, .rst-content, .wy-nav-content {
+  font-family: 'Lato', Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2c2c2c;
+}
+
+/* 标题统一字体设定 */
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
+  font-family: 'Montserrat', 'Lato', sans-serif !important;
+  font-weight: 600;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 分级颜色设置 */
+.rst-content h1 {
+  color: #0071e3 !important; 
+}
+
+.rst-content h2 {
+  color: #2c2c2c !important;  
+}
+
+.rst-content h3 {
+  color: #2c2c2c !important;
+}
+
+
+
+
+
+/* 链接样式 */
+a {
+  color: #0071e3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 正文内页面目录（Table of Contents）字体 */
+.rst-content .toctree-wrapper,
+.rst-content .toctree-wrapper ul,
+.rst-content .toctree-wrapper li,
+.rst-content .toctree-wrapper a {
+  font-family: 'Lato', Arial, sans-serif !important;
+  font-size: 16px !important;             /* 字号适中 */
+  color: #333333 !important;              /* 深灰，接近苹果正文主色 */
+  line-height: 1.5 !important;
+  text-decoration: none !important;
+}
+
+/* 鼠标悬浮时链接颜色 */
+.rst-content .toctree-wrapper a:hover {
+  color: #0071e3 !important;     
+}
+
+/* 正文内页面目录标题 */
+.rst-content .toctree-wrapper > p {
+  font-family: 'Montserrat', 'Lato', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  color: #0071e3 !important;             
+  margin-bottom: 0.5em !important;
+}
+
+/* 禁止页面横向滚动（防止内容撑出屏幕） */
+body {
+  overflow-x: hidden;
+}
+
+
+/* 移动端优化：主内容宽度铺满屏幕，避免横向滚动 */
+@media (max-width: 768px) {
+  .wy-nav-content {
+    max-width: 100% !important;
+    padding: 1em !important;
+    box-sizing: border-box;
+  }
+
+  /* 优化目录标题字号 */
+  .rst-content .toctree-wrapper > p {
+    font-size: 18px !important;
+  }
+
+  /* 优化目录链接字号 */
+  .rst-content .toctree-wrapper a {
+    font-size: 14px !important;
+  }
+
+  /* 确保代码块不会溢出横向 */
+  pre {
+    overflow-x: auto;
+  }
+}
+
+
+
+
+/* 容器：多列横向排列，自动换行 */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+/* 单个卡片 */
+.product-card {
+  width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-family: 'Lato', Arial, sans-serif !important;
+  text-align: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 图片 */
+.product-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 8px 15px rgba(0,0,0,0.2));
+}
+
+/* 标题 */
+.product-title {
+  margin: 16px 0 12px;
+  font-size: 1.25rem;
+  color: #222;
+  font-weight: 700;
+}
+
+/* 按钮组 */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 16px 16px; /* 上左右下内边距，左右改成16px */
+  width: 100%;
+  background: #f8f9fa;
+  box-sizing: border-box; /* 保证 padding 不撑破卡片宽度 */
+}
+
+
+.btn {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white !important;
+  text-decoration: none;
+  user-select: none;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+
+/* 官网按钮 */
+.btn-website,
+.btn-website:hover,
+.btn-website:active,
+.btn-website:focus {
+  background-color: #007bff;
+}
+
+.btn-website:hover {
+  background-color: #0056b3;
+}
+
+/* 文档按钮 */
+.btn-doc,
+.btn-doc:hover,
+.btn-doc:active,
+.btn-doc:focus {
+  background-color: #6c757d;
+}
+
+.btn-doc:hover {
+  background-color: #545b62;
+}
+
+
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .products-container {
+    justify-content: center;
+  }
+  .product-card {
+    width: 90vw;
+  }
+  .product-image {
+    height: auto;
+  }
+  .btn-group {
+    gap: 12px;
+  }
+  .btn {
+    flex: none;
+    padding: 10px 24px;
+    min-width: 120px;
+  }
+}
