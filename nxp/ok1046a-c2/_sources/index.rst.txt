@@ -35,7 +35,7 @@ Development Manual
    :caption: Development Manual
    :maxdepth: 2
 
-   LS Development Manual <https://forlinxembedded.github.io/nxp/ls-development-manual/index.html>
+   LS Development Manual <https://hellotangle.github.io/forlinx-docs-HT/nxp/ls-development-manual/index.html>
 
 
 
