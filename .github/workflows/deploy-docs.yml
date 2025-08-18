@@ -25,7 +25,7 @@ jobs:
       # 3️⃣ 安装依赖
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx-rtd-theme sphinx-sitemap
+          pip install sphinx sphinx-rtd-theme sphinx-sitemap myst-parser
 
       # 4️⃣ 构建所有子项目 HTML
       - name: Build all subprojects
