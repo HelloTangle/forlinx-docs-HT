@@ -45,7 +45,11 @@ jobs:
       # 遍历 platform 目录下的子目录，检测是否包含 conf.py，如果有则分别单独构建
       # 每个平台文档构建输出到 docs_build/对应路径下，实现多平台文档并存
 
-
+    - name: Add CNAME file
+      run: echo "docs.forlinx.net" > ./docs_build/CNAME
+      # 关键步骤：写入自定义域名到 docs_build/CNAME 文件
+      # 这样 GitHub Pages 托管时会绑定这个域名，防止被部署覆盖删除
+      # 请把 docs.forlinx.net 换成你自己的域名
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4

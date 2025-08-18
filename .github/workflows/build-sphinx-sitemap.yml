@@ -1,0 +1,62 @@
+name: Build Sphinx Docs with Sitemap Index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "platform/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ 拉取代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ 安装 Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3️⃣ 安装依赖
+      - name: Install dependencies
+        run: |
+          pip install sphinx sphinx-rtd-theme sphinx-sitemap
+
+      # 4️⃣ 构建所有子项目
+      - name: Build all subprojects
+        run: |
+          mkdir -p site
+          for proj in $(find platform -name conf.py -exec dirname {} \;); do
+            echo "Building $proj"
+            make -C $proj html || exit 1
+            dest="site/${proj#platform/}"
+            mkdir -p "$dest"
+            cp -r $proj/_build/html/* "$dest/"
+          done
+
+      # 5️⃣ 生成根索引 sitemap_index.xml
+      - name: Generate root sitemap index
+        run: |
+          base_url="https://forlinxembedded.github.io"
+          index="site/sitemap_index.xml"
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > "$index"
+          echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$index"
+          # 遍历每个子项目生成的 sitemap.xml
+          while IFS= read -r sm; do
+            rel="${sm#site/}"
+            echo "  <sitemap><loc>${base_url}/${rel}</loc></sitemap>" >> "$index"
+          done < <(find site -type f -name sitemap.xml)
+          echo '</sitemapindex>' >> "$index"
+          echo "Generated $index"
+
+      # 6️⃣ 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
