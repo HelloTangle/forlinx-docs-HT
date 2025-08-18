@@ -42,7 +42,7 @@ jobs:
       # 5️⃣ 生成根索引 sitemap_index.xml
       - name: Generate root sitemap index
         run: |
-          base_url="https://forlinxembedded.github.io"
+          base_url="https://hellotangle.github.io/forlinx-docs-HT/"
           index="site/sitemap_index.xml"
           echo '<?xml version="1.0" encoding="UTF-8"?>' > "$index"
           echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$index"
