@@ -121,7 +121,7 @@ body {
 }
 
 
-/* 移动端优化：主内容宽度铺满屏幕，避免横向滚动 */
+
 @media (max-width: 768px) {
   .wy-nav-content {
     max-width: 100% !important;
@@ -129,18 +129,38 @@ body {
     box-sizing: border-box;
   }
 
-  /* 优化目录标题字号 */
   .rst-content .toctree-wrapper > p {
     font-size: 18px !important;
   }
 
-  /* 优化目录链接字号 */
   .rst-content .toctree-wrapper a {
     font-size: 14px !important;
   }
 
-  /* 确保代码块不会溢出横向 */
   pre {
     overflow-x: auto;
+    white-space: pre-wrap !important;   /* 新增：移动端代码折行 */
+    word-break: break-word !important;
+  }
+
+  /* 新增：移动端正文、列表、表格、标题、链接换行 */
+  .rst-content p,
+  .rst-content li,
+  .rst-content td,
+  .rst-content a,
+  .rst-content h1,
+  .rst-content h2,
+  .rst-content h3,
+  .rst-content h4,
+  .rst-content h5,
+  .rst-content h6 {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .rst-content table td {
+    white-space: normal !important;
+    word-break: break-word !important;
   }
 }
