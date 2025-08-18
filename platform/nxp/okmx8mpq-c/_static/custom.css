@@ -47,6 +47,17 @@ body, .rst-content, .wy-nav-content {
   box-sizing: border-box;
 }
 
+/* 单独让 H2 标题变蓝色，覆盖上面的颜色 */
+.rst-content h2 {
+  color: #0071e3 !important;   /* 你想要的蓝色 */
+}
+
+/* 隐藏正文中的 toctree caption 标题（保留侧边栏） */
+.rst-content .caption,
+.rst-content .caption-text {
+  display: none !important;
+}
+
 /* 代码字体 */
 code, pre {
   font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace !important;
@@ -110,7 +121,7 @@ body {
 }
 
 
-/* 移动端优化：主内容宽度铺满屏幕，避免横向滚动 */
+
 @media (max-width: 768px) {
   .wy-nav-content {
     max-width: 100% !important;
@@ -118,18 +129,63 @@ body {
     box-sizing: border-box;
   }
 
-  /* 优化目录标题字号 */
   .rst-content .toctree-wrapper > p {
     font-size: 18px !important;
   }
 
-  /* 优化目录链接字号 */
   .rst-content .toctree-wrapper a {
     font-size: 14px !important;
   }
 
-  /* 确保代码块不会溢出横向 */
   pre {
+    overflow-x: auto;       /* 超长代码可以左右滚动 */
+    white-space: pre !important;  /* 保持原格式，不折行 */
+    word-break: normal !important; /* 避免折行破坏代码 */
+  }
+  
+
+  /* 新增：移动端正文、列表、表格、标题、链接换行 */
+  .rst-content p,
+  .rst-content li,
+  .rst-content td,
+  .rst-content a,
+  .rst-content h1,
+  .rst-content h2,
+  .rst-content h3,
+  .rst-content h4,
+  .rst-content h5,
+  .rst-content h6 {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* 移动端表格横向滚动 + 单元格换行 */
+  .rst-content table {
+    display: block;
+    width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .rst-content table td,
+  .rst-content table th {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* 移动端正文行高略微减小，提高紧凑感 */
+  body, .rst-content, .wy-nav-content {
+    line-height: 1.5;
+  }  
+}
+
+
+
+/* 移动端极小屏字体微调（可选） */
+@media (max-width: 480px) {
+  body, .rst-content, .wy-nav-content {
+    font-size: 15px;
   }
 }
+
