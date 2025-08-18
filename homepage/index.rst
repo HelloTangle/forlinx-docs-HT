@@ -76,6 +76,27 @@ i.MX93 Series
 - OKMX9352-C Manual
   ⏳ Documentation coming soon.
 
+
+LS1046A Series
+-----------------
+
+.. raw:: html
+
+   <div class="product-card">
+     <a href="nxp/ok1046a-c2/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/nxp/OK1046A-C2.png" alt="OK1046A-C2" class="product-image" />
+     </a>
+     <h3 class="product-title">OK1046A-C2</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/ls1046a-system-on-module-21.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="nxp/ok1046a-c2/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+
+
+
+
 ----
 
 Texas Instruments Series
