@@ -13,7 +13,10 @@ copyright = 'Forlinx Embedded'
 
 extensions = [
     'myst_parser',         # 支持 Markdown
+    'sphinx_sitemap',      # 支持生成 sitemap
 ]
+html_baseurl = 'https://hellotangle.github.io/forlinx-docs-HT/allwinner/ok527n-c/'
+
 
 templates_path = ['_templates']
 exclude_patterns = []

@@ -1,79 +1,62 @@
-name: Build Docs with Sitemap and Deploy  # 工作流名称
+name: Build Sphinx Docs with Sitemap Index
 
 on:
   push:
     branches:
-      - main                 # 当 main 分支有代码 push 时触发
+      - main
     paths:
-      - "platform/**"        # 只要 platform 目录下有变化也会触发
-      - "homepage/**"        # 首页 Markdown 文件有改动也触发
+      - "platform/**"
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-latest   # 使用最新 Ubuntu 运行环境
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ 拉取仓库代码
+      # 1️⃣ 拉取代码
       - name: Checkout repository
         uses: actions/checkout@v4
-        # 把仓库代码拉取到 runner 上
 
       # 2️⃣ 安装 Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-        # 安装 Python 3.11，用于执行 Sphinx 构建
 
       # 3️⃣ 安装依赖
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
-        # 安装项目依赖，例如 sphinx、主题、sphinx-sitemap 等
+          pip install sphinx sphinx-rtd-theme sphinx-sitemap
 
-      # 4️⃣ 构建首页文档
-      - name: Build homepage
+      # 4️⃣ 构建所有子项目 HTML
+      - name: Build all subprojects
         run: |
-          sphinx-build -b html ./homepage ./docs_build
-        # 使用 Sphinx 构建 homepage 目录下文档
-        # 输出目录统一放在 docs_build
-
-      # 5️⃣ 构建平台子项目文档
-      - name: Build platform docs
-        run: |
-          for dir in platform/*/*; do
-            if [ -f "$dir/conf.py" ]; then   # 判断是否存在 conf.py
-              echo "Building $dir"
-              outdir="docs_build/${dir#platform/}"  # 输出目录映射到 docs_build/对应路径
-              mkdir -p "$outdir"
-              sphinx-build -b html -c "$dir" "$dir" "$outdir"
-            fi
+          mkdir -p site
+          for proj in $(find platform -name conf.py -exec dirname {} \;); do
+            echo "Building $proj"
+            sphinx-build -b html "$proj" "$proj/_build/html" || exit 1
+            dest="site/${proj#platform/}"
+            mkdir -p "$dest"
+            cp -r "$proj/_build/html/"* "$dest/"
           done
-        # 遍历 platform 下所有子项目，逐个构建 HTML
 
-      # 6️⃣ 生成根 sitemap_index.xml
+      # 5️⃣ 生成根索引 sitemap_index.xml
       - name: Generate root sitemap index
         run: |
-          base_url="https://hellotangle.github.io/forlinx-docs-HT/"  # 你 GitHub Pages 域名
-          index="docs_build/sitemap_index.xml"           # 根 sitemap 文件路径
+          base_url="https://hellotangle.github.io/forlinx-docs-HT/"
+          index="site/sitemap_index.xml"
           echo '<?xml version="1.0" encoding="UTF-8"?>' > "$index"
           echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> "$index"
-
-          # 遍历每个子项目的 sitemap.xml
+          # 遍历每个子项目已经生成的 sitemap.xml
           while IFS= read -r sm; do
-            rel="${sm#docs_build/}"                     # 去掉本地前缀，生成相对路径
-            echo "  <sitemap><loc>${base_url}/${rel}</loc></sitemap>" >> "$index"
-          done < <(find docs_build -type f -name sitemap.xml)
-
+            rel="${sm#site/}"
+            echo "  <sitemap><loc>${base_url}${rel}</loc></sitemap>" >> "$index"
+          done < <(find site -type f -name sitemap.xml)
           echo '</sitemapindex>' >> "$index"
           echo "Generated $index"
-        # 生成 sitemap_index.xml，用于提交到 GSC
 
-
-      # 8️⃣ 部署到 GitHub Pages
+      # 6️⃣ 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs_build     # 发布目录
-          publish_branch: gh-pages      # 发布到 gh-pages 分支
+          publish_dir: ./site

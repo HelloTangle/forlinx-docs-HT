@@ -10,7 +10,7 @@
 
 
 ==================
-OK527N-C Manuals
+OK527N-C Manual
 ==================
 
 .. toctree::
