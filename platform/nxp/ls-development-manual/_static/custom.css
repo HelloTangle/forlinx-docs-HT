@@ -164,4 +164,19 @@ body {
     white-space: normal !important;
     word-break: break-word !important;
   }
+
+  /* 移动端正文行高略微减小，提高紧凑感 */
+  body, .rst-content, .wy-nav-content {
+    line-height: 1.5;
+  }  
 }
+
+
+
+/* 移动端极小屏字体微调（可选） */
+@media (max-width: 480px) {
+  body, .rst-content, .wy-nav-content {
+    font-size: 15px;
+  }
+}
+
