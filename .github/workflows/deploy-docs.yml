@@ -1,57 +1,77 @@
-name: Build and Deploy Docs  # 工作流名称
+name: Build and Deploy Docs
 
 on:
   push:
     branches:
-      - main                 # 触发条件：当 main 分支有代码 push 时触发构建和部署
+      - main
 
 jobs:
   build-docs:
-    runs-on: ubuntu-latest   # 使用最新的 Ubuntu 虚拟环境运行任务
+    runs-on: ubuntu-latest
 
     steps:
+    # 1️⃣ Checkout 仓库
     - name: Checkout code
       uses: actions/checkout@v4
-      # 拉取仓库代码到 runner 工作目录
 
-    - name: Setup Python
+    # 2️⃣ 设置 Python 环境
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-      # 安装 Python 3.11 环境，准备执行 Python 脚本和 Sphinx 构建
 
+    # 3️⃣ 安装依赖
     - name: Install dependencies
-      run: pip install -r requirements.txt
-      # 安装项目中定义的 Python 依赖，比如 sphinx 和主题等
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
 
-    # - name: Preprocess Markdown images (download + replace paths)
-    #   run: python scripts/process_md_images.py
-    # 可选步骤，处理 Markdown 文件中的远程图片，下载并替换成本地路径，提升文档构建效果
-
+    # 4️⃣ 构建 homepage（必选）
     - name: Build homepage
       run: |
+        mkdir -p docs_build
         sphinx-build -b html ./homepage ./docs_build
-      # 使用 Sphinx 构建首页文档，输出目录是 docs_build
 
+    # 5️⃣ 构建 platform 子项目
     - name: Build platform docs
       run: |
-        for dir in platform/*/*; do
-          if [ -f "$dir/conf.py" ]; then
-            echo "Building $dir"
-            outdir="docs_build/${dir#platform/}"
-            sphinx-build -b html -c "$dir" "$dir" "$outdir"
+        for project in platform/*/*; do
+          if [ -f "$project/conf.py" ]; then
+            echo "Building $project ..."
+            project_name=$(basename $(dirname "$project"))
+            platform_name=$(basename "$project")
+            outdir="docs_build/$project_name/$platform_name"
+            mkdir -p "$outdir"
+            sphinx-build -b html "$project" "$outdir"
           fi
         done
-      # 遍历 platform 目录下的子目录，检测是否包含 conf.py，如果有则分别单独构建
-      # 每个平台文档构建输出到 docs_build/对应路径下，实现多平台文档并存
 
+    # 6️⃣ 生成总 sitemap_index.xml
+    - name: Generate sitemap_index.xml
+      run: |
+        echo '<?xml version="1.0" encoding="UTF-8"?>' > docs_build/sitemap_index.xml
+        echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs_build/sitemap_index.xml
 
+        # 遍历所有子项目的 sitemap.xml
+        for sm in docs_build/*/*/sitemap.xml; do
+          if [ -f "$sm" ]; then
+            relpath=${sm#docs_build/}
+            echo "  <sitemap>" >> docs_build/sitemap_index.xml
+            echo "    <loc>https://docs.forlinx.net/$relpath</loc>" >> docs_build/sitemap_index.xml
+            echo "  </sitemap>" >> docs_build/sitemap_index.xml
+          fi
+        done
+
+        echo '</sitemapindex>' >> docs_build/sitemap_index.xml
+
+    # 7️⃣ 添加 CNAME 文件（绑定自定义域名）
+    - name: Add CNAME file
+      run: echo "docs.forlinx.net" > ./docs_build/CNAME
+
+    # 8️⃣ 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs_build
         publish_branch: gh-pages
-      # 使用官方维护的 actions-gh-pages 插件，将 docs_build 目录内容推送到 gh-pages 分支
-      # gh-pages 分支是 GitHub Pages 默认的发布分支
-      # 通过 github_token 自动授权推送
