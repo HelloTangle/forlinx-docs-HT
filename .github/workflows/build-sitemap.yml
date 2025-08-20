@@ -1,0 +1,76 @@
+name: Build and Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1️⃣ 拉取仓库
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 2️⃣ 设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    # 3️⃣ 安装依赖
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install sphinx sphinx-sitemap
+
+    # 4️⃣ 构建所有子项目
+    - name: Build all Sphinx projects
+      run: |
+        mkdir -p docs_build
+        for project in platform/*/*; do
+          if [ -f "$project/conf.py" ]; then
+            echo "Building $project ..."
+            project_name=$(basename $(dirname "$project"))
+            platform_name=$(basename "$project")
+            outdir="docs_build/$project_name/$platform_name"
+            mkdir -p "$outdir"
+            sphinx-build -b html "$project" "$outdir"
+          fi
+        done
+
+
+
+
+
+
+    # 5️⃣ 生成 sitemap_index.xml
+    - name: Generate sitemap_index.xml
+      run: |
+        echo '<?xml version="1.0" encoding="UTF-8"?>' > docs_build/sitemap_index.xml
+        echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs_build/sitemap_index.xml
+
+        for sm in docs_build/*/*/sitemap.xml; do
+          if [ -f "$sm" ]; then
+            relpath=${sm#docs_build/}
+            echo "  <sitemap>" >> docs_build/sitemap_index.xml
+            echo "    <loc>https://docs.forlinx.net/$relpath</loc>" >> docs_build/sitemap_index.xml
+            echo "  </sitemap>" >> docs_build/sitemap_index.xml
+          fi
+        done
+
+        echo '</sitemapindex>' >> docs_build/sitemap_index.xml
+
+    # 6️⃣ 添加 CNAME（可选）
+    - name: Add CNAME file
+      run: echo "docs.forlinx.net" > ./docs_build/CNAME
+
+    # 7️⃣ 部署到 GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs_build
+        publish_branch: gh-pages
