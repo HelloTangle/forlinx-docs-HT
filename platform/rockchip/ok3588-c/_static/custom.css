@@ -160,19 +160,33 @@ body {
     overflow-wrap: break-word !important;
   }
 
-  /* 移动端表格横向滚动 + 单元格换行 */
-  .rst-content table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
+
+  /* 表格容器允许横向滚动 */
+  .rst-content table,
+  .md-table-wrapper table {
+    display: table !important;       /* 保留表格原有布局 */
+    max-width: 100% !important;
+    width: auto !important;
+  }
+
+  .rst-content table-wrapper,
+  .md-table-wrapper {
+    overflow-x: auto !important;     /* 横向滚动 */
     -webkit-overflow-scrolling: touch;
   }
+
+  /* 单元格保持一行显示，不换行 */
   .rst-content table td,
-  .rst-content table th {
+  .rst-content table th,
+  .md-table-wrapper td,
+  .md-table-wrapper th {
     white-space: nowrap !important;
     word-break: normal !important;
     overflow-wrap: normal !important;
-  }
+  } 
+  
+
+
 
   /* 移动端正文行高略微减小，提高紧凑感 */
   body, .rst-content, .wy-nav-content {
