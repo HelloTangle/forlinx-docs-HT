@@ -175,9 +175,9 @@ body {
   
   .rst-content table td,
   .rst-content table th {
-      white-space: nowrap;
-      word-break: normal;
-      font-size: 12px !important;;
+      white-space: nowrap !important;
+      word-break: normal !important;
+      font-size: 12px !important;
       padding: 4px 8px; /* 增加一点内边距更易阅读 */
   }
   
