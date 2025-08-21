@@ -47,7 +47,20 @@ jobs:
           fi
         done
 
-    # 6️⃣ 生成总 sitemap_index.xml
+
+    # 6️⃣ 清理 /en/
+    - name: Remove /en/ from sitemap URLs
+      run: |
+        for sm in docs_build/*/*/sitemap.xml; do
+          if [ -f "$sm" ]; then
+            echo "Cleaning $sm ..."
+            sed -i 's#<loc>\(.*\)/en/\(.*\)</loc>#<loc>\1/\2</loc>#g' "$sm"
+          fi
+        done
+
+
+
+    # 7️⃣ 生成总 sitemap_index.xml
     - name: Generate sitemap_index.xml
       run: |
         echo '<?xml version="1.0" encoding="UTF-8"?>' > docs_build/sitemap_index.xml
@@ -66,17 +79,6 @@ jobs:
         echo '</sitemapindex>' >> docs_build/sitemap_index.xml
 
   
-    # 7️⃣ 清理 /en/
-    - name: Remove /en/ from sitemap URLs
-      run: |
-
-        echo '</sitemapindex>' >> docs_build/sitemap_index.xml
-            for sm in docs_build/*/*/sitemap.xml; do
-        if [ -f "$sm" ]; then
-            echo "Cleaning $sm ..."
-            sed -i 's#/en/#/#g' "$sm"
-        fi
-        done
 
 
     # 8️⃣ 部署到 GitHub Pages
