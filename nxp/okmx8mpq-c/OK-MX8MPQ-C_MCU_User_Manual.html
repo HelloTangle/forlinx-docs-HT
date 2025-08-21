@@ -1,12 +1,12 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="None" data-content_root="./">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MCU_User&#39;s Manual_V1.0 &mdash; NXP IMX8MP Documentation  documentation</title>
+  <title>MCU_User’s Manual_V1.0 &mdash; NXP IMX8MP Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9e813c0b" />
@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="_static/forlinx.png"/>
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=938b9a03"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -51,7 +51,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MCU_User's Manual_V1.0</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MCU_User’s Manual_V1.0</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application">Application</a></li>
@@ -200,7 +200,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">MCU_User's Manual_V1.0</li>
+      <li class="breadcrumb-item active">MCU_User’s Manual_V1.0</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -210,7 +210,7 @@
            <div itemprop="articleBody">
              
   <section id="mcu-user-s-manual-v1-0">
-<h1>MCU_User's Manual_V1.0<a class="headerlink" href="#mcu-user-s-manual-v1-0" title="Link to this heading"></a></h1>
+<h1>MCU_User’s Manual_V1.0<a class="headerlink" href="#mcu-user-s-manual-v1-0" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright-notice">
 <h2>Copyright Notice<a class="headerlink" href="#copyright-notice" title="Link to this heading"></a></h2>
@@ -220,7 +220,7 @@
 </section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p><font style="color:rgb(0,0,0);">This manual is intended to familiarize users with the product quickly, understand the functions and testing methods of the M core interface. It mainly describes the overview of the M core interface on the development board, source code analysis and testing methods, as well as how to troubleshoot some issues that may arise during usage. In the process of testing, some commands are annotated to facilitate the user's understanding, mainly for practical use. Please refer to the MCU User Compilation Manual provided by Forlinx to view application program compilation, development environment building, program download and simulation, etc.</font></p>
+<p><font style="color:rgb(0,0,0);">This manual is intended to familiarize users with the product quickly, understand the functions and testing methods of the M core interface. It mainly describes the overview of the M core interface on the development board, source code analysis and testing methods, as well as how to troubleshoot some issues that may arise during usage. In the process of testing, some commands are annotated to facilitate the user’s understanding, mainly for practical use. Please refer to the MCU User Compilation Manual provided by Forlinx to view application program compilation, development environment building, program download and simulation, etc.</font></p>
 <p>There are total five chapters:</p>
 <ul class="simple">
 <li><p><font style="color:rgb(0,0,0);">Chapter 1. provides an overview of the NXP i.MX 8M Plus, giving a brief introduction to the overall architecture and features of the i.MX 8M Plus processor;</font></p></li>
@@ -379,7 +379,7 @@
 <p>The OKMX8MPQ-C development board supports 2 GPIO output (running water light).</p>
 <section id="hardware-connection">
 <h4>3.1.1 Hardware Connection<a class="headerlink" href="#hardware-connection" title="Link to this heading"></a></h4>
-<p>The demo does not have any special hardware connections, only utilizing the carrier board's 2 x LED.</p>
+<p>The demo does not have any special hardware connections, only utilizing the carrier board’s 2 x LED.</p>
 <p><img alt="Image" src="_images/336fee040e814eca9b533580e32df38a.png" /></p>
 <p><img alt="Image" src="_images/1af0fda2b3b6444fb0d27b49664e49ec.png" /></p>
 </section>
@@ -423,10 +423,10 @@
 </section>
 <section id="uart">
 <h3>3.2  UART<a class="headerlink" href="#uart" title="Link to this heading"></a></h3>
-<p>In the M-core SDK package, there are 7 serial port examples. These include &quot;auto_baudrate_detect&quot; for automatic baud rate detection, &quot;polling&quot; for polling-based sending and receiving, and &quot;sdma_transfer&quot; and &quot;idle_detect_sdma_transfer&quot; for DMA-based sending and receiving. Interrupt, interrupt _ transfer, and interrupt _ rb _ transfer are interrupt methods to complete the sending and receiving routine. We primarily introduce interrupt routines.</p>
+<p>In the M-core SDK package, there are 7 serial port examples. These include “auto_baudrate_detect” for automatic baud rate detection, “polling” for polling-based sending and receiving, and “sdma_transfer” and “idle_detect_sdma_transfer” for DMA-based sending and receiving. Interrupt, interrupt _ transfer, and interrupt _ rb _ transfer are interrupt methods to complete the sending and receiving routine. We primarily introduce interrupt routines.</p>
 <section id="id3">
 <h4>3.2.1 Hardware Connection<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
-<p>By using a USB to Type-C connection, you can connect the debug port of a computer and a development board. The computer's Device Manager will generate two serial ports. One serial port is for debugging the A-core Linux, and the other one is for debugging the M-core. Serial port configuration: Baud rate is 115200, data bits are 8, no flow control, stop bits are 1.<img alt="Image" src="_images/b8c47dd10f4045e288d62591a5e6008f.png" /></p>
+<p>By using a USB to Type-C connection, you can connect the debug port of a computer and a development board. The computer’s Device Manager will generate two serial ports. One serial port is for debugging the A-core Linux, and the other one is for debugging the M-core. Serial port configuration: Baud rate is 115200, data bits are 8, no flow control, stop bits are 1.<img alt="Image" src="_images/b8c47dd10f4045e288d62591a5e6008f.png" /></p>
 </section>
 <section id="id4">
 <h4>3.2.2 Software Implementation<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
@@ -492,17 +492,17 @@
 <p>s_i2cMasterIsr = I2C_MasterTransferHandleIRQ;<font style="color:#008200;">// Install interrupt</font></p>
 <p>(<strong><font style="color:#006699;">void</font></strong>)EnableIRQ(s_i2cIrqs[instance]);<font style="color:#008200;">// Enable interrupt</font></p>
 <p>(2) Execution process</p>
-<p>After initialization is complete, wait for commands. If it's a command to set the time, retrieve the time value via the debug serial port and update it to the RTC chip through an I2C write command. If reading the time command, use the I2C read command to obtain RTC time, as displayed via debug serial port.</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;\r\n  Please input 'S/R'?  If set time ,press 'S' and read time press 'R' \r\n&quot;</font>);</p>
+<p>After initialization is complete, wait for commands. If it’s a command to set the time, retrieve the time value via the debug serial port and update it to the RTC chip through an I2C write command. If reading the time command, use the I2C read command to obtain RTC time, as displayed via debug serial port.</p>
+<p>PRINTF(<font style="color:#0000FF;">”\r\n  Please input ‘S/R’?  If set time ,press ‘S’ and read time press ‘R’ \r\n”</font>);</p>
 <p>ch = 0;</p>
 <p>ch = GETCHAR();</p>
 <p>PUTCHAR(ch);</p>
-<p><strong><font style="color:#006699;">if</font></strong>((ch == <font style="color:#0000FF;">'s'</font>)||(ch == <font style="color:#0000FF;">'S'</font>))<font style="color:#008200;">// set means setting time</font></p>
+<p><strong><font style="color:#006699;">if</font></strong>((ch == <font style="color:#0000FF;">’s’</font>)||(ch == <font style="color:#0000FF;">’S’</font>))<font style="color:#008200;">// set means setting time</font></p>
 <p>{</p>
 <p>get_input_time();</p>
 <p>PCF8563_set_time();</p>
 <p>}</p>
-<p><strong><font style="color:#006699;">else</font></strong> <strong><font style="color:#006699;">if</font></strong>((ch == <font style="color:#0000FF;">'r'</font>)||(ch == <font style="color:#0000FF;">'R'</font>))<font style="color:#008200;">// read means reading time</font></p>
+<p><strong><font style="color:#006699;">else</font></strong> <strong><font style="color:#006699;">if</font></strong>((ch == <font style="color:#0000FF;">’r’</font>)||(ch == <font style="color:#0000FF;">’R’</font>))<font style="color:#008200;">// read means reading time</font></p>
 <p>{</p>
 <p>PCF8563_get_time();</p>
 <p>}</p>
@@ -510,8 +510,8 @@
 <section id="id8">
 <h4>3.3.3 Experimental Phenomena<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot;</p>
-<p>(2) Debugging via the M-core serial port, after entering ''s'', you can set the time. Enter the command ''2023-01-18 15:34:06'' to successfully set the time;</p>
-<p>(3) Debugging via the M-core serial port, after entering ''r'', you can read the time, observing it continuously running.<img alt="Image" src="_images/22616a2ca86a4f2888d5884699507480.png" /></p>
+<p>(2) Debugging via the M-core serial port, after entering ‘’s’’, you can set the time. Enter the command ‘’2023-01-18 15:34:06’’ to successfully set the time;</p>
+<p>(3) Debugging via the M-core serial port, after entering ‘’r’’, you can read the time, observing it continuously running.<img alt="Image" src="_images/22616a2ca86a4f2888d5884699507480.png" /></p>
 </section>
 </section>
 <section id="can">
@@ -555,17 +555,17 @@
 <p>(2) Execution process</p>
 <p>After initialization is complete, wait for a command. On one development board, entering “B” via the serial port sets it as a CAN slave station awaiting receiving. Upon completing data receiving, print a message and send back the received data.</p>
 <p>FLEXCAN_TransferReceiveNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;rxXfer);<font style="color:#008200;">// Receive data</font></p>
-<p>LOG_INFO(<font style="color:#0000FF;">&quot;Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n&quot;</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
+<p>LOG_INFO(<font style="color:#0000FF;">”Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n”</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
 <p>FLEXCAN_TransferSendNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;txXfer);    <font style="color:#008200;">// Return data</font></p>
 <p>Enter ‘A’ via the serial port, followed by any key. It is actively transmitted as a can master station, and then receives the return data from the slave station. After completing a transfer, enter any key to trigger the next transfer.</p>
 <p>FLEXCAN_TransferSendNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;txXfer) <font style="color:#008200;">// Send data</font></p>
 <p>FLEXCAN_TransferReceiveNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;rxXfer); <font style="color:#008200;">// Receive data</font></p>
-<p>LOG_INFO(<font style="color:#0000FF;">&quot;Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n&quot;</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
-<p>LOG_INFO(<font style="color:#0000FF;">&quot;Press any key to trigger the next transmission!\r\n\r\n&quot;</font>);</p>
+<p>LOG_INFO(<font style="color:#0000FF;">”Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n”</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
+<p>LOG_INFO(<font style="color:#0000FF;">”Press any key to trigger the next transmission!\r\n\r\n”</font>);</p>
 </section>
 <section id="id11">
 <h4>3.4.3 Experimental Phenomena<a class="headerlink" href="#id11" title="Link to this heading"></a></h4>
-<p>（1）After the compilation is completed, as described in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU - User Compilation Manual - V1.0&quot;, manually load the M-core program in U-Boot;</p>
+<p>（1）After the compilation is completed, as described in Section 3.1.1 of the “OKMX8MPQ-C_MCU - User Compilation Manual - V1.0”, manually load the M-core program in U-Boot;</p>
 <p>（2）Debug the serial port in the M core. Input data B into the serial port of the development board which will act as the CAN slave station and wait for incoming data. Once data receiving is complete, print a message and return the received data;</p>
 <p><img alt="Image" src="_images/d65aad04b95a400c8af19a270179817d.png" /></p>
 <p>（3）Debug the serial port in the M core, input A in the serial port of the other development board, input any key as the active transmission of the CAN master station, and then receive the return data from the slave station. After completing a transfer, enter any key to trigger the next transfer.</p>
@@ -617,17 +617,17 @@
 <p>(2) Execution process</p>
 <p>After initialization is complete, wait for commands. On one of the development boards, input “B” through the serial port to configure it as a CAN-FD slave station that waits for data receiving. Upon completing data receiving, print a message and send the received data back.</p>
 <p>FLEXCAN_TransferFDReceiveNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;rxXfer);<font style="color:#008200;">// Receive data</font></p>
-<p>LOG_INFO(<font style="color:#0000FF;">&quot;Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n&quot;</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
+<p>LOG_INFO(<font style="color:#0000FF;">”Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n”</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
 <p>FLEXCAN_TransferFDSendNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;txXfer);    <font style="color:#008200;">// Return data</font></p>
 <p>Input A in the serial port of the other development board as the active transmission of the CAN-FD master station, and then receive the return data from the slave station. After completing a transfer, enter any key to trigger the next transfer.</p>
 <p>FLEXCAN_TransferSendNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;txXfer) <font style="color:#008200;">// Send data</font></p>
 <p>FLEXCAN_TransferFDReceiveNonBlocking(EXAMPLE_CAN, &amp;flexcanHandle, &amp;rxXfer);<font style="color:#008200;">// Receive data</font></p>
-<p>LOG_INFO(<font style="color:#0000FF;">&quot;Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n&quot;</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
-<p>LOG_INFO(<font style="color:#0000FF;">&quot;Press any key to trigger the next transmission!\r\n\r\n&quot;</font>);</p>
+<p>LOG_INFO(<font style="color:#0000FF;">”Rx MB ID: 0x%3x, Rx MB data: 0x%x, Time stamp: %d\r\n”</font>, frame.id &gt;&gt; CAN_ID_STD_SHIFT,frame.dataByte0, frame.timestamp);</p>
+<p>LOG_INFO(<font style="color:#0000FF;">”Press any key to trigger the next transmission!\r\n\r\n”</font>);</p>
 </section>
 <section id="id14">
 <h4>3.5.3 Experimental Phenomena<a class="headerlink" href="#id14" title="Link to this heading"></a></h4>
-<p>（1）After the compilation is completed, as described in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU - User Compilation Manual - V1.0&quot;, manually load the M-core program in U-Boot;</p>
+<p>（1）After the compilation is completed, as described in Section 3.1.1 of the “OKMX8MPQ-C_MCU - User Compilation Manual - V1.0”, manually load the M-core program in U-Boot;</p>
 <p>（2）Debug the serial port in the M core. Input data B into the serial port of the development board which will act as the CAN-FD slave station and wait for incoming data. Once data receiving is complete, print a message and return the received data.</p>
 <p><img alt="Image" src="_images/070133bd8d9e460497025da4777c07a4.png" /></p>
 <p>（3）Debug the serial port in the M core, input A in the serial port of the other development board, and then input any key as the active transmission of the CAN-FD master station, and then receive the return data from the slave station. After completing a transfer, enter any key to trigger the next transfer.</p>
@@ -643,7 +643,7 @@
 <p><img alt="Image" src="_images/258e2c0efab540f7866eb153e71c91e5.png" /></p>
 <p>Connect the SPI of the two development boards one-to-one using DuPont wires with the followingwire sequence:</p>
 <p>| <font style="color:#0000FF;">Development Board 1-SPI Master Mode</font>| | <font style="color:#FF0000;">Development Board 2-SPI Slave Mode</font>|
-|:----------:|----------|:----------:|----------
+|:———-:|———-|:———-:|———-
 | <font style="color:#0000FF;">Pin name</font>| <font style="color:#0000FF;">Development board location</font>| <font style="color:#FF0000;">Pin name</font>| <font style="color:#FF0000;">Development board location</font>
 | <font style="color:#0000FF;">MISO</font>| <font style="color:#0000FF;">P40-10</font>| <font style="color:#FF0000;">MISO</font>| <font style="color:#FF0000;">P40-10</font>
 | <font style="color:#0000FF;">MOSI</font>| <font style="color:#0000FF;">P40-8</font>| <font style="color:#FF0000;">MOSI</font>| <font style="color:#FF0000;">P40-8</font>
@@ -709,7 +709,7 @@
 </section>
 <section id="id17">
 <h4>3.6.3 Experimental Phenomena<a class="headerlink" href="#id17" title="Link to this heading"></a></h4>
-<p>（1）After the compilation is completed, as described in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU - User Compilation Manual - V1.0&quot;, manually load the M-core program in U-Boot;</p>
+<p>（1）After the compilation is completed, as described in Section 3.1.1 of the “OKMX8MPQ-C_MCU - User Compilation Manual - V1.0”, manually load the M-core program in U-Boot;</p>
 <p>（2）Board 2 is powered on first. The M-core program starts, initializes the SPI, and enters a waiting state for receiving;</p>
 <p>（3）Board 1 is powered on later. The M-core program starts, initializes the SPI, and actively sends 64 bytes of data;</p>
 <p>（4）Board 2 receives the data through the SPI, prints the received data through the serial port, and then sends the received data again;</p>
@@ -735,10 +735,10 @@
 <p>config-&gt;clockSource  = kGPT_ClockSource_Periph; <font style="color:#008200;">//Clock source：ipg_clk 66M</font></p>
 <p>config-&gt;divider      = 1U;</p>
 <p>Operating state in the same mode: In sleep and debug modes, timer interrupts do not function.</p>
-<p>config-&gt;enableRunInStop = <strong><font style="color:#006699;">true</font></strong>;  <font style="color:#008200;">// In stop mode, the timer's periodic interrupt continues to work.</font></p>
-<p>config-&gt;enableRunInWait = <strong><font style="color:#006699;">true</font></strong>;  <font style="color:#008200;">// In wait mode, the timer's periodic interrupt continues to work.</font></p>
-<p>config-&gt;enableRunInDoze = <strong><font style="color:#006699;">false</font></strong>; <font style="color:#008200;">// In sleep mode, the timer's periodic interrupt doesn’t work.</font></p>
-<p>config-&gt;enableRunInDbg  = <strong><font style="color:#006699;">false</font></strong>; <font style="color:#008200;">// In debugging mode,  the timer's periodic interrupt doesn’t work.</font></p>
+<p>config-&gt;enableRunInStop = <strong><font style="color:#006699;">true</font></strong>;  <font style="color:#008200;">// In stop mode, the timer’s periodic interrupt continues to work.</font></p>
+<p>config-&gt;enableRunInWait = <strong><font style="color:#006699;">true</font></strong>;  <font style="color:#008200;">// In wait mode, the timer’s periodic interrupt continues to work.</font></p>
+<p>config-&gt;enableRunInDoze = <strong><font style="color:#006699;">false</font></strong>; <font style="color:#008200;">// In sleep mode, the timer’s periodic interrupt doesn’t work.</font></p>
+<p>config-&gt;enableRunInDbg  = <strong><font style="color:#006699;">false</font></strong>; <font style="color:#008200;">// In debugging mode,  the timer’s periodic interrupt doesn’t work.</font></p>
 <p>Counting mode selection: The timer has two working modes: set-and-forget and free-running. The difference between these two working modes is as follows:</p>
 <p>set-and-forget mode: The EPIT counter fetches its initial value from the load register EPITx_LR and cannot directly write data to the counter register. Whenever the counter reaches 0, data from EPITx_LR is reloaded into the counter, repeating indefinitely.</p>
 <p>free-running mode：When the counter reaches 0, it restarts counting from 0xFFFFFFFF, not from the load register EPITx_LR. Watch out for technological overflow when calculating the difference.</p>
@@ -754,7 +754,7 @@
 <p>{</p>
 <p><font style="color:#008200;">// Clear interrupt flag</font></p>
 <p>GPT_ClearStatusFlags(EXAMPLE_GPT, kGPT_OutputCompare1Flag);</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;\r\n GPT 1 second interrupt is occurred !&quot;</font>)；</p>
+<p>PRINTF(<font style="color:#0000FF;">”\r\n GPT 1 second interrupt is occurred !”</font>)；</p>
 <p>}</p>
 </section>
 <section id="id20">
@@ -862,7 +862,7 @@
 <p><strong><font style="color:#006699;">else</font></strong></p>
 <p>{</p>
 <p><font style="color:#008200;">// Reduce the duty cycle until it reaches 0.</font></p>
-<p><strong><font style="color:#006699;">if</font></strong> (--pwmDutycycle == 0U)</p>
+<p><strong><font style="color:#006699;">if</font></strong> (–pwmDutycycle == 0U)</p>
 <p>{</p>
 <p>pwmDutyUp = <strong><font style="color:#006699;">true</font></strong>;</p>
 <p>}</p>
@@ -954,7 +954,7 @@
 <section id="id29">
 <h4>3.10.3 Experimental Phenomena<a class="headerlink" href="#id29" title="Link to this heading"></a></h4>
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot;</p>
-<p>(2) The development board is powered on, the M-core program is started, and a &quot;beep&quot; sound can be heard from the headphones and speakers, which lasts only 1-2 seconds due to limited memory.</p>
+<p>(2) The development board is powered on, the M-core program is started, and a “beep” sound can be heard from the headphones and speakers, which lasts only 1-2 seconds due to limited memory.</p>
 </section>
 </section>
 <section id="audio-rate-conversion-asrc">
@@ -1024,7 +1024,7 @@
 </section>
 <section id="watchdog">
 <h3>3.12  Watchdog<a class="headerlink" href="#watchdog" title="Link to this heading"></a></h3>
-<p>Forlinx OKMX8MP-C development board supports watchdog functionality. You can set the timeout and feeding intervals. If the watchdog isn't fed on time due to program anomalies, it triggers a software reset to maintain normal operation. M-core SDK package includes examples for normal watchdog feeding and handling watchdog timeout scenarios. Users can modify the watchdog feeding time and waiting time to simulate normal and abnormal conditions.</p>
+<p>Forlinx OKMX8MP-C development board supports watchdog functionality. You can set the timeout and feeding intervals. If the watchdog isn’t fed on time due to program anomalies, it triggers a software reset to maintain normal operation. M-core SDK package includes examples for normal watchdog feeding and handling watchdog timeout scenarios. Users can modify the watchdog feeding time and waiting time to simulate normal and abnormal conditions.</p>
 <section id="id33">
 <h4>3.12.1 Hardware Connection<a class="headerlink" href="#id33" title="Link to this heading"></a></h4>
 <p>This routine does not have any special wiring.</p>
@@ -1048,37 +1048,37 @@
 <p>config-&gt;enableInterrupt        = true; <font style="color:#008200;">// Enable the interrupt</font></p>
 <p>(2) Execution process</p>
 <p>After the CPU completes watchdog initialization, setting the timeout and feeding interval, if the feeding interval is less than the timeout period, the watchdog will be regularly fed, and the program will run normally. If the feeding interval is greater than the timeout period, the chip will reset due to timeout. The reset reason can be obtained from the WRSR register.</p>
-<p>After the CPU starts running, the chip's reset reason can be read from the WRSR register, which includes power-on reset, software reset, and watchdog timeout reset.</p>
+<p>After the CPU starts running, the chip’s reset reason can be read from the WRSR register, which includes power-on reset, software reset, and watchdog timeout reset.</p>
 <p><strong><font style="color:#006699;">switch</font></strong> (resetFlag &amp; (kWDOG_PowerOnResetFlag | kWDOG_TimeoutResetFlag | kWDOG_SoftwareResetFlag))</p>
 <p>{</p>
 <p><strong><font style="color:#006699;">case</font></strong> kWDOG_PowerOnResetFlag:</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot; Power On Reset!\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">” Power On Reset!\r\n”</font>);</p>
 <p><strong><font style="color:#006699;">break</font></strong>;</p>
 <p><strong><font style="color:#006699;">case</font></strong> kWDOG_TimeoutResetFlag:</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot; Time Out Reset!\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">” Time Out Reset!\r\n”</font>);</p>
 <p><strong><font style="color:#006699;">break</font></strong>;</p>
 <p><strong><font style="color:#006699;">case</font></strong> kWDOG_SoftwareResetFlag:</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot; Software Reset!\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">” Software Reset!\r\n”</font>);</p>
 <p><strong><font style="color:#006699;">break</font></strong>;</p>
 <p><strong><font style="color:#006699;">default</font></strong>:</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot; Error status!\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">” Error status!\r\n”</font>);</p>
 <p><strong><font style="color:#006699;">break</font></strong>;</p>
 <p>}</p>
 <p>When the development board is powered on, the chip resets due to power-on. At this point, the watchdog reset register is set, initiating a software reset of the chip.</p>
 <p><font style="color:#008200;">// Trigger a software reset if the system is reset after power up</font></p>
 <p><strong><font style="color:#006699;">if</font></strong> (resetFlag &amp; kWDOG_PowerOnResetFlag)</p>
 <p>{</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;\r\n- 1.Testing System reset by software trigger...   &quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”\r\n- 1.Testing System reset by software trigger…   “</font>);</p>
 <p>WDOG_TriggerSystemSoftwareReset(DEMO_WDOG_BASE);</p>
 <p>}</p>
 <p>After the chip resets with a software reset detected, the program initializes the watchdog timer with a timeout and enters an infinite `while(1)` loop without feeding the watchdog, leading to a watchdog timeout reset.</p>
 <p><strong><font style="color:#006699;">if</font></strong> (resetFlag &amp; kWDOG_SoftwareResetFlag)</p>
 <p>{</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;\r\n- 2.Testing system reset by WDOG timeout.\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”\r\n- 2.Testing system reset by WDOG timeout.\r\n”</font>);</p>
 <p>WDOG_GetDefaultConfig(&amp;config);</p>
 <p>config.timeoutValue = 0xFU; <font style="color:#008200;">/* Timeout value is (0xF + 1)/2 = 8 sec. */</font></p>
 <p>WDOG_Init(DEMO_WDOG_BASE, &amp;config);</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;--- wdog Init done---\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”— wdog Init done—\r\n”</font>);</p>
 <p><font style="color:#008200;">// Program dead loop, nobody feed the dog, watchdog timeout reset</font></p>
 <p><strong><font style="color:#006699;">while</font></strong> (1)</p>
 <p>{</p>
@@ -1088,24 +1088,24 @@
 <p>When setting the watchdog timeout and feeding interval for normal operation, the program feeds the watchdog and prints feeding information every 2 seconds if running correctly. When the watchdog times out, it triggers an interrupt and then resets. After resetting, the CPU reads the chip reset reason from the WRSR register, which indicates a timeout.</p>
 <p><strong><font style="color:#006699;">if</font></strong> (resetFlag &amp; kWDOG_TimeoutResetFlag)</p>
 <p>{</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;\r\n- 3.Test the WDOG refresh function by using interrupt.\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”\r\n- 3.Test the WDOG refresh function by using interrupt.\r\n”</font>);</p>
 <p>WDOG_GetDefaultConfig(&amp;config);</p>
 <p>config.timeoutValue       = 0xFU; <font style="color:#008200;">// Timeout period：(0xF+1)/2 = 8 sec.</font></p>
 <p>config.enableInterrupt    = <strong><font style="color:#006699;">true</font></strong>;</p>
 <p>config.interruptTimeValue = 0x4U; <font style="color:#008200;">// How long before reset to enter interrupt:(0x4)/2 = 2 sec </font></p>
 <p>WDOG_Init(DEMO_WDOG_BASE, &amp;config);</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;--- wdog Init done---\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”— wdog Init done—\r\n”</font>);</p>
 <p><strong><font style="color:#006699;">while</font></strong> (1)</p>
 <p>{</p>
 <p>WDOG_Refresh(DEMO_WDOG_BASE);</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot; \r\nWDOG has be refreshed!&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">” \r\nWDOG has be refreshed!”</font>);</p>
 <p>delay(SystemCoreClock);</p>
 <p>}</p>
 <p>}</p>
 </section>
 <section id="id35">
 <h4>3.12.3 Experimental Phenomena<a class="headerlink" href="#id35" title="Link to this heading"></a></h4>
-<p>(1) Compilation program, as introduced in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU User Compilation Manual V1.0&quot;, manually loads M core program in U-Boot;</p>
+<p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot;</p>
 <p>(2) Upon device power-up, it resets due to power-up, forcing a software reset.</p>
 <p><img alt="Image" src="_images/b0062dc710c5475d8504896c954afc0e.png" /></p>
 <p>After the program restarts due to a software reset, the watchdog is configured but not fed, causing a timeout and restart.</p>
@@ -1126,7 +1126,7 @@
 <p>（1）Initialization</p>
 <p>TMU initialization mainly involves initializing monitoring points, temperature thresholds, and interrupts.</p>
 <p>The details are as follows:</p>
-<p>Monitoring points: 8MP supports two detection points. The primary monitoring point measures the chip's memory, while the secondary monitoring point is located near the ARM core. This example selects the primary monitoring point.</p>
+<p>Monitoring points: 8MP supports two detection points. The primary monitoring point measures the chip’s memory, while the secondary monitoring point is located near the ARM core. This example selects the primary monitoring point.</p>
 <p>config-&gt;probeSelect = kTMU_ProbeSelectMainProbe;    <font style="color:#008200;">// Primary detection point</font></p>
 <p>Filter: The average low-pass filter threshold is 0.5.</p>
 <p>config-&gt;averageLPF  = kTMU_AverageLowPassFilter0_5; <font style="color:#008200;">//Average low-pass filter setting 0.5 </font></p>
@@ -1153,7 +1153,7 @@
 </section>
 <section id="id38">
 <h4>3.13.3 Experimental Phenomena<a class="headerlink" href="#id38" title="Link to this heading"></a></h4>
-<p>(1) Compilation program, as introduced in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU User Compilation Manual V1.0&quot;, manually loads M core program in U-Boot；</p>
+<p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot；</p>
 <p>(2) After the M core program completes the TMU initialization, read the average temperature and display it；</p>
 <p>(3) After waiting for the temperature to exceed 50°C, display the current temperature, trigger the interrupt, and disable the interrupt.</p>
 <p><img alt="Image" src="_images/55ffc744c0ca4c8ba1bbc2f62c1a8c34.png" /></p>
@@ -1198,7 +1198,7 @@
 </section>
 <section id="id41">
 <h4>3.14.3 Experimental Phenomena<a class="headerlink" href="#id41" title="Link to this heading"></a></h4>
-<p>(1) Compilation program, as introduced in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU User Compilation Manual V1.0&quot;, manually loads M core program in U-Boot；</p>
+<p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot；</p>
 <p>(2) After the CPU completes the DMA initialization, the serial port prints the value of the destination memory, initiates the transfer process, completes the copying of data from the source address to the destination address in the DDR memory, and then prints the value of the destination memory from the serial port.</p>
 <p><img alt="Image" src="_images/154998628bab44f89c93e32563a0d465.png" /></p>
 </section>
@@ -1224,7 +1224,7 @@
 <p>RDC_SetPeriphAccessConfig(APP_RDC, &amp;periphConfig);<font style="color:#008200;">// Save RDC configuration</font></p>
 <p>Accessing GPIO5 at this time will trigger a hardware error, and M7 will be restored to check the access right of GPIO5 in the error handling function.</p>
 <p><font style="color:#008200;">// Restore M7 to verify access to GPIO5</font></p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;RDC Peripheral acess GPIO5 error\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”RDC Peripheral acess GPIO5 error\r\n”</font>);</p>
 <p>periphConfig.policy |= RDC_ACCESS_POLICY(APP_CUR_MASTER_DID, kRDC_ReadWrite);</p>
 <p>RDC_SetPeriphAccessConfig(APP_RDC, &amp;periphConfig);</p>
 <p>(2) RDC Sema42 mutex control GPIO5</p>
@@ -1239,10 +1239,10 @@
 <p>RDC_SEMA42_Lock(APP_RDC_SEMA42, APP_RDC_SEMA42_GATE, APP_MASTER_INDEX, BOARD_DOMAIN_ID);</p>
 <p>M-core releases the RDC Sema42 lock on GPIO5, releasing the use of the pin:</p>
 <p>RDC_SEMA42_Unlock(APP_RDC_SEMA42, APP_RDC_SEMA42_GATE);</p>
-<p>The M core does not acquire the lock initially. During this time, if it accesses GPIO, a hardware error is triggered. In the error handling function, the lock is acquired to restore the M7 core's access rights to the GPIO.</p>
+<p>The M core does not acquire the lock initially. During this time, if it accesses GPIO, a hardware error is triggered. In the error handling function, the lock is acquired to restore the M7 core’s access rights to the GPIO.</p>
 <p><font style="color:#008200;">// Lock the sema42 door, and then peripheral devices can access it</font></p>
 <p>RDC_SEMA42_Lock(APP_RDC_SEMA42, APP_RDC_SEMA42_GATE, APP_MASTER_INDEX, APP_CUR_MASTER_DID</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;Sema42 acess periph error \r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”Sema42 acess periph error \r\n”</font>);</p>
 <p>（3）RDC control memory</p>
 <p>In addition to supporting access to peripherals, RDC can also set access to memory. The details are as follows:</p>
 <p>RDC_GetDefaultMemAccessConfig(&amp;memConfig); <font style="color:#008200;">// Get the default configuration of RDC memory</font></p>
@@ -1252,14 +1252,14 @@
 <p>memConfig.policy &amp;=~(RDC_ACCESS_POLICY(APP_CUR_MASTER_DID,kRDC_ReadWrite));<font style="color:#008200;">//M core cannot be accessed</font></p>
 <p>RDC_SetMemAccessConfig(APP_RDC, &amp;memConfig);<font style="color:#008200;">// Save RDC memory configuration</font></p>
 <p>Accessing this memory segment at this time will trigger a hardware error. The access rights to the memory for the M7 core will be restored in the error handling function.</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;RDC memory acess error\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”RDC memory acess error\r\n”</font>);</p>
 <p><font style="color:#008200;">// Make the memory area accessible.</font></p>
 <p>memConfig.policy |= RDC_ACCESS_POLICY(APP_CUR_MASTER_DID, kRDC_ReadWrite);</p>
 <p>RDC_SetMemAccessConfig(APP_RDC, &amp;memConfig);</p>
 </section>
 <section id="id44">
 <h4>3.15.3 Experimental Phenomena<a class="headerlink" href="#id44" title="Link to this heading"></a></h4>
-<p>(1) Compilation program, as introduced in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU User Compilation Manual V1.0&quot;, manually loads M core program in U-Boot；</p>
+<p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot；</p>
 <p>(2) The M7 core is configured to not access GPIO5. Attempting to control GPIO5 output triggers a hardware error. The access rights to GPIO5 are restored afterwards；</p>
 <p>(3) The M7 core is configured with Sema42 mutex. When GPIO5 is not locked, attempting to control GPIO5 output triggers a hardware error. Locking GPIO5 restores access rights to GPIO5；</p>
 <p>(4) The M7 core configuration cannot access the memory. At this time, accessing this segment of memory triggers a hardware error and restores the access right to this segment of memory.</p>
@@ -1268,7 +1268,7 @@
 </section>
 <section id="ipc">
 <h3>3.16  IPC<a class="headerlink" href="#ipc" title="Link to this heading"></a></h3>
-<p>8MP features 4 x A53 cores and 1 x M7 core. A53 cores and M7 core exchange information through theRPmsgframework. MailBox interrupts notify the other party of incoming messages. The messages details is placed in shared memory on the DDR. Virtio is used to implement zero-copy data transfer. Detailed information is not described here; please refer to the document &quot;Implementation of 8MP Dual-Core Communication Based on RPmsg&quot; in the application notes folder.</p>
+<p>8MP features 4 x A53 cores and 1 x M7 core. A53 cores and M7 core exchange information through theRPmsgframework. MailBox interrupts notify the other party of incoming messages. The messages details is placed in shared memory on the DDR. Virtio is used to implement zero-copy data transfer. Detailed information is not described here; please refer to the document “Implementation of 8MP Dual-Core Communication Based on RPmsg” in the application notes folder.</p>
 <p>There are two RPmsg routines in the M-core SDK package. rpmsg_lite_str_echo_rtos is the routine for passing arbitrary characters, andrpmsg_lite_pingpong_rtosis the routine for dual-core interactive communication. We will focus on the rpmsg _ lite _ pingpong _ rtos routine.</p>
 <section id="id45">
 <h4>3.16.1 Hardware Connection<a class="headerlink" href="#id45" title="Link to this heading"></a></h4>
@@ -1289,26 +1289,26 @@
 <p><strong><font style="color:#006699;">while</font></strong> (0 == rpmsg_lite_is_link_up(my_rpmsg))</p>
 <p>{</p>
 <p>}</p>
-<p>(<strong><font style="color:#006699;">void</font></strong>)PRINTF(<font style="color:#0000FF;">&quot;Link is up!\r\n&quot;</font>);</p>
+<p>(<strong><font style="color:#006699;">void</font></strong>)PRINTF(<font style="color:#0000FF;">”Link is up!\r\n”</font>);</p>
 <p>my_queue  = rpmsg_queue_create(my_rpmsg);<font style="color:#008200;">//Create RPMS queues and related control variables, callback functions, etc.  </font></p>
 <p>my_ept    = rpmsg_lite_create_ept(my_rpmsg, LOCAL_EPT_ADDR, rpmsg_queue_rx_cb, my_queue);		<font style="color:#008200;">// Receive callback functions and bind them to the bottom virtio buffer </font></p>
 <p>ns_handle = rpmsg_ns_bind(my_rpmsg, app_nameservice_isr_cb, ((<strong><font style="color:#006699;">void</font></strong> *)0)); <font style="color:#008200;">// Dual-core notification message callback function  </font></p>
 <p><font style="color:#008200;">//Some delay is introduced to avoid that the A-core message publication is not captured by the M-core. This can happen when the M-core executes too fast and triggers the ns announcement message before the A-core registers the nameservice_isr_cb</font></p>
 <p>SDK_DelayAtLeastUs(1000000U, SDK_DEVICE_MAXIMUM_CPU_CLOCK_FREQUENCY);<font style="color:#008200;">//1 sec  </font></p>
 <p>(<strong><font style="color:#006699;">void</font></strong>)rpmsg_ns_announce(my_rpmsg, my_ept, RPMSG_LITE_NS_ANNOUNCE_STRING, (uint32_t)RL_NS_CREATE);</p>
-<p>(<strong><font style="color:#006699;">void</font></strong>)PRINTF(<font style="color:#0000FF;">&quot;Nameservice announce sent.\r\n&quot;</font>);</p>
+<p>(<strong><font style="color:#006699;">void</font></strong>)PRINTF(<font style="color:#0000FF;">”Nameservice announce sent.\r\n”</font>);</p>
 <p>(2) Receive messages sent by the A-core and save channel-related information</p>
 <p>The M-core receives the A-core Hello world! message, thus obtaining the A-core channel number, which will be used for subsequent ping-pong data transmissions.</p>
 <p><font style="color:#008200;">//2 Waiting for A core to send hello world! information  </font></p>
 <p>(<strong><font style="color:#006699;">void</font></strong>)rpmsg_queue_recv(my_rpmsg, my_queue, (uint32_t *)&amp;remote_addr, helloMsg, <strong><font style="color:#006699;">sizeof</font></strong>(helloMsg), ((<strong><font style="color:#006699;">void</font></strong> *)0),RL_BLOCK);</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;msg = %s\r\n&quot;</font>,helloMsg);</p>
+<p>PRINTF(<font style="color:#0000FF;">”msg = %s\r\n”</font>,helloMsg);</p>
 <p>(3) Receive and transmit function of RPmsg to complete data ping-pong processing</p>
 <p>The RPmsg transceiver function is used to complete the dual-core data transceiver, and the dual-core respectively adds 1 to the received data until 100 stops.</p>
 <p><font style="color:#008200;">// 3 Ping-pong data receiving and sending. Because the amount of data is very small, there is no need for delay. When sending large data, the delay between each frame is increased by several to tens of milliseconds.  </font></p>
 <p><strong><font style="color:#006699;">while</font></strong> (msg.DATA &lt;= 100U)</p>
 <p>{</p>
 <p>(<strong><font style="color:#006699;">void</font></strong>)rpmsg_queue_recv(my_rpmsg, my_queue, (uint32_t *)&amp;remote_addr, (<strong><font style="color:#2E8B57;">char</font></strong> *)&amp;msg, <strong><font style="color:#006699;">si			zeof</font></strong>(THE_MESSAGE),  ((<strong><font style="color:#006699;">void</font></strong> *)0), RL_BLOCK);</p>
-<p>(<strong><font style="color:#006699;">void</font></strong>)PRINTF(<font style="color:#0000FF;">&quot;M7 rx data:%d\r\n&quot;</font>,msg.DATA);</p>
+<p>(<strong><font style="color:#006699;">void</font></strong>)PRINTF(<font style="color:#0000FF;">”M7 rx data:%d\r\n”</font>,msg.DATA);</p>
 <p>msg.DATA++;</p>
 <p>(<strong><font style="color:#006699;">void</font></strong>)rpmsg_lite_send(my_rpmsg, my_ept, remote_addr, (<strong><font style="color:#2E8B57;">char</font></strong> *)&amp;msg, <strong><font style="color:#006699;">sizeof</font></strong>(THE_MESSAGE)			, RL_BLOCK);</p>
 <p>}</p>
@@ -1325,7 +1325,7 @@
 </section>
 <section id="id47">
 <h4>3.16.3 Experimental Phenomena<a class="headerlink" href="#id47" title="Link to this heading"></a></h4>
-<p>(1) Compilation program, as introduced in Section 3.1.1 of the &quot;OKMX8MPQ-C_MCU User Compilation Manual V1.0&quot;, manually loads M core program in U-Boot；</p>
+<p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot；</p>
 <p>(2) Linux Operation: The official SDK does not provide ready-made application layer invocation examples. There is only a ping-pong example encapsulated in the driver, which cannot be modified by the user at the application layer. It is necessary to manually load the module, produce the equipment file, write the A-core application program, and complete the data receiving and sending.</p>
 <p>① Enter the<font style="color:#0000FF;">boot</font>command in the A-core debugging serial port to start the A-core.</p>
 <p>② In the shell interface, enter:</p>
@@ -1367,11 +1367,11 @@
 <p>The details are as follows:</p>
 <p>Task creation: The main function creates three tasks: queue sending, receiving, and semaphore.</p>
 <p><font style="color:#008200;">//  Create queue receive task</font></p>
-<p>if(xTaskCreate(prvQueueReceiveTask,&quot;Rx&quot;,configMINIMAL_STACK_SIZE+166,NULL,mainQUEUE_RECEIVE_TASK_PRIORITY,NULL)!=pdPASS)</p>
+<p>if(xTaskCreate(prvQueueReceiveTask,”Rx”,configMINIMAL_STACK_SIZE+166,NULL,mainQUEUE_RECEIVE_TASK_PRIORITY,NULL)!=pdPASS)</p>
 <p><font style="color:#008200;">// Create Queue send task</font></p>
-<p>if(xTaskCreate(prvQueueSendTask,&quot;TX&quot;,configMINIMAL_STACK_SIZE+166, NULL, mainQUEUE_SEND_TASK_PRIORITY, NULL) !=pdPASS)</p>
+<p>if(xTaskCreate(prvQueueSendTask,”TX”,configMINIMAL_STACK_SIZE+166, NULL, mainQUEUE_SEND_TASK_PRIORITY, NULL) !=pdPASS)</p>
 <p><font style="color:#008200;">// Create semaphore task</font></p>
-<p>if(xTaskCreate(prvEventSemaphoreTask,&quot;Sem&quot;,configMINIMAL_STACK_SIZE+166,NULL,mainEVENT_SEMAPHORE_TASK_PRIORITY, NULL) != pdPASS)</p>
+<p>if(xTaskCreate(prvEventSemaphoreTask,”Sem”,configMINIMAL_STACK_SIZE+166,NULL,mainEVENT_SEMAPHORE_TASK_PRIORITY, NULL) != pdPASS)</p>
 <p><strong>Queue</strong> Queue send task, block for 200ms and then send data to the queue; Queue receive task, block and read the queue, if the data is read correctly, print the number of items received in the queue at that moment.</p>
 <p><font style="color:#008200;">// Queue sending task: send data to the queue after blocking for 200ms</font></p>
 <p><strong><font style="color:#006699;">static</font></strong> <strong><font style="color:#006699;">void</font></strong> prvQueueSendTask(<strong><font style="color:#006699;">void</font></strong> *pvParameters)</p>
@@ -1399,14 +1399,14 @@
 <p><strong><font style="color:#006699;">if</font></strong> (ulReceivedValue == 100UL)</p>
 <p>{</p>
 <p>ulCountOfItemsReceivedOnQueue++;</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;Receive message counter: %d.\r\n&quot;</font>, ulCountOfItemsReceivedOnQueue);</p>
+<p>PRINTF(<font style="color:#0000FF;">”Receive message counter: %d.\r\n”</font>, ulCountOfItemsReceivedOnQueue);</p>
 <p>}</p>
 <p>}</p>
 <p>}</p>
 <p>Soft timer: Set the soft timer period 1s, when the time is up, call the callback function, record the number of times, and print via serial port.</p>
 <p><font style="color:#008200;">//The time for creating the software timer task is 1 s, and the cycle is periodic.</font></p>
 <p>xExampleSoftwareTimer = xTimerCreate(</p>
-<p><font style="color:#0000FF;">“LEDTimer&quot;</font>,</p>
+<p><font style="color:#0000FF;">“LEDTimer”</font>,</p>
 <p>mainSOFTWARE_TIMER_PERIOD_MS,</p>
 <p>pdTRUE,</p>
 <p>(<strong><font style="color:#006699;">void</font></strong> *)0,</p>
@@ -1418,7 +1418,7 @@
 <p>{</p>
 <p><font style="color:#008200;">//It enters the callback function once every 1s, and the count increases</font></p>
 <p>ulCountOfTimerCallbackExecutions++;</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;Soft timer: %d s.\r\n&quot;</font>, ulCountOfTimerCallbackExecutions);</p>
+<p>PRINTF(<font style="color:#0000FF;">”Soft timer: %d s.\r\n”</font>, ulCountOfTimerCallbackExecutions);</p>
 <p>}</p>
 <p>System Tick Clock: By setting the configTICK_RATE_HZ in the FreeRTOSConfig.h file, the task tick interrupt frequency can be configured. When starting the task scheduler, the system will calculate the value to be written to the tick counter based on another variable, configCPU_CLOCK_HZ, which represents the CPU frequency. This will initiate the timer interrupt.</p>
 <p><font style="color:#008200;">// Set the system clock tick to 1000/200=5ms</font></p>
@@ -1445,11 +1445,11 @@
 <p><font style="color:#008200;">The task blocks until the semaphore can be acquired</font></p>
 <p><strong><font style="color:#006699;">if</font></strong> (xSemaphoreTake(xEventSemaphore, portMAX_DELAY) != pdTRUE)</p>
 <p>{</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;Failed to take semaphore.\r\n&quot;</font>);</p>
+<p>PRINTF(<font style="color:#0000FF;">”Failed to take semaphore.\r\n”</font>);</p>
 <p>}</p>
 <p><font style="color:#008200;">//The number of times the semaphore is received accumulate.</font></p>
 <p>ulCountOfReceivedSemaphores++;</p>
-<p>PRINTF(<font style="color:#0000FF;">&quot;Event task is running. Get semaphore :%d \r\n&quot;</font>,ulCountOfReceivedSemaphores);</p>
+<p>PRINTF(<font style="color:#0000FF;">”Event task is running. Get semaphore :%d \r\n”</font>,ulCountOfReceivedSemaphores);</p>
 <p>}</p>
 <p>}</p>
 <p>Exception Handling: When memory allocation fails, a stack error occurs, or the task is idle, the corresponding function is triggered, allowing users to add custom handling routines.</p>
