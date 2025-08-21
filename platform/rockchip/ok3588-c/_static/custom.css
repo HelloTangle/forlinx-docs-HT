@@ -161,32 +161,25 @@ body {
   }
 
 
-    /* 表格外层允许横向滚动 */
-    .rst-content .table-wrapper,
-    .rst-content .md-table-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    /* 表格自适应内容宽度 */
-    .rst-content table {
-        width: auto !important;
-        min-width: 300px;  /* 小屏幕适配 */
-        table-layout: auto;
-        border-collapse: collapse;
-    }
-
-    /* 单元格保持单行，单词不换行 */
-    .rst-content table td,
-    .rst-content table th {
-        white-space: nowrap;   /* 单行显示，不换行 */
-        font-size: 12px;       /* 移动端字体 */
-        padding: 3px 6px;
-        overflow: hidden;      /* 保证不会撑破容器 */
-        text-overflow: clip;   /* 不截断显示 */
-    }
-
-
+  .rst-content table-wrapper,
+  .rst-content .md-table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+  }
+  
+  .rst-content table {
+      width: auto;
+      min-width: 600px;
+      table-layout: auto;
+  }
+  
+  .rst-content table td,
+  .rst-content table th {
+      white-space: normal;
+      word-break: break-word;
+      padding: 4px 8px; /* 增加一点内边距更易阅读 */
+  }
+  
 
 
 
