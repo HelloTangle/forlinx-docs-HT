@@ -169,9 +169,9 @@ body {
   }
   .rst-content table td,
   .rst-content table th {
-    white-space: normal !important;
-    word-break: break-word !important;
-    overflow-wrap: break-word !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
   }
 
   /* 移动端正文行高略微减小，提高紧凑感 */
