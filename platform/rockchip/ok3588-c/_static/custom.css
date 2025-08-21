@@ -161,9 +161,6 @@ body {
   }
 
 
-
-
-
   .rst-content table-wrapper,
   .rst-content .md-table-wrapper {
       overflow-x: auto;
@@ -182,12 +179,9 @@ body {
   .rst-content table th p {
       white-space: normal !important;
       word-break: normal !important;
-      font-size: 14px !important;
       padding: 4px 8px; /* 增加一点内边距更易阅读 */
       line-height: 1.4; /* 行距稍微放大，避免太挤 */
   }
-    
-
 
 
   /* 移动端正文行高略微减小，提高紧凑感 */
@@ -195,8 +189,6 @@ body {
     line-height: 1.5;
   }  
 }
-
-
 
 /* 移动端极小屏字体微调（可选） */
 @media (max-width: 480px) {
