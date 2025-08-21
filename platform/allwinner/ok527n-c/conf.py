@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'NXP IMX8MP Documentation'
+project = 'allwinner T527N Documentation'
 author = 'Forlinx Embedded'
 copyright = 'Forlinx Embedded'
 # -- General configuration ---------------------------------------------------
@@ -16,7 +16,7 @@ extensions = [
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
 html_baseurl = "https://hellotangle.github.io/forlinx-docs-HT/allwinner/ok527n-c/"
-
+language = None
 
 
 templates_path = ['_templates']
