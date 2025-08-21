@@ -54,7 +54,7 @@ jobs:
         for sm in docs_build/*/*/sitemap.xml; do
           if [ -f "$sm" ]; then
             echo "Cleaning $sm ..."
-            sed -i 's#<loc>\(.*\)/en/\(.*\)</loc>#<loc>\1/\2</loc>#g' "$sm"
+            sed -i 's#/en/#/#g' "$sm"
           fi
         done
 
