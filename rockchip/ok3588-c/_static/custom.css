@@ -161,31 +161,26 @@ body {
   }
 
 
-  /* 表格容器允许横向滚动 */
-  .rst-content table,
-  .md-table-wrapper table {
-    display: table !important;       /* 保留表格原有布局 */
-    max-width: 100% !important;
-    width: auto !important;
-  }
-
-  .rst-content table-wrapper,
-  .md-table-wrapper {
-    overflow-x: auto !important;     /* 横向滚动 */
+  /* 表格外层容器允许横向滚动 */
+  .rst-content .md-typeset,
+  .rst-content .md-table-wrapper,
+  .rst-content .table-wrapper {
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  /* 单元格保持一行显示，不换行 */
+  /* 表格保持原有布局 */
+  .rst-content table {
+    max-width: 100%;
+  }
+
+  /* 单元格保持一行显示 */
   .rst-content table td,
-  .rst-content table th,
-  .md-table-wrapper td,
-  .md-table-wrapper th {
+  .rst-content table th {
     white-space: nowrap !important;
     word-break: normal !important;
     overflow-wrap: normal !important;
-  } 
-  
-
+  }
 
 
   /* 移动端正文行高略微减小，提高紧凑感 */
