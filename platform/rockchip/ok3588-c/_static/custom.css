@@ -201,7 +201,7 @@ body {
 /* 移动端极小屏字体微调（可选） */
 @media (max-width: 480px) {
   body, .rst-content, .wy-nav-content {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
