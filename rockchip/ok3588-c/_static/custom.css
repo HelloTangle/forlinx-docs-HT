@@ -161,6 +161,9 @@ body {
   }
 
 
+
+
+
   .rst-content table-wrapper,
   .rst-content .md-table-wrapper {
       overflow-x: auto;
@@ -174,13 +177,16 @@ body {
   }
   
   .rst-content table td,
-  .rst-content table th {
+  .rst-content table th,
+  .rst-content table td p,
+  .rst-content table th p {
       white-space: nowrap !important;
       word-break: normal !important;
-      font-size: 12px !important;
+      font-size: 14px !important;
       padding: 4px 8px; /* 增加一点内边距更易阅读 */
+      line-height: 1.4; /* 行距稍微放大，避免太挤 */
   }
-  
+    
 
 
 
@@ -195,7 +201,7 @@ body {
 /* 移动端极小屏字体微调（可选） */
 @media (max-width: 480px) {
   body, .rst-content, .wy-nav-content {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
