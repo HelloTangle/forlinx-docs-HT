@@ -161,25 +161,34 @@ body {
   }
 
 
+
+  /* 表格外层允许横向滚动 */
   .rst-content table-wrapper,
   .rst-content .md-table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
   }
 
-  /* 表格宽度自适应内容，不压缩 */
+  /* 表格自适应内容宽度 */
   .rst-content table {
-    width: auto !important;      /* 重要！不要 100% */
-    min-width: 600px;            /* 可以设置最小宽度 */
-    table-layout: auto;          /* 自动列宽 */
+      width: auto !important;
+      min-width: 300px;  /* 小屏幕适配 */
+      table-layout: auto;
+      border-collapse: collapse;
   }
 
+  /* 单元格保持单行，单词不换行 */
   .rst-content table td,
   .rst-content table th {
-      white-space: nowrap !important; /* 保持单行显示 */
-      overflow: visible;              /* 防止强制截断 */
-      word-break: normal;             /* 不在单词中间断开 */
+      white-space: nowrap;
+      overflow: visible;       /* 不截断内容 */
+      word-break: normal;      /* 单词不换行 */
+      font-size: 12px;         /* 移动端适合字体 */
+      padding: 3px 6px;        /* 内边距稍微小一点 */
   }
+
+
+
 
   /* 移动端正文行高略微减小，提高紧凑感 */
   body, .rst-content, .wy-nav-content {
