@@ -43,7 +43,7 @@ jobs:
             platform_name=$(basename "$project")
             outdir="docs_build/$project_name/$platform_name"
             mkdir -p "$outdir"
-            sphinx-build -b html -D language="" "$project" "$outdir"
+            sphinx-build -b html -D language=None "$project" "$outdir"
           fi
         done
 
