@@ -58,7 +58,7 @@ jobs:
           if [ -f "$sm" ]; then
             relpath=${sm#docs_build/}
             echo "  <sitemap>" >> docs_build/sitemap_index.xml
-            echo "    <loc>https://docs.forlinx.net/$relpath</loc>" >> docs_build/sitemap_index.xml
+            echo "    <loc>https://hellotangle.github.io/forlinx-docs-HT/$relpath</loc>" >> docs_build/sitemap_index.xml
             echo "  </sitemap>" >> docs_build/sitemap_index.xml
           fi
         done
