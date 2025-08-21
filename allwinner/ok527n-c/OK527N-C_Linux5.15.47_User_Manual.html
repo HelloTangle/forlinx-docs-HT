@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="./">
+<html class="writer-html5" lang="None" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -16,7 +16,7 @@
     <link rel="canonical" href="https://hellotangle.github.io/forlinx-docs-HT/allwinner/ok527n-c/OK527N-C_Linux5.15.47_User_Manual.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/documentation_options.js?v=938b9a03"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -237,7 +237,7 @@
 </section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p><font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the</font>user’s understanding, mainly for practical use. Please refer to “OK527N-C _ Linux 5.15.147 + Qt5.15.8 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment construction.</p>
+<p><font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the</font>user's understanding, mainly for practical use. Please refer to “OK527N-C _ Linux 5.15.147 + Qt5.15.8 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment construction.</p>
 <p>There are total six parts:</p>
 <p>Chapter 1. provides an overview of the product, briefly introducing the interface resources of the development board, the relevant driver paths in the kernel source code, supported flashing and booting methods, as well as explanations of key sections in the documentation;</p>
 <p>Chapter 2. is the fast boot/startup of the product, which can adopt two ways of serial port login and network login;</p>
@@ -263,12 +263,12 @@
 </table>
 <p>forlinx&#64;ubuntu: Ubuntu development environment account information</p>
 <p>Users can determine the operating environment for functional operations based on this information.</p>
-<p>Example: After inserting the TF card, you can use the “ls” command to view the mounting directory.</p>
+<p>Example: After inserting the TF card, you can use the &quot;ls&quot; command to view the mounting directory.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/# ls /run/media                                //List files in the/run/media directory
 mmcblk0p1  mmcblk0p5  mmcblk1p1
 </pre></div>
 </div>
-<p>root&#64;OK527: The username is ‘’root’’, the hostname is ‘’OK527’’, indicating operations are being performed on the development board using the root user.</p>
+<p>root&#64;OK527: The username is ''root'', the hostname is ''OK527'', indicating operations are being performed on the development board using the root user.</p>
 <p>// : Explanation of ls /run/media operation, no input required.</p>
 </section>
 <section id="application-scope">
@@ -291,7 +291,7 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <td class="text-center"><p>V1.0</p></td>
 <td class="text-center"><p>V1.1</p></td>
 <td class="text-center"><p>V1.1 and Above</p></td>
-<td><p>User’s Manual Initial Version</p></td>
+<td><p>User's Manual Initial Version</p></td>
 </tr>
 </tbody>
 </table>
@@ -303,7 +303,7 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <p><font style="color:black;">OK527 development board uses a </font>SoM<font style="color:black;">+ carrier board structure, designed and developed based on the AllWinner T527 processor. The processor features an ARM Cortex-A55, 2Tops NPU, HiFi4 DSP, G57 MC1 GPU multi-core heterogeneous architecture. The processor consists of four small cores with a frequency of 1.</font>4G<font style="color:black;">Hz and four big cores with a frequency of 1.8GHz. The SoM comes in two configurations: one with 4GB LPDDR4 memory and 32GB eMMC, and the other with 2GB LPDDR4 memory and 16GB eMMC. The OK527N-C development board offers rich interface resources and multiple peripheral interfaces, including network card, CPU built-in audio codec, GPADC, LRADC, TF Card, LVDS, HDM, DP, RGB, WiFi, 4G, PCIe, MIPI-CSI, and more.</font></p>
 <p><img alt="Image" src="_images/06c53e4a05ac401f98dfa0199879ae61.png" /></p>
 <p><strong>Note：</strong></p>
-<p><strong>The hardware parameters are not described in this software manual. Before referring to this manual for software development, please read “OK527N-C _ Hardware Manual” under the path of “U disk Path: User Data \ Hardware Data \ 1-Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</strong></p>
+<p><strong>The hardware parameters are not described in this software manual. Before referring to this manual for software development, please read &quot;OK527N-C _ Hardware Manual&quot; under the path of &quot;U disk Path: User Data \ Hardware Data \ 1-Manual&quot; to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</strong></p>
 </section>
 <section id="introduction-to-linux-5-15-104-system-software-resources">
 <h3>1.2 Introduction to Linux 5.15.104 System Software Resources<a class="headerlink" href="#introduction-to-linux-5-15-104-system-software-resources" title="Link to this heading"></a></h3>
@@ -409,7 +409,7 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <section id="flashing-and-boot-settings">
 <h3>1.3 Flashing and Boot Settings<a class="headerlink" href="#flashing-and-boot-settings" title="Link to this heading"></a></h3>
 <p>OK527 supports TF card and USB OTG programming, and the hardware supports eMMC startup.</p>
-<p>Insert the TF card into the development board before powering on. After powering on, the TF card flashing process will begin; otherwise, it will boot from eMMC. For detailed flashing instructions, please refer to the “System Flashing”.</p>
+<p>Insert the TF card into the development board before powering on. After powering on, the TF card flashing process will begin; otherwise, it will boot from eMMC. For detailed flashing instructions, please refer to the &quot;System Flashing&quot;.</p>
 <p><strong>Note: The OK527 development board does not support SPI NOR booting.</strong></p>
 </section>
 </section>
@@ -423,7 +423,7 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <li><p>12V3A DC Power Cable;</p>
 <p>Debugging serial cable (Serial Login);</p>
 </li>
-<li><p>The development board features a USB Type-C port for debugging purposes, allowing you to connect it to a PC using a Type-A to Type-C cable in order to access the board’s status information;</p></li>
+<li><p>The development board features a USB Type-C port for debugging purposes, allowing you to connect it to a PC using a Type-A to Type-C cable in order to access the board's status information;</p></li>
 <li><p>Network cable (for network login);</p></li>
 <li><p>According to the development board interface to connect the screen (Based on display needs);</p></li>
 <li><p>Check the booting method (the system will prioritize booting from the TF card if inserted; otherwise, it will boot from eMMC).</p></li>
@@ -468,7 +468,7 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <p>The specific method of operation is as follows:</p>
 <p>1. Connect eth0 of the development board to the computer through the network and power up the development board. A red light on the SoM will blink after the kernel starts, and the network card connected to the computer will blink quickly after normal startup. At this point, we can test the network connection;</p>
 <p><img alt="Image" src="_images/2c6fb190a0024aaaa36d36d1f6d5864e.png" /></p>
-<p>2. Close the computer firewall (General computer operations, not described here in detail), then open the computer’s run command;</p>
+<p>2. Close the computer firewall (General computer operations, not described here in detail), then open the computer's run command;</p>
 <p><img alt="Image" src="_images/2b9890db290046fdbb1d34fb7ffc3c35.png" /></p>
 <p>3. Use cmd to open the administrator interface , and use the ping command to test the network connection status of the computer and the development board.</p>
 <p>A data return indicates a normal network connection.</p>
@@ -478,12 +478,12 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <h4>2.3.2 SSH server<a class="headerlink" href="#ssh-server" title="Link to this heading"></a></h4>
 <p><strong>Description:</strong></p>
 <ul class="simple">
-<li><p><strong>The default factory SSH login account is “root” and the password is also “root”;</strong></p></li>
+<li><p><strong>The default factory SSH login account is &quot;root&quot; and the password is also &quot;root&quot;;</strong></p></li>
 <li><p><strong>The default factory IP for eth0 is 192.168.0.232;</strong></p></li>
 <li><p><strong>File transfers can be performed with scp.</strong></p></li>
 </ul>
 <p><img alt="Image" src="_images/846ff8b162c546ac9e268600a5dce468.png" /></p>
-<p>Click “Open”, the following dialog box will appear, click “Yes” to enter the login screen.</p>
+<p>Click &quot;Open&quot;, the following dialog box will appear, click &quot;Yes&quot; to enter the login screen.</p>
 <p><img alt="Image" src="_images/326d584bb5d247ffa6bc2f4c325934fc.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Login as：root
 root@192.168.0.232&#39;s password:               //Enter the password &quot;root&quot; for the root account of the development board as prompted.
@@ -527,7 +527,7 @@ root@OK527:~$
 <p>Enter 3 will cyclically select the Display1 Type screen;</p>
 <p>Enter 4 will cyclically select the multiplexing of PCIe and USB3.0.</p>
 <p>Enter 5 will cyclically select the main screen;</p>
-<p>Take the “LVDS 1280x800” and “HDMI” screens as an example. After entering the uboot menu, press the corresponding number until the following content is displayed, and then press 1 to restart.</p>
+<p>Take the &quot;LVDS 1280x800&quot; and &quot;HDMI&quot; screens as an example. After entering the uboot menu, press the corresponding number until the following content is displayed, and then press 1 to restart.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
 0:Exit to console
 1:Reboot
@@ -633,7 +633,7 @@ Swap:             0           0           0
 <h2>3. OK527 Platform Interface Function Use and Test<a class="headerlink" href="#ok527-platform-interface-function-use-and-test" title="Link to this heading"></a></h2>
 <p><font style="color:black;"> </font><strong>Description:</strong></p>
 <p><strong>Users should follow this section when using the screen with the QT file system, but can skip it for non-QT operations.</strong></p>
-<p><strong>This chapter details QT functions. With the default device and driver working normally, it’s advisable to test interface functions after command line tests.</strong></p>
+<p><strong>This chapter details QT functions. With the default device and driver working normally, it's advisable to test interface functions after command line tests.</strong></p>
 <p>QT test source code path: source code OK 527-linux-sdk/platform/forlinx/forlinx _ qt _ demo.</p>
 <p>Testing program path in the development board’s file system: /usr/bin.</p>
 <p>This chapter mainly explains the usage of the expansion interfaces on the development board in QT interface. The testing program is only for reference, and please make adjustments based on your actual situations when using it.</p>
@@ -653,7 +653,7 @@ Swap:             0           0           0
 <p>Icon：<img alt="Image" src="_images/8c4ed03d40d74850bf31dbac258f1ed8.png" /></p>
 <p>Clicking on the network configuration icon will open a interface program that supports two modes: STATIC and DHCP.</p>
 <p>STATIC Mode</p>
-<p>After clicking on the network configuration icon, select the STATIC mode as shown in the figure. You can then configure the IP address, subnet mask, gateway, and DNS settings. Once you have set the parameters, click on “Apply and Restart Network”.</p>
+<p>After clicking on the network configuration icon, select the STATIC mode as shown in the figure. You can then configure the IP address, subnet mask, gateway, and DNS settings. Once you have set the parameters, click on &quot;Apply and Restart Network&quot;.</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Relevant Parameter</strong></p></th>
@@ -687,14 +687,14 @@ Swap:             0           0           0
 <section id="browser-test">
 <h3>3.3 Browser Test<a class="headerlink" href="#browser-test" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/4fdf6ce0e5a945068ca0af853ae7cda9.png" /></p>
-<p>Click the browser icon and ensure a smooth network connection with available DNS before accessing external sites. Upon browser startup, it defaults to visiting Forlinx Embedded’s official website, as shown below:</p>
+<p>Click the browser icon and ensure a smooth network connection with available DNS before accessing external sites. Upon browser startup, it defaults to visiting Forlinx Embedded's official website, as shown below:</p>
 <p><img alt="Image" src="_images/492a4d3587424cfba9b634f07b3e773c.png" /></p>
 <p><strong>Note: If the development board time is abnormal, it will cause certificate problems.</strong></p>
 </section>
 <section id="g-test">
 <h3>3.4 4G Test<a class="headerlink" href="#g-test" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/13cbef6336ce49f4a9c02543f92e5a08.png" /></p>
-<p>The “4G” test program is used to test the OK527 external 4G module (EC20). Before testing, power off the development board, insert the SIM card into the 4G module (ensure correct SIM direction), and launch the test application. This test employs the EC20 module as a reference.</p>
+<p>The &quot;4G&quot; test program is used to test the OK527 external 4G module (EC20). Before testing, power off the development board, insert the SIM card into the 4G module (ensure correct SIM direction), and launch the test application. This test employs the EC20 module as a reference.</p>
 <p><img alt="Image" src="_images/967d5501a0c14067a9335a9818759cb4.png" /></p>
 <p><img alt="Image" src="_images/17bcdf9cb5db451c908a4db324ea4496.png" /></p>
 <p>Click the CONNECT button then the program will automatically enter the dialing process and get the IP to set the DNS, etc. After waiting patiently for a few seconds, click the ping button to test it.</p>
@@ -752,11 +752,11 @@ Swap:             0           0           0
 <h3>3.7 WIFI Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
 <p><strong>Description:</strong></p>
 <p><strong>The AW-CM358 chip is soldered on the OK527 carrier board.</strong></p>
-<p><strong>“WIFI” is a tool for configuring and testing the STA (station) mode of Wi-Fi</strong>.</p>
+<p><strong>&quot;WIFI&quot; is a tool for configuring and testing the STA (station) mode of Wi-Fi</strong>.</p>
 <p>1. Click icon<img alt="Image" src="_images/385fdc5821e243f3a949e0c26d7873b9.png" />to enter test interface, select module from dropdown, enter SSID for Wi-Fi connection.</p>
-<p>Enter router name &amp; password in PAWD, click “connect” to WiFi；</p>
+<p>Enter router name &amp; password in PAWD, click &quot;connect&quot; to WiFi；</p>
 <p><img alt="Image" src="_images/a9c7ff0405bd4de8a0f9a6470ad95792.png" /></p>
-<p>2. After the connection is successful, click “ping” to test the network after setting the IP;</p>
+<p>2. After the connection is successful, click &quot;ping&quot; to test the network after setting the IP;</p>
 <p><img alt="Image" src="_images/2d7a458942f644c79ad11fe78bfc79dd.png" /></p>
 </section>
 <section id="rtc-test">
@@ -766,30 +766,30 @@ Swap:             0           0           0
 <p>RTC test includes setting time, power cycling, rerunning test software, and verifying RTC sync.</p>
 <p>Run the RTC test software to view and set the current system time with the following interface:</p>
 <p><img alt="Image" src="_images/2e3029188fd745669a09a5325d549ec7.png" /></p>
-<p>Click “set” to set the time. After setting, click the save button to save the setting.<font style="color:black;"> Then power off and power on after a period of time. Run the</font><font style="color:black;"> RTC </font><font style="color:black;">test software again to read the time automatically. It can be seen that the </font><font style="color:black;"> RTC </font><font style="color:black;">time has been synchronized and the</font><font style="color:black;">RTC</font><font style="color:black;"> test is normal.</font></p>
+<p>Click &quot;set&quot; to set the time. After setting, click the save button to save the setting.<font style="color:black;"> Then power off and power on after a period of time. Run the</font><font style="color:black;"> RTC </font><font style="color:black;">test software again to read the time automatically. It can be seen that the </font><font style="color:black;"> RTC </font><font style="color:black;">time has been synchronized and the</font><font style="color:black;">RTC</font><font style="color:black;"> test is normal.</font></p>
 </section>
 <section id="key-test">
 <h3>3.9 Key Test<a class="headerlink" href="#key-test" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/583f89cff0cf4ebd8db8a3baf67aefe2.png" /></p>
-<p>“Keypad” tests platform buttons’ availability by checking if pressed buttons turn blue. Interface shown below.</p>
+<p>&quot;Keypad&quot; tests platform buttons' availability by checking if pressed buttons turn blue. Interface shown below.</p>
 <p><img alt="Image" src="_images/a92e9fb982d6497cb5f6e520b1b6c3a3.png" /></p>
 <p>There are 6 physical buttons USER, VOL +, VOL-, HOME, MENU and ENTER on the side of OK527 carrier board, which respectively correspond to User, V +, V-, Home, Menu and Enter in the test program. When the button is pressed, the corresponding button in the test application will turn blue, indicating that the button function is normal.</p>
 </section>
 <section id="watchdog-test">
 <h3>3.10 Watchdog Test<a class="headerlink" href="#watchdog-test" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/01580cc9162a46b99b05bc277e34fc0a.png" /></p>
-<p>“WatchDog” tests the functionality of the watchdog feature.</p>
+<p>“WatchDog&quot; tests the functionality of the watchdog feature.</p>
 <p>Interface as follows:</p>
 <p><img alt="Image" src="_images/a54150d7f7894642b8dcc433b6e646ba.png" /></p>
-<p>Checking “feed dog” &amp; clicking “open watchdog” starts watchdog function with dog-feeding. System shouldn’t restart under normal conditions.</p>
-<p>Unchecking “Feed Dog” &amp; clicking “Activate Watchdog” starts watchdog function without dog-feeding. After about 10 seconds, the system restarts, indicating normal watchdog function.”</p>
+<p>Checking &quot;feed dog&quot; &amp; clicking &quot;open watchdog&quot; starts watchdog function with dog-feeding. System shouldn't restart under normal conditions.</p>
+<p>Unchecking &quot;Feed Dog&quot; &amp; clicking &quot;Activate Watchdog” starts watchdog function without dog-feeding. After about 10 seconds, the system restarts, indicating normal watchdog function.”</p>
 </section>
 <section id="ping-test">
 <h3>3.11 Ping Test<a class="headerlink" href="#ping-test" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/e2d8ef4843d7428497a04aa1209744f8.png" /></p>
-<p>“Ping” is a graphical tool for network testing, offering a user-friendly interface for ping operations.</p>
+<p>&quot;Ping&quot; is a graphical tool for network testing, offering a user-friendly interface for ping operations.</p>
 <p><img alt="Image" src="_images/4e36409435484ccdad5aa645e0618579.png" /></p>
-<p>Write the target IP address in the “hostname” column. Click the “ping” button, and the “result” column will display the ping outcome. Click “stop” to end the ping test, and “clear” to erase the information in the “result” column.</p>
+<p>Write the target IP address in the &quot;hostname&quot; column. Click the &quot;ping&quot; button, and the &quot;result&quot; column will display the ping outcome. Click &quot;stop&quot; to end the ping test, and &quot;clear&quot; to erase the information in the &quot;result&quot; column.</p>
 <p>As shown in the figure, the network connection is smooth.</p>
 <p><img alt="Image" src="_images/58cb2cca95e54cf78502e6511b2e3e2d.png" /></p>
 </section>
@@ -801,14 +801,14 @@ Swap:             0           0           0
 <p><img alt="Image" src="_images/3353cea26e2d42149a1e3b539ac83ea6.png" /></p>
 <p>Choose the camera video device node;</p>
 <p>Set the camera resolution;</p>
-<p>Click “Start” to capture video;</p>
-<p>Click “Stop” to end capture;</p>
-<p>Click “Picture” to take a photo;</p>
+<p>Click &quot;Start&quot; to capture video;</p>
+<p>Click &quot;Stop&quot; to end capture;</p>
+<p>Click &quot;Picture&quot; to take a photo;</p>
 <p>Save the photo with a name and at a chosen path.</p>
 <p><strong>Note: Please select the camera device and resolution based on your actual situation.</strong></p>
 <p>Take mipiov5645 camera as an example for test.</p>
 <p><img alt="Image" src="_images/968c3a2360bf47e5bc7c68132dbc8b73.png" /></p>
-<p>Click “Picture” to take photos and save them in /root/. Use Windows built-in image viewer to view them.</p>
+<p>Click &quot;Picture&quot; to take photos and save them in /root/. Use Windows built-in image viewer to view them.</p>
 <p><img alt="Image" src="_images/2cef678e66c24514b5c11ede328b8c08.png" /></p>
 <p>The current MIPI OV5645 module supports resolutions of 1280x960, 1920x1080, and 2592x1944 respectively.</p>
 <p>The following is an example test of the OV5645 resolution of 2592x1944 connected to the carrier board P48.</p>
@@ -822,7 +822,7 @@ Open OKT527-linux-sdk1.3/kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-
 <section id="backlight-test">
 <h3>3.13 Backlight Test<a class="headerlink" href="#backlight-test" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/a3360044cf194d89af094fb38842e517.png" /></p>
-<p>“BackLight” is an LCD backlight adjustment App with a left-right progress bar for brightness control.</p>
+<p>&quot;BackLight&quot; is an LCD backlight adjustment App with a left-right progress bar for brightness control.</p>
 <p>Click to open the interface as follows:</p>
 <p><img alt="Image" src="_images/e115fd386d75465e86da4c6d1426b7ec.png" /></p>
 <p>Drag the slider in the interface to set the LCD backlight brightness. 1 is the darkest, 255 is the brightest, and 0 needs to be set through the command line. Refer to“4.21 LCD Backlight Adjustment”.</p>
@@ -831,7 +831,7 @@ Open OKT527-linux-sdk1.3/kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-
 <h3>3.14 Play/Record Test<a class="headerlink" href="#play-record-test" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/2b35bce12a7c40c9b7d001af8eb1b902.png" /></p>
 <p>Before conducting the audio recording test, please insert the prepared microphone into the mic port. Click the icon to enter the recording test application, which can be used to check if the sound card recording function is working properly.</p>
-<p>Choose where to save the recording file. Click “Start” to begin recording and “Stop” to end.</p>
+<p>Choose where to save the recording file. Click &quot;Start&quot; to begin recording and &quot;Stop&quot; to end.</p>
 <p>The interface is as follows:</p>
 <p><img alt="Image" src="_images/275349cfe1e2419985ba4358217ee8bd.png" /></p>
 <p>Click the Record button to test the recording. The recording file is saved in the root directory.</p>
@@ -840,7 +840,7 @@ Open OKT527-linux-sdk1.3/kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-
 <section id="music-play-test">
 <h3>3.15 Music Play Test<a class="headerlink" href="#music-play-test" title="Link to this heading"></a></h3>
 <p>Use the “ <img alt="Image" src="_images/a953a7962ad4473898aba29091d51499.png" />” app icon to conduct a music playback test.</p>
-<p>“music player” is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.</p>
+<p>&quot;music player&quot; is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.</p>
 <p><img alt="Image" src="_images/c3aa49a425fd493197e652a27aae6cb2.png" /></p>
 <p>Application Interfaces</p>
 <p>Click the button in the lower left corner and select test audio /forlinx/media/test.mp3</p>
@@ -856,7 +856,7 @@ Open OKT527-linux-sdk1.3/kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-
 <p>Set Userspace Governor: Set CPU frequency in user mode;</p>
 <p>Set Frequency CPU0-3: Adjust the frequency of the small cores;</p>
 <p>Set Frequency CPU4-7: Adjust the frequency of the big cores;</p>
-<p>As an example for setting the frequency of the small cores: First, click “Set Userspace Governor,” then a dialog box will pop up; click “RUN.”</p>
+<p>As an example for setting the frequency of the small cores: First, click &quot;Set Userspace Governor,&quot; then a dialog box will pop up; click &quot;RUN.&quot;</p>
 <p><img alt="Image" src="_images/50711674801f456aa2d459f3c8a571ef.png" /></p>
 <p>Then, click “Set Frequency CPU0-3” to set a fixed frequency. (Click the arrow in the top right corner to return to the previous directory, and click the icon in the top right corner to return to the main directory).</p>
 <p><img alt="Image" src="_images/69dc2680f28c451e8bcb5b7185a9cd94.png" /></p>
@@ -875,7 +875,7 @@ Open OKT527-linux-sdk1.3/kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-
 <p>Icon：<img alt="Image" src="_images/17530712eb84466fafaa35c8d4ba53a4.png" /></p>
 <p>Click on the icon to enter the SPI testing interface. Short-circuit the SPI0_MOSI and SPI0_MISO pins, then click “send” below to receive the data sent out and complete the test.</p>
 <p><img alt="Image" src="_images/d2dd10362853426aa763204ee8b303e3.png" /></p>
-<p>Short-circuit the SPI0_MOSI and SPI0_MISO pins, then click “send” below to receive the data sent out and complete the test.</p>
+<p>Short-circuit the SPI0_MOSI and SPI0_MISO pins, then click &quot;send&quot; below to receive the data sent out and complete the test.</p>
 </section>
 <section id="switching-display-screen">
 <h3>3.19 Switching Display Screen<a class="headerlink" href="#switching-display-screen" title="Link to this heading"></a></h3>
@@ -902,7 +902,7 @@ Open OKT527-linux-sdk1.3/kernel/linux-5.15/arch/arm64/boot/dts/allwinner/OKT527-
 <section id="video-player">
 <h3>3.21 Video Player<a class="headerlink" href="#video-player" title="Link to this heading"></a></h3>
 <p>Icon：<img alt="Image" src="_images/7d833c2e88dd4f0e96519b5400b138d6.png" /></p>
-<p>Click “open file” to select the test video to play.</p>
+<p>Click &quot;open file&quot; to select the test video to play.</p>
 <p><img alt="Image" src="_images/0d68d6be0d70478b9139091b031c72f1.png" /></p>
 <p><img alt="Image" src="_images/807c6cc3a73147e5858cd07a7617f4e4.png" /></p>
 </section>
@@ -932,7 +932,7 @@ root@OK527:/# cangen awlink1
 <h2>4. OK527 Command Line Function Test<a class="headerlink" href="#ok527-command-line-function-test" title="Link to this heading"></a></h2>
 <p>The OK527 platform has various built-in command line tools available to users.</p>
 <p>Test program source code path: OK527-linux-sdk/platform/forlinx/forlinx_cmd_demo/</p>
-<p>Testing program path: “path”: /usr/bin</p>
+<p>Testing program path: &quot;path&quot;: /usr/bin</p>
 <section id="system-information-query">
 <h3>4.1 System Information Query<a class="headerlink" href="#system-information-query" title="Link to this heading"></a></h3>
 <p>To view the kernel information, enter the following command:</p>
@@ -1061,7 +1061,7 @@ _=/usr/bin/env
 conservative ondemand userspace powersave performance schedutil
 </pre></div>
 </div>
-<p>The userspace indicates user mode, in which other users’ programs can adjust the CPU frequency.</p>
+<p>The userspace indicates user mode, in which other users' programs can adjust the CPU frequency.</p>
 <ol class="arabic simple" start="2">
 <li><p>View the current CPU supported frequency level.</p></li>
 </ol>
@@ -1159,7 +1159,7 @@ root@OK527:/#
 <section id="id2">
 <h3>4.5 Watchdog Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>Watchdog is a frequently used function in embedded systems, and the device node for the watchdog in OK527 is /dev/watchdog. The watchdog timeout is up to 16 seconds.</p>
-<p>To activate the watchdog, set the reset time to 10 seconds, and regularly “feed” the watchdog, you can use thefltest_watchdogcommand. This command will open the watchdog and perform the necessary “feeding” operation, ensuring that the system does not reboot.</p>
+<p>To activate the watchdog, set the reset time to 10 seconds, and regularly &quot;feed&quot; the watchdog, you can use thefltest_watchdogcommand. This command will open the watchdog and perform the necessary &quot;feeding&quot; operation, ensuring that the system does not reboot.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/#fltest_watchdog -t 10 -c
 Watchdog Ticking Away!
 </pre></div>
@@ -1406,8 +1406,8 @@ value 849
 <h3>4.11 TF Test<a class="headerlink" href="#tf-test" title="Link to this heading"></a></h3>
 <p><strong>Description:</strong></p>
 <p><strong>The SD card mounts at /run/media, allowing hot-plugging. Terminal displays SD card information.</strong></p>
-<p><strong>If the file system doesn’t support NTFS, format the TF card as FAT32 before use, especially if unsure of its current format.</strong></p>
-<p><strong>The device node is “/dev/mmcblk1” after the eMMC version is inserted into the TF card.</strong></p>
+<p><strong>If the file system doesn't support NTFS, format the TF card as FAT32 before use, especially if unsure of its current format.</strong></p>
+<p><strong>The device node is &quot;/dev/mmcblk1&quot; after the eMMC version is inserted into the TF card.</strong></p>
 <p><strong>The following test commands are based on the eMMC version.</strong></p>
 <p>1. Insert the TF card into the card slot on the carrier board. Under normal circumstances, the development board terminal will display the following printing information:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[ 1157.138343] sunxi-mmc 4020000.sdmmc: sdc set ios:clk 0Hz bm PP pm UP vdd 23 width 1 timing LEGACY(SDR12) dt B
@@ -1462,7 +1462,7 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 </section>
 <section id="storage-test">
 <h3>4.12 Storage Test<a class="headerlink" href="#storage-test" title="Link to this heading"></a></h3>
-<p>The OK527 platform’s eMMC runs by default in HS400 mode. Below is a simple test of the eMMC’s read and write speed using the ext4 file system as an example.</p>
+<p>The OK527 platform's eMMC runs by default in HS400 mode. Below is a simple test of the eMMC's read and write speed using the ext4 file system as an example.</p>
 <p>Write test:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/#dd if=/dev/zero of=/run/media/mmcblk0p5/data.img bs=1M count=500 conv=fsync
 500+0 records in
@@ -1500,9 +1500,9 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <h3>4.14 USB 2.0<a class="headerlink" href="#usb-2-0" title="Link to this heading"></a></h3>
 <p><strong>Description:</strong></p>
 <p><strong>Support hot-plugging of USB flash drive devices;</strong></p>
-<p><strong>If NTFS isn’t supported and you’re unsure of the USB drive’s format, it’s best to format it to FAT32 before using it.</strong></p>
+<p><strong>If NTFS isn't supported and you're unsure of the USB drive's format, it's best to format it to FAT32 before using it.</strong></p>
 <p><strong>Note the distinction between USB 3.0 and USB 2.0 interfaces.</strong></p>
-<p>OK527 supports three USB2.0 interfaces. Users can connect USB mouse, USB keyboard, U disk and other devices on any on-board USB HOST interface, and support hot plug of the above devices. Here’s a demo using the example of mounting a USB disk.</p>
+<p>OK527 supports three USB2.0 interfaces. Users can connect USB mouse, USB keyboard, U disk and other devices on any on-board USB HOST interface, and support hot plug of the above devices. Here's a demo using the example of mounting a USB disk.</p>
 <p>The terminal shows USB flash drive info, which can vary due to the many types available.</p>
 <p>1. Upon booting the development board, plug a USB flash drive into its USB host interface;</p>
 <p>Serial port information:</p>
@@ -1530,7 +1530,7 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 mmcblk0p1  mmcblk0p5  sda1
 </pre></div>
 </div>
-<p>“sda1” represents the first partition of the first USB storage device inserted, and so forth.</p>
+<p>&quot;sda1&quot; represents the first partition of the first USB storage device inserted, and so forth.</p>
 <p>3. View the contents of the USB flash drive:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/#ls -l /run/media/sda1
 total 8
@@ -1553,7 +1553,7 @@ drwxrwx--- 2 root disk 8192 Sep 23  2021 &#39;System Volume Information&#39;
 524288000 bytes (524 MB, 500 MiB) copied, 18.4939 s, 28.3 MB/s
 </pre></div>
 </div>
-<p>6. Before removing the USB flash drive, it’s necessary to unmount it using ‘’umount’’.</p>
+<p>6. Before removing the USB flash drive, it's necessary to unmount it using ''umount''.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/#umount /run/media/sda1
 </pre></div>
 </div>
@@ -1562,7 +1562,7 @@ drwxrwx--- 2 root disk 8192 Sep 23  2021 &#39;System Volume Information&#39;
 <section id="otg-test">
 <h3>4.15 OTG Test<a class="headerlink" href="#otg-test" title="Link to this heading"></a></h3>
 <p>OK527-C board includes an OTG (On-The-Go) interface. In Device mode, it can be used for activities such as firmware flashing, ADB file transfer, and debugging. In Host mode, it allows you to connect regular USB devices to the board. When using a Type-C adapter cable to connect OK527-C to a PC, OK527-C will automatically configure OTG as Device mode. Similarly, when using an OTG cable to plug in a USB flash drive or other devices, the system will automatically configure OTG as Host mode.</p>
-<p>1. After the development board boots up, connect a USB flash drive to the development board’s OTG interface using a Type-C to Type-A cable.</p>
+<p>1. After the development board boots up, connect a USB flash drive to the development board's OTG interface using a Type-C to Type-A cable.</p>
 <p>Serial port information:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[  854.830829] sunxi:sunxi_usbc:[INFO]: insmod_host_driver
 [  854.830829]
@@ -1618,7 +1618,7 @@ drwxrwx--- 2 root disk 8192 Sep 23  2021 &#39;System Volume Information&#39;
 mmcblk0p1  mmcblk0p5  sda1
 </pre></div>
 </div>
-<p>“sda1” represents the first partition of the first USB storage device inserted, and so forth.</p>
+<p>&quot;sda1&quot; represents the first partition of the first USB storage device inserted, and so forth.</p>
 <p>3. View the contents of the USB flash drive:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/#ls -l /run/media/sda1
 total 8
@@ -1641,14 +1641,14 @@ drwxrwx--- 2 root disk 8192 Sep 23  2021 &#39;System Volume Information&#39;
 524288000 bytes (524 MB, 500 MiB) copied, 18.2891 s, 28.7 MB/s
 </pre></div>
 </div>
-<p>6. Before removing the USB flash drive, it’s necessary to unmount it using ‘’umount’’.</p>
+<p>6. Before removing the USB flash drive, it's necessary to unmount it using ''umount''.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/#umount /run/media/sda1
 </pre></div>
 </div>
 </section>
 <section id="ethernet-configuration">
 <h3>4.16 Ethernet Configuration<a class="headerlink" href="#ethernet-configuration" title="Link to this heading"></a></h3>
-<p>OK527-C comes with 2 x Gigabit Ethernet ports. When connected to the network via an Ethernet cable, the factory default configuration sets eth0 to the static IP 192.168.0.232. The OK527-C’s network card can be configured via the configuration file /etc/network/interfaces.</p>
+<p>OK527-C comes with 2 x Gigabit Ethernet ports. When connected to the network via an Ethernet cable, the factory default configuration sets eth0 to the static IP 192.168.0.232. The OK527-C's network card can be configured via the configuration file /etc/network/interfaces.</p>
 <section id="gigabit-ethernet-static-ip-configuration">
 <h4>4.16.1 Gigabit Ethernet Static IP Configuration<a class="headerlink" href="#gigabit-ethernet-static-ip-configuration" title="Link to this heading"></a></h4>
 <p><strong>Note: In the kernel, the Gigabit Ethernet card is identified as eth0, and its default IP address is 192.168.0.232.</strong></p>
@@ -1751,8 +1751,8 @@ root@OK527:/#
 <p><strong>The default IP for eth0 is 192.168.0.232</strong></p>
 <section id="web-services">
 <h4>4.17.1 Web Services<a class="headerlink" href="#web-services" title="Link to this heading"></a></h4>
-<p><strong>Note: To properly use this feature, the PC’s IP address must be in the same network segment as the development board’s.</strong></p>
-<p>The OK527 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board’s webserver, as shown in the following figure:</p>
+<p><strong>Note: To properly use this feature, the PC's IP address must be in the same network segment as the development board's.</strong></p>
+<p>The OK527 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board's webserver, as shown in the following figure:</p>
 <p><img alt="Image" src="_images/aaa38263111348619ee5b3ca3e5b19e0.png" /></p>
 </section>
 <section id="sftp">
@@ -1832,7 +1832,7 @@ round-trip min/avg/max = 40.234/79.797/119.289 ms
 <p><strong>Description:</strong></p>
 <p><strong>Ensure that the Gigabit LAN card is eth0 connected to the network and that the network works well before performing this test;</strong></p>
 <p><strong>5GHz hotspot on by default</strong></p>
-<p><strong>To enable the 2.4GHz hotspot and modify the/usr/bin/fltest _ hostap. sh, change “hostapd/etc/hostapd-5g.conf &amp;” to “hostapd/etc/hostapd-2.4g.conf &amp;”</strong></p>
+<p><strong>To enable the 2.4GHz hotspot and modify the/usr/bin/fltest _ hostap. sh, change &quot;hostapd/etc/hostapd-5g.conf &amp;&quot; to &quot;hostapd/etc/hostapd-2.4g.conf &amp;&quot;</strong></p>
 <p>1. Configure Hotspot</p>
 <p>WiFi Hotspot Name: OK527_WIFI_5G_AP</p>
 <p>Password: 12345678</p>
@@ -1860,9 +1860,9 @@ uap0: EAPOL-4WAY-HS-COMPLETED 86:de:12:63:58:96
 <section id="ec20-test">
 <h4>4.19.1 EC20 Test<a class="headerlink" href="#ec20-test" title="Link to this heading"></a></h4>
 <p><strong>Description:</strong></p>
-<p><strong>When testing with an IoT card, ensure the module’s firmware version; older versions may require upgrading to EC20 firmware for compatibility.</strong></p>
+<p><strong>When testing with an IoT card, ensure the module's firmware version; older versions may require upgrading to EC20 firmware for compatibility.</strong></p>
 <p><strong>Some IoT SIM cards may require specific account credentials when dialing. Users should adjust the instructions accordingly based on the actual situation.</strong></p>
-<p><strong>You can use the quectelCM –help command to see the meaning of the relevant parameters.</strong></p>
+<p><strong>You can use the quectelCM --help command to see the meaning of the relevant parameters.</strong></p>
 <p>1. After connecting the module and powering up the board and module, check the USB status through the lsusb command;</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/# lsusb
 Bus 005 Device 001: ID 1d6b:0002
@@ -1988,7 +1988,7 @@ Signed 16 bit Little Endian, Rate 48000 Hz, Stereo
 </section>
 <section id="lcd-backlight-adjustment">
 <h3>4.21 LCD Backlight Adjustment<a class="headerlink" href="#lcd-backlight-adjustment" title="Link to this heading"></a></h3>
-<p>Backlight level range (0–255), maximum level 255, 0 indicating turn off. Enter the system and enter the following command in the terminal to perform the backlight test.</p>
+<p>Backlight level range (0--255), maximum level 255, 0 indicating turn off. Enter the system and enter the following command in the terminal to perform the backlight test.</p>
 <p>When the LCD screen (lcd 800x480, lcd 1024x600, mipi 1024x600, lvds 1280x800) is selected as “Primary Disp”, usefltest_backlight get 0;otherwise, usefltest_backlight get 1.The following command is an example assuming the LCD screen is selected as “Primary Disp”.</p>
 <p>1. View the current screen backlight value:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/# fltest_backlight get 0
@@ -2097,7 +2097,7 @@ root@OK527:/#
 <p>to buildroot/buildroot-202205/board/worldinx/okt527/fs overlay/etc/init.d/</p>
 <p>Add a shell statement at the end of the buildroot/buildroot-202205/board/worldinx/okt527/fs overlay/etc/init.d/rcS file:/etc/autorun.sh&amp;.</p>
 <p>3. Recompile and package</p>
-<p>Please refer to the compilation chapter of “OK527-C_Linux5.15.104+Qt5.12.5 User’s Compilation Manual”.</p>
+<p>Please refer to the compilation chapter of &quot;OK527-C_Linux5.15.104+Qt5.12.5 User's Compilation Manual&quot;.</p>
 </section>
 </section>
 <section id="a55-coremark-test">
@@ -2320,8 +2320,8 @@ root@OK527:/# echo 8 &gt; /sys/class/pwm/pwmchip0/unexport
 </section>
 <section id="usb3-0">
 <h3>4.33 USB3.0<a class="headerlink" href="#usb3-0" title="Link to this heading"></a></h3>
-<p>OK527-C’s USB3.0 and PCIE are multiplexed functions, and only one works at the same time. Need to switch functions in the uboot menu</p>
-<p>Change the carrier board DIP switch, select USB3.0, press the space to enter the uboot menu interface after the development board is powered on, press 4 to cycle in “pcie” “USB 3.0”, and select “USB 3.0” as shown below:</p>
+<p>OK527-C's USB3.0 and PCIE are multiplexed functions, and only one works at the same time. Need to switch functions in the uboot menu</p>
+<p>Change the carrier board DIP switch, select USB3.0, press the space to enter the uboot menu interface after the development board is powered on, press 4 to cycle in &quot;pcie&quot; &quot;USB 3.0&quot;, and select &quot;USB 3.0&quot; as shown below:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
 0:Exit to console
 1:Reboot
@@ -2337,7 +2337,7 @@ root@OK527:/# echo 8 &gt; /sys/class/pwm/pwmchip0/unexport
 <section id="pcie">
 <h3>4.34 PCIE<a class="headerlink" href="#pcie" title="Link to this heading"></a></h3>
 <p>USB3.0 and PCIE of OK527-C are multiplexing functions, and only one can work at the same time. Need to switch functions in the uboot menu</p>
-<p>Change the DIP switch on the carrier board, select PCIE2.1. After powering on the development board, press the space bar to enter the uboot menu interface. Press 4 to cycle through “PCIe” and “USB 3.0”. Select “PCIe” as shown below:</p>
+<p>Change the DIP switch on the carrier board, select PCIE2.1. After powering on the development board, press the space bar to enter the uboot menu interface. Press 4 to cycle through &quot;PCIe” and &quot;USB 3.0&quot;. Select &quot;PCIe&quot; as shown below:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
 0:Exit to console
 1:Reboot
@@ -2357,7 +2357,7 @@ root@OK527:/# ifconfig -a | grep enp
 enp1s0    Link encap:Ethernet  HWaddr 00:00:00:00:00:05
 </pre></div>
 </div>
-<p>Note: The network speed follows the “barrel effect”. In this test, the RTL8125 is a 2.5g network card, but the network card of the 192.168.1.39 computer is a gigabit network card, so the final test speed is a gigabit speed.</p>
+<p>Note: The network speed follows the &quot;barrel effect&quot;. In this test, the RTL8125 is a 2.5g network card, but the network card of the 192.168.1.39 computer is a gigabit network card, so the final test speed is a gigabit speed.</p>
 </section>
 <section id="ir-rx">
 <h3>4.35 IR-RX<a class="headerlink" href="#ir-rx" title="Link to this heading"></a></h3>
@@ -2489,7 +2489,7 @@ Default agent request successful
 </pre></div>
 </div>
 <p>1. Development Board Passive Pairing.</p>
-<p>After the above settings, open the computer to search for Bluetooth, click “Add Bluetooth or other devices”, a “OKT527” device will appear, click this Bluetooth to try to pair.</p>
+<p>After the above settings, open the computer to search for Bluetooth, click &quot;Add Bluetooth or other devices&quot;, a &quot;OKT527&quot; device will appear, click this Bluetooth to try to pair.</p>
 <p><img alt="Image" src="_images/40b40021d9a94094a8dabf3e33ded013.png" /></p>
 <p>At the same time, the information printed on the development board is as follows. Enter yes:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[CHG] Device 2C:DB:07:C7:4F:F6 Connected: yes
@@ -2544,9 +2544,9 @@ Pairing successful
 <p>At the same time, the pairing request appears on the computer interface, click the pairing, the board end prints and inputs yes, and the end pairing is successful.</p>
 <p>4. Development board to receive documents</p>
 <p>After successful pairing, you can use Bluetooth to send files to the board on the computer side.</p>
-<p>Click on “Send or receive files via Bluetooth”</p>
+<p>Click on &quot;Send or receive files via Bluetooth&quot;</p>
 <p><img alt="Image" src="_images/546e43f08bac45689251aba4739cd77a.png" /></p>
-<p>Select “Send File”</p>
+<p>Select &quot;Send File&quot;</p>
 <p><img alt="Image" src="_images/f7d301937a164d988dc89ebfd6d2c998.png" /></p>
 <p>Select OKT527.</p>
 <p><img alt="Image" src="_images/bf7b4b2e47fa4617a410a38274db9230.png" /></p>
@@ -2560,7 +2560,7 @@ Pairing successful
 <p>5. The development board is to send files.</p>
 <p>Similarly, you can use the development board to send files to the computer.</p>
 <p>The test method is as follows:</p>
-<p>Select “Receive File” on the computer side.</p>
+<p>Select &quot;Receive File&quot; on the computer side.</p>
 <p><img alt="Image" src="_images/c018e7d4f48b4af986da3b6f4e6741df.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:~# bluetoothctl 
 Agent registered
@@ -2773,7 +2773,7 @@ profile inference time=344865us, cycle=239992405
 <section id="uvc-play-test">
 <h3>5.1 UVC Play Test<a class="headerlink" href="#uvc-play-test" title="Link to this heading"></a></h3>
 <p><strong>Note:</strong></p>
-<p><strong>Before performing the tests in this section, refer to “Closing the Desktop” to close the desktop test program and clear the screen.</strong></p>
+<p><strong>Before performing the tests in this section, refer to “Closing the Desktop&quot; to close the desktop test program and clear the screen.</strong></p>
 <p><strong>The device node recognized by the OK527 UVC camera is /dev/video1, and this test uses LVDS as the display device.</strong></p>
 <p>1. Capture Test</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK527:/# gst-launch-1.0 v4l2src device=/dev/video1 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480,framerate=30/1 ! waylandsink
@@ -2846,11 +2846,11 @@ Freeing pipeline ...
 <p>Unzip the Phoenix Suit _ V1.10.zip and connect the development board to the PC using the Type-C cable.</p>
 <p>Use the Type-C cable to connect the development board and the host. Press and hold the FEL key and press the RESET key to reset the system. Release the RESET key for about two seconds and then release the FEL key.</p>
 <p><strong>Note: Make sure to release the RESET button first, then release the FEL button.</strong></p>
-<p>Open the windows device manager, find an unknown device with a yellow exclamation mark, select to install the driver manually, right-click the unknown device, and select “Update Driver”</p>
+<p>Open the windows device manager, find an unknown device with a yellow exclamation mark, select to install the driver manually, right-click the unknown device, and select &quot;Update Driver&quot;</p>
 <p><img alt="Image" src="_images/e5f86fbc1486465992bbe76cd757b12d.png" /></p>
-<p>Select “Browse my computer for drivers” and then select the extracted V1.10 directory of the Phoenix Suit _.</p>
+<p>Select &quot;Browse my computer for drivers&quot; and then select the extracted V1.10 directory of the Phoenix Suit _.</p>
 <p><img alt="Image" src="_images/92a779fea1264e2bb070bcac89d74dca.png" /></p>
-<p>Wait for the driver to finish installing, and run PhoenixSuit.exe, the bottom left corner shows “The device has been connected successfully”.</p>
+<p>Wait for the driver to finish installing, and run PhoenixSuit.exe, the bottom left corner shows &quot;The device has been connected successfully&quot;.</p>
 <p><img alt="Image" src="_images/48ee2faa0d544b98b7f5b783cbf42f3e.png" /></p>
 </section>
 <section id="otg-flashing-method">
@@ -2863,27 +2863,27 @@ Freeing pipeline ...
 <p><img alt="Image" src="_images/b9d6ce35261d45989b61599133445b73.png" /></p>
 <p>Connect the development board and the host using a Type-A to Type-C cable, do not power on the board initially, press the FEL key, power on the board, then release the FEL key.</p>
 <p><strong>Note: Be sure to press the FEL key when the power is off.</strong></p>
-<p>In the following interface, click “Yes” to enter the formatting upgrade mode.</p>
+<p>In the following interface, click &quot;Yes&quot; to enter the formatting upgrade mode.</p>
 <p><img alt="Image" src="_images/9e841ac83db74c3f8252cd462c7c9b8e.png" /></p>
 <p>Waif for the flashing to finish, the following interface will pop up:</p>
 <p><img alt="Image" src="_images/25e5db4bcd224c4b90932f18ba8fadf7.png" /></p>
 <p>Power on and start the OK527 board.</p>
 <p>2. Update the image separately.</p>
 <p>1) Separate flashing test for OTG Uboot</p>
-<p>In the following interface, check the checkbox “Single or Multi-zone Download (Check this option, the flashing tool downloads the partitions you selected)”, check “BOOT-RESOURCE”, “ENV”, checkboxes.</p>
+<p>In the following interface, check the checkbox &quot;Single or Multi-zone Download (Check this option, the flashing tool downloads the partitions you selected)&quot;, check &quot;BOOT-RESOURCE&quot;, &quot;ENV&quot;, checkboxes.</p>
 <p><img alt="Image" src="_images/cdd682f28efa43f3948b34cf987a980f.png" /></p>
 <p>Connect the development board and the host using a Type-A to Type-C cable, do not power on the board initially, press the FEL key, power on the board, then release the FEL key. Wait for flashing to finish, the following interface will pop up:</p>
 <p><strong>Note: Be sure to press the FEL key when the power is off.</strong></p>
 <p><img alt="Image" src="_images/f58585e7e2e5409e9916f7fecc70266b.png" /></p>
 <p>2) Flash the kernel image and device tree (dtb) file via OTG</p>
-<p>Check the “Single/Multiple Partition Download” box in the interface (flashing tool downloads selected partitions), also check “BOOT-RESOURCE” and “BOOT”.</p>
-<p>Place the kernel image in the “BOOT” partition, and the device tree (DTB) file and U-Boot in the “BOOT-RESOURCE” partition.</p>
+<p>Check the &quot;Single/Multiple Partition Download&quot; box in the interface (flashing tool downloads selected partitions), also check &quot;BOOT-RESOURCE&quot; and &quot;BOOT&quot;.</p>
+<p>Place the kernel image in the &quot;BOOT&quot; partition, and the device tree (DTB) file and U-Boot in the &quot;BOOT-RESOURCE&quot; partition.</p>
 <p><img alt="Image" src="_images/897c8fbb003944ceb6cf8fe34b68de83.png" /></p>
 <p>Connect the development board and the host using a Type-A to Type-C cable, do not power on the board initially, press the FEL key, power on the board, then release the FEL key. Wait for flashing to finish, the following interface will pop up:</p>
 <p><strong>Note:Be sure to press the FEL key when the power is off.</strong></p>
 <p><img alt="Image" src="_images/0b2663ee9100475daac085b38192c22d.png" /></p>
 <p>3) OTG flashing File System</p>
-<p>Check the “Single/Multiple Partition Download” box in the interface (flashing tool downloads selected partitions), also check “ROOTFS”.</p>
+<p>Check the &quot;Single/Multiple Partition Download&quot; box in the interface (flashing tool downloads selected partitions), also check &quot;ROOTFS&quot;.</p>
 <p><img alt="Image" src="_images/cd45f3bab23048ec97c58521e9db720c.png" /></p>
 <p>Connect the development board and the host using a Type-A to Type-C cable, do not power on the board initially, press the FEL key, power on the board, then release the FEL key. Wait for flashing to finish, the following interface will pop up:</p>
 <p><strong>Note: Be sure to press the FEL key when the power is off.</strong></p>
@@ -2892,7 +2892,7 @@ Freeing pipeline ...
 <section id="otg-flashing-common-issues">
 <h4>6.2.3 OTG Flashing Common Issues<a class="headerlink" href="#otg-flashing-common-issues" title="Link to this heading"></a></h4>
 <p>1. Driver installation failed</p>
-<p>Some users still see an “Unknown Device” after installing USB drivers per the manual. Clicking on it shows a message about a third-party INF lacking digital signature info, as shown below.</p>
+<p>Some users still see an &quot;Unknown Device&quot; after installing USB drivers per the manual. Clicking on it shows a message about a third-party INF lacking digital signature info, as shown below.</p>
 <p><img alt="Image" src="_images/add5cacc0f3944ca9e281a9e532154e2.png" /></p>
 <p>This occurs because some Windows systems disallow unsigned drivers to ensure system stability, resulting in failed installation of unsigned drivers. Users need to disable driver signature enforcement on their computers before installing drivers according to the manual.</p>
 <ul class="simple">
@@ -2900,7 +2900,7 @@ Freeing pipeline ...
 </ul>
 <p>1）<font style="color:black;">First press and hold Shift + to restart</font></p>
 <p><img alt="Image" src="_images/8e077ae99f5c45499a2e0d5549cd10c2.png" /></p>
-<p>2）<font style="color:black;">At startup, select Troubleshooting – Advanced Options – Startup Settings</font></p>
+<p>2）<font style="color:black;">At startup, select Troubleshooting -- Advanced Options -- Startup Settings</font></p>
 <p><img alt="Image" src="_images/8a469de93ad145a9929cfa82a67562a1.png" /></p>
 <p>3. <font style="color:black;">In the boot settings screen, click Reboot in the lower right corner to reboot into the boot settings; you can use the number keys 7 or functional keys F7; disable driver forced signing;</font></p>
 <p><img alt="Image" src="_images/58ad1236653d426eaf695631e1e5fce0.png" /></p>
@@ -2923,7 +2923,7 @@ Freeing pipeline ...
 <p>As shown in the following interface:</p>
 <p><img alt="Image" src="_images/ca21e82750e0406d9531ad7baec66c5a.png" /></p>
 <p><strong>Note: When there are multiple partitions on the TF card, please click on “Restore Card” first, and then click on “Burn Card”. Otherwise, it may result in a failed burn process.</strong></p>
-<p>3. Click on “Firmware” to browse OK527 firmware image, select “Mass Production Card,” and click “Flash Card”.</p>
+<p>3. Click on &quot;Firmware&quot; to browse OK527 firmware image, select &quot;Mass Production Card,&quot; and click “Flash Card&quot;.</p>
 <p>After flashing, as shown in the following interface:</p>
 <p><img alt="Image" src="_images/564b183a3bb54e87ab1b8cd8e33b8445.png" /></p>
 </section>
@@ -2985,7 +2985,7 @@ remind_type : GPIO_LED
 <p>Path of recovery tool: 02-User information \ 01-Software information \ 04-Tools \ PanasonicSDFormatter.zip</p>
 <p>Copy PanasonicSDFormatter.zip to any window directory and unzip it, insert the TF card into the Windows host, and run SDFormatter.exe as administrator.</p>
 <p><img alt="Image" src="_images/37b85de7e4b7429a838d3d8fc6bbd93b.png" /></p>
-<p>Click on “Options Settings,” select Erase and Format, and then click Format to restore the burned TF card to a regular TF card.</p>
+<p>Click on &quot;Options Settings,&quot; select Erase and Format, and then click Format to restore the burned TF card to a regular TF card.</p>
 </section>
 </section>
 </section>
