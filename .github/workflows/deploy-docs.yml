@@ -64,9 +64,7 @@ jobs:
 
         echo '</sitemapindex>' >> docs_build/sitemap_index.xml
 
-    # 7️⃣ 添加 CNAME 文件（绑定自定义域名）
-    - name: Add CNAME file
-      run: echo "docs.forlinx.net" > ./docs_build/CNAME
+
 
     # 8️⃣ 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
