@@ -174,10 +174,11 @@ body {
     table-layout: auto;          /* 自动列宽 */
   }
 
-  /* 单元格保持一行 */
   .rst-content table td,
   .rst-content table th {
-    white-space: nowrap !important;
+      white-space: nowrap !important; /* 保持单行显示 */
+      overflow: visible;              /* 防止强制截断 */
+      word-break: normal;             /* 不在单词中间断开 */
   }
 
   /* 移动端正文行高略微减小，提高紧凑感 */
