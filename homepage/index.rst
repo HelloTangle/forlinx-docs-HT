@@ -19,8 +19,18 @@ Rockchip Series
 
 RK3588 Series
 --------------
-- OK3588-C Manual
-  ⏳ Documentation coming soon.
+.. raw:: html
+
+   <div class="product-card">
+     <a href="rockchip/ok3588-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/rockchip/OK3588-C.png" alt="ok3588-c" class="product-image" />
+     </a>
+     <h3 class="product-title">OK3588-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/rk3588-som-134.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="rockchip/ok3588-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
 
 RK3576 Series
 --------------
@@ -115,23 +125,9 @@ Allwinner Series
 
 T527 Series
 -------------
+- OK527N-C Manual
+  ⏳ Documentation coming soon.
 
-.. raw:: html
-
-   <div class="products-container">
-
-   <div class="product-card">
-     <a href="allwinner/ok527n-c/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/allwinner/OK527N-C.png" alt="OK527N-C" class="product-image" />
-     </a>
-     <h3 class="product-title">OK527N-C</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/product/t527-c-system-on-module-149.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
-       <a href="allwinner/ok527n-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
-   </div>
-
-   </div>
  
 
 

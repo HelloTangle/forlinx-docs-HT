@@ -4,16 +4,22 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'platform/**/**/*.md' # 只在 Markdown 文件变动时触发
   workflow_dispatch:
     
 jobs:
   build-docs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 授予写入权限，以便提交更改
 
     steps:
     # 1️⃣ Checkout 仓库
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # 获取所有历史，以便进行 diff
 
     # 2️⃣ 设置 Python 环境
     - name: Set up Python
@@ -26,14 +32,78 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install -r requirements.txt
+        pip install requests
 
-    # 4️⃣ 构建 homepage（必选）
+    # 4️⃣ 获取本次 push 的变化 Markdown 文件
+    - name: Detect changed Markdown files
+      id: detect_md
+      shell: bash
+      run: |
+        echo "::group::Detect changed .md files"
+        changed=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' || true)
+        echo "Changed md files:"
+        echo "$changed"
+        echo "::endgroup::"
+
+        # 将多行路径写入环境变量 CHANGED_MD_FILES
+        if [[ -n "$changed" ]]; then
+          echo "CHANGED_MD_FILES<<EOF" >> "$GITHUB_ENV"
+          echo "$changed" >> "$GITHUB_ENV"
+          echo "EOF" >> "$GITHUB_ENV"
+        fi
+
+
+        
+
+
+    # 5️⃣ 处理变化的 Markdown 文件（抓取图片 + 路径修改）
+    - name: Process changed Markdown files
+      shell: bash
+      run: |
+          if [[ -z "$CHANGED_MD_FILES" ]]; then
+            echo "No changed Markdown files."
+            exit 0
+          fi
+
+          echo "Processing changed Markdown files..."
+          # 逐行读取环境变量
+          while IFS= read -r f; do
+            # 忽略空行
+            [[ -z "$f" ]] && continue
+            if [ -f "$f" ]; then
+              echo "📄 Processing $f"
+              python ./scripts/process_md_images.py "$f"
+            else
+              echo "⚠️ File not found: $f"
+            fi
+          done <<< "$CHANGED_MD_FILES"
+
+    # 6️⃣ 提交并推送更新
+    - name: Commit and push changes
+      shell: bash
+      run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-update local image paths for changed md files"
+            git push origin main
+          else
+            echo "No changes to commit."
+          fi
+          
+
+
+        
+    # 8 构建 homepage（必选）
     - name: Build homepage
       run: |
         mkdir -p docs_build
         sphinx-build -b html ./homepage ./docs_build
 
-    # 5️⃣ 构建 platform 子项目
+    # 9 构建 platform 子项目
     - name: Build platform docs
       run: |
         for project in platform/*/*; do
@@ -48,7 +118,7 @@ jobs:
         done
 
 
-    # 6️⃣ 清理 /en/
+    # 10 清理 /en/
     - name: Remove /en/ from sitemap URLs
       run: |
         for sm in docs_build/*/*/sitemap.xml; do
@@ -60,7 +130,7 @@ jobs:
 
 
 
-    # 7️⃣ 生成总 sitemap_index.xml
+    # 11 生成总 sitemap_index.xml
     - name: Generate sitemap_index.xml
       run: |
         echo '<?xml version="1.0" encoding="UTF-8"?>' > docs_build/sitemap_index.xml
@@ -78,10 +148,8 @@ jobs:
 
         echo '</sitemapindex>' >> docs_build/sitemap_index.xml
 
-  
 
-
-    # 8️⃣ 部署到 GitHub Pages
+    # 12 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
