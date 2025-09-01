@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - 'platform/**/**/*.md' # 只在 Markdown 文件变动时触发
+      - 'homepage/**/*.rst'   #  RST 文件 
+      - 'platform/**/*.rst'
+      - 'homepage/conf.py'     #  配置文件（conf.py）
+      - 'platform/**/conf.py'
   workflow_dispatch:
     
 jobs:
