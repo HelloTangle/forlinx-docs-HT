@@ -3,27 +3,27 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search &mdash; Forlinx Embedded RK3576 Documentation  documentation</title>
+  <title>第二章 加载已有ubuntu开发环境 &mdash; Forlinx Embedded RK3576 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=30170994" />
 
   
     <link rel="shortcut icon" href="_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3576-c/search.html" />
-    
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3576-c/02_%E5%8A%A0%E8%BD%BD%E5%B7%B2%E6%9C%89ubuntu%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="第四章 相关代码编译" href="04_%E7%9B%B8%E5%85%B3%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91.html" />
+    <link rel="prev" title="第一章 VMware虚拟机软件安装" href="01_VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -53,7 +53,7 @@
               <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -61,9 +61,9 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="01_VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85.html">第一章 VMware虚拟机软件安装</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_%E5%8A%A0%E8%BD%BD%E5%B7%B2%E6%9C%89ubuntu%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html">第二章 加载已有ubuntu开发环境</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第二章 加载已有ubuntu开发环境</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_%E7%9B%B8%E5%85%B3%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91.html">第四章 相关代码编译</a></li>
 </ul>
 
@@ -81,7 +81,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Search</li>
+      <li class="breadcrumb-item active">第二章 加载已有ubuntu开发环境</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -90,18 +90,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search functionality.
-    </p>
-  </div>
-  </noscript>
+  <section id="ubuntu">
+<h1>第二章 加载已有ubuntu开发环境<a class="headerlink" href="#ubuntu" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><strong>注意：</strong></p></li>
+<li><p><strong>建议初学者直接使用飞凌搭建好的虚拟机环境。了解完该章节后可以直接跳转到编译章节。</strong></p></li>
+<li><p><strong>提供开发环境的账户为：forlinx，密码为：forlinx</strong></p></li>
+</ul>
+<p>在VMware下使用虚拟机的环境有两种方式，一种是直接加载已有的环境，另一种是新建一个环境，我们先来说说如何加载一个已经存在的环境</p>
+<p>首先，下载飞凌提供的开发环境，开发环境资料中有MD5校验文件，用户下载完开发环境资料，先对开发环境压缩包进行MD5校验（MD5校验可以在网络上选择MD5在线工具校验，也可以下载MD5校验工具进行校验，可根据实际情况选择），查看校验码和校验文件中校验码是否一致，若一致则下载文件正常；若不一致，则文件可能有破损，需要重新下载。</p>
+<p>选中压缩包一起解压</p>
+<p>解压完成后出现 3576标准环境文件夹，其中.vmx为虚拟机要打开的文件。</p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291989704-d40b3337-f04a-45a5-8056-f6118bda4b1f.png" /></p>
+<p>打开虚拟机，选择解压出来的OK3576.vmx</p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291989979-2b8d681a-40e2-4572-8cb0-35d6320a4abc.png" /></p>
+<p>加载完成后点击开启此虚拟机，即可运行，进入系统的界面。</p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990280-09eace25-36da-4f07-8e8e-f479dd385778.png" /></p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990450-b1f74516-c288-4574-baf3-ab9f4d6c3ebd.png" /></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录。
+</pre></div>
+</div>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990738-f09dadaa-6483-4668-9eae-edc0ac839c47.png" /></p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291991069-fefb2fc8-71c7-4c5c-a7da-48ca3f224c1e.png" /></p>
+</section>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
@@ -145,14 +157,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script>
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>
