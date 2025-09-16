@@ -92,7 +92,7 @@ jobs:
           git add .
 
           if ! git diff --cached --quiet; then
-            git commit -m "Auto-update local image paths for changed md files"
+            git commit -m "Auto-update docs changes"
             git push origin main
           else
             echo "No changes to commit."
