@@ -21,7 +21,7 @@ HARDWARE
    :maxdepth: 2
 
    01_VMware
-   02_ubuntu dev environment
+   02_ubuntu_dev_environment
    04_compile
 
 
