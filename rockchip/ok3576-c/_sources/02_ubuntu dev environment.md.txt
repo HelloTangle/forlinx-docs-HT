@@ -13,23 +13,23 @@
 
 解压完成后出现 3576标准环境文件夹，其中.vmx为虚拟机要打开的文件。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291989704-d40b3337-f04a-45a5-8056-f6118bda4b1f.png)
+![Image](./images/02_ubuntu dev environment/1726291989704_d40b3337_f04a_45a5_8056_f6118bda4b1f.png)
 
 打开虚拟机，选择解压出来的OK3576.vmx
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291989979-2b8d681a-40e2-4572-8cb0-35d6320a4abc.png)
+![Image](./images/02_ubuntu dev environment/1726291989979_2b8d681a_40e2_4572_8cb0_35d6320a4abc.png)
 
 加载完成后点击开启此虚拟机，即可运行，进入系统的界面。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990280-09eace25-36da-4f07-8e8e-f479dd385778.png)
+![Image](./images/02_ubuntu dev environment/1726291990280_09eace25_36da_4f07_8e8e_f479dd385778.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990450-b1f74516-c288-4574-baf3-ab9f4d6c3ebd.png)
+![Image](./images/02_ubuntu dev environment/1726291990450_b1f74516_c288_4574_baf3_ab9f4d6c3ebd.png)
 
 	提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990738-f09dadaa-6483-4668-9eae-edc0ac839c47.png)
+![Image](./images/02_ubuntu dev environment/1726291990738_f09dadaa_6483_4668_9eae_edc0ac839c47.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291991069-fefb2fc8-71c7-4c5c-a7da-48ca3f224c1e.png)
+![Image](./images/02_ubuntu dev environment/1726291991069_fefb2fc8_71c7_4c5c_a7da_48ca3f224c1e.png)
 
 
 

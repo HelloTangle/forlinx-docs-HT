@@ -130,13 +130,13 @@ Qt的版本是Qt 5.15.11
 
 <font style="color:#000000;"> </font><font style="color:#0000FF;">路径：/home/forlinx/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-gcc</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292014485-f06907c5-932b-4414-80ff-d76ced326a9a.png)
+![Image](./images/04_compile/1726292014485_f06907c5_932b_4414_80ff_d76ced326a9a.png)
 
 <font style="color:#000000;">5、按照同样的方法添加 GCC 编译器，点击右侧“Add->GCC->C++”，如图所示： </font>
 
 <font style="color:#000000;"> </font><font style="color:#0000FF;">路径：/home/forlinx/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292014769-384507d5-8651-47a2-93a8-c288b8a17df3.png)
+![Image](./images/04_compile/1726292014769_384507d5_8651_47a2_93a8_c288b8a17df3.png)
 
 
 
@@ -151,7 +151,7 @@ Qt的版本是Qt 5.15.11
 
 <font style="color:#000000;">5、然后点击 Apply 及 OK。</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292015054-64cf2592-9fbc-4fa7-9c02-5167becea1fe.png)
+![Image](./images/04_compile/1726292015054_64cf2592_9fbc_4fa7_9c02_5167becea1fe.png)
 
 ### 4.4.3 Kits 配置 
 <font style="color:#000000;">Kits 是一个构建套件，用来构建和选择开发编译环境，对于有多种 QT 库的项目很有用。将之前添加 </font>
@@ -168,7 +168,7 @@ Qt的版本是Qt 5.15.11
 
 5、然后点击 Apply 及 OK。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292015332-5cb82538-73e7-437c-9e21-ede225f2efcb.png)
+![Image](./images/04_compile/1726292015332_5cb82538_73e7_437c_9e21_ede225f2efcb.png)
 
 
 
