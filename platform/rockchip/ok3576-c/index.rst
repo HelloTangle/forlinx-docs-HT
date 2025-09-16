@@ -20,9 +20,9 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   01_VMware虚拟机软件安装
-   02_加载已有ubuntu开发环境
-   04_相关代码编译
+   01_VMware
+   02_ubuntu dev environment
+   04_compile
 
 
 
