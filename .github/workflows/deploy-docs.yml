@@ -10,6 +10,7 @@ on:
       - 'platform/**/*.rst'
       - 'homepage/conf.py'     #  配置文件（conf.py）
       - 'platform/**/conf.py'
+      - 'homepage/**/*.css'
   workflow_dispatch:
     
 jobs:
