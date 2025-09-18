@@ -256,7 +256,7 @@ body {
 
 /* Banner 区 */
 .banner {
-  background: url('_static/images/banner/banner-bg.png') center/cover no-repeat;
+  background: url('/images/banner/banner-bg.png') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 80px 20px;
