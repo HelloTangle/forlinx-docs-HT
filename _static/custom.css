@@ -152,6 +152,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 /* 图片 */
@@ -255,7 +256,7 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  height: 500px;
+  aspect-ratio: 16 / 5; /* 例如 1920:600 的图可以写成 16:5 */
   overflow: hidden;
 }
 
