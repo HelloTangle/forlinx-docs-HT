@@ -12,6 +12,20 @@ Welcome to Forlinx Embedded Documentation
      </div>
    </section>
 
+.. raw:: html
+
+   <section class="banner">
+     <img src="_static/images/banner/banner-bg.png" alt="Banner Background" class="banner-img">
+     <div class="banner-content-left">
+       <h1>High-Performance Embedded Solutions</h1>
+       <p>System on Modules, Single Board Computers & Embedded Computers for industrial automation, smart transportation, energy, medical, and edge AI applications.</p>
+       <a href="https://www.forlinx.net/product_index.html" class="btn btn-website btn-banner">View Products</a>
+     </div>
+   </section>
+
+
+
+
 
 **Forlinx Embedded** is a trusted embedded solution provider specializing in the design and production of high-performance **System on Modules (SoMs)**, **Single Board Computers** and **Embedded Computers**. Our SoMs are widely used in industrial automation, smart transportation, energy, medical, and edge AI applications.
 
