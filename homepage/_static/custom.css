@@ -253,42 +253,84 @@ body {
 
 
 
-
-/* Banner 区 */
 .banner {
-  background: url('/images/banner/banner-bg.png') center/cover no-repeat;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 文字和按钮放在左侧 */
+.banner-content-left {
+  position: absolute;
+  top: 50%;
+  left: 60px; /* 距离左边 60px，可调整 */
+  transform: translateY(-50%);
+  max-width: 600px;
   color: white;
-  text-align: center;
-  padding: 80px 20px;
+  text-align: left;
+  z-index: 2;
+  padding: 0 20px;
 }
 
-.banner-content h1 {
-  font-family: 'Lato', sans-serif;
-  font-size: 2.8rem;
+/* 半透明遮罩，让文字更清晰 */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.banner-content-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
-.banner-content p {
+.banner-content-left p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 .btn-banner {
-  background-color: #ff7f00; /* CTA 橙色 */
+  background-color: #ff7f00;
+  color: white;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 6px;
+  transition: background 0.3s;
 }
 
 .btn-banner:hover {
   background-color: #e06b00;
 }
 
+/* 响应式优化 */
+@media (max-width: 1200px) {
+  .banner-content-left h1 { font-size: 2.2rem; }
+  .banner-content-left p { font-size: 1rem; }
+}
 
-
-/* 保持移动端适配 */
 @media (max-width: 768px) {
-  .banner-content h1 {
-    font-size: 2rem;
+  .banner {
+    height: 400px;
   }
-  .banner-content p {
-    font-size: 1rem;
+  .banner-content-left {
+    left: 20px;
+    max-width: 90%;
   }
+  .banner-content-left h1 { font-size: 1.8rem; }
+  .banner-content-left p { font-size: 0.9rem; }
+  .btn-banner { padding: 10px 20px; font-size: 0.9rem; }
 }
