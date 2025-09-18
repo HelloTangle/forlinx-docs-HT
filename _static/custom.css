@@ -256,7 +256,7 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  min-height: 600px;  /* PC 高度 */
+  min-height: 500px;  /* PC 高度 */
   height: 50vh;       /* 移动端自适应 */
   background: url('images/banner/banner-bg.png') center/cover no-repeat;
   overflow: hidden;
@@ -323,12 +323,14 @@ body {
   .banner {
     height: 50vh;          /* 移动端自适应高度 */
     min-height: 300px;     /* 保证不太小 */
-    background-size: contain; /* 显示完整图片 */
+    background-size: cover; /* 显示完整图片 */
     background-position: center;
   }
   .banner-content-left {
-    left: 20px;
-    max-width: 90%;
+    left: 10%;
+    max-width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .banner-content-left h1 { font-size: 1.8rem; }
   .banner-content-left p { font-size: 0.9rem; }
