@@ -300,24 +300,30 @@ body {
   color: #F3F4F6; /* p 为灰白色 */
 }
 
+
+
+
 .btn-banner {
-  background-color: #ff7f00;
-  color: white;
+  background-color: #ff7f00 !important;
+  color: white !important;
   font-weight: 600;
   padding: 12px 30px;
   border-radius: 6px;
-  transition: background 0.3s;
-}
-
-.btn-banner:hover {
-  background-color: #e06b00;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+  outline: none !important;
 }
 
 .btn-banner:active,
 .btn-banner:focus {
-  color: white;           /* 点击或聚焦时文字仍然为白色 */
-  background-color: #e06b00; /* 可以保持 hover 的背景色一致 */
+  color: white !important;
+  background-color: #ff7f00 !important;
+  text-decoration: none !important;
+  outline: none !important;
 }
+
+
 
 /* 响应式优化 */
 @media (max-width: 1200px) {
