@@ -342,3 +342,9 @@ body {
   .banner-content-left p { font-size: 0.9rem; }
   .btn-banner { padding: 10px 20px; font-size: 0.9rem; }
 }
+
+
+/* 页脚社交图标，去掉下划线 */
+.forlinx-footer-social a {
+  text-decoration: none !important;
+}
