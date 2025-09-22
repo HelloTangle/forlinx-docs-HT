@@ -290,7 +290,7 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-  color: white;
+  color: white !important;
 }
 
 .banner-content-left p {
