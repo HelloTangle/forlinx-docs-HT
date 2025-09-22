@@ -313,6 +313,12 @@ body {
   background-color: #e06b00;
 }
 
+.btn-banner:active,
+.btn-banner:focus {
+  color: white;           /* 点击或聚焦时文字仍然为白色 */
+  background-color: #e06b00; /* 可以保持 hover 的背景色一致 */
+}
+
 /* 响应式优化 */
 @media (max-width: 1200px) {
   .banner-content-left h1 { font-size: 2.2rem; }
