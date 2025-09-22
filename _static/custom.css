@@ -324,7 +324,7 @@ body {
     height: 50vh;          /* 移动端自适应高度 */
     min-height: 300px;     /* 保证不太小 */
     background-size: cover; /* 显示完整图片 */
-    background-position: 65% center;
+    background-position: 60% center;
   }
   .banner-content-left {
     left: 10%;
