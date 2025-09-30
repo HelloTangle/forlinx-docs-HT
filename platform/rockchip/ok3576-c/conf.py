@@ -42,6 +42,7 @@ html_logo = '_static/forlinx-logo.png'
 html_favicon = '_static/forlinx.png'
 html_theme_options = {
     'logo_only': True,
+    'collapse_navigation': False,  # 禁止自动折叠，允许多项同时展开
 }
 
 html_css_files = [
