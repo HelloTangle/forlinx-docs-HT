@@ -15,14 +15,3 @@
     gtag('config', 'G-N8EJPNL8NR');
   </script>
 {% endblock %}
-
-{% block sidebar_logo %}
-  <a href="https://forlinxembedded.github.io/" class="icon icon-home">
-    {# 保留主题默认 logo 渲染逻辑 #}
-    {% if logo_url %}
-      <img src="{{ pathto('_static/forlinx-logo.png', 1) }}" class="logo" alt="Forlinx Docs">
-    {% else %}
-      {{ project }}
-    {% endif %}
-  </a>
-{% endblock %}
