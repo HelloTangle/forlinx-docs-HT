@@ -2,7 +2,7 @@
 
    📌 To return to the **main Forlinx documentation site**, visit:
 
-   `Forlinx Documentation Main Page <https://forlinxembedded.github.io/>`_
+   `Forlinx Documentation Main Page <https://hellotangle.github.io/forlinx-docs-HT/>`_
 
    🔗 Official product overview:
    
