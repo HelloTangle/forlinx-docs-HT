@@ -21,6 +21,11 @@ html_baseurl = "https://forlinxembedded.github.io/rockchip/ok3576-c/"
 templates_path = ['_templates']
 exclude_patterns = []
 
+# 加载自定义 JS
+html_js_files = [
+    'custom.js',  # 合并后的 JS
+]
+
 source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
