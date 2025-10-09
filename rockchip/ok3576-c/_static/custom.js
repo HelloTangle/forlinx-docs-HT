@@ -9,41 +9,49 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ---------------------------
-    // 2) 左侧目录：支持多项展开 + 状态记忆
+    // 2) 左侧目录：保持用户手动展开状态
     // ---------------------------
 
-    // 从 localStorage 读取上次展开的目录项
-    const expandedSet = new Set(JSON.parse(localStorage.getItem('forlinx-expanded') || '[]'));
+    const expanded = JSON.parse(localStorage.getItem('forlinx-expanded') || '[]');
 
-    // 初始化展开状态
-    document.querySelectorAll('.wy-menu-vertical li.toctree-l1, .wy-menu-vertical li.toctree-l2').forEach(function(li) {
-        const id = li.querySelector('a')?.getAttribute('href');
-        if (id && expandedSet.has(id)) {
-            li.classList.add('current'); // 展开之前展开过的
+    // 恢复展开状态
+    expanded.forEach(href => {
+        const link = document.querySelector(`.wy-menu-vertical a[href="${href}"]`);
+        if (link) {
+            const li = link.closest('li.toctree-l1, li.toctree-l2');
+            if (li) li.classList.add('current');
         }
     });
 
-    // 点击目录时切换展开状态
-    document.querySelectorAll('.wy-menu-vertical li.toctree-l1 > a, .wy-menu-vertical li.toctree-l2 > a').forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            const parentLi = this.parentElement;
-            const subMenu = parentLi.querySelector('ul');
-            const id = this.getAttribute('href');
+    // 绑定点击事件
+    document.querySelectorAll('.wy-menu-vertical li.toctree-l1 > a, .wy-menu-vertical li.toctree-l2 > a').forEach(link => {
+        const subMenu = link.parentElement.querySelector('ul');
+        const href = link.getAttribute('href');
 
-            if (subMenu) {
-                event.preventDefault(); // 阻止默认跳转
-                parentLi.classList.toggle('current'); // 切换展开状态
-
-                // 更新 localStorage 中的记录
-                if (id) {
-                    if (parentLi.classList.contains('current')) {
-                        expandedSet.add(id);
-                    } else {
-                        expandedSet.delete(id);
-                    }
-                    localStorage.setItem('forlinx-expanded', JSON.stringify([...expandedSet]));
+        if (subMenu) {
+            link.addEventListener('click', function(e) {
+                // 若链接为空或为锚点，则只展开折叠，不跳转
+                if (!href || href === '#' || href === '') {
+                    e.preventDefault();
+                } else {
+                    // 链接正常的情况下仍允许跳转（让用户能进该页）
+                    // 但加一个轻微延迟，以确保点击时仍能记录展开状态
+                    setTimeout(() => { window.location = href; }, 80);
                 }
-            }
-        });
+
+                // 切换展开状态
+                const li = this.parentElement;
+                li.classList.toggle('current');
+
+                // 更新 localStorage
+                let list = JSON.parse(localStorage.getItem('forlinx-expanded') || '[]');
+                if (li.classList.contains('current')) {
+                    if (!list.includes(href)) list.push(href);
+                } else {
+                    list = list.filter(i => i !== href);
+                }
+                localStorage.setItem('forlinx-expanded', JSON.stringify(list));
+            });
+        }
     });
 });
