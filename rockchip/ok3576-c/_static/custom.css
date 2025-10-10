@@ -1,0 +1,182 @@
+/* Google Fonts 引入，必须放最前面 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&family=Fira+Code&display=swap');
+
+/* ---------------------- 搜索栏 ---------------------- */
+.wy-side-nav-search {
+  /* 使用主题变量背景色，保留主题切换 */
+  background-color: var(--theme-sidebar-bg);
+}
+
+.wy-side-nav-search > div.version {
+  color: white; /* 固定白色版本号，通常在暗色主题下可见 */
+}
+
+/* 侧边栏菜单项 hover 效果，使用主题变量覆盖 */
+.wy-menu-vertical a:hover {
+  background-color: rgba(0, 122, 204, 0.1); /* 浅蓝色悬浮效果 */
+  color: var(--theme-link) !important;
+}
+
+/* ---------------------- 主内容区域 ---------------------- */
+.wy-nav-content {
+  max-width: 1200px; /* 默认宽度 */
+}
+
+/* 正文字体，主体区域和容器统一 */
+body, .rst-content, .wy-nav-content {
+  font-family: 'Lato', Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.7;
+  /* 颜色不要固定，保留主题变量 */
+  color: var(--theme-fg);
+  overflow-x: hidden; /* 防止横向滚动 */
+}
+
+/* 标题字体 */
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
+  font-family: 'Montserrat', 'Lato', sans-serif !important;
+  font-weight: 600;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* H2 蓝色标题，仅覆盖颜色，不影响主题切换其他标题 */
+.rst-content h2 {
+  color: #0071e3 !important;
+}
+
+/* 隐藏正文中的 toctree caption 标题（保留侧边栏） */
+.rst-content .caption,
+.rst-content .caption-text {
+  display: none !important;
+}
+
+/* ---------------------- 代码块 ---------------------- */
+code, pre {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace !important;
+  font-size: 14px;
+  background-color: var(--theme-code-bg); /* 使用主题变量 */
+  color: var(--theme-fg);                /* 使用主题变量 */
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* ---------------------- 链接 ---------------------- */
+a {
+  color: #0071e3; /* 蓝色链接 */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------- TOC / 页面目录 ---------------------- */
+.rst-content .toctree-wrapper,
+.rst-content .toctree-wrapper ul,
+.rst-content .toctree-wrapper li,
+.rst-content .toctree-wrapper a {
+  font-family: 'Lato', Arial, sans-serif !important;
+  font-size: 16px !important;
+  color: var(--theme-fg) !important; /* 使用主题变量，支持 dark/light */
+  line-height: 1.5 !important;
+  text-decoration: none !important;
+}
+
+.rst-content .toctree-wrapper > ul > li > a {
+  font-weight: 700 !important;
+  font-size: 18px !important;
+}
+
+.rst-content .toctree-wrapper a:hover {
+  color: #0071e3 !important;
+}
+
+.rst-content .toctree-wrapper > p {
+  font-family: 'Montserrat', 'Lato', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  color: #0071e3 !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* ---------------------- 响应式 ---------------------- */
+@media (max-width: 768px) {
+  .wy-nav-content {
+    max-width: 100% !important;
+    padding: 1em !important;
+    box-sizing: border-box;
+  }
+
+  .rst-content .toctree-wrapper > p { font-size: 18px !important; }
+  .rst-content .toctree-wrapper a { font-size: 14px !important; }
+
+  pre {
+    overflow-x: auto;
+    white-space: pre !important;
+    word-break: normal !important;
+  }
+
+  .rst-content p,
+  .rst-content li,
+  .rst-content td,
+  .rst-content a,
+  .rst-content h1,
+  .rst-content h2,
+  .rst-content h3,
+  .rst-content h4,
+  .rst-content h5,
+  .rst-content h6 {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .rst-content table-wrapper,
+  .rst-content .md-table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+  }
+  
+  .rst-content table {
+      width: auto;
+      min-width: 600px;
+      table-layout: auto;
+  }
+  
+  .rst-content table td,
+  .rst-content table th,
+  .rst-content table td p,
+  .rst-content table th p {
+      white-space: normal !important;
+      word-break: normal !important;
+      padding: 4px 8px;
+      line-height: 1.4;
+  }
+
+  body, .rst-content, .wy-nav-content {
+    line-height: 1.5;
+  }  
+}
+
+@media (max-width: 480px) {
+  body, .rst-content, .wy-nav-content {
+    font-size: 15px;
+  }
+}
+
+/* 页脚社交图标 */
+.forlinx-footer-social a {
+  text-decoration: none !important;
+}
