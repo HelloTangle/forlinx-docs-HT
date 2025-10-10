@@ -1,0 +1,247 @@
+/* _static/theme-switcher.css */
+
+/* ========== 主题变量定义 ========== */
+.theme-light {
+    --theme-bg: #ffffff;
+    --theme-fg: #292929;
+    --theme-link: #007acc;
+    --theme-sidebar-bg: #f9f9f9;
+    --theme-border: #e0e0e0;
+    --theme-btn-bg: #007acc;
+    --theme-btn-fg: #ffffff;
+    --theme-btn-hover: #005a99;
+    --theme-code-bg: #f0f0f0;
+    --theme-blockquote-bg: #f8f9fa;
+}
+
+.theme-dark {
+    --theme-bg: #1E1E1E;
+    /* VS Code 背景 */
+    --theme-fg: #D4D4D4;
+    /* VS Code 文字颜色 */
+    --theme-link: #4EC9B0;
+    /* VS Code 风格的青绿色链接 */
+    --theme-sidebar-bg: #1E1E1E;
+    /* 侧边栏背景，与主背景一致 */
+    --theme-border: #3C3C3C;
+    /* 分割线颜色 */
+    /* 保留按钮颜色不变 */
+    --theme-btn-bg: #005a99;
+    /* 不变 */
+    --theme-btn-fg: #ffffff;
+    /* 不变 */
+    --theme-btn-hover: #0088cc;
+    /* 不变 */
+    --theme-code-bg: #2D2D2D;
+    /* 代码块背景 */
+    --theme-blockquote-bg: #2D2D2D;
+
+    /* 引用块背景 */
+    /* 确保所有需要深色背景的内容区域使用相同的背景颜色 */
+    .wy-nav-content,
+    .product-card,
+    .btn-group {
+        background-color: var(--theme-bg);
+    }
+
+    /* 分级颜色设置 */
+    .rst-content h1, .rst-content a {
+        color: #cee3f8 !important;
+    }
+
+    .rst-content h2 {
+        color: #b3b4b9 !important;
+    }
+
+    .rst-content h3 {
+        color: #797474 !important;
+    }
+}
+
+/* ========== 全局应用变量 ========== */
+
+/* 页面背景 & 文字 */
+body {
+    background-color: var(--theme-bg);
+    color: var(--theme-fg);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 链接 */
+a {
+    color: var(--theme-link);
+}
+
+a:hover,
+a:active {
+    color: var(--theme-link);
+}
+
+/* ========== 左侧侧边栏 ========== */
+.wy-nav-side {
+    background-color: var(--theme-sidebar-bg);
+}
+
+.wy-side-nav-search {
+    border-bottom-color: var(--theme-border);
+}
+
+.wy-menu a,
+.wy-menu a:visited {
+    color: var(--theme-fg);
+}
+
+.wy-menu a:hover {
+    color: var(--theme-link);
+}
+
+.wy-menu hr {
+    border-top-color: var(--theme-border);
+}
+
+.caption {
+    color: var(--theme-fg);
+}
+
+/* ========== 右侧内容区 ========== */
+
+/* 标题 */
+.wy-nav-content-wrap h1,
+.wy-nav-content-wrap h2,
+.wy-nav-content-wrap h3,
+.wy-nav-content-wrap h4,
+.wy-nav-content-wrap h5,
+.wy-nav-content-wrap h6 {
+    color: var(--theme-fg);
+}
+
+/* 段落 */
+.wy-nav-content-wrap p {
+    color: var(--theme-fg);
+}
+
+/* 分割线 */
+.wy-nav-content-wrap hr {
+    border-top-color: var(--theme-border);
+}
+
+/* 列表 */
+.wy-nav-content-wrap ul,
+.wy-nav-content-wrap ol {
+    color: var(--theme-fg);
+}
+
+/* 表格 */
+.wy-nav-content-wrap table {
+    color: var(--theme-fg);
+    border-color: var(--theme-border);
+}
+
+.wy-nav-content-wrap table th,
+.wy-nav-content-wrap table td {
+    border-color: var(--theme-border);
+}
+
+.wy-nav-content-wrap table th {
+    background-color: var(--theme-sidebar-bg);
+}
+
+/* 代码块 */
+.wy-nav-content-wrap .highlight,
+.wy-nav-content-wrap .highlight pre,
+.wy-nav-content-wrap div.literal-block,
+.wy-nav-content-wrap code {
+    background-color: var(--theme-code-bg);
+    color: var(--theme-fg);
+}
+
+.wy-nav-content-wrap .highlight .c {
+    color: #60a0b0;
+    font-style: italic;
+}
+
+/* 注释 */
+.wy-nav-content-wrap .highlight .k {
+    color: #007020;
+    font-weight: bold;
+}
+
+/* keywords */
+.wy-nav-content-wrap .highlight .n {
+    color: var(--theme-fg);
+}
+
+/* 名称 */
+.wy-nav-content-wrap .highlight .s {
+    color: #4070a0;
+}
+
+/* 字符串 */
+
+/* 引用块 */
+.wy-nav-content-wrap blockquote {
+    background-color: var(--theme-blockquote-bg);
+    border-left-color: var(--theme-link);
+    color: var(--theme-fg);
+}
+
+/* 按钮（如 "View page source"） */
+.wy-nav-content-wrap .btn,
+.wy-nav-content-wrap .viewcode-link,
+.wy-nav-content-wrap .headerlink {
+    background-color: var(--theme-btn-bg);
+    color: var(--theme-btn-fg);
+    border-color: var(--theme-btn-bg);
+}
+
+.wy-nav-content-wrap .btn:hover,
+.wy-nav-content-wrap .viewcode-link:hover,
+.wy-nav-content-wrap .headerlink:hover {
+    background-color: var(--theme-btn-hover);
+    color: var(--theme-btn-fg);
+}
+
+/* 搜索框（如果存在） */
+.wy-nav-content-wrap .wy-form input[type="text"] {
+    background-color: var(--theme-bg);
+    color: var(--theme-fg);
+    border-color: var(--theme-border);
+}
+
+
+/* 下拉菜单基础样式 */
+#theme-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid var(--theme-border);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+}
+
+/* 每个选项的基础样式 */
+#theme-dropdown div {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: var(--theme-fg);
+    transition: background-color 0.3s;
+}
+
+/* 鼠标悬停时的效果 */
+#theme-dropdown div:hover {
+    background-color: var(--theme-link);
+    color: var(--theme-btn-fg);
+}
+
+/* 根据主题调整样式 */
+.theme-light #theme-dropdown {
+    background: var(--theme-bg);
+    border-color: var(--theme-border);
+}
+
+.theme-dark #theme-dropdown {
+    background: var(--theme-bg);
+    border-color: var(--theme-border);
+}

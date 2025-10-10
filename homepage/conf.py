@@ -24,6 +24,7 @@ html_static_path = ['_static']
 
 html_css_files = [
     'custom.css',
+    'theme-switcher.css',  # 亮暗模式 CSS
 ]
 
 # Logo 文件放在 _static 文件夹，确保路径正确
@@ -51,3 +52,11 @@ html_sidebars = {
 }
 
 html_show_sourcelink = False
+
+
+
+# 引入自定义 JS 文件
+html_js_files = [
+    'theme-switcher.js',   # 主题切换逻辑
+    'logo-link.js',        # logo 跳转逻辑
+]
