@@ -40,6 +40,7 @@ html_theme_options = {
 }
 
 html_css_files = [
+    'custom.css',
     'theme-switcher.css',
 ]
 
