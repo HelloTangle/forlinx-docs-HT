@@ -33,6 +33,9 @@ html_favicon = '_static/forlinx.png'
 # 主题选项，根据需要调整
 html_theme_options = {
     'logo_only': True,
+    "style_nav_header_background": "#2980B9",
+    # 可选：自定义颜色模式开关
+    "default_dark_mode": False,  # 默认浅色，可改为 True
 
 }
 
