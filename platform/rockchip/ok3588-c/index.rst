@@ -31,16 +31,25 @@ SOFTWARE
 
    OK3588-C_Linux5_10_209_User_Manual
    OK3588-C_Linux5_10_209_User_Compilation_Manual
-   OK3588-C_Linux5_10_209_User_Compilation_Manualeng
+   OK3588-C_Forlinx_Desktop22_04_User_Manual
+   OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual
+   OK3588-C_Android_14_User_Manual
+   OK3588-C_Android_14_User_Compilation_Manual
+   OK3588-C_Android_12_User_Manual
+   OK3588-C_Android_12_User_Compilation_Manual.md
+   
+
 
 APPLICATION NOTE
------------------
+------------------
 
 .. toctree::
    :caption: APPLICATION NOTE
    :maxdepth: 2
 
+   RK Development Manual <https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html>
 
+   
 
 ===========
 Contact Us

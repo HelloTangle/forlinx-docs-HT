@@ -16,7 +16,9 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 The manual will provide instructions for setting up the environment but there may be some unforeseen issues during the environment setup process. For beginners, it is recommended to use the pre-configured development environment provided by Forlinx. This will allow you to quickly get started and reduce development time.
 
-Linux systems are typically installed in three ways: Dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine.<font style="color:black;background-color:#ffffff;"> Computer Hardware Requirements: It is recommended to have at least<font style="color:black;background-color:#ffffff;">16GB</font><font style="color:black;background-color:#ffffff;"> memory or above.It allows for allocating a sufficient memory to the virtual machine (recommended to allocate</font><font style="color:black;background-color:#ffffff;">10GB</font><font style="color:black;background-color:#ffffff;">or above), while still leaving enough resources for other operations on</font><font style="color:black;background-color:#ffffff;">Windows</font><font style="color:black;background-color:#ffffff;">. Insufficient memory allocation may result in slower performance on</font><font style="color:black;background-color:#ffffff;">Windows.</font>
+Linux systems are typically installed in three ways: Dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine.
+
+Hardware Requirements: It is recommended to have at least<font style="color:black;background-color:#ffffff;">16GB</font><font style="color:black;background-color:#ffffff;"> memory or above.It allows for allocating a sufficient memory to the virtual machine (recommended to allocate</font><font style="color:black;background-color:#ffffff;">10GB</font><font style="color:black;background-color:#ffffff;">or above), while still leaving enough resources for other operations on</font><font style="color:black;background-color:#ffffff;">Windows</font><font style="color:black;background-color:#ffffff;">. Insufficient memory allocation may result in slower performance on</font><font style="color:black;background-color:#ffffff;">Windows.</font>
 
 The manual is mainly divided into four chapters:
 
@@ -29,7 +31,7 @@ A description of some of the symbols and formats associated with this manual:
 
 | **Format**| **Meaning**|
 |:----------:|----------|
-| Note | Note or information that requires special attention, be sure to read carefully|
+| **Note** | Note or information that requires special attention, be sure to read carefully|
 | 📚 | Relevant notes on the test chapters|
 | ️️🛤️ ️ | Indicates the related path.|
 | <font style="color:blue;">Blue font on gray background</font>| Refers to commands entered at the command line(Manual input required).|
@@ -77,6 +79,7 @@ Go to the VMware website https://www.vmware.com/cn.html to download Workstation 
 ### <font style="color:#000000;">1.2 VMware Software Installation</font>
 
 <font style="color:#000000;">Double-click the startup program to enter the installation wizard, and click on "Next".</font>
+
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Compilation_Manual/2.png)
 
@@ -371,7 +374,7 @@ forlinx@ubuntu:~$ sudo apt-get install ssh make gcc libssl-dev liblz4-tool expec
 2. The following libraries also need to be installed when using the Network Configuration Tool and menuconfig:
 
 ```plain
-forlinx@ubuntu:~$ sudo apt-get update                      //Download and update the source information
+forlinx@ubuntu:~$ sudo apt-get update                      //Update the download source information
 forlinx@ubuntu:~$ sudo apt-get install libncurses*             //For building text-based user interfaces
 forlinx@ubuntu:~$ sudo apt-get install net-tools               //Network configuration tool
 ```
@@ -421,7 +424,7 @@ Click "Next".
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Compilation_Manual/1718949389912_40538f13_42dd_4fe2_a513_8f18a1464527.png)
 
-Users can set the installation path according to their own habits. It is set by default here, so click "Next".
+You can set the installation path according to your own habits. It is set by default here, so click "Next".
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Compilation_Manual/1718949390111_1aa013ad_5377_4660_a182_bea3db7b0227.png)
 
@@ -512,7 +515,7 @@ After successful compilation, the system image will be generated under the rockd
 
 #### <font style="color:#000000;">4.2.2 Separate Compilation</font>
 
-The user performs the operation in the kernel source code path.
+Perform the operation in the kernel source code path.
 
 ```plain
 forlinx@ubuntu: ~/3588/OK3588-linux-source$ ./build.sh kernel

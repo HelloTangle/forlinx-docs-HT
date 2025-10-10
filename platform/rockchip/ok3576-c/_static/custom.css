@@ -197,3 +197,7 @@ body {
   }
 }
 
+/* 页脚社交图标，去掉下划线 */
+.forlinx-footer-social a {
+  text-decoration: none !important;
+}

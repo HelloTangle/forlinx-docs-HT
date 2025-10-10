@@ -2048,11 +2048,11 @@ New clock: GstAudioSinkClock
 ^Chandling interrupt. (2.6 %)
 ```
 
-## 5.2 Video Hardware Encoding
+### 5.2 Video Hardware Encoding
 
 OK3588 supports up to 8K @ 60fps/H.265 and 8K @ 60fps/H.264 video encoding.
 
-### 5.2.1 Video Hardware Encoding H.264
+#### 5.2.1 Video Hardware Encoding H.264
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
@@ -2065,7 +2065,7 @@ New clock: GstSystemClock
 0:00:18.2 / 0:00:20.0 (91.0 %)
 ```
 
-### 5.2.2 Video Hardware Encoding H.265 
+#### 5.2.2 Video Hardware Encoding H.265 
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
@@ -2080,7 +2080,7 @@ New clock: GstSystemClock
 0:00:05.0 / 0:00:20.0 (25.2 %)
 ```
 
-### 5.2.3 JPEG Hardware Encoding
+#### 5.2.3 JPEG Hardware Encoding
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg

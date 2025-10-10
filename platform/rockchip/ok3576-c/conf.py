@@ -15,16 +15,11 @@ extensions = [
     'myst_parser',         # 支持 Markdown
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
-html_baseurl = "https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3576-c/"
+html_baseurl = "https://forlinxembedded.github.io/rockchip/ok3576-c/"
 
 
 templates_path = ['_templates']
 exclude_patterns = []
-
-# 加载自定义 JS
-html_js_files = [
-    'custom.js',  # 合并后的 JS
-]
 
 source_suffix = {
     '.rst': 'restructuredtext',
@@ -42,7 +37,6 @@ html_logo = '_static/forlinx-logo.png'
 html_favicon = '_static/forlinx.png'
 html_theme_options = {
     'logo_only': True,
-    'collapse_navigation': False,  # 禁止自动折叠，允许多项同时展开
 }
 
 html_css_files = [
