@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const themes = {
-        light: "浅色",
-        dark: "深色",
+        light: "Light Mode",
+        dark: "Dark Mode",
     };
 
     // 获取当前主题（从 localStorage）
