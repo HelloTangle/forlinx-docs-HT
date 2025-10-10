@@ -2,7 +2,7 @@
 
    📌 To return to the **main Forlinx documentation site**, visit:
 
-   `Forlinx Documentation Main Page <https://hellotangle.github.io/forlinx-docs-HT/>`_
+   `Forlinx Documentation Main Page <https://forlinxembedded.github.io/>`_
 
    🔗 Official product overview:
    
@@ -10,7 +10,7 @@
 
 
 ====================
-OK3576-C Manuals
+OK3576-C Manual
 ====================
 
 HARDWARE
@@ -20,11 +20,7 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   01_VMware
-   02_ubuntu_dev_environment
-   04_compile
-
-
+   OK3576-C_User_Hardware_Manual
 
    
 
@@ -35,7 +31,12 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
-
+   OK3576-C_Linux6_1_84_User_Manual
+   OK3576-C_Linux6_1_84_User_Compilation_Manual
+   OK3576-C_Forlinx_Desktop24_04_User_Manual
+   OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual
+   OK3576-C_Android_14_User_Manual
+   OK3576-C_Android14_User_Compilation_Manual
 
 APPLICATION NOTE
 -----------------

@@ -1,0 +1,673 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK3576-C_Android14.0_User’s Compilation Manual_V1.0 &mdash; Forlinx Embedded RK3576 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=562fc538" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3576-c/OK3576-C_Android14_User_Compilation_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OK3576-C_Android14.0_User’s Manual_V1.0" href="OK3576-C_Android_14_User_Manual.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OK3576-C_User_Hardware_Manual.html">OK3576-C_User’s Hardware Manual_V1.3</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="OK3576-C_Linux6_1_84_User_Manual.html">OK3576-C_Linux6.1.84_User’s Manual_V1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3576-C_Linux6_1_84_User_Compilation_Manual.html">OK3576-C_Linux6.1.84_User’s Compilation Manual_V1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3576-C_Forlinx_Desktop24_04_User_Manual.html">Forlinx Desktop24.04_User’s Manual_V1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual.html">Forlinx Desktop 24.04_User’s Compilation Manual_V1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3576-C_Android_14_User_Manual.html">OK3576-C_Android14.0_User’s Manual_V1.0</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OK3576-C_Android14.0_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-download-purchase">1.1 VMware Software Download &amp; Purchase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation">1.2 VMware Software Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-an-ubuntu-virtual-machine">3.1 Creating an Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-installation">3.2 System Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-settings">3.3 System Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#virtual-memory-settings">3.3.1 Virtual Memory Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#network-configuration">3.3.2 Network Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nat-connection-method">3.3.3 NAT Connection Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bridge-connection">3.3.4 Bridge Connection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#android-system-compilation">4. Android System Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#compilation-environment">4.1.1 Compilation Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#code-preparation">4.2 Code Preparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compilation">4.2.1 Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#individual-kernel-compilation">4.2.1.1 Individual Kernel Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#individual-android-compilation">4.2.1.2 Individual Android Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fully-compiled-and-packaged-image">4.2.3 Fully Compiled and Packaged Image</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ota-upgrade-package">4.3 OTA Upgrade Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ota-full-upgrade-package">4.3.1 OTA Full Upgrade Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ota-incremental-upgrade-package">4.3.2 OTA Incremental Upgrade Package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu-application-development">5. Ubuntu Application Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#android-studio-installation">5.1 Android Studio Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-new-project">5.2 Creating New Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apk-platform-signature">5.3 Apk Platform Signature</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#making-signature-document">5.3.1 Making Signature Document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#andorid-studio-settings">5.3.2 Andorid Studio Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#apk-pre-installation-method">5.4 APK Pre-installation Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getting-root-permissions">5.5 Getting Root Permissions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded RK3576 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">OK3576-C_Android14.0_User’s Compilation Manual_V1.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3576-c-android14-0-users-compilation-manual-v1-0">
+<h1>OK3576-C_Android14.0_User’s Compilation Manual_V1.0<a class="headerlink" href="#ok3576-c-android14-0-users-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourselves with the compilation methods of Forlinx products. The application needs to be cross-compiled on an Ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile their own software code.   	The manual will provide instructions for setting up the environment but there may be some unforeseen issues during the environment setup process. For beginners, it is recommended to use the pre-configured development environment provided by us. This will allow you to quickly get started and reduce development time.<br />
+Linux systems are typically installed in three ways: dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine. Computer Hardware Requirements: It is recommended to have at least 16GB memory or above.It allows for allocating a sufficient memory to the virtual machine (recommended to allocate 16GB or above), while still leaving enough resources for other operations on Windows. Insufficient memory allocation may result in slower performance on Windows.<br />
+The manual is mainly divided into five chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. Virtual Machine software installation - introduction to downloading and installing Vmware software;</p></li>
+<li><p>Chapter 2. provides the loading of the ubuntu system;</p></li>
+<li><p>Chapter 3. Building, setting up, and installing necessary tools for the Ubuntu system and common issues in development environments;</p></li>
+<li><p>Chapter 4. mainly focuses on the deployment and usage of Docker containers, kernel compilation, as well as Android-related source code;</p></li>
+<li><p>Chapter 5. is the description of android application development.</p></li>
+</ul>
+<p>A description of some of the symbols and formats in the manual:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Format</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><strong>Note</strong></p></td>
+<td><p>Note or information that requires special attention, be sure to read carefully</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>Relevant notes on the test chapters</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>️️🛤️️️️</p></td>
+<td><p>Indicates the related path.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:blue;background-color:#d7d7d7;">Blue on gray</font></p></td>
+<td><p>Refers to commands entered at the command line (Manual input required).</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:black;background-color:#d7d7d7;">Black font on gray background</font></p></td>
+<td><p>Serial port output message after entering a command</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><strong><font style="color:black;background-color:#d7d7d7;">Bold black on gray background</font></strong></p></td>
+<td><p>Key information in the serial port output message</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>//</p></td>
+<td><p>Interpretation of input instructions or output information</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Username&#64;Hostname</p></td>
+<td><p>forlinx&#64;ubuntu: Development environment Ubuntu account information Users can determine the functional operating environment with this information.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Example: Search the Docker-CE version:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>apt-cache<span class="w"> </span>madison<span class="w"> </span>docker-ce<span class="w">                   </span><span class="c1"># Find the version of Docker-CE</span>
+docker-ce<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">18</span>.06.3~ce~3-0~ubuntu<span class="w"> </span><span class="p">|</span><span class="w"> </span>http://mirrors.aliyun.com/docker-ce/linux/ubuntu/trusty/stable<span class="w"> </span>amd64<span class="w"> </span>Packages
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">forlinx&#64;ubuntu</span></code>：User’ name: forlinx, host name: ubuntu, whic indicating the user forlinx is used on the development environment ubuntu for operations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">#</span></code> ：Explanation of the instruction, no input required.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">apt-cache</span> <span class="pre">madison</span> <span class="pre">docker-ce</span></code>：Blue font indicates the relevant commands that need to be entered manually.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker-ce</span> <span class="pre">|</span> <span class="pre">18.06.3~ce~3-0~ubuntu</span></code>：Black font is the output information after the input command, and the bold font is the key information.</p></li>
+</ul>
+</section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This manual is mainly applicable to the Android14 operating system on the Forlinx OK3576-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head text-center"><p><strong>Manual Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>08/11/2024</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td><p>OK3576-C Android14_User’s Compilation Manual Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vmware-virtual-machine-software-installation">
+<h2>1. VMware Virtual Machine Software Installation<a class="headerlink" href="#vmware-virtual-machine-software-installation" title="Link to this heading"></a></h2>
+<p>This chapter mainly introduces VMware virtual machine installation, and takes<code class="docutils literal notranslate"><span class="pre">VMware</span> <span class="pre">workstation</span> <span class="pre">15</span> <span class="pre">Pro</span></code>as an example to show the installation and configuration process of operating system.</p>
+<section id="vmware-software-download-purchase">
+<h3>1.1 VMware Software Download &amp; Purchase<a class="headerlink" href="#vmware-software-download-purchase" title="Link to this heading"></a></h3>
+<p>Visit Vmware official website https://www.vmware.com/cn.html for downloading Workstation Pro and obtaining the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.</p>
+<p><img alt="Image" src="_images/1730964222993_631476f6_6792_4565_88e3_5f35c07205e7.png" /></p>
+</section>
+<section id="vmware-software-installation">
+<h3>1.2 VMware Software Installation<a class="headerlink" href="#vmware-software-installation" title="Link to this heading"></a></h3>
+<p>Double-click the startup program to enter the installation wizard.</p>
+<p><img alt="Image" src="_images/1730964223101_381e785b_91aa_4bd5_b8a2_e9b57d3482c9.png" /></p>
+<p>Click “Next”.</p>
+<p><img alt="Image" src="_images/1730964223210_43737a0c_16a9_45d4_8987_335455f5e0bd.png" /></p>
+<p>Check the terms in the license agreement that I accept, then click “Next”.</p>
+<p><img alt="Image" src="_images/1730964223348_749b77fa_a5c5_4652_861f_96b2fd7de3fe.png" /></p>
+<p>Modify the installation location to the partition where the software is installed on your computer, and click “Next”.</p>
+<p><img alt="Image" src="_images/1730964223470_bc50d3be_b099_4fa4_b761_1381428e7b52.png" /></p>
+<p>Check and click “Next”.</p>
+<p><img alt="Image" src="_images/1730964223557_96743400_c69b_48f3_872c_455fd5dc92db.png" /></p>
+<p>Check Add Shortcut and click “Next”.</p>
+<p><img alt="Image" src="_images/1730964223686_8aa0f22c_0367_4c8d_8151_0fd9bfb5f8f3.png" /></p>
+<p>Click “Install”.</p>
+<p><img alt="Image" src="_images/1730964223764_6ec848f6_efc5_41fa_80e6_c977054ec9e0.png" /></p>
+<p>Wait for the installation to complete.</p>
+<p><img alt="Image" src="_images/1730964223871_9dec8163_07f0_45ed_82ea_193b4fc11e91.png" /></p>
+<p>Click “Finish” to try it out. For long-term usage, users need to purchase from the official site and fill out the license application.</p>
+</section>
+</section>
+<section id="loading-the-existing-ubuntu-development-environment">
+<h2>2. Loading the Existing Ubuntu Development Environment<a class="headerlink" href="#loading-the-existing-ubuntu-development-environment" title="Link to this heading"></a></h2>
+<p>It is recommended for beginners to directly use the pre-built virtual machine environment provided by Forlinx, which already includes installed cross-compiler and Qt environment. After understanding this chapter, you can directly jump to the compilation chapter for further study.</p>
+<p>Common user name:<code class="docutils literal notranslate"><span class="pre">forlinx</span></code>, password:<code class="docutils literal notranslate"><span class="pre">forlinx</span></code></p>
+<p>Please ask your sales representative for the download link.</p>
+<p>There are two ways to use a virtual machine environment in VMware: one is to directly load an existing environment, and the other is to create a new environment. Let’s first talk about how to load an existing environment.</p>
+<p>First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don’t match, it suggests that the file may be corrupt, and you should consider downloading it again.</p>
+<p><img alt="Image" src="_images/1730964225451_9c9f1318_45b2_45c4_92e2_1cb2776ebce5.png" /></p>
+<p>Select all compressed files, right-click and extract to the current folder or your own directory:</p>
+<p><img alt="Image" src="_images/1730964225542_28d5ad72_4196_4829_b495_dd2fc5c3c5da.png" /></p>
+<p>After unpacking, you will get the development environment<code class="docutils literal notranslate"><span class="pre">OK3576-VM15.1.0-Ubuntu22.04</span></code>. <code class="docutils literal notranslate"><span class="pre">OK3576-VM15.1.0-Ubuntu22.04.vmx</span></code>is virtual machine file.</p>
+<p><img alt="Image" src="_images/1730964225631_4c1e382f_229c_4aca_aeda_700d5528c645.png" /></p>
+<p>Open the installed virtual machine, select the<code class="docutils literal notranslate"><span class="pre">OK3576-VM15.1.0-Ubuntu22.04.vmx</span></code>just unzipped, and double-click to open the startup file.</p>
+<p><img alt="Image" src="_images/1730964225763_2ea7d704_144d_4bd2_ba79_b2f2f603524c.png" /></p>
+<p>After loading, click <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">the</span> <span class="pre">virtual</span></code>to run and enter the system interface.</p>
+<p>The development environment has forlinx user and root user.</p>
+<ul class="simple">
+<li><p>User’s name<code class="docutils literal notranslate"><span class="pre">forlinx</span></code>, password<code class="docutils literal notranslate"><span class="pre">forlinx</span></code>.</p></li>
+<li><p>User’s name<code class="docutils literal notranslate"><span class="pre">root</span></code>, password<code class="docutils literal notranslate"><span class="pre">root</span></code>.</p></li>
+</ul>
+</section>
+<section id="new-ubuntu-development-environment-setup">
+<h2>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h2>
+<p>This chapter mainly explains the building process of Ubuntu system.</p>
+<p>Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section.</p>
+<section id="creating-an-ubuntu-virtual-machine">
+<h3>3.1 Creating an Ubuntu Virtual Machine<a class="headerlink" href="#creating-an-ubuntu-virtual-machine" title="Link to this heading"></a></h3>
+<p>Open VMware software and click<code class="docutils literal notranslate"> <span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">New</span> <span class="pre">Virtual</span> <span class="pre">Machine</span></code>to enter the following：</p>
+<p><img alt="Image" src="_images/1730964227414_3edd9205_a894_4a51_97ae_8c39c94bb0be.png" /></p>
+<p>Select Custom and click “Next”.</p>
+<p><img alt="Image" src="_images/1730964227622_9c601b37_1755_4889_959a_038ffeeaa8b5.png" /></p>
+<p>Select the compatibility that corresponds to the VMware version, the version can be viewed in<code class="docutils literal notranslate"><span class="pre">Help</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">About</span> <span class="pre">VMware</span> <span class="pre">Workstation</span></code>, click the “Next”.</p>
+<p><img alt="Image" src="_images/1730964227731_3c701a08_2e09_4d3a_8ef2_442adb748eff.png" /></p>
+<p>Select to install the operating system later and click “Next”.</p>
+<p><img alt="Image" src="_images/1730964227843_63162a40_ba19_4aea_b8d5_20642790227d.png" /></p>
+<p>To keep the default, click “Next”.</p>
+<p><img alt="Image" src="_images/1730964227978_67bb4b5f_f226_451c_ae90_7ff661b29a08.png" /></p>
+<p>Modify the virtual machine name and installation location, click “Next”.</p>
+<p><img alt="Image" src="_images/1730964228070_4b5ca3fb_22e0_42ef_854e_e6dfdc31ef99.png" /></p>
+<p>Set the number of processors according to the actual situation.</p>
+<p><img alt="Image" src="_images/1730964228151_31374531_110f_47ab_88cc_eb3b560a3e7e.png" /></p>
+<p>Also set the memory size according to the actual situation (it is recommended to adjust the memory size to 20g or more).</p>
+<p><img alt="Image" src="_images/1730964228260_aae4e91b_4c23_4aa3_aba4_1aa2b369d916.png" /></p>
+<p>Set the network type, the default is NAT mode, click “Next”.</p>
+<p><img alt="Image" src="_images/1730964228359_2ede8765_c725_4ea3_90cc_4ae8a53d5a1c.png" /></p>
+<p>To keep the default, click “Next”.</p>
+<p><img alt="Image" src="_images/1730964228435_a3379fa3_9cf7_4a33_b989_ad3718a9a5b8.png" /></p>
+<p>To keep the default, click “Next”.</p>
+<p><img alt="Image" src="_images/1730964228519_8e111534_62d9_458c_a08d_1f233bdf810d.png" /></p>
+<p>Choose to create a new virtual disk here.</p>
+<p><img alt="Image" src="_images/1730964228623_3fea80d1_731f_4ac3_bc24_7536d48283e2.png" /></p>
+<p>Set the disc size to 500G, select the disc form, and click “Next” to finish.</p>
+<p><img alt="Image" src="_images/1730964228702_654b46e9_479d_4daf_abb3_7169868660eb.png" /></p>
+<p>Specify the disk file, the default one here is fine.</p>
+<p><img alt="Image" src="_images/1730964228785_5c7a5011_5baa_4dda_8eba_53afe89d710b.png" /></p>
+<p>Click “Finish” by default.</p>
+<p><img alt="Image" src="1730964229273_3d038bb3_f89a_4502_a3e8_e10a15a13cca.png" /></p>
+<p>At this point, virtual machine creation is complete.</p>
+</section>
+<section id="system-installation">
+<h3>3.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h3>
+<p>Ubuntu version is 22.04; the introduction and development in this manual are carried out on Ubuntu22.04. Use the Tsinghua image site to download, the address is <a class="reference external" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.4-desktop-amd64.iso">https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04/ubuntu-22.04.4-desktop-amd64.iso</a></p>
+<p>Right-click on the newly created Ubuntu 64bit and select Settings from the pop-up menu.</p>
+<p><img alt="Image" src="_images/1730964228965_3075e710_081a_42d8_8efa_4bf430708aba.png" /></p>
+<p>The “Virtual Machine Settings Menu” pops up as shown below:</p>
+<p><img alt="Image" src="_images/1730964229053_b0868896_bd7d_495d_8e1a_ff5d4b8189b5.png" /></p>
+<p>Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.</p>
+<p><img alt="Image" src="_images/1730964229132_37326492_cccc_44a8_8866_8b7ca247ef16.png" /></p>
+<p>After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with Ubuntu image installation.</p>
+<p><img alt="Image" src="_images/1730964229273_3d038bb3_f89a_4502_a3e8_e10a15a13cca.png" /></p>
+<p>After starting the virtual machine, wait for the installation interface to appear as shown below.</p>
+<p><img alt="Image" src="_images/1730964229347_0783b665_ffd3_42b5_935f_9d3c45fd1eb7.png" /></p>
+<p>After selecting the language on the left side as shown in the figure, click<code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Ubuntu</span></code>to pop up the language selection interface. Ubuntu’s default language is English, of course, you can also choose other language, the default language can also be reset at a later stage, select Complete and click<code class="docutils literal notranslate"><span class="pre">Continue</span></code>.</p>
+<p><img alt="Image" src="_images/1730964229421_67855201_9acb_4c81_8590_3f8826645d2a.png" /></p>
+<p>Use the default keyboard layout, click<code class="docutils literal notranslate"><span class="pre">Continue</span></code>.</p>
+<p><img alt="Image" src="_images/1730964229511_2186fdfb_726d_4641_b0e3_2b7ea6f1ec58.png" /></p>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Continue</span></code>.</p>
+<p><img alt="Image" src="_images/1730964229593_be840ab7_8bfc_488a_8386_320ecfdb591c.png" /></p>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Continue</span></code>.</p>
+<p><img alt="Image" src="_images/1730964229669_0b5f8aba_79e9_402a_8782_82f73f4e7c48.png" /></p>
+<p>Set the user name and password, click <code class="docutils literal notranslate"><span class="pre">Continue</span></code>, and wait for the installation to complete.</p>
+</section>
+<section id="system-settings">
+<h3>3.3 System Settings<a class="headerlink" href="#system-settings" title="Link to this heading"></a></h3>
+<section id="virtual-memory-settings">
+<h4>3.3.1 Virtual Memory Settings<a class="headerlink" href="#virtual-memory-settings" title="Link to this heading"></a></h4>
+<p>Some platforms require a large amount of memory when compiling. If the total memory of the computer is not large, resulting in only 8GB or less allocated to the virtual machine, the compilation may fail. Now, you can set swapfile to use a portion of the hard drive space as memory. Hard disc read/write speeds are much less than memory read/write speeds, so using virtual memory will inevitably lead to performance degradation. Try to use physical memory as much as possible.<br />
+The memory allocated when creating the virtual machine is 8GB. If the 8GB memory is not enough during compilation, the size of the swapfile needs to be modified.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo swapoff /swapfile
+forlinx@ubuntu:~$ sudo dd if=/dev/zero of=/swapfile bs=1G count=32
+forlinx@ubuntu:~$ sudo mkswap /swapfile
+forlinx@ubuntu:~$ sudo swapon /swapfile
+</pre></div>
+</div>
+</section>
+<section id="network-configuration">
+<h4>3.3.2 Network Configuration<a class="headerlink" href="#network-configuration" title="Link to this heading"></a></h4>
+<p><img alt="Image" src="_images/1730964229812_5497b436_9472_43b7_9c68_cc6a20c4b06d.png" /></p>
+</section>
+<section id="nat-connection-method">
+<h4>3.3.3 NAT Connection Method<a class="headerlink" href="#nat-connection-method" title="Link to this heading"></a></h4>
+<p>By default, after the virtual machine is installed, the network connection method is set to NAT, which shares the host machine’s IP address. This configuration does not need to be changed when performing tasks like installing dependencies or compiling code.<br />
+When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. In this mode the virtual NAT device and the host NIC are connected to communicate for Internet access. This is the most common way for our VM to access the external network.</p>
+</section>
+<section id="bridge-connection">
+<h4>3.3.4 Bridge Connection<a class="headerlink" href="#bridge-connection" title="Link to this heading"></a></h4>
+<p>When the VMware virtual NIC device is in bridge mode, the host NIC and the virtual machine NIC communicate through the virtual bridge, and the network IP and the host need to be set in the same network segment in the Ubuntu environment. If accessing an external network, you need to set the DNS to be consistent with the host NIC. If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode.</p>
+</section>
+</section>
+</section>
+<section id="android-system-compilation">
+<h2>4. Android System Compilation<a class="headerlink" href="#android-system-compilation" title="Link to this heading"></a></h2>
+<section id="preparation-before-compilation">
+<h3>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h3>
+<section id="compilation-environment">
+<h4>4.1.1 Compilation Environment<a class="headerlink" href="#compilation-environment" title="Link to this heading"></a></h4>
+<p>Install the compilation environment. The virtual machine provided by Forlinx has been installed. This section can be skipped.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>software-properties-common
+forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:openjdk-r/ppa
+forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>uuid<span class="w"> </span>uuid-dev<span class="w"> </span>zlib1g-dev<span class="w"> </span>liblz-dev<span class="w"> </span>liblzo2-2<span class="w"> </span>liblzo2-dev<span class="w"> </span>lzop<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>git<span class="w"> </span>curl<span class="w"> </span>u-boot-tools<span class="w"> </span>mtd-utils<span class="w"> </span>android-sdk-libsparse-utils<span class="w"> </span>openjdk-8-jdk<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>device-tree-compiler<span class="w"> </span>gdisk<span class="w"> </span>m4<span class="w"> </span>make<span class="w"> </span>bc<span class="w"> </span>fakeroot<span class="w"> </span>unzip<span class="w"> </span>zip<span class="w"> </span>gawk<span class="w"> </span>busybox<span class="w"> </span>libncurses5<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libstdc++6<span class="w"> </span>lib32stdc++6<span class="w"> </span>bison<span class="w"> </span>flex<span class="w"> </span>python2<span class="w"> </span>libssl-dev<span class="w"> </span>cpio<span class="w"> </span>lz4<span class="w"> </span>rsync
+forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/usr/bin/python2<span class="w"> </span>/usr/bin/python
+</pre></div>
+</div>
+</section>
+</section>
+<section id="code-preparation">
+<h3>4.2 Code Preparation<a class="headerlink" href="#code-preparation" title="Link to this heading"></a></h3>
+<p>Copy the code (<code class="docutils literal notranslate"><span class="pre">2-image</span> <span class="pre">and</span> <span class="pre">source</span> <span class="pre">code\1-source</span> <span class="pre">code</span></code>) to the virtual machine<code class="docutils literal notranslate"><span class="pre">/home/forlinx/work/</span></code>directory and unzip it</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ cat OK3576-android-source.* | tar -jxv
+</pre></div>
+</div>
+</section>
+<section id="compilation">
+<h3>4.2.1 Compilation<a class="headerlink" href="#compilation" title="Link to this heading"></a></h3>
+<section id="individual-kernel-compilation">
+<h4>4.2.1.1 Individual Kernel Compilation<a class="headerlink" href="#individual-kernel-compilation" title="Link to this heading"></a></h4>
+<p>The kernel is configured as follows:</p>
+<ul class="simple">
+<li><p>config：</p>
+<ul>
+<li><p>rockchip_defconfig</p></li>
+<li><p>android-14.config</p></li>
+<li><p>OK3576-C-android.config</p></li>
+<li><p>rk3576.config</p></li>
+</ul>
+</li>
+<li><p>dts：</p>
+<ul>
+<li><p>OK3576-C-android.dts</p></li>
+</ul>
+</li>
+</ul>
+<p>Compilation</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3576-android-source$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>build/envsetup.sh
+forlinx@ubuntu:~/work/OK3576-android-source$<span class="w"> </span>lunch<span class="w"> </span>ok3576_c-userdebug
+forlinx@ubuntu:~/work/OK3576-android-source$<span class="w"> </span>./build.sh<span class="w"> </span>-Ku
+</pre></div>
+</div>
+</section>
+<section id="individual-android-compilation">
+<h4>4.2.1.2 Individual Android Compilation<a class="headerlink" href="#individual-android-compilation" title="Link to this heading"></a></h4>
+<p>Android partial profile directory<code class="docutils literal notranslate"><span class="pre">device/rockchip/rk3576/ok3576_c/</span></code></p>
+<p>Compilation command.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3576-android-source$ source build/envsetup.sh
+forlinx@ubuntu:~/work/OK3576-android-source$ lunch ok3576_c-userdebug
+forlinx@ubuntu:~/work/OK3576-android-source$ ./build.sh -Au
+</pre></div>
+</div>
+</section>
+<section id="fully-compiled-and-packaged-image">
+<h4>4.2.3 Fully Compiled and Packaged Image<a class="headerlink" href="#fully-compiled-and-packaged-image" title="Link to this heading"></a></h4>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3576-android-source$ source build/envsetup.sh
+forlinx@ubuntu:~/work/OK3576-android-source$ lunch ok3576_c-userdebug
+forlinx@ubuntu:~/work/OK3576-android-source$ ./build.sh -KAup
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Generated files directory is<code class="docutils literal notranslate"><span class="pre">rockdev/</span></code>and<code class="docutils literal notranslate"><span class="pre">IMAGE/OK3576_C_USERDEBUG_OK3576-C-ANDROID__xxxxxxxxxx/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">update.img</span></code>can be used for system flashing.</p></li>
+</ul>
+</section>
+</section>
+<section id="ota-upgrade-package">
+<h3>4.3 OTA Upgrade Package<a class="headerlink" href="#ota-upgrade-package" title="Link to this heading"></a></h3>
+<p>Full package includes entire system, incremental package contains version differences. Ensure low version is flashed on the board before using incremental upgrade.</p>
+<section id="ota-full-upgrade-package">
+<h4>4.3.1 OTA Full Upgrade Package<a class="headerlink" href="#ota-full-upgrade-package" title="Link to this heading"></a></h4>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3576-android-source$ source build/envsetup.sh
+forlinx@ubuntu:~/work/OK3576-android-source$ lunch ok3576_c-userdebug
+forlinx@ubuntu:~/work/OK3576-android-source$ ./build.sh -KAuop
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Generated files directory is<code class="docutils literal notranslate"><span class="pre">rockdev/</span></code>and<code class="docutils literal notranslate"><span class="pre">IMAGE/OK3576_C_USERDEBUG_OK3576-C-ANDROID__xxxxxxxxxx/</span></code></p></li>
+<li><p>Rename<code class="docutils literal notranslate"><span class="pre">ok3576_c-ota-eng.root.zip</span></code>to<code class="docutils literal notranslate"><span class="pre">update.zip</span></code>for full OTA upgrade</p></li>
+</ul>
+</section>
+<section id="ota-incremental-upgrade-package">
+<h4>4.3.2 OTA Incremental Upgrade Package<a class="headerlink" href="#ota-incremental-upgrade-package" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>First, release the v1.0 version image and burn it to the development board. (Both OTG and TF card flashing are OK).</p></li>
+</ol>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">forlinx</span><span class="nv">@ubuntu</span><span class="p">:~/</span><span class="n">work</span><span class="p">/</span><span class="n">OK3576-android-source</span><span class="p">$</span> <span class="n">source</span> <span class="n">build</span><span class="p">/</span><span class="n">envsetup</span><span class="p">.</span><span class="n">sh</span>
+<span class="n">forlinx</span><span class="nv">@ubuntu</span><span class="p">:~/</span><span class="n">work</span><span class="p">/</span><span class="n">OK3576-android-source</span><span class="p">$</span> <span class="n">lunch</span> <span class="n">ok3576_c-userdebug</span>
+<span class="n">forlinx</span><span class="nv">@ubuntu</span><span class="p">:~/</span><span class="n">work</span><span class="p">/</span><span class="n">OK3576-android-source</span><span class="p">$</span> <span class="p">./</span><span class="n">build</span><span class="p">.</span><span class="n">sh</span> <span class="n">-KAuop</span>
+</pre></div>
+</div>
+<p>The generated<code class="docutils literal notranslate"><span class="pre">IMAGE/OK3576_C_USERDEBUG_OK3576-C-ANDROID__xxxxxxx/IMAGES/ok3576_c-target_files-eng.root.zip</span></code>is v1.0 material package. For easy description, named as<code class="docutils literal notranslate"><span class="pre">files-v1.0.zip</span></code></p>
+<ol class="arabic simple" start="2">
+<li><p>Modify the kernel code or Android code (upgraded to v2.0)</p></li>
+<li><p>Same as step 1, generate a v2.0 package named<code class="docutils literal notranslate"><span class="pre">files-v2.0.zip</span></code></p></li>
+<li><p>Generate v1.0-v2.0 incremental upgrade package.</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3576-android-source$ out/host/linux-x86/bin/ota_from_target_files -v -i files-v1.0.zip --block -p ./out/host/linux-x86 files-v2.0.zip ./v1.0--v2.0.zip
+</pre></div>
+</div>
+<p>Generated<code class="docutils literal notranslate"><span class="pre">v1.0--v2.0.zip</span></code>is the incremental upgrade package from v1.0 to v2.0.</p>
+<ol class="arabic simple" start="5">
+<li><p>Rename<code class="docutils literal notranslate"><span class="pre">v1.0--v2.0.zip</span></code>to<code class="docutils literal notranslate"><span class="pre">update.zip</span></code>, which can be used for OTA incremental upgrade (the development board needs to be a v1.0 system)</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="ubuntu-application-development">
+<h2>5. Ubuntu Application Development<a class="headerlink" href="#ubuntu-application-development" title="Link to this heading"></a></h2>
+<p>This chapter explains how to set up the Android application development environment, including downloading and installing the Android SDK and Android Studio integrated development environment, as well as using the OK3576 development board for on-device debugging. It is highly suitable for Android beginners to learn from and refer to.</p>
+<section id="android-studio-installation">
+<h3>5.1 Android Studio Installation<a class="headerlink" href="#android-studio-installation" title="Link to this heading"></a></h3>
+<p>Open<code class="docutils literal notranslate"><span class="pre">3-tools\android-studio-2024.1.1.12-windows.exe</span></code><br />
+Click “Next”.</p>
+<p><img alt="Image" src="_images/1730964232750_d2a7b496_d768_4569_a775_0d608ac99cf2.png" /></p>
+<p>Click “Next”.</p>
+<p><img alt="Image" src="_images/1730964232840_74c91d77_0a6e_4905_8e1c_174e8da37729.png" /></p>
+<p>Click “Install”.</p>
+<p><img alt="Image" src="_images/1730964232985_6be34815_955e_4432_a511_ac1fd4285426.png" /></p>
+<p>Click “Next”.</p>
+<p><img alt="Image" src="_images/1730964233075_83f41638_9f1b_42a1_a402_d4259c696c90.png" /></p>
+<p>Click “Finish”.</p>
+<p><img alt="Image" src="_images/1730964233166_39fd326f_3e00_43d4_84f7_8d66f2099771.png" /></p>
+<p>Installation completed.</p>
+<p>Configure sdk, click “Next”.</p>
+<p><img alt="Image" src="_images/1730964233294_cb3b13c3_5b25_416e_a281_b0ea94f29ead.png" /></p>
+<p>Click “Next”.</p>
+<p><img alt="Image" src="_images/1730964233481_6464b760_c699_4021_ae56_30c84718974e.png" /></p>
+<p>Click “Next”.</p>
+<p><img alt="Image" src="_images/1730964233572_20025940_de72_4e22_adbe_35a64e890f69.png" /></p>
+<p>Select “Accept” click “Finish”.</p>
+<p><img alt="Image" src="_images/1730964233656_5ae7f139_f1f0_4cd8_b8af_99197c10d7db.png" /></p>
+<p>After waiting for the download to complete, click “Finish”.</p>
+<p><img alt="Image" src="_images/1730964233751_8c70bcc4_d723_42c0_a32c_b133c18f03f8.png" /></p>
+</section>
+<section id="creating-new-project">
+<h3>5.2 Creating New Project<a class="headerlink" href="#creating-new-project" title="Link to this heading"></a></h3>
+<p>Click <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code>.</p>
+<p><img alt="Image" src="_images/1730964233830_31138b20_047a_4a89_930b_0ceaa4ab7b41.png" /></p>
+<p>Select <code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">View</span> <span class="pre">Acticity</span></code>.</p>
+<p><img alt="Image" src="_images/1730964233902_cabb16b7_7142_43f0_948a_e559b56c840c.png" /></p>
+<p>Modify project name and other information, click “Finish”.</p>
+<p><img alt="Image" src="_images/1730964234049_50d8b770_2eb0_4fdf_8be3_987e10380c0d.png" /></p>
+<p>For the first time, relevant SDK and other tools will be automatically downloaded, and there will be a prompt in the status bar.</p>
+<p><img alt="Image" src="_images/1730964234185_14b03ff4_05ed_42ee_846d_9d18256af99f.png" /></p>
+<p><img alt="Image" src="_images/1730964234329_3f866496_3977_45a7_8bd7_6f10007a4b0a.png" /></p>
+<p>If there is a JDK-related error, click <code class="docutils literal notranslate"><span class="pre">Setup</span> <span class="pre">SDK</span></code>and select the first item.</p>
+<p><img alt="Image" src="_images/1730964234467_e49fe2b1_0090_4639_8592_9ee107b1d458.png" /></p>
+<p>Connect the development board to the computer to ensure that the ADB can be used normally; click the Run button in the title bar to compile the project and install it to the development board to run.</p>
+<p><img alt="Image" src="_images/1730964234560_8323128f_051e_4604_9822_b1b0d77e05e6.png" /></p>
+</section>
+<section id="apk-platform-signature">
+<h3>5.3 Apk Platform Signature<a class="headerlink" href="#apk-platform-signature" title="Link to this heading"></a></h3>
+<p>If the<code class="docutils literal notranslate"><span class="pre">openssl</span></code>command is not available on your windows system, go to the <a class="reference external" href="http://slproweb.com/products/Win32OpenSSL.html">http://slproweb.com/products/Win32OpenSSL.html</a> to download and install it, and set the environment variables.</p>
+<p>SELinux in the Android platform will be divided into three kinds of Apps, including those without platform signature and system privileges <code class="docutils literal notranslate"><span class="pre">untrusted_app</span></code>, those with platform signature and no system privileges <code class="docutils literal notranslate"><span class="pre">platform_app</span></code>, and those with platform signature and system privileges <code class="docutils literal notranslate"><span class="pre">system_app</span></code>. This chapter will introduce how to sign the apk and obtain system permissions.</p>
+<section id="making-signature-document">
+<h4>5.3.1 Making Signature Document<a class="headerlink" href="#making-signature-document" title="Link to this heading"></a></h4>
+<p>Copy<code class="docutils literal notranslate"><span class="pre">build/target/product/security/platform.x509.pem</span></code> and<code class="docutils literal notranslate"><span class="pre">build/target/product/security/platform.pk8</span></code> in the Android system to Windows.</p>
+<p>Open command line window to execute:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>openssl pkcs8 -in platform.pk8 -inform DER -outform PEM -out shared.priv.pem –nocrypt
+openssl pkcs12 -export -in platform.x509.pem -inkey shared.priv.pem -out shared.pk12 -name androiddebugkey
+</pre></div>
+</div>
+<p>Enter the password<code class="docutils literal notranslate"><span class="pre">android</span></code></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>keytool -importkeystore -deststorepass android -destkeypass android -destkeystore debug.keystore -srckeystore shared.pk12 -srcstoretype PKCS12 -srcstorepass android -alias androiddebugkey
+</pre></div>
+</div>
+<p>You can modify<code class="docutils literal notranslate"><span class="pre">key-alias</span></code>and<code class="docutils literal notranslate"><span class="pre">password</span></code>according to the requirements. Save the signature file<code class="docutils literal notranslate"><span class="pre">debug.keystore</span></code>to your usually use directory.</p>
+</section>
+<section id="andorid-studio-settings">
+<h4>5.3.2 Andorid Studio Settings<a class="headerlink" href="#andorid-studio-settings" title="Link to this heading"></a></h4>
+<p>Open “Android Studio”, add shared UID in<code class="docutils literal notranslate"><span class="pre">AndroidManifest.xml</span></code>:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+    android:sharedUserId=&quot;android.uid.system&quot;&gt;
+</pre></div>
+</div>
+<p>Click <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">structure</span></code>:</p>
+<p><img alt="Image" src="_images/1730964234712_9b808ecf_2eda_490d_9675_e0cf3d946b72.png" /></p>
+<p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p>
+<p>Add the signature configuration of debug version and release version, and click <code class="docutils literal notranslate"><span class="pre">Build</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">Build</span> <span class="pre">Types...</span></code>in the menu bar.</p>
+<p><img alt="Image" src="_images/1730964234842_4a5caae4_cb37_493b_b733_7819d1c71b16.png" /></p>
+<p>Modify debug and release <code class="docutils literal notranslate"><span class="pre">Signing</span> <span class="pre">Config</span></code>, and set to <code class="docutils literal notranslate"><span class="pre">$signingConfigs.debug</span></code>and <code class="docutils literal notranslate"><span class="pre">$signingConfigs.release</span></code> respectively, and click  <code class="docutils literal notranslate"><span class="pre">OK</span></code>to finish.</p>
+<p><img alt="Image" src="_images/1730964234982_8377f125_0085_490f_8906_89b01dd12098.png" /></p>
+<p>After modification, recompile and run the app. At this time, you can see that the App is run by the system user through the PS command <code class="docutils literal notranslate"><span class="pre">system_app</span></code>.</p>
+<p><img alt="Image" src="_images/1730964235131_b878a053_7ade_4123_ba4d_7e5524d1fe82.png" /></p>
+</section>
+</section>
+<section id="apk-pre-installation-method">
+<h3>5.4 APK Pre-installation Method<a class="headerlink" href="#apk-pre-installation-method" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Create a new directory in Android system:</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3576-android-source/android$ mkdir packages/apps/helloworld
+</pre></div>
+</div>
+<p>Copy the apk that needs to be pre-installed (no signature required) to the directory for<code class="docutils literal notranslate"><span class="pre">helloworld.apk</span></code>example:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3576-android-source/android$ cp helloworld.apk packages/apps/helloworld
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">packages/apps/helloworld</span></code> create <code class="docutils literal notranslate"><span class="pre">Android.mk</span></code></p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE := helloworld
+LOCAL_SRC_FILES := helloworld.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_DEX_PREOPT := false
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Modify<code class="docutils literal notranslate"><span class="pre">device/softwinner/ok3576-c/ok3576_c.mk</span></code>, add the followings:</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>PRODUCT_PACKAGES += \
+    helloworld
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Recompile the image</p></li>
+</ol>
+</section>
+<section id="getting-root-permissions">
+<h3>5.5 Getting Root Permissions<a class="headerlink" href="#getting-root-permissions" title="Link to this heading"></a></h3>
+<p>Currently only <code class="docutils literal notranslate"><span class="pre">system_app</span></code>can get root privileges, need to <code class="docutils literal notranslate"><span class="pre">Developer</span> <span class="pre">options</span></code>open the <code class="docutils literal notranslate"><span class="pre">Root</span> <span class="pre">access</span></code>switch in the relevant steps referring to “OK3576-C_Android14_User’s Manual”, app source code reference <code class="docutils literal notranslate"><span class="pre">vendor/forlinx/RootChecker/</span></code>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
