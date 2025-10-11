@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
         // 更新按钮文字
         updateButtonLabel();
 
-        // 更新 logo
-        const logo = document.querySelector(".wy-side-nav-search .logo img"); // Sphinx 默认 logo
+        // 动态切换 logo
+        const logo = document.querySelector(".wy-side-nav-search img"); // 更通用选择器
         if (logo) {
+            const pathPrefix = window.location.pathname.includes('_static') ? '' : '../../_static/';
             if (theme === "light") {
-                logo.src = "_static/forlinx-logo.png"; // 浅色 logo
-                logo.style.filter = ""; // 清除滤镜
+                logo.src = pathPrefix + "forlinx-logo.png";
+                logo.style.filter = "";
             } else {
-                logo.src = "_static/forlinx-logo-dark.png"; // 暗色 logo
-                // logo.style.filter = "invert(1)"; // 如果只想用反色
+                logo.src = pathPrefix + "forlinx-logo-dark.png";
             }
         }
 
