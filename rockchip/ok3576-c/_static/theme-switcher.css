@@ -290,63 +290,48 @@ pre, code {
 }
 
 /* ======================= 下拉主题菜单 ======================= */
-#theme-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    border: 1px solid var(--theme-border);
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 120px;
+
+/* ======================= 浮动主题切换按钮 ======================= */
+#theme-switcher {
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 10px;
+    display: block;
+    pointer-events: auto; /* 确保可点击 */
 }
 
-#theme-dropdown div {
+/* 按钮样式 */
+#theme-switcher-btn {
     padding: 8px 12px;
+    background: rgba(0, 122, 204, 0.85); /* 半透明蓝色 */
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* 圆形/胶囊形 */
     cursor: pointer;
-    color: var(--theme-fg);
-    transition: background-color 0.3s;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px); /* 背景轻微模糊 */
 }
 
-#theme-dropdown div:hover {
-    background-color: var(--theme-link);
-    color: var(--theme-btn-fg);
+/* 悬浮效果 */
+#theme-switcher-btn:hover {
+    background: rgba(0, 122, 204, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
-.theme-light #theme-dropdown,
-.theme-dark #theme-dropdown {
-    background: var(--theme-bg);
-    border-color: var(--theme-border);
-}
-
-/* ======================= 移动端按钮和下拉菜单 ======================= */
+/* ======================= 移动端右下角 ======================= */
 @media (max-width: 768px) {
     #theme-switcher {
-        position: fixed !important;    /* 固定在视口内 */
-        bottom: 16px !important;       /* 距离底部 */
-        right: 16px !important;        /* 靠右侧 */
-        top: auto !important;          /* 取消顶部定位 */
-        z-index: 9999 !important;
-        display: flex !important;      /* 按钮和下拉垂直排列 */
-        flex-direction: column;
-        align-items: flex-end;
+        top: auto !important;
+        bottom: 16px !important;
+        right: 16px !important;
     }
-
     #theme-switcher-btn {
-        margin-bottom: 6px;            /* 按钮和下拉菜单间距 */
-    }
-
-    #theme-dropdown {
-        position: relative !important; /* 相对于按钮 */
-        top: 0 !important;
-        right: 0 !important;
-        min-width: 140px !important;
-        border-radius: 8px !important;
-    }
-
-    #theme-dropdown div {
-        padding: 10px 14px !important;
-        font-size: 16px !important;
+        padding: 10px 14px;
+        font-size: 15px;
     }
 }
 
