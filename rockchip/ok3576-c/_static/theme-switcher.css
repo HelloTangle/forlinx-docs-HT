@@ -313,3 +313,16 @@ pre, code {
     background: var(--theme-bg);
     border-color: var(--theme-border);
 }
+
+/* ======================= 移动端下拉菜单位置调整 ======================= */
+@media (max-width: 768px) {
+    #theme-dropdown {
+      position: fixed !important;     /* 固定在视口内，避免被导航遮挡 */
+      bottom: 70px !important;        /* 距离底部一点距离 */
+      right: 16px !important;         /* 靠右侧对齐 */
+      top: auto !important;           /* 取消顶部定位 */
+      border-radius: 8px !important;  /* 稍微圆角一些更现代 */
+      z-index: 9999 !important;       /* 确保浮在最上层 */
+    }
+  }
+  
