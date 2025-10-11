@@ -1,21 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let currentTheme = localStorage.getItem("doc-theme") || "light";
 
-    // ------------------- 自动获取当前项目路径 -------------------
-    // 例：https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3576-c/
-    // 提取出 /forlinx-docs-HT/rockchip/ok3576-c/
-    const pathParts = window.location.pathname.split("/");
-    // 找到 "_static" 之前的层级
-    // 例： /forlinx-docs-HT/rockchip/ok3576-c/some-page.html → /forlinx-docs-HT/rockchip/ok3576-c/
-    let projectBase = "/";
-    const idx = pathParts.indexOf("_static");
-    if (idx > 1) {
-        projectBase = pathParts.slice(0, idx).join("/") + "/";
-    } else if (pathParts.length > 3) {
-        // 一般 Sphinx 子项目深度：/repo/brand/model/
-        projectBase = pathParts.slice(0, 4).join("/") + "/";
-    }
-
     // ------------------- 应用主题 -------------------
     function applyTheme(theme) {
         // 切换 body class
@@ -26,26 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
         updateButtonLabel();
 
         // 动态切换 logo
-        const logo = document.querySelector(".wy-side-nav-search img");
+        const logo = document.querySelector(".wy-side-nav-search img"); // 更通用选择器
         if (logo) {
-            const lightLogo = projectBase + "_static/forlinx-logo.png";
-            const darkLogo = projectBase + "_static/forlinx-logo-dark.png";
-
-            if (theme === "dark") {
-                // 先检测 dark logo 是否存在
-                const testImg = new Image();
-                testImg.onload = function () {
-                    logo.src = darkLogo;
-                    logo.style.filter = "";
-                };
-                testImg.onerror = function () {
-                    logo.src = lightLogo;
-                    logo.style.filter = "invert(1) hue-rotate(180deg)";
-                };
-                testImg.src = darkLogo;
-            } else {
-                logo.src = lightLogo;
+            const pathPrefix = window.location.pathname.includes('_static') ? '' : '../../_static/';
+            if (theme === "light") {
+                logo.src = pathPrefix + "forlinx-logo.png";
                 logo.style.filter = "";
+            } else {
+                logo.src = pathPrefix + "forlinx-logo-dark.png";
             }
         }
 
@@ -57,7 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateButtonLabel() {
         const btn = document.getElementById("theme-switcher-btn");
         if (!btn) return;
-        btn.textContent = currentTheme === "light" ? "🌙 Dark Mode" : "🌞 Light Mode";
+
+        if (currentTheme === "light") {
+            btn.textContent = "🌙 Dark Mode"; // 当前是 light，按钮显示切换到暗色
+        } else {
+            btn.textContent = "🌞 Light Mode"; // 当前是 dark，按钮显示切换到亮色
+        }
     }
 
     // ------------------- 创建切换按钮 -------------------
