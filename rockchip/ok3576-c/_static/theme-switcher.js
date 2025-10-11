@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 logo.src = "_static/forlinx-logo.png"; // 浅色 logo
                 logo.style.filter = ""; // 清除滤镜
             } else {
-                logo.src = "_static/forlinx-logo-dark.png"; // 暗色 logo
+                logo.src = "_static/forlinx-logo-dark.svg"; // 暗色 logo
                 // logo.style.filter = "invert(1)"; // 如果只想用反色
             }
         }
