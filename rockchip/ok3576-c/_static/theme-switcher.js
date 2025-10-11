@@ -1,13 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
     let currentTheme = localStorage.getItem("doc-theme") || "light";
 
+    // ------------------- 应用主题 -------------------
     function applyTheme(theme) {
+        // 切换 body class
         document.body.className = document.body.className.replace(/theme-\w+/g, "");
         document.body.classList.add(`theme-${theme}`);
+
+        // 更新按钮文字
         updateButtonLabel();
+
+        // 更新 logo
+        const logo = document.querySelector(".wy-side-nav-search .logo img"); // Sphinx 默认 logo
+        if (logo) {
+            if (theme === "light") {
+                logo.src = "_static/forlinx-logo.png"; // 浅色 logo
+                logo.style.filter = ""; // 清除滤镜
+            } else {
+                logo.src = "_static/forlinx-logo-dark.svg"; // 暗色 logo
+                // logo.style.filter = "invert(1)"; // 如果只想用反色
+            }
+        }
+
+        // 平滑过渡
         document.body.style.transition = "background-color 0.3s, color 0.3s";
     }
 
+    // ------------------- 更新按钮文字 -------------------
     function updateButtonLabel() {
         const btn = document.getElementById("theme-switcher-btn");
         if (!btn) return;
@@ -19,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // ------------------- 创建切换按钮 -------------------
     function createButton() {
         const container = document.createElement("div");
         container.id = "theme-switcher";
@@ -48,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateButtonLabel();
     }
 
+    // ------------------- 初始化 -------------------
     applyTheme(currentTheme);
     createButton();
 });
