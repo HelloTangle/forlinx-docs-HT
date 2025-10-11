@@ -319,15 +319,35 @@ pre, code {
     border-color: var(--theme-border);
 }
 
-/* ======================= 移动端下拉菜单位置调整 ======================= */
+/* ======================= 移动端按钮和下拉菜单 ======================= */
 @media (max-width: 768px) {
-    #theme-dropdown {
-      position: fixed !important;     /* 固定在视口内，避免被导航遮挡 */
-      bottom: 70px !important;        /* 距离底部一点距离 */
-      right: 16px !important;         /* 靠右侧对齐 */
-      top: auto !important;           /* 取消顶部定位 */
-      border-radius: 8px !important;  /* 稍微圆角一些更现代 */
-      z-index: 9999 !important;       /* 确保浮在最上层 */
+    #theme-switcher {
+        position: fixed !important;    /* 固定在视口内 */
+        bottom: 16px !important;       /* 距离底部 */
+        right: 16px !important;        /* 靠右侧 */
+        top: auto !important;          /* 取消顶部定位 */
+        z-index: 9999 !important;
+        display: flex !important;      /* 按钮和下拉垂直排列 */
+        flex-direction: column;
+        align-items: flex-end;
     }
-  }
+
+    #theme-switcher-btn {
+        margin-bottom: 6px;            /* 按钮和下拉菜单间距 */
+    }
+
+    #theme-dropdown {
+        position: relative !important; /* 相对于按钮 */
+        top: 0 !important;
+        right: 0 !important;
+        min-width: 140px !important;
+        border-radius: 8px !important;
+    }
+
+    #theme-dropdown div {
+        padding: 10px 14px !important;
+        font-size: 16px !important;
+    }
+}
+
   
