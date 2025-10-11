@@ -122,6 +122,23 @@ a:hover {
     border-color: var(--theme-border);
 }
 
+
+/* ---------- 暗色模式表格样式 ---------- */
+.theme-dark .wy-nav-content-wrap table th {
+    background-color: #2A2A2A !important;
+  }
+  
+  .theme-dark .wy-nav-content-wrap table td {
+    background-color: #242424 !important;
+    border-color: #3C3C3C !important;
+  }
+  
+  .theme-dark .wy-nav-content-wrap table {
+    border-color: #3C3C3C !important;
+  }
+  
+
+
 /* 代码块 */
 .wy-nav-content-wrap .highlight,
 .wy-nav-content-wrap .highlight pre,
