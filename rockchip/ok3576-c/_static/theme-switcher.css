@@ -74,6 +74,7 @@ a:hover {
 }
 
 .wy-side-nav-search {
+    background-color: var(--theme-sidebar-bg) !important; 
     border-bottom-color: var(--theme-border) !important;
 }
 
