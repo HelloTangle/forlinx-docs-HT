@@ -33,7 +33,7 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 # Logo (如果有，放在 _static 目录)
-html_logo = '_static/forlinx-logo.png'
+html_logo = '_static/forlinx-logo-dark.svg'
 html_favicon = '_static/forlinx.png'
 html_theme_options = {
     'logo_only': True,
