@@ -81,7 +81,11 @@ a:hover {
     color: white;
 }
 
-
+.wy-side-nav-search .logo img {
+    width: 150px;   /* 或根据你 logo 原始尺寸设置 */
+    height: auto;
+    display: block;
+}
 
 
 .wy-menu a,
