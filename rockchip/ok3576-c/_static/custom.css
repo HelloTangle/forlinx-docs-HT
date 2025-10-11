@@ -4,7 +4,7 @@
 /* ---------------------- 搜索栏 ---------------------- */
 .wy-side-nav-search {
   /* 使用主题变量背景色，保留主题切换 */
-  background-color: var(--theme-sidebar-bg);
+  background-color: #005bac !important; /* 飞凌主蓝 */
 }
 
 .wy-side-nav-search > div.version {
