@@ -135,6 +135,13 @@ a:hover {
     border-color: var(--theme-border);
 }
 
+.theme-dark .admonition.note {
+    background-color: #2D2D2D;
+    border-left-color: #4EC9B0;
+    color: #D4D4D4;
+}
+
+
 
 /* ---------- 暗色模式表格样式 ---------- */
 .theme-dark .wy-nav-content-wrap table th {
