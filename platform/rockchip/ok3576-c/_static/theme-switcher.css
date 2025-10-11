@@ -74,7 +74,7 @@ a:hover {
 }
 
 .wy-side-nav-search {
-    background-color: var(--theme-sidebar-bg);
+    background-color: #005bac !important; /* 飞凌主蓝 */
 }
 
 .wy-side-nav-search > div.version {
@@ -97,6 +97,11 @@ a:hover {
 }
 
 /* ======================= 内容区 ======================= */
+
+.wy-nav-content {
+    max-width: 1200px; /* 默认宽度 */
+  }
+
 .wy-nav-content-wrap p,
 .wy-nav-content-wrap ul,
 .wy-nav-content-wrap ol,
