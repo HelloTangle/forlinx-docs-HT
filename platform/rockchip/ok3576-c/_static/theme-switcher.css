@@ -74,7 +74,7 @@ a:hover {
 }
 
 .wy-side-nav-search {
-    background-color: #005bac !important; /* 飞凌主蓝 */
+    border-bottom-color: var(--theme-border);
 }
 
 .wy-side-nav-search > div.version {
