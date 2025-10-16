@@ -1,6 +1,7 @@
-/* _static/theme-switcher.css */
+/* ======================= Google Fonts ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&family=Fira+Code&display=swap');
 
-/* ========== 主题变量定义 ========== */
+/* ======================= 主题变量定义 ======================= */
 .theme-light {
     --theme-bg: #ffffff;
     --theme-fg: #292929;
@@ -16,74 +17,69 @@
 
 .theme-dark {
     --theme-bg: #1E1E1E;
-    /* VS Code 背景 */
     --theme-fg: #D4D4D4;
-    /* VS Code 文字颜色 */
     --theme-link: #4EC9B0;
-    /* VS Code 风格的青绿色链接 */
     --theme-sidebar-bg: #1E1E1E;
-    /* 侧边栏背景，与主背景一致 */
     --theme-border: #3C3C3C;
-    /* 分割线颜色 */
-    /* 保留按钮颜色不变 */
     --theme-btn-bg: #005a99;
-    /* 不变 */
     --theme-btn-fg: #ffffff;
-    /* 不变 */
     --theme-btn-hover: #0088cc;
-    /* 不变 */
     --theme-code-bg: #2D2D2D;
-    /* 代码块背景 */
     --theme-blockquote-bg: #2D2D2D;
-
-    /* 引用块背景 */
-    /* 确保所有需要深色背景的内容区域使用相同的背景颜色 */
-    .wy-nav-content,
-    .product-card,
-    .btn-group {
-        background-color: var(--theme-bg);
-    }
-
-    /* 分级颜色设置 */
-    .rst-content h1, .rst-content a {
-        color: #cee3f8 !important;
-    }
-
-    .rst-content h2 {
-        color: #b3b4b9 !important;
-    }
-
-    .rst-content h3 {
-        color: #797474 !important;
-    }
 }
 
-/* ========== 全局应用变量 ========== */
-
-/* 页面背景 & 文字 */
-body {
-    background-color: var(--theme-bg);
+/* ======================= 全局样式 ======================= */
+body, .rst-content, .wy-nav-content {
+    font-family: 'Lato', Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.7;
     color: var(--theme-fg);
+    background-color: var(--theme-bg);
+    overflow-x: hidden;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* 链接 */
 a {
-    color: var(--theme-link);
+    color: #0071e3; /* 蓝色链接 */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
-a:hover,
-a:active {
-    color: var(--theme-link);
+/* ======================= 标题 ======================= */
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
+    font-family: 'Montserrat', 'Lato', sans-serif !important;
+    font-weight: 600;
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    color: var(--theme-fg);
 }
 
-/* ========== 左侧侧边栏 ========== */
+.rst-content h2 {
+    color: #0071e3 !important; /* 保留蓝色 H2 */
+}
+
+/* ======================= 侧边栏 ======================= */
 .wy-nav-side {
     background-color: var(--theme-sidebar-bg);
 }
 
 .wy-side-nav-search {
-    border-bottom-color: var(--theme-border);
+    background-color: var(--theme-sidebar-bg) !important; 
+    border-bottom-color: var(--theme-border) !important;
+}
+
+.wy-side-nav-search > div.version {
+    color: white;
 }
 
 .wy-menu a,
@@ -91,101 +87,89 @@ a:active {
     color: var(--theme-fg);
 }
 
-.wy-menu a:hover {
-    color: var(--theme-link);
+.wy-menu a:hover,
+.wy-menu-vertical a:hover {
+    color: var(--theme-link) !important;
+    background-color: rgba(0, 122, 204, 0.1) !important;
 }
 
 .wy-menu hr {
     border-top-color: var(--theme-border);
 }
 
-.caption {
+/* ======================= 内容区 ======================= */
+
+.wy-nav-content {
+    max-width: 1200px; /* 默认宽度 */
+  }
+
+.wy-nav-content-wrap p,
+.wy-nav-content-wrap ul,
+.wy-nav-content-wrap ol,
+.wy-nav-content-wrap table,
+.wy-nav-content-wrap blockquote {
     color: var(--theme-fg);
 }
 
-/* ========== 右侧内容区 ========== */
-
-/* 标题 */
-.wy-nav-content-wrap h1,
-.wy-nav-content-wrap h2,
-.wy-nav-content-wrap h3,
-.wy-nav-content-wrap h4,
-.wy-nav-content-wrap h5,
-.wy-nav-content-wrap h6 {
-    color: var(--theme-fg);
-}
-
-/* 段落 */
-.wy-nav-content-wrap p {
-    color: var(--theme-fg);
-}
-
-/* 分割线 */
 .wy-nav-content-wrap hr {
     border-top-color: var(--theme-border);
 }
 
-/* 列表 */
-.wy-nav-content-wrap ul,
-.wy-nav-content-wrap ol {
-    color: var(--theme-fg);
-}
-
-/* 表格 */
 .wy-nav-content-wrap table {
-    color: var(--theme-fg);
-    border-color: var(--theme-border);
-}
-
-.wy-nav-content-wrap table th,
-.wy-nav-content-wrap table td {
     border-color: var(--theme-border);
 }
 
 .wy-nav-content-wrap table th {
     background-color: var(--theme-sidebar-bg);
+    border-color: var(--theme-border);
 }
+
+.wy-nav-content-wrap table td {
+    border-color: var(--theme-border);
+}
+
+
+/* ---------- 暗色模式表格样式 ---------- */
+.theme-dark .wy-nav-content-wrap table th {
+    background-color: #2A2A2A !important;
+  }
+  
+  .theme-dark .wy-nav-content-wrap table td {
+    background-color: #242424 !important;
+    border-color: #3C3C3C !important;
+  }
+  
+  .theme-dark .wy-nav-content-wrap table {
+    border-color: #3C3C3C !important;
+  }
+  
+
 
 /* 代码块 */
 .wy-nav-content-wrap .highlight,
 .wy-nav-content-wrap .highlight pre,
 .wy-nav-content-wrap div.literal-block,
-.wy-nav-content-wrap code {
+.wy-nav-content-wrap code,
+pre, code {
     background-color: var(--theme-code-bg);
     color: var(--theme-fg);
+    font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace !important;
+    font-size: 14px;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-break: break-word;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
 }
-
-.wy-nav-content-wrap .highlight .c {
-    color: #60a0b0;
-    font-style: italic;
-}
-
-/* 注释 */
-.wy-nav-content-wrap .highlight .k {
-    color: #007020;
-    font-weight: bold;
-}
-
-/* keywords */
-.wy-nav-content-wrap .highlight .n {
-    color: var(--theme-fg);
-}
-
-/* 名称 */
-.wy-nav-content-wrap .highlight .s {
-    color: #4070a0;
-}
-
-/* 字符串 */
 
 /* 引用块 */
 .wy-nav-content-wrap blockquote {
     background-color: var(--theme-blockquote-bg);
     border-left-color: var(--theme-link);
-    color: var(--theme-fg);
 }
 
-/* 按钮（如 "View page source"） */
+/* ======================= 按钮 ======================= */
 .wy-nav-content-wrap .btn,
 .wy-nav-content-wrap .viewcode-link,
 .wy-nav-content-wrap .headerlink {
@@ -201,47 +185,155 @@ a:active {
     color: var(--theme-btn-fg);
 }
 
-/* 搜索框（如果存在） */
-.wy-nav-content-wrap .wy-form input[type="text"] {
-    background-color: var(--theme-bg);
-    color: var(--theme-fg);
-    border-color: var(--theme-border);
+/* ======================= 页面目录 TOC ======================= */
+.rst-content .toctree-wrapper,
+.rst-content .toctree-wrapper ul,
+.rst-content .toctree-wrapper li,
+.rst-content .toctree-wrapper a {
+    font-family: 'Lato', Arial, sans-serif !important;
+    font-size: 16px !important;
+    color: var(--theme-fg) !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
 }
 
-
-/* 下拉菜单基础样式 */
-#theme-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    border: 1px solid var(--theme-border);
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 120px;
+.rst-content .toctree-wrapper > ul > li > a {
+    font-weight: 700 !important;
+    font-size: 18px !important;
 }
 
-/* 每个选项的基础样式 */
-#theme-dropdown div {
+.rst-content .toctree-wrapper a:hover {
+    color: #0071e3 !important;
+}
+
+.rst-content .toctree-wrapper > p {
+    font-family: 'Montserrat', 'Lato', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    color: #0071e3 !important;
+    margin-bottom: 0.5em !important;
+}
+
+/* 隐藏正文中的 toctree caption */
+.rst-content .caption,
+.rst-content .caption-text {
+    display: none !important;
+}
+
+/* ======================= 响应式 ======================= */
+@media (max-width: 768px) {
+    .wy-nav-content {
+        max-width: 100% !important;
+        padding: 1em !important;
+        box-sizing: border-box;
+    }
+
+    .rst-content .toctree-wrapper > p { font-size: 18px !important; }
+    .rst-content .toctree-wrapper a { font-size: 14px !important; }
+
+    pre {
+        overflow-x: auto;
+        white-space: pre !important;
+        word-break: normal !important;
+    }
+
+    .rst-content p,
+    .rst-content li,
+    .rst-content td,
+    .rst-content a,
+    .rst-content h1,
+    .rst-content h2,
+    .rst-content h3,
+    .rst-content h4,
+    .rst-content h5,
+    .rst-content h6 {
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .rst-content table-wrapper,
+    .rst-content .md-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .rst-content table {
+        width: auto;
+        min-width: 600px;
+        table-layout: auto;
+    }
+
+    .rst-content table td,
+    .rst-content table th,
+    .rst-content table td p,
+    .rst-content table th p {
+        white-space: normal !important;
+        word-break: normal !important;
+        padding: 4px 8px;
+        line-height: 1.4;
+    }
+
+    body, .rst-content, .wy-nav-content {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    body, .rst-content, .wy-nav-content {
+        font-size: 15px;
+    }
+}
+
+/* ======================= 页脚社交图标 ======================= */
+.forlinx-footer-social a {
+    text-decoration: none !important;
+}
+
+/* ======================= 下拉主题菜单 ======================= */
+
+/* ======================= 浮动主题切换按钮 ======================= */
+#theme-switcher {
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 10px;
+    display: block;
+    pointer-events: auto; /* 确保可点击 */
+}
+
+/* 按钮样式 */
+#theme-switcher-btn {
     padding: 8px 12px;
+    background: rgba(0, 122, 204, 0.85); /* 半透明蓝色 */
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* 圆形/胶囊形 */
     cursor: pointer;
-    color: var(--theme-fg);
-    transition: background-color 0.3s;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px); /* 背景轻微模糊 */
 }
 
-/* 鼠标悬停时的效果 */
-#theme-dropdown div:hover {
-    background-color: var(--theme-link);
-    color: var(--theme-btn-fg);
+/* 悬浮效果 */
+#theme-switcher-btn:hover {
+    background: rgba(0, 122, 204, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
-/* 根据主题调整样式 */
-.theme-light #theme-dropdown {
-    background: var(--theme-bg);
-    border-color: var(--theme-border);
+/* ======================= 移动端右下角 ======================= */
+@media (max-width: 768px) {
+    #theme-switcher {
+        top: auto !important;
+        bottom: 16px !important;
+        right: 16px !important;
+    }
+    #theme-switcher-btn {
+        padding: 10px 14px;
+        font-size: 15px;
+    }
 }
 
-.theme-dark #theme-dropdown {
-    background: var(--theme-bg);
-    border-color: var(--theme-border);
-}
+  

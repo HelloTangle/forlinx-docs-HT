@@ -1,40 +1,50 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const themes = {
-        light: "Light Mode",
-        dark: "Dark Mode",
-    };
+    let currentTheme = localStorage.getItem("doc-theme") || "light";
 
-    // 获取当前主题（从 localStorage）
-    const savedTheme = localStorage.getItem("doc-theme") || "light";
-
-    // 应用主题
-    function applyTheme(themeKey) {
+    // ------------------- 应用主题 -------------------
+    function applyTheme(theme) {
+        // 切换 body class
         document.body.className = document.body.className.replace(/theme-\w+/g, "");
-        document.body.classList.add(`theme-${themeKey}`);
-        updateButtonLabel(themeKey);
+        document.body.classList.add(`theme-${theme}`);
+
+        // 更新按钮文字
+        updateButtonLabel();
+
+        // 动态切换 logo
+        const logo = document.querySelector(".wy-side-nav-search img"); // 更通用选择器
+        if (logo) {
+            const pathPrefix = window.location.pathname.includes('_static') ? '' : '../../_static/';
+            if (theme === "light") {
+                logo.src = pathPrefix + "forlinx-logo.png";
+                logo.style.filter = "";
+            } else {
+                logo.src = pathPrefix + "forlinx-logo-dark.png";
+            }
+        }
+
+        // 平滑过渡
+        document.body.style.transition = "background-color 0.3s, color 0.3s";
     }
 
-    // 更新按钮文字
-    function updateButtonLabel(themeKey) {
+    // ------------------- 更新按钮文字 -------------------
+    function updateButtonLabel() {
         const btn = document.getElementById("theme-switcher-btn");
-        if (btn) btn.textContent = `🎨 ${themes[themeKey]}`;
+        if (!btn) return;
+
+        if (currentTheme === "light") {
+            btn.textContent = "🌙 Dark Mode"; // 当前是 light，按钮显示切换到暗色
+        } else {
+            btn.textContent = "🌞 Light Mode"; // 当前是 dark，按钮显示切换到亮色
+        }
     }
 
-    // 创建下拉菜单
-    function createDropdown() {
+    // ------------------- 创建切换按钮 -------------------
+    function createButton() {
         const container = document.createElement("div");
         container.id = "theme-switcher";
-        container.style.cssText = `
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            z-index: 9999;
-            font-size: 14px;
-        `;
 
         const btn = document.createElement("button");
         btn.id = "theme-switcher-btn";
-        btn.textContent = `🎨 ${themes[savedTheme]}`;
         btn.style.cssText = `
             padding: 6px 10px;
             background: var(--theme-btn-bg);
@@ -42,47 +52,23 @@ document.addEventListener("DOMContentLoaded", function () {
             border: 1px solid var(--theme-border);
             border-radius: 4px;
             cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s, color 0.3s;
         `;
 
-        const dropdown = document.createElement("div");
-        dropdown.id = "theme-dropdown";
-
-        Object.keys(themes).forEach(key => {
-            const item = document.createElement("div");
-            item.textContent = themes[key];
-            item.style.cssText = `
-                padding: 8px 12px;
-                cursor: pointer;
-            `;
-            item.onmouseover = () => item.style.backgroundColor = "var(--theme-link)";
-            item.onmouseout = () => item.style.backgroundColor = "transparent";
-            item.onclick = () => {
-                localStorage.setItem("doc-theme", key);
-                applyTheme(key);
-                dropdown.style.display = "none";
-            };
-            dropdown.appendChild(item);
-        });
-
-        container.appendChild(btn);
-        container.appendChild(dropdown);
-
-        // 切换下拉
         btn.onclick = () => {
-            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+            currentTheme = currentTheme === "light" ? "dark" : "light";
+            localStorage.setItem("doc-theme", currentTheme);
+            applyTheme(currentTheme);
         };
 
-        // 点击外部关闭
-        document.addEventListener("click", (e) => {
-            if (!container.contains(e.target)) {
-                dropdown.style.display = "none";
-            }
-        });
-
+        container.appendChild(btn);
         document.body.appendChild(container);
+
+        updateButtonLabel();
     }
 
-    // 初始化
-    applyTheme(savedTheme);
-    createDropdown();
+    // ------------------- 初始化 -------------------
+    applyTheme(currentTheme);
+    createButton();
 });
