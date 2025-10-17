@@ -103,6 +103,13 @@ a:hover {
     max-width: 1200px; /* 默认宽度 */
   }
 
+/* 让右侧背景跟随主题变化 */
+.wy-nav-content-wrap {
+    background-color: var(--theme-bg) !important;
+    transition: background-color 0.3s ease;
+}
+
+
 .wy-nav-content-wrap p,
 .wy-nav-content-wrap ul,
 .wy-nav-content-wrap ol,
