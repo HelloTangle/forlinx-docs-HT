@@ -39,7 +39,7 @@ html_theme_options = {
 }
 
 html_css_files = [
-    'custom.css',
+    'theme-switcher.css',
 ]
 
 html_sidebars = {
@@ -53,3 +53,10 @@ html_sidebars = {
 }
 
 html_show_sourcelink = False
+
+
+# 引入自定义 JS 文件
+html_js_files = [
+    'theme-switcher.js',   # 主题切换逻辑
+    'logo-link.js',        # logo 跳转逻辑
+]
