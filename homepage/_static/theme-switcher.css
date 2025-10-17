@@ -105,7 +105,7 @@ a:hover {
 
 /* 让右侧背景跟随主题变化 */
 .wy-nav-content-wrap {
-    background-color: var(--theme-bg) !important;
+    background-color: var(--theme-sidebar-bg) !important;
     transition: background-color 0.3s ease;
 }
 
