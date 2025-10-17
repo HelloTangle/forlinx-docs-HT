@@ -295,7 +295,7 @@ body {
   font-size: 1.2rem;
   margin-bottom: 30px;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-  color: #F3F4F6; /* p 为灰白色 */
+  color: #F3F4F6 !important; /* p 为灰白色 */
 }
 
 

@@ -58,7 +58,6 @@ Rockchip Serie
        <a href="rockchip/ok3568-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
-   </div>
 
 
 
