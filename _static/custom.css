@@ -142,7 +142,7 @@ body {
 
 /* 单个卡片 */
 .product-card {
-  width: 280px;
+  width: 345px;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   overflow: hidden;
