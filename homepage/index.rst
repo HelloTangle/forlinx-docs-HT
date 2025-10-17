@@ -16,7 +16,7 @@ Welcome to Forlinx Embedded Documentation
 
 ----
 
-Rockchip Series
+Rockchip Serie
 ================
 
 
