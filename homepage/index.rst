@@ -68,8 +68,6 @@ Rockchip Serie
 NXP Series
 ================
 
-i.MX8M Plus Series
---------------------
 
 .. raw:: html
 
@@ -96,22 +94,6 @@ i.MX8M Plus Series
        <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
-   </div>
-
-
-
-
-
-i.MX93 Series
--------------
-- OKMX9352-C Manual
-  ⏳ Documentation coming soon.
-
-
-LS1046A Series
------------------
-
-.. raw:: html
 
    <div class="product-card">
      <a href="nxp/ok1046a-c2/index.html" target="_blank" rel="noopener noreferrer">
@@ -127,33 +109,7 @@ LS1046A Series
 
 
 
-
-----
-
-Texas Instruments Series
-==========================
-
-AM62x Series
--------------
-- OK62xx-C Manual
-  ⏳ Documentation coming soon.
-
-
-----
-
-Allwinner Series
-==================
-
-T527 Series
--------------
-- OK527N-C Manual
-  ⏳ Documentation coming soon.
-
- 
-
-
-----
-
+   </div>
 
 
 
