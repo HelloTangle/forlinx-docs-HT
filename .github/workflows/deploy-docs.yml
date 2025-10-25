@@ -154,6 +154,14 @@ jobs:
         echo '</sitemapindex>' >> docs_build/sitemap_index.xml
 
 
+    # 11.5 添加 robots.txt 到部署根目录
+    - name: Add robots.txt
+      run: |
+        cp homepage/_static/robots.txt docs_build/robots.txt
+        echo "✅ robots.txt added to deployment root"
+        
+
+
     # 12 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
