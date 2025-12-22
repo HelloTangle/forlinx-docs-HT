@@ -333,7 +333,7 @@ pre, code {
 /* ======================= 移动端右下角 ======================= */
 @media (max-width: 768px) {
     #theme-switcher {
-        top: 42px !important;
+        top: 60px !important;
         right: 16px !important;
         bottom: auto !important; /* 清除 bottom 定位 */
     }
