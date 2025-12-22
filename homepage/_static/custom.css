@@ -384,31 +384,23 @@ body {
 
 
   /* =====================================================
-   RTD 移动端：目录浮层方案（不影响正文）
+   RTD 移动端顶部右上角三横杠固定 
    ===================================================== */
-   @media (max-width: 768px) {
 
-    /* 顶部栏固定 */
-    .wy-nav-top {
-      position: fixed !important;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 50px;
-      z-index: 10000;
-  
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;   /* 关键：内容靠右 */
-      padding-right: 16px;        /* 右边留点手指空间 */
+    @media (max-width: 768px) {
+      /* 顶部右上角三横杠固定 */
+      .wy-nav-top .fa-bars {
+        position: fixed;   /* 固定在屏幕 */
+        top: 10px;         /* 距离屏幕顶部 */
+        right: 10px;       /* 距离屏幕右侧 */
+        z-index: 10000;    /* 层级高于目录和内容 */
+        font-size: 24px;   /* 图标大小 */
+        cursor: pointer;   /* 鼠标悬停显示手型 */
+      }
     }
+    
   
 
   
-    /* 正文下移 */
-    .wy-nav-content {
-      padding-top: 50px;
-    }
-  }
   
 
