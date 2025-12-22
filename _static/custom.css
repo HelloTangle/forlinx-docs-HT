@@ -399,10 +399,6 @@ body {
     z-index: 10000;
   }
 
-  .wy-nav-top .fa-bars {
-    font-size: 22px;
-    color: #fff;
-  }
 
   /* 给正文让出顶部空间 */
   .wy-nav-content {
@@ -434,9 +430,15 @@ body {
     transform: translateX(0);
   }
 
-  /* ---------- 内容区：永远不动 ---------- */
-  .wy-nav-content-wrap {
-    margin-left: 0 !important;
-    transform: none !important;
+  /* 目录必须在最上层 */
+  .wy-nav-side {
+    z-index: 10001 !important;
   }
-}
+
+  /* 禁止正文层盖住目录 */
+  .wy-nav-content-wrap,
+  .wy-nav-content-wrap::before {
+    z-index: auto !important;
+    pointer-events: auto;
+  }
+
