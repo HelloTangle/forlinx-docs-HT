@@ -108,22 +108,4 @@ document.addEventListener("DOMContentLoaded", async function () {
     applyTheme(currentTheme);
     createButton();
 
-    // ================== 移动端目录滚动保持 ==================
-    // 建议放在这里，确保 DOM 元素已创建
-    const sidebar = document.querySelector('.wy-nav-side');
-    const toggleBtn = document.querySelector('.wy-nav-top .fa-bars');
-    if (sidebar && toggleBtn) {
-        let scrollPos = 0;
-
-        toggleBtn.addEventListener('click', function() {
-            // 保存当前滚动位置
-            scrollPos = sidebar.scrollTop;
-
-            // 等待目录弹出动画结束后恢复 scroll
-            setTimeout(() => {
-                sidebar.scrollTop = scrollPos;
-            }, 50); // 延迟可根据你的动画时间调整
-        });
-    }
-
 });
