@@ -385,20 +385,5 @@ body {
   /* ===========================================
      移动端侧边目录栏
   ============================================ */
-  @media (max-width: 768px) {
 
-  
-    /* 固定顶部三横杠 */
-    .wy-nav-top {
-      position: fixed !important;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 9999;
-    }
-  
-    .wy-nav-content {
-      padding-top: 60px;
-    }
-  }
   
