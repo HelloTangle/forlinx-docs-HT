@@ -389,6 +389,12 @@ body {
 
 @media (max-width: 768px) {
 
+      /* 顶部右上角三横杠固定 */
+      .wy-nav-top .fa-bars {
+        position: fixed;   /* 固定在屏幕 */
+        z-index: 10000;    /* 层级高于目录和内容 */
+      }
+
 .wy-nav-top {
   position: fixed;      /* 固定在屏幕顶部 */
   top: 0;               /* 顶部对齐屏幕 */
