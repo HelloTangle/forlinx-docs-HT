@@ -408,5 +408,14 @@ body {
   z-index: 9999;        /* 高于内容 */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 可选：轻微阴影 */
  }
+
+ .wy-nav-side.shift {
+  width: 50%;   
+ }
+
+ .wy-nav-content-wrap.shift {
+  left: 50%;   
+ }
+
 }
 
