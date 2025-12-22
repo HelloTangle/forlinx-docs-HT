@@ -397,10 +397,24 @@ body {
         font-size: 24px;   /* 图标大小 */
         cursor: pointer;   /* 鼠标悬停显示手型 */
       }
-    }
-    
-  
 
+    
+    .wy-nav-top {
+      position: fixed;      /* 固定在屏幕顶部 */
+      top: 0;               /* 顶部对齐屏幕 */
+      left: 0;              /* 左边对齐屏幕 */
+      right: 0;             /* 右边对齐屏幕 */
+      height: 50px;         /* 高度 */
+      z-index: 9999;        /* 高于内容 */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 可选：轻微阴影 */
+    }
+
+  
+  /* 给正文让出顶部空间 */
+  .wy-nav-content {
+    padding-top: 50px;    /* 避免被固定顶部栏遮挡 */
+  }
+}
   
   
 
