@@ -387,35 +387,72 @@ body {
    RTD 移动端顶部右上角三横杠固定 
    ===================================================== */
 
-    @media (max-width: 768px) {
-      /* 顶部右上角三横杠固定 */
-      .wy-nav-top .fa-bars {
-        position: fixed;   /* 固定在屏幕 */
-        top: 10px;         /* 距离屏幕顶部 */
-        right: 10px;       /* 距离屏幕右侧 */
-        z-index: 10000;    /* 层级高于目录和内容 */
-        font-size: 24px;   /* 图标大小 */
-        cursor: pointer;   /* 鼠标悬停显示手型 */
-      }
+/* ===================== 移动端优化（max-width:768px） ===================== */
+@media (max-width: 768px) {
 
-    
-    .wy-nav-top {
-      position: fixed;      /* 固定在屏幕顶部 */
-      top: 0;               /* 顶部对齐屏幕 */
-      left: 0;              /* 左边对齐屏幕 */
-      right: 0;             /* 右边对齐屏幕 */
-      z-index: 9999;        /* 高于内容 */
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 可选：轻微阴影 */
-    }
-
-  
-  /* 给正文让出顶部空间 */
-  .wy-nav-content {
-    padding-top: 50px;    /* 避免被固定顶部栏遮挡 */
+  /* ---------- 顶部栏固定 ---------- */
+  .wy-nav-top {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;   /* 关键：内容靠右 */
+    padding-right: 16px;         /* 右侧留手指空间 */
+    background: #005bac;         /* 可根据实际颜色调整 */
   }
 
+  /* ---------- 顶部右上角三横杠固定 ---------- */
+  .wy-nav-top .fa-bars {
+    position: fixed;   /* 固定在屏幕 */
+    top: 10px;         /* 距离顶部 */
+    right: 10px;       /* 距离右侧 */
+    z-index: 10001;    /* 高于目录和正文 */
+    cursor: pointer;
+  }
+
+  /* ---------- 左侧目录栏 ---------- */
+  .wy-nav-side {
+    position: fixed !important;
+    top: 50px;                 /* 顶部栏高度 */
+    left: 0;
+    width: 60%;                /* 移动端宽度适中 */
+    max-width: 220px;          /* 最大宽度 */
+    height: calc(100vh - 50px);
+    overflow-y: auto;           /* ⚠️ 保证可滚动 */
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 9999;
+    background: inherit;
+    box-shadow: 4px 0 12px rgba(0,0,0,0.3);
+  }
+
+  /* 打开目录 */
+  body.wy-nav-side-shift .wy-nav-side {
+    transform: translateX(0);
+  }
+
+  /* ---------- 正文内容 ---------- */
+  .wy-nav-content {
+    margin-left: 0;            /* 默认紧贴屏幕 */
+    padding-top: 50px;         /* 给顶部栏留出空间 */
+    transition: margin-left 0.25s ease;
+  }
+
+  /* 打开目录时正文右移一点点，与目录保持间距 */
+  body.wy-nav-side-shift .wy-nav-content {
+    margin-left: 8px;          /* 可根据需求微调 */
+  }
+
+  /* ---------- 防止内容横向溢出 ---------- */
+  .wy-nav-content-wrap {
+    overflow-x: hidden;
+  }
 
 }
+
   
   
 
