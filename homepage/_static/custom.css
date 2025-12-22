@@ -389,17 +389,6 @@ body {
 
 @media (max-width: 768px) {
 
-  /* ---------- 顶部栏固定 ---------- */
-  .wy-nav-top .fa-bars {
-    position: fixed;   /* 固定在屏幕 */
-    top: 10px;         /* 距离屏幕顶部 */
-    right: 10px;       /* 距离屏幕右侧 */
-    z-index: 10000;    /* 层级高于目录和内容 */
-    font-size: 24px;   /* 图标大小 */
-    cursor: pointer;   /* 鼠标悬停显示手型 */
-  }
-
-
 .wy-nav-top {
   position: fixed;      /* 固定在屏幕顶部 */
   top: 0;               /* 顶部对齐屏幕 */
@@ -410,11 +399,11 @@ body {
  }
 
  .wy-nav-side.shift {
-  width: 50%;   
+  width: 40%;   
  }
 
  .wy-nav-content-wrap.shift {
-  left: 50%;   
+  left: 40%;   
  }
 
 }
