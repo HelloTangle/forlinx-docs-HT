@@ -414,22 +414,6 @@ body {
     padding-top: 50px;    /* 避免被固定顶部栏遮挡 */
   }
 
-  /* 左侧目录栏宽度 */
-  .wy-nav-side {
-    width: 60%;         /* 缩小宽度 */
-    max-width: 220px;   /* 最大宽度 */
-  }
-
-  /* 正文内容默认距离 */
-  .wy-nav-content {
-    margin-left: 0;     /* 默认不偏移 */
-    transition: margin-left 0.25s ease;
-  }
-
-  /* 当目录打开时，正文与目录保持适度距离 */
-  body.wy-nav-side-shift .wy-nav-content {
-    margin-left: 8px;   /* 可以根据需要调整，8~12px即可 */
-  }
 
 }
   
