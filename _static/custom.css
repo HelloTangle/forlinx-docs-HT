@@ -392,6 +392,8 @@ body {
       /* 顶部右上角三横杠固定 */
       .wy-nav-top .fa-bars {
         position: fixed;   /* 固定在屏幕 */
+        top: 10px;         /* 距离屏幕顶部 */
+        right: 10px;       /* 距离屏幕右侧 */
         z-index: 10000;    /* 层级高于目录和内容 */
       }
 
