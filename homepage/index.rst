@@ -26,7 +26,7 @@ Rockchip Series
 
    <div class="product-card">
      <a href="rockchip/ok3588-c/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/rockchip/OK3588-C.png" alt="ok3588-c" class="product-image" />
+       <img src="_static/images/rockchip/OK3588-C.png" alt="ok3588-cc" class="product-image" />
      </a>
      <h3 class="product-title">OK3588-C</h3>
      <div class="btn-group">
