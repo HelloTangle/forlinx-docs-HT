@@ -404,41 +404,5 @@ body {
   .wy-nav-content {
     padding-top: 50px;
   }
-
-  /* ---------- 侧边目录（浮层） ---------- */
-  .wy-nav-side {
-    position: fixed !important;
-    top: 50px;                 /* 不盖住顶部栏 */
-    left: 0;
-    width: 70%;
-    max-width: 260px;
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-
-    /* 默认隐藏（RTD 控制显示） */
-    margin-left: 0 !important;
-    transform: translateX(-100%);
-    transition: transform 0.25s ease;
-
-    z-index: 9999;
-    box-shadow: 4px 0 12px rgba(0,0,0,0.3);
-    background: inherit;
-  }
-
-  /* 打开目录（RTD 原生 class） */
-  body.wy-nav-side-shift .wy-nav-side {
-    transform: translateX(0);
-  }
-
-  /* 目录必须在最上层 */
-  .wy-nav-side {
-    z-index: 10001 !important;
-  }
-
-  /* 禁止正文层盖住目录 */
-  .wy-nav-content-wrap,
-  .wy-nav-content-wrap::before {
-    z-index: auto !important;
-    pointer-events: auto;
-  }
+}
 
