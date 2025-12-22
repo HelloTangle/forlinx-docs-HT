@@ -387,11 +387,6 @@ body {
   ============================================ */
   @media (max-width: 768px) {
 
-    /* 缩小侧边栏 */
-    .wy-nav-side {
-      width: 70% !important;
-      max-width: 260px !important;
-    }
   
     /* 固定顶部三横杠 */
     .wy-nav-top {
