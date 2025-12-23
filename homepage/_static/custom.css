@@ -419,7 +419,7 @@ body {
     /* 4. 核心逻辑：正文等比例缩小 */
     .wy-nav-content-wrap {
         transition: transform 0.3s ease, left 0.3s ease; /* 缩放动画 */
-        transform-origin: right center; /* 以右侧中心为原点缩放，这样左侧会留出空间 */
+        transform-origin: right top !important;
         background-color: #fcfcfc;      /* 确保缩小后背景不穿透 */
     }
 
@@ -433,10 +433,10 @@ body {
         transform: scale(0.65) !important;
         
         /* 视觉优化：给缩小后的页面加点投影，增加层次感 */
-        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+        box-shadow: -10px 0 20px rgba(0,0,0,0.2);
         
-        /* 锁定高度，防止缩小后出现多余滚动条 */
-        height: 100vh !important;
-        overflow: hidden !important;
+        
+        height: 153.85vh !important;
+        overflow-y: auto !important;
     }
 }
