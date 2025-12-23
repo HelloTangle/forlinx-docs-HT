@@ -387,29 +387,56 @@ body {
    RTD 移动端顶部右上角三横杠固定 
    ===================================================== */
 
+/* =====================================================
+   RTD 移动端：目录打开时正文等比例缩小 
+   ===================================================== */
+
    @media (max-width: 768px) {
-    /* 顶部右上角三横杠固定 */
-    .wy-nav-top .fa-bars {
-        position: fixed;   /* 固定在屏幕 */
-        top: 10px;         /* 距离屏幕顶部 */
-        right: 10px;       /* 距离屏幕右侧 */
-        z-index: 10000;    /* 层级高于目录和内容 */
-    }
-
+    /* 1. 顶部导航条保持固定 */
     .wy-nav-top {
-        position: fixed;                      /* 固定在屏幕顶部 */
-        top: 0;                               /* 顶部对齐屏幕 */
-        left: 0;                              /* 左边对齐屏幕 */
-        right: 0;                             /* 右边对齐屏幕 */
-        z-index: 9999;                        /* 高于内容 */
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 可选：轻微阴影 */
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .wy-nav-side.shift {
-        width: 35%;
+    /* 2. 汉堡图标固定样式 */
+    .wy-nav-top .fa-bars {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 10000;
     }
 
+    /* 3. 侧边栏宽度设为 35% */
+    .wy-nav-side {
+        width: 35% !important;
+        transition: left 0.3s ease; /* 平滑滑出 */
+    }
+
+    /* 4. 核心逻辑：正文等比例缩小 */
+    .wy-nav-content-wrap {
+        transition: transform 0.3s ease, left 0.3s ease; /* 缩放动画 */
+        transform-origin: right center; /* 以右侧中心为原点缩放，这样左侧会留出空间 */
+        background-color: #fcfcfc;      /* 确保缩小后背景不穿透 */
+    }
+
+    /* 当目录打开时 (.shift 激活) */
     .wy-nav-content-wrap.shift {
-        left: 35%;
+        /* 1. left: 35% 将容器整体右移 
+           2. scale(0.65) 将内容等比例缩小到 65% 
+           (1 - 0.35 = 0.65，刚好让缩小后的内容贴合目录)
+        */
+        left: 35% !important;
+        transform: scale(0.65) !important;
+        
+        /* 视觉优化：给缩小后的页面加点投影，增加层次感 */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+        
+        /* 锁定高度，防止缩小后出现多余滚动条 */
+        height: 100vh !important;
+        overflow: hidden !important;
     }
 }
