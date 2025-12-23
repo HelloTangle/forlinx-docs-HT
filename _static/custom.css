@@ -387,50 +387,20 @@ body {
    RTD 移动端顶部右上角三横杠固定 
    ===================================================== */
 
-   @media screen and (max-width: 768px) {
-    /* 1. 导航栏不再固定，随页面滚动而滚走 */
-    .wy-nav-top {
-        position: absolute !important; 
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        /* 确保导航栏不会固定在屏幕上 */
-    }
-
-    /* 2. 核心：防止点击时页面跳回顶部 */
-    .wy-nav-content-wrap.shift {
-        position: relative !important; /* 严禁使用 fixed */
-        left: 0 !important;            /* 也不要让内容区向右偏移 */
-        top: auto !important;
-        overflow: visible !important;   /* 允许页面正常滚动 */
-    }
-
-    /* 3. 目录侧边栏：虽然按钮滚走了，但目录弹出来时必须固定在屏幕上，方便操作 */
-    .wy-nav-side {
-        position: fixed !important;    /* 目录展开后是固定的，方便选择章节 */
-        top: 0;
-        bottom: 0;
-        left: -100%;
-        width: 85% !important;
-        z-index: 10001;
-        transition: left 0.3s ease;    /* 配合手势滑动的平滑动画 */
+   @media (max-width: 768px) {
+    /* 顶部右上角三横杠固定 */
+    .wy-nav-top .fa-bars {
+        position: fixed;   /* 固定在屏幕 */
+        top: 10px;         /* 距离屏幕顶部 */
+        right: 10px;       /* 距离屏幕右侧 */
+        z-index: 10000;    /* 层级高于目录和内容 */
     }
 
     .wy-nav-side.shift {
-        left: 0 !important;
+        width: 40%;
     }
 
-    /* 4. 添加一个遮罩层，当目录打开时，点击内容区可以关闭目录 */
-    .wy-body-for-nav.shift::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.4);
-        z-index: 10000;
+    .wy-nav-content-wrap.shift {
+        left: 40%;
     }
 }
-
