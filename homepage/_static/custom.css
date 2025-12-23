@@ -387,32 +387,50 @@ body {
    RTD 移动端顶部右上角三横杠固定 
    ===================================================== */
 
-@media (max-width: 768px) {
+  
+   @media screen and (max-width: 768px) {
+    /* 1. 顶部导航条保持固定 */
+    .wy-nav-top {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
 
-      /* 顶部右上角三横杠固定 */
-      .wy-nav-top .fa-bars {
-        position: fixed;   /* 固定在屏幕 */
-        top: 10px;         /* 距离屏幕顶部 */
-        right: 10px;       /* 距离屏幕右侧 */
-        z-index: 10000;    /* 层级高于目录和内容 */
-      }
+    /* 2. 关键修复：强制内容容器不发生任何位移或定位改变 */
+    .wy-nav-content-wrap, 
+    .wy-nav-content-wrap.shift {
+        position: static !important; /* 严禁 fixed */
+        margin-left: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        overflow: visible !important; /* 允许正常滚动 */
+    }
 
-.wy-nav-top {
-  position: fixed;      /* 固定在屏幕顶部 */
-  top: 0;               /* 顶部对齐屏幕 */
-  left: 0;              /* 左边对齐屏幕 */
-  right: 0;             /* 右边对齐屏幕 */
-  z-index: 9999;        /* 高于内容 */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 可选：轻微阴影 */
- }
+    /* 3. 目录侧边栏：改为悬浮遮盖层 */
+    .wy-nav-side {
+        position: fixed !important;
+        top: 0;
+        bottom: 0;
+        left: -85%; /* 初始状态隐藏在左侧外 */
+        width: 85% !important; /* 移动端建议加宽，40% 太窄了不容易看清 */
+        z-index: 10001; /* 高于顶部导航条 */
+        transition: left 0.3s ease; /* 必须加动画，否则手势滑动没效果 */
+    }
 
- .wy-nav-side.shift {
-  width: 40%;   
- }
+    /* 4. 当点击汉堡按钮后，侧边栏滑入 */
+    .wy-nav-side.shift {
+        left: 0 !important;
+    }
 
- .wy-nav-content-wrap.shift {
-  left: 40%;   
- }
-
+    /* 5. 汉堡按钮（三横杠） */
+    .wy-nav-top .fa-bars {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 10002; /* 最高层级，确保始终能点到 */
+        color: #fff;
+    }
 }
 
