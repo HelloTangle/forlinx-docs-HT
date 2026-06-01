@@ -158,15 +158,15 @@ In the following, take the putty terminal software as an example to introduce th
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer ).
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793550889_bac1185f_f1dd_415f_b4bf_d93afae08225.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793550889_bac1185f_f1dd_415f_b4bf_d93afae08225.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM24 as an example, save the settings, open the serial port again later, and click on the saved port number.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793550972_3992b27b_5d24_4265_a91d_09ea3caae604.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793550972_3992b27b_5d24_4265_a91d_09ea3caae604.png)
 
 #### 2.3.2 Serial Login
 
@@ -241,13 +241,13 @@ Press and hold "PWRON" for 6 seconds to force power off.
 
 ### 3.1 Main Interface Display
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793552561_c48281ee_e47d_4c7f_b609_48790a594bc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793552561_c48281ee_e47d_4c7f_b609_48790a594bc9.png)
 
 ### 3.2 Application Drawer
 
 Swipe up on the main screen to bring up the following screen.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793552677_75a59f28_f261_4f0c_8a82_1b52dee819df.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793552677_75a59f28_f261_4f0c_8a82_1b52dee819df.png)
 
 **Note: After software version updates, there may be minor differences, which do not represent the actual images for each subsequent version update and are provided for reference only.**
 
@@ -255,15 +255,15 @@ Swipe up on the main screen to bring up the following screen.
 
 Open the "Settings" app in the application drawer interface and click "System".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793552868_417f92c1_4736_4a8d_ba47_e1ed36ce58a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793552868_417f92c1_4736_4a8d_ba47_e1ed36ce58a9.png)
 
 Click "Language" to enter the language setting interface.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793552954_cf56ef45_9f32_4748_a692_4754a77700b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793552954_cf56ef45_9f32_4748_a692_4754a77700b6.png)
 
 Here you can select the language you want to set.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553046_a4d626e6_d765_463d_92b3_d132870d4fbd.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553046_a4d626e6_d765_463d_92b3_d132870d4fbd.png)
 
 ### 3.4 Picture and Audio View
 
@@ -273,9 +273,9 @@ Open the Gallery app in the App Drawer interface
 
 Configure permissions:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553146_33879878_9e84_496a_ac86_253f6a4102b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553146_33879878_9e84_496a_ac86_253f6a4102b8.png)
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553248_5e73bd9f_419a_42bf_8059_495dcae541cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553248_5e73bd9f_419a_42bf_8059_495dcae541cd.png)
 
 ### 3.5 Audio Test
 
@@ -285,11 +285,11 @@ Open the Music app in the App Drawer interface.
 
 Click "Song" in the interface to enter the song list interface.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553329_b6dad9e4_c883_4380_a34a_eb8258e0b300.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553329_b6dad9e4_c883_4380_a34a_eb8258e0b300.png)
 
 Click Play Music to enter the play interface.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553406_e7ede4f5_3bfc_4622_a85d_e25ba6ba5bbf.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553406_e7ede4f5_3bfc_4622_a85d_e25ba6ba5bbf.png)
 
 The volume can be adjusted by pressing the physical buttons VOL + and VOL- on the carrier board of the board.
 
@@ -301,15 +301,15 @@ Click the round button to start recording:
 
 **Note: the pointer will swing according to the sound level during normal recording.**
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553485_b0c67714_47e7_49c5_b143_b4bd61998220.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553485_b0c67714_47e7_49c5_b143_b4bd61998220.png)
 
 Click the "square button" to stop recording, and finally click the "save" button to save.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553585_255b9924_53ca_4385_a677_f57c4a914fa7.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553585_255b9924_53ca_4385_a677_f57c4a914fa7.png)
 
-Click the "![Image](./images/OK3576-C_Android_14_User_Manual/1730793553665_5074b3ec_8add_4e87_9fd8_afd11a911166.jpg)" button below to display the previously recorded audio file.
+Click the "![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553665_5074b3ec_8add_4e87_9fd8_afd11a911166.jpg)" button below to display the previously recorded audio file.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553748_afa445dd_80dc_4b5b_abfb_979684bf1433.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553748_afa445dd_80dc_4b5b_abfb_979684bf1433.png)
 
 Click on the audio file you want to play, and the recording will start playing.
 
@@ -317,25 +317,25 @@ Click on the audio file you want to play, and the recording will start playing.
 
 Open the "Settings" app in the application drawer interface, and click "Tone and Vibration" to enter the volume setting interface.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553821_b6088547_e46a_4b58_b651_b15473fd8d50.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553821_b6088547_e46a_4b58_b651_b15473fd8d50.png)
 
 This interface allows you to adjust each section's volume and supports media volume adjustment using the physical buttons VOL- and VOL+ on the carrier board.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793553979_a43c885d_5372_4b9d_a925_ca4b454bdc38.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793553979_a43c885d_5372_4b9d_a925_ca4b454bdc38.png)
 
 ### 3.8 Display Settings
 
 Open the "Settings" app in the application drawer interface, and click "Display" to enter the display settings interface.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554081_74b123f7_8fb5_4e9c_968a_0d6201bd4a3f.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554081_74b123f7_8fb5_4e9c_968a_0d6201bd4a3f.png)
 
 Click "brightness" to adjust the brightness of mipi screen.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554155_82dbcca5_6cb7_4b31_a082_addf98e4a375.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554155_82dbcca5_6cb7_4b31_a082_addf98e4a375.png)
 
 The default setting of OK3576 is to never turn off the screen. If you need to turn off the screen automatically, please click the "Screen timeout" option and select the time.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554235_de014591_cbe9_4910_bf8b_7b2949b70497.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554235_de014591_cbe9_4910_bf8b_7b2949b70497.png)
 
 If there is no operation on the interface within the set timeout period, the screen will enter the sleep mode. Short press of the "PWRON" button on the carrier board will wake up the screen.
 
@@ -343,15 +343,15 @@ If there is no operation on the interface within the set timeout period, the scr
 
 Open the "Settings" app in the application drawer interface and click "System".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554426_00ddef62_bf53_4eda_8a8e_8fe2daa8af9c.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554426_00ddef62_bf53_4eda_8a8e_8fe2daa8af9c.png)
 
 Click on “Date \&Time.”
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554530_2dfa19ed_41a8_4bd6_8e64_8c8300b20d13.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554530_2dfa19ed_41a8_4bd6_8e64_8c8300b20d13.png)
 
 Turn off Auto Time to use the RTC time, where the date and time can be changed and the time can be synchronized after you power down (make sure you have a coin battery installed).
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554621_3ed5f4c2_21f3_4b0e_a837_11cfdba84e05.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554621_3ed5f4c2_21f3_4b0e_a837_11cfdba84e05.png)
 
 ### 3.10 Ethernet Test
 
@@ -361,17 +361,17 @@ OK3576 has 2 x Gigabit NIC (Ethernet ETH0 and Ethernet ETH1) on board, which can
 
 After inserting the network cable, open the "Settings" app in the application drawer interface and click "Network and Internet".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554699_89b780a1_0d97_4931_9ad6_030e437ff67d.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554699_89b780a1_0d97_4931_9ad6_030e437ff67d.png)
 
 Click "Ethernet":
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554820_d030f45d_04f5_4f82_aa2d_0ac146ee1c00.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554820_d030f45d_04f5_4f82_aa2d_0ac146ee1c00.png)
 
 The default method for obtaining an IP address is “dhcp.”
 
 If you want to set a static IP address, click "EthernetIp mode" "and select" static "to set a static IP address. Only IPV4 is supported.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554894_bea8217c_d889_4396_acc1_04abaac94511.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554894_bea8217c_d889_4396_acc1_04abaac94511.png)
 
 Click CONNECT to complete the configuration:
 
@@ -379,7 +379,7 @@ After successful connection, open the "Lightning" app in the app drawer interfac
 
 Test the network by entering the [www.forlinx.net](http://www.forlinx.com进行网络测试) in the address bar.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793554973_6db0f40e_ace8_47c3_a7e8_b7b1099c215d.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793554973_6db0f40e_ace8_47c3_a7e8_b7b1099c215d.png)
 
 ### 3.11 WiFi Test
 
@@ -387,7 +387,7 @@ Test the network by entering the [www.forlinx.net](http://www.forlinx.com进行�
 
 Open the "Settings" app in the app drawer and click "Network and Internet".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555074_f748f1d9_5a9d_47be_bb7a_79b091bf30e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793555074_f748f1d9_5a9d_47be_bb7a_79b091bf30e2.png)
 
 Click on "Internet".
 
@@ -397,7 +397,7 @@ After successful connection, open the "Lightning" app in the app drawer interfac
 
 Test the network by entering the [www.forlinx.net ](http://www.forlinx.com进行网络测试)in the address bar
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555352_4d5c70d8_6492_41aa_a159_f6d31f3407e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793555352_4d5c70d8_6492_41aa_a159_f6d31f3407e6.png)
 
 ### 3.12 WiFi Hotspot Test
 
@@ -405,19 +405,19 @@ OK3576 supports the sharing of Ethernet or mobile networks through WIFI for WIFI
 
 Open the "Settings" app in the app drawer and click "Network and Internet".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555438_b7431df0_34f1_4a00_b3df_55f4ecfd20ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793555438_b7431df0_34f1_4a00_b3df_55f4ecfd20ed.png)
 
 Click "Hotspot \&tethering":
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555529_55b79eac_ff36_4eeb_9794_affd6c390ef7.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793555529_55b79eac_ff36_4eeb_9794_affd6c390ef7.png)
 
 Click WLAN Hotspot:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555674_277cb8d6_c054_4641_816d_066ae556ad04.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793555674_277cb8d6_c054_4641_816d_066ae556ad04.png)
 
 Enable the WLAN hotspot and set the hot spot name and password:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555792_730b98ba_cec5_4392_8941_22e1e9d137df.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793555792_730b98ba_cec5_4392_8941_22e1e9d137df.png)
 
 After connecting to the hotspot through the mobile phone, you can surf the Internet normally.
 
@@ -429,7 +429,7 @@ The OK3576 carrier board supports 4G modules (EM05) and 5G modules (RM500U). Bef
 
 Open the "Settings" app in the app drawer and click "Network and Internet".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555884_d0c647ac_2c88_436f_8c91_d9b30b98c50c.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793555884_d0c647ac_2c88_436f_8c91_d9b30b98c50c.png)
 
 Now you can see that you have successfully connected to China Unicom.
 
@@ -437,7 +437,7 @@ After successful connection, open the "Lighting" app in the app drawer interface
 
 Test the network by entering the [www.forlinx.net](http://www.forlinx.com进行网络测试) in the address bar.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556086_75ea80b2_0bef_4754_be83_1ac9d07aeaba.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556086_75ea80b2_0bef_4754_be83_1ac9d07aeaba.png)
 
 ### 3.14 Bluetooth Test
 
@@ -449,11 +449,11 @@ Use the Bluetooth mouse to test, and the test method is as follows:
 
 Open the "Settings" app in the app drawer interface and click "Connected Devices".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556196_80eaf4e4_b491_4d45_b69a_281bc5dadc6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556196_80eaf4e4_b491_4d45_b69a_281bc5dadc6c.png)
 
 Tap "Pair with new device" and turn on Bluetooth mouse pairing mode.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556289_f28501f0_7db8_420e_97b8_01a3af1b402d.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556289_f28501f0_7db8_420e_97b8_01a3af1b402d.png)
 
 Click the device corresponding to the Bluetooth mouse.
 
@@ -461,11 +461,11 @@ Click the device corresponding to the Bluetooth mouse.
 
 Click "Match".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556490_82474c46_38de_4c75_9e22_b7838e5e8693.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556490_82474c46_38de_4c75_9e22_b7838e5e8693.png)
 
 Successful connection, mouse pointer appears on desktop.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556617_5622736c_6a8d_4a3d_abf4_92bd78489c87.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556617_5622736c_6a8d_4a3d_abf4_92bd78489c87.png)
 
 ### 3.15 Key Test (Sleep Wake-up)
 
@@ -513,17 +513,17 @@ This test is a test of TF card and USB storage device. The following steps take 
 
 Open the "Settings" app in the application drawer interface and click "Storage" to view the internal storage device and the inserted storage device:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556715_3ea077b9_1d4f_498e_a4bb_27f8317e892c.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556715_3ea077b9_1d4f_498e_a4bb_27f8317e892c.png)
 
 Select TF card.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556828_69dd204e_f5a7_48c2_ab82_04d7d9478483.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556828_69dd204e_f5a7_48c2_ab82_04d7d9478483.png)
 
 Click the “File” to manage the files:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556923_038df4b5_3781_4d78_9ee4_25874caabec8.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556923_038df4b5_3781_4d78_9ee4_25874caabec8.png)
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557028_cf70e90f_3edc_4ddd_b2dd_6bf298d2851e.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793557028_cf70e90f_3edc_4ddd_b2dd_6bf298d2851e.png)
 
 ### 3.17 USB Mouse Test
 
@@ -535,19 +535,19 @@ The OK3576 development board supports USB OTG functionality.
 
 The Typec of the development board is connected to the computer, and the computer will recognize the board as follows:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31.jpg)
 
 Open the "Settings" app in the app drawer interface and click "Connected Devices".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31.png)
 
 Click “USB“.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793556196_80eaf4e4_b491_4d45_b69a_281bc5dadc6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793556196_80eaf4e4_b491_4d45_b69a_281bc5dadc6c.png)
 
 Click "File Transfer".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557669_0b94ea97_8387_412a_a1e7_602ddf166380.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793557669_0b94ea97_8387_412a_a1e7_602ddf166380.png)
 
 Open “This PC” on your computer, and you will see “ok3576\_c”. This allows file transfer via the computer.
 
@@ -565,7 +565,7 @@ OK3576 platform carrier board schematic indicates the breakout of UART0, UART4, 
 
 Testing will use two RS485 ports, UART5 and UART6. Before testing, ensure proper connection of the two RS485 interfaces: connect A to A and B to B. The two RS485 carrier board interfaces are as follows:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557922_bdf0e3c7_4cef_4dad_9f6d_73e85b69a974.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793557922_bdf0e3c7_4cef_4dad_9f6d_73e85b69a974.jpg)
 
 Open the "SerialPortTest" app "in the application drawer and click the" Setup "button
 
@@ -575,7 +575,7 @@ Set the Baud rate "to 115200.
 
 Set Display format "to char.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558062_b3253ec7_5dbc_4645_9b74_1ffd9a42fe33.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558062_b3253ec7_5dbc_4645_9b74_1ffd9a42fe33.png)
 
 Click the "CONSOLE" option in the previous menu to perform the send-receive test:
 
@@ -600,7 +600,7 @@ console:/ # cat /dev/ttyS6
 
 Enter the data to be sent in the Emission textbox in the app, and click Send, as shown in the figure below;
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558266_d022d091_083d_4a92_bb96_02256f7c8787.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558266_d022d091_083d_4a92_bb96_02256f7c8787.png)
 
 Data from ttyS5 can be received in the command line terminal.
 
@@ -617,23 +617,23 @@ Currently supports OV13855 (connects to CAM1 interface), OV5645 (connects to CAM
 
 Open the "Camera" app in the application drawer interface and configure the relevant permissions.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558435_e5053d8e_988c_4016_9241_5f6656c1c1da.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558435_e5053d8e_988c_4016_9241_5f6656c1c1da.png)
 
 Preview Interface.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558539_f3e19655_c103_4fac_af2d_80d0957cbf93.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558539_f3e19655_c103_4fac_af2d_80d0957cbf93.png)
 
 The preview interface slides to the right, and you can choose to take photos or videos.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558648_f1d5a294_f094_48f8_85c6_46059f13a9df.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558648_f1d5a294_f094_48f8_85c6_46059f13a9df.png)
 
-Slide left in the preview interface and click the first icon "![Image](./images/OK3576-C_Android_14_User_Manual/1730793558787_2554f9e2_5f7e_4bb1_a655_a82b4d14ac6f.jpg)" to switch cameras (this camera app only supports two cameras).
+Slide left in the preview interface and click the first icon "![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558787_2554f9e2_5f7e_4bb1_a655_a82b4d14ac6f.jpg)" to switch cameras (this camera app only supports two cameras).
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558870_3b802f26_7610_4e5f_97cf_59fa25690afc.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558870_3b802f26_7610_4e5f_97cf_59fa25690afc.png)
 
 Open the "MultipleCamera" app "in the application drawer interface to display multiple camera images (640 \* 480) at the same time.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558952_69756fa3_4fb1_4d50_bc6b_83a2b92701c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793558952_69756fa3_4fb1_4d50_bc6b_83a2b92701c5.png)
 
 ### 3.21 HDMI \& eDP Resolution Setting Test
 
@@ -643,15 +643,15 @@ OK3576's CPU supports 3 Video Ports, where vp0 supports up to 4K@120Hz 10bit to 
 
 Open the "Settings" app in the app drawer and click "Display".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793559053_5cbce303_afc3_402a_a2af_0f5c23ad6d7c.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793559053_5cbce303_afc3_402a_a2af_0f5c23ad6d7c.png)
 
 Click “HDMI“.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793559222_079b57bf_abec_4e08_a63c_72d3727f04dc.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793559222_079b57bf_abec_4e08_a63c_72d3727f04dc.png)
 
 You can set HDMI display related parameters here.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793559334_14816cdf_7983_4c11_b3d9_d85b9c11a777.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793559334_14816cdf_7983_4c11_b3d9_d85b9c11a777.png)
 
 ### 3.22 Factory Reset
 
@@ -659,15 +659,15 @@ The OK3576 platform supports restoring factory settings.
 
 Open the "Settings" app in the application drawer interface and click "System".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793559460_b0463266_bbc4_4c6c_a10c_b444e1fafe97.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793559460_b0463266_bbc4_4c6c_a10c_b444e1fafe97.png)
 
 Click "Reset Options".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793559579_a278a245_4314_4060_9d60_c0a76b74a15d.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793559579_a278a245_4314_4060_9d60_c0a76b74a15d.png)
 
 Select the data to be reset according to the actual situation, wait for OK3576 to restore the default factory settings, and do not power off during the process of restoring the factory settings.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793559703_46fea020_f43f_4ddd_8b8f_33a9a935c62f.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793559703_46fea020_f43f_4ddd_8b8f_33a9a935c62f.png)
 
 ### 3.23 APK Installation With TF Card
 
@@ -675,29 +675,29 @@ Copy the APK file to the TF card and open the TF card directory in the File app 
 
 Click on the APK file, the window will pop up, click on "Settings"
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793559837_b37e61f6_777d_45d6_b56a_1850df6384a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793559837_b37e61f6_777d_45d6_b56a_1850df6384a2.png)
 
 Allow apps from this source.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560003_96b9ca87_69d2_4c9d_a35a_d0f849762361.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793560003_96b9ca87_69d2_4c9d_a35a_d0f849762361.png)
 
 ### 3.24 ROOT Permission Test
 
 Open the "Settings" app in the app drawer interface and click "About Tablet”.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560151_161a89d3_c264_46b9_9b37_ee6ed0c8ee32.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793560151_161a89d3_c264_46b9_9b37_ee6ed0c8ee32.png)
 
 Click "Build" 7 times in a row.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560294_35b28567_cd91_4a13_a2fb_631d16ac6ae3.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793560294_35b28567_cd91_4a13_a2fb_631d16ac6ae3.png)
 
 Return to the previous menu and click "System".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560486_c2d6392d_ed5a_4823_b56b_adca9b606f29.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793560486_c2d6392d_ed5a_4823_b56b_adca9b606f29.png)
 
 Click "Developer Options".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560588_ac300f3b_dbdb_4d1e_8fce_e7fa0cbc4147.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793560588_ac300f3b_dbdb_4d1e_8fce_e7fa0cbc4147.png)
 
 Locate Root Authorization. 
 
@@ -711,7 +711,7 @@ This switch controls root privileges including the following:
 
 Open the RootChecker "app in the application drawer to test whether system app can get root privileges.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560946_7f89af88_5cba_4570_a7e8_f095581163a5.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793560946_7f89af88_5cba_4570_a7e8_f095581163a5.png)
 
 ### 3.25 Locking Screen Test
 
@@ -719,17 +719,17 @@ Open the RootChecker "app in the application drawer to test whether system app c
 
 Open "Settings" in the app drawer and click "Security \& Privacy".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793561092_c28be54f_8aaa_40aa_91be_bf9388de4d8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793561092_c28be54f_8aaa_40aa_91be_bf9388de4d8f.png)
 
 Click "Device Unlock".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793561289_be5887d6_f06a_4f8e_a0c5_01d26f3b52d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793561289_be5887d6_f06a_4f8e_a0c5_01d26f3b52d2.png)
 
 Tap "Screen Lock".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793561434_4b823bfb_7725_47f1_afdd_f0480dd3fdf2.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793561434_4b823bfb_7725_47f1_afdd_f0480dd3fdf2.png)
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793561629_ade5032a_3c87_48ce_84e2_a853fa496c5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793561629_ade5032a_3c87_48ce_84e2_a853fa496c5e.png)
 
 ### **3.26** CAN Test
 
@@ -739,25 +739,25 @@ Parameters related to can can be set in the "Settings" app or through the "can" 
 
 Open "Settings" in the application drawer and click "Network and Internet".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793561733_71af9355_d6e6_4b38_bab7_1e6350a37e60.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793561733_71af9355_d6e6_4b38_bab7_1e6350a37e60.png)
 
 Click “CAN“.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793561992_ace50021_3eb8_4d1e_bdbd_f4e0f98c7bef.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793561992_ace50021_3eb8_4d1e_bdbd_f4e0f98c7bef.png)
 
 Set the baud rate for can0 and can1.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793562256_d624c6b5_3fa7_4721_afcd_4845d2400587.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793562256_d624c6b5_3fa7_4721_afcd_4845d2400587.png)
 
 Short H and L of can0 and can1, respectively.
 
 Open the "can" app in the app drawer.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793562535_8afacedf_d364_490d_9c46_5394844fc868.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793562535_8afacedf_d364_490d_9c46_5394844fc868.png)
 
 Click "SETTING" to set can parameters, and then click "CAN \_ ON" to open can.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793562633_c11a7c5d_4cc9_4dfd_84c3_844cb7376d2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793562633_c11a7c5d_4cc9_4dfd_84c3_844cb7376d2d.png)
 
 At this time, execute the cangen command (root permission is required) on the command line terminal to see the data in the app.
 
@@ -770,7 +770,7 @@ console:/ # cangen -vv -n 5 can1
   can1  778   [4]  0D 0D 59 32
 ```
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793562750_32937def_d743_49e2_a2bb_3c75af90b949.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793562750_32937def_d743_49e2_a2bb_3c75af90b949.png)
 
 Execute the candump command at the command line terminal, enter hexadecimal data in the text box below the app, and then click SEND to send. At this time, the data can be received at the command line terminal.
 
@@ -781,7 +781,7 @@ console:/ # candump can1
   can1  123   [8]  12 34 56 78 12 34 56 78
 ```
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793562859_28c0cad8_f596_4c23_823d_213b5debb926.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793562859_28c0cad8_f596_4c23_823d_213b5debb926.png)
 
 ### **3.27 Watchdog Test**
 
@@ -789,13 +789,13 @@ Open the WatchdogTest "app in the Applications Drawer.
 
 Set the timeout time, click “Start”to start the watchdog, and click “Feed” to feed the dog. If the dog is not fed within the timeout time, the development board will restart.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793562962_258a302b_bf83_4e89_b7c7_1885b9e6a5b2.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793562962_258a302b_bf83_4e89_b7c7_1885b9e6a5b2.png)
 
 ### **3.28 ADC Test**
 
 Open "Settings" in the app drawer and click "Security \& Privacy".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793563106_dfc810b1_5ec2_46ba_9345_444b90088861.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793563106_dfc810b1_5ec2_46ba_9345_444b90088861.png)
 
 ### **3.29 GPIO Test**
 
@@ -821,19 +821,19 @@ pin\_number = 485 + 1 \* 8 + 2 = 495
 
 Open the GPIOTest "app in the application drawer, enter the calculated pin \_ number in the pin number text box, click Open to open the GPIO, and then you can read or set it to 1 and clear it to 0.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793563247_3b62d3f1_5699_489c_af01_f01f031a524e.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793563247_3b62d3f1_5699_489c_af01_f01f031a524e.png)
 
 ### **3.30 Uboot Menu**
 
 Open the "UbootMenu" app "in the application drawer to set functions such as screen switch, home screen, dpi, etc.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793563343_8a230a4e_7984_4764_a55f_984bbeb80bf6.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793563343_8a230a4e_7984_4764_a55f_984bbeb80bf6.png)
 
 ### **3.31 Silent Installation**
 
 Open the SilentInstallDemo "app in the applications drawer, click the install silent button to install silently "/storage/emulated/0/Android/data/com. forlinx. Silent InstallDemo/files/test. apk" APK needs to be placed in this location in advance. ". Users can modify the source code of SilentInstallDemo to achieve silent installation.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793563460_58994a8e_d898_4e77_9543_870228667bc2.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793563460_58994a8e_d898_4e77_9543_870228667bc2.png)
 
 ## 4\. System Flashing
 
@@ -847,11 +847,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793565145_13d99d4d_bca0_44d3_9b22_b05b752be810.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793565145_13d99d4d_bca0_44d3_9b22_b05b752be810.jpg)
 
 Click "Driver Installation”.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793565272_f277f501_d995_4253_82ac_3d1de892f959.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793565272_f277f501_d995_4253_82ac_3d1de892f959.jpg)
 
 #### **4.1.2** **OTG Flashing Test**
 
@@ -865,25 +865,25 @@ It is a development tool provided by Rockchip Micro. Unzip it to a full English 
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1750319091973_df49a9b7_0487_45bb_ae0f_e17c6d58fb45.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1750319091973_df49a9b7_0487_45bb_ae0f_e17c6d58fb45.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1750319339986_e8e6060c_5e99_4928_a142_e56dfd22b0f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1750319339986_e8e6060c_5e99_4928_a142_e56dfd22b0f1.png)
 
 Click "Advanced Functions"-> "Erase All" to erase.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1750319533424_f65d5c86_78e3_4a0d_849b_f8900eb94eb0.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1750319533424_f65d5c86_78e3_4a0d_849b_f8900eb94eb0.png)
 
 Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1750319645988_ab89d472_d74b_4ef3_abdd_44fb5ac64af7.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1750319645988_ab89d472_d74b_4ef3_abdd_44fb5ac64af7.png)
 
 **Introduction to MASKROM mode**
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the red Maskrom key and then press the reset key to enter the maskrom mode for flashing.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793565674_814ae2a1_322b_49dd_8151_58f580f1d35e.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793565674_814ae2a1_322b_49dd_8151_58f580f1d35e.jpg)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -893,7 +893,7 @@ At this time, the system will prompt the discovery of a maskrom device. The flas
 
 This feature is useful when you need to download a separate image. This function is only applicable in loader flashing mode.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793565777_65cb8f3b_aada_4bd6_91d4_38456fe186bb.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793565777_65cb8f3b_aada_4bd6_91d4_38456fe186bb.jpg)
 
 1. Click ① Download image tab;
 2. Click ② Device partition table to read the mirror partition location;
@@ -906,15 +906,15 @@ This feature is useful when you need to download a separate image. This function
 
 Factory Tool is a factory batch OTG flashing tool, which does not need to read the image and supports large file flashing. Use this tool if RKDevTool is not compatible. Before use, you need to decompress to the full English path, connect the development board to the host, press the recovery key, press the reset key to reset, and release the recovery key after two seconds. There will be prompts on the Rockchip development tool : loader device found
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793565386_ec93e535_b051_4a3d_89c2_af3ca1099564.png) **Note: To recognize the device, the recovery button on the development board should be pressed down while the board is powered on. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793565386_ec93e535_b051_4a3d_89c2_af3ca1099564.png) **Note: To recognize the device, the recovery button on the development board should be pressed down while the board is powered on. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793565887_ba93bf76_ce65_49a0_b472_406b9b8fa26f.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793565887_ba93bf76_ce65_49a0_b472_406b9b8fa26f.jpg)
 
 Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793565977_adf8b5b9_c6be_42c0_9237_14cf7e85c1a6.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793565977_adf8b5b9_c6be_42c0_9237_14cf7e85c1a6.jpg)
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793566105_670d1d49_ec5c_429f_9af3_14f25b7f04c2.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793566105_670d1d49_ec5c_429f_9af3_14f25b7f04c2.jpg)
 
 ### **4.2 TF Card Flashing**
 
@@ -924,13 +924,13 @@ TF card production, flashing and testing
 
 Copy SDDiskTool\_v1.69.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793566236_19af8aab_0628_448b_8870_655aef6d588f.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793566236_19af8aab_0628_448b_8870_655aef6d588f.jpg)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793566336_f58f3b06_c143_4143_8e2c_b333bf6f4c51.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793566336_f58f3b06_c143_4143_8e2c_b333bf6f4c51.jpg)
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793566441_8e6d1f8d_5d7f_4a07_988a_c692f9b04116.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793566441_8e6d1f8d_5d7f_4a07_988a_c692f9b04116.jpg)
 
 Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:
 
@@ -974,7 +974,7 @@ adb push ok3576_c-ota-eng.root.zip /storage/emulated/0/update.zip
 
 After uploading the upgrade package using ADB, it is necessary to restart the development board to trigger the system to detect the upgrade package.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793568208_703b6412_01c4_48c4_b33b_774c7c79d1f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793568208_703b6412_01c4_48c4_b33b_774c7c79d1f8.png)
 
 Click "Installation”.
 
@@ -982,7 +982,7 @@ Click "Installation”.
 
 The debugging window prints the following information:
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793568499_cd64dd67_8f70_4804_a9cc_fd572e141bd3.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793568499_cd64dd67_8f70_4804_a9cc_fd572e141bd3.jpg)
 
 After that, it will automatically restart and enter the Recovery system to automatically complete the OTA package upgrade. At this time, it cannot be powered off and wait for the upgrade.
 
@@ -990,7 +990,7 @@ When completed, it will automatically restart to the main Android interface.
 
 After the system restarts, a dialog box pops up on the interface to prompt congratulations on the success of the upgrade.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793568604_7d8daa3f_b9df_4cc8_ae55_a392366727f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/rockchip/ok3576-c/OK3576-C_Android_14_User_Manual/1730793568604_7d8daa3f_b9df_4cc8_ae55_a392366727f3.png)
 
 Click "Yes".
 
