@@ -5,10 +5,10 @@ on:
     branches:
       - main
     paths:
-      - 'platform/**/**/*.md' # 只在 Markdown 文件变动时触发
-      - 'homepage/**/*.rst'   #  RST 文件 
+      - 'platform/**/**/*.md' 
+      - 'homepage/**/*.rst'   
       - 'platform/**/*.rst'
-      - 'homepage/conf.py'     #  配置文件（conf.py）
+      - 'homepage/conf.py'    
       - 'platform/**/conf.py'
       - 'homepage/**/*.css'
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
   build-docs:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 授予写入权限，以便提交更改
+      contents: write # 授予写入权限，以便将改写后的 MD 文件 push 回仓库
 
     steps:
     # 1️⃣ Checkout 仓库
@@ -36,8 +36,8 @@ jobs:
     - name: Install dependencies
       run: |
         pip install --upgrade pip
-        pip install -r requirements.txt
         pip install requests
+        if [ -f "requirements.txt" ]; then pip install -r requirements.txt; fi
 
     # 4️⃣ 获取本次 push 的变化 Markdown 文件
     - name: Detect changed Markdown files
@@ -50,30 +50,23 @@ jobs:
         echo "$changed"
         echo "::endgroup::"
 
-        # 将多行路径写入环境变量 CHANGED_MD_FILES
         if [[ -n "$changed" ]]; then
           echo "CHANGED_MD_FILES<<EOF" >> "$GITHUB_ENV"
           echo "$changed" >> "$GITHUB_ENV"
           echo "EOF" >> "$GITHUB_ENV"
         fi
 
-
-        
-
-
-    # 5️⃣ 处理变化的 Markdown 文件（抓取图片 + 路径修改）
+    # 5️⃣ 启动 Python 图床分离引擎（抓图 + 分拣 + 链接改写）
     - name: Process changed Markdown files
       shell: bash
       run: |
           if [[ -z "$CHANGED_MD_FILES" ]]; then
-            echo "No changed Markdown files."
+            echo "No changed Markdown files. Skipping image processing."
             exit 0
           fi
 
           echo "Processing changed Markdown files..."
-          # 逐行读取环境变量
           while IFS= read -r f; do
-            # 忽略空行
             [[ -z "$f" ]] && continue
             if [ -f "$f" ]; then
               echo "📄 Processing $f"
@@ -83,32 +76,43 @@ jobs:
             fi
           done <<< "$CHANGED_MD_FILES"
 
-    # 6️⃣ 提交并推送更新
-    - name: Commit and push changes
+    # 🌟 6️⃣ 核心新增：将 4层架构图片文件夹 极速穿越到飞凌后台服务器
+    - name: 🚀 Sync Images to Forlinx Server
+      uses: appleboy/scp-action@master
+      # 安全锁：只有 Python 真的提取了图片（生成了临时文件夹），才执行上传
+      if: hashFiles('_temp_upload/**') != '' 
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        port: 22000
+        source: "./_temp_upload/*"
+        target: "/home/forlinx/www/docs_assets/images" # 👈 请确保这是飞凌服务器真实的物理路径
+        strip_components: 1
+
+    # 🌟 7️⃣ 核心修改：将修改了链接的 Markdown 文件提交回仓库，并带上防死循环标识
+    - name: 📝 Commit and push MD changes
       shell: bash
       run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add platform/**/*.md
 
-          git add .
-
+          # 强制带上 [skip ci] 标识，防止 GitHub Actions 看到这次 Push 又触发一次流水线！
           if ! git diff --cached --quiet; then
-            git commit -m "Auto-update docs changes"
+            git commit -m "chore: auto-update image paths to server URLs [skip ci]"
             git push origin main
           else
             echo "No changes to commit."
           fi
           
-
-
-        
-    # 8 构建 homepage（必选）
+    # 8️⃣ 构建 homepage（必须保留，否则主页会变 404）
     - name: Build homepage
       run: |
         mkdir -p docs_build
         sphinx-build -b html ./homepage ./docs_build
 
-    # 9 构建 platform 子项目
+    # 9️⃣ 构建 platform 子项目
     - name: Build platform docs
       run: |
         for project in platform/*/*; do
@@ -122,8 +126,7 @@ jobs:
           fi
         done
 
-
-    # 10 清理 /en/
+    # 🔟 清理 /en/
     - name: Remove /en/ from sitemap URLs
       run: |
         for sm in docs_build/*/*/sitemap.xml; do
@@ -133,15 +136,12 @@ jobs:
           fi
         done
 
-
-
-    # 11 生成总 sitemap_index.xml
+    # 1️⃣1️⃣ 生成总 sitemap_index.xml
     - name: Generate sitemap_index.xml
       run: |
         echo '<?xml version="1.0" encoding="UTF-8"?>' > docs_build/sitemap_index.xml
         echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs_build/sitemap_index.xml
 
-        # 遍历所有子项目的 sitemap.xml
         for sm in docs_build/*/*/sitemap.xml; do
           if [ -f "$sm" ]; then
             relpath=${sm#docs_build/}
@@ -150,19 +150,17 @@ jobs:
             echo "  </sitemap>" >> docs_build/sitemap_index.xml
           fi
         done
-
         echo '</sitemapindex>' >> docs_build/sitemap_index.xml
 
-
-    # 11.5 添加 robots.txt 到部署根目录
+    # 1️⃣2️⃣ 添加 robots.txt
     - name: Add robots.txt
       run: |
-        cp homepage/_static/robots.txt docs_build/robots.txt
-        echo "✅ robots.txt added to deployment root"
+        if [ -f "homepage/_static/robots.txt" ]; then
+          cp homepage/_static/robots.txt docs_build/robots.txt
+          echo "✅ robots.txt added"
+        fi
         
-
-
-    # 12 部署到 GitHub Pages
+    # 1️⃣3️⃣ 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
