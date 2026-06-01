@@ -51,7 +51,7 @@ OK3576-android-source  OK3576-android-source.tar.bz2
 
 This manual is mainly applicable to the Android14 operating system on the Forlinx OK3576-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
 
-## Materials Description
+## Materials Descriptions
 
 OK3576-C development board currently provides software documentation for the Android operating system. This document serves as a user manual for Android users and includes relevant functionality testing and explanations for the Android 11 kernel. Users should select the corresponding documentation that matches the image on the development board for their operations. Users can access the documentation and source code of the software and hardware through the web link provided by our company.
 
