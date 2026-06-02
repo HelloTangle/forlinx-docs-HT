@@ -94,16 +94,22 @@ def process_md_file(md_path: Path):
 
     def repl(match):
         img_url = match.group('url').strip()
-        
-        # 🌟 3. 防重复处理锁：如果已经是新服务器的链接，原样返回，不折腾
-        if img_url.startswith(SERVER_BASE_URL):
-            return match.group(0)
-
         img_name = get_clean_filename(img_url)
         save_path = target_dir / img_name
+        
+        # 将 Windows 的反斜杠 \ 转换为 URL 标准的正斜杠 /
+        url_path = str(relative_dir).replace('\\', '/')
+        # 计算出这幅图在 1:1 镜像下【理应具备的最完美 URL】
+        perfect_server_url = f"{SERVER_BASE_URL}/{url_path}/{md_name}/{img_name}"
 
-        # 🌟 4. 安全落地机制：先抓图片
+        # 🌟 3. 升级版智能锁：不仅要看域名，还要看路径对不对！
+        if img_url == perfect_server_url:
+            # 只有当目前的链接和最完美的 1:1 链接一模一样时，才真正跳过
+            return match.group(0)
+
+        # 🌟 4. 安全落地机制：发现是旧链接、外链或本地图，统统重新抓取！
         if img_url.startswith(('http://', 'https://')):
+            # 如果是官网的老路径图，脚本会把它重新下载回来，放进新的 1:1 目录备用
             success = download_image(img_url, save_path)
         else:
             abs_path = (md_path.parent / img_url).resolve() if not os.path.isabs(img_url) else Path(img_url)
@@ -113,12 +119,9 @@ def process_md_file(md_path: Path):
                 print(f"⚠️ 物理文件丢失: {img_url}")
                 success = False
 
-        # 🌟 5. 源码改写机制：确认图片落地安全后，直接拼接原生路径
+        # 🌟 5. 源码改写机制：直接替换为最完美的原生路径
         if success:
-            # 将 Windows 的反斜杠 \ 转换为 URL 标准的正斜杠 /
-            url_path = str(relative_dir).replace('\\', '/')
-            server_url = f"{SERVER_BASE_URL}/{url_path}/{md_name}/{img_name}"
-            return f"![Image]({server_url})"
+            return f"![Image]({perfect_server_url})"
         else:
             return match.group(0)
 
