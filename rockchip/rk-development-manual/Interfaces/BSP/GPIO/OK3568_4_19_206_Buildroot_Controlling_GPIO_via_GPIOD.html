@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK3568 4.19.206 Buildroot Controlling GPIO via GPIOD &mdash; Forlinx Embedded LS Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/theme-switcher.css?v=c5fef1f0" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nxp/ls-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_GPIOD.html" />
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../_static/theme-switcher.js?v=950663c4"></script>
+      <script src="../../../_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html">
+            
+              <img src="../../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OK3568 4.19.206 Buildroot  Controlling GPIO via GPIOD</a><ul>
+<li><a class="reference internal" href="#introduction-to-gpiod">1. Introduction to GPIOD</a></li>
+<li><a class="reference internal" href="#enabling-the-gpiod-function">2. Enabling the GPIOD Function</a></li>
+<li><a class="reference internal" href="#common-gpiod-instructions">3. Common GPIOD Instructions</a><ul>
+<li><a class="reference internal" href="#instruction-explanation">3.1 Instruction Explanation</a><ul>
+<li><a class="reference internal" href="#gpiodetect">1）gpiodetect</a></li>
+<li><a class="reference internal" href="#gpioinfo">2）gpioinfo：</a></li>
+<li><a class="reference internal" href="#gpioget">3）gpioget</a></li>
+<li><a class="reference internal" href="#gpioset">4）gpioset</a></li>
+<li><a class="reference internal" href="#gpiomon">6）gpiomon</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Forlinx Embedded LS Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot  Controlling GPIO via GPIOD</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3568-4-19-206-buildroot-controlling-gpio-via-gpiod">
+<h1>OK3568 4.19.206 Buildroot  Controlling GPIO via GPIOD<a class="headerlink" href="#ok3568-4-19-206-buildroot-controlling-gpio-via-gpiod" title="Link to this heading"></a></h1>
+<section id="introduction-to-gpiod">
+<h2>1. Introduction to GPIOD<a class="headerlink" href="#introduction-to-gpiod" title="Link to this heading"></a></h2>
+<p>Libgpiod is a user-space API for the Linux kernel GPIO (General-Purpose Input/Output) driver library. It provides a simple way to control GPIO lines in a Linux system. These lines are usually connected to the digital input/output ports of hardware devices, such as LED and buttons. Through libgpiod, applications can easily open, read, write, and configure the states of GPIO lines, enabling operations on hardware devices and supporting cross - platform programming. Since Linux 4.8, the GPIO sysfs interface has been deprecated. User space should use libgpiod to interact with GPIO character devices instead.</p>
+</section>
+<section id="enabling-the-gpiod-function">
+<h2>2. Enabling the GPIOD Function<a class="headerlink" href="#enabling-the-gpiod-function" title="Link to this heading"></a></h2>
+<p>Open the graphical configuration interface of buildroot and select the following options.</p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_GPIOD/1722301092309_7029d794_3257_411c_b64c_49b5893f2843.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_GPIOD/1722301035162_9b486b13_de81_4505_bca3_0f6541559ff5.png" /></p>
+<p>After regenerating and flashing the new file system, open the development board debugging tool.</p>
+<p>You can see that the development board generates the node /dev/gpioN.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/dev]# ls gpio*
+gpiochip0  gpiochip1  gpiochip2  gpiochip3  gpiochip4  gpiochip5
+</pre></div>
+</div>
+<p>At this time, the development board supports the gpiod dynamic library.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/usr/lib]# ls libgpiod.so*
+libgpiod.so  libgpiod.so.0  libgpiod.so.0.3.2
+</pre></div>
+</div>
+</section>
+<section id="common-gpiod-instructions">
+<h2>3. Common GPIOD Instructions<a class="headerlink" href="#common-gpiod-instructions" title="Link to this heading"></a></h2>
+<section id="instruction-explanation">
+<h3>3.1 Instruction Explanation<a class="headerlink" href="#instruction-explanation" title="Link to this heading"></a></h3>
+<section id="gpiodetect">
+<h4>1）gpiodetect<a class="headerlink" href="#gpiodetect" title="Link to this heading"></a></h4>
+<p><font style="color:rgb(28, 30, 33);">List all GPIO controllers in the system.</font></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# gpiodetect
+gpiochip5 [rk817-gpio] (1 lines)
+gpiochip4 [gpio4] (32 lines)
+gpiochip3 [gpio3] (32 lines)
+gpiochip2 [gpio2] (32 lines)
+gpiochip1 [gpio1] (32 lines)
+gpiochip0 [gpio0] (32 lines)
+</pre></div>
+</div>
+</section>
+<section id="gpioinfo">
+<h4>2）gpioinfo：<a class="headerlink" href="#gpioinfo" title="Link to this heading"></a></h4>
+<p><font style="color:rgb(28, 30, 33);">Display GPIO device information:</font></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# gpioinfo
+gpiochip5 - 1 lines:
+        line   0:      unnamed       unused   input  active-high
+gpiochip4 - 32 lines:
+        line   0:      unnamed       unused   input  active-high
+        line   1:      unnamed       unused   input  active-high
+        line   2:      unnamed       unused   input  active-high
+        line   3:      unnamed       unused   input  active-high
+        line   4:      unnamed       unused   input  active-high
+        line   5:      unnamed       unused   input  active-high
+        line   6:      unnamed       unused   input  active-high
+        line   7:      unnamed       unused   input  active-high
+        line   8:      unnamed       unused   input  active-high
+        line   9:      unnamed       unused   input  active-high
+        line  10:      unnamed       unused  output  active-high
+        line  11:      unnamed       unused   input  active-high
+        line  12:      unnamed       unused   input  active-high
+        line  13:      unnamed       unused   input  active-high
+        line  14:      unnamed       unused   input  active-high
+        line  15:      unnamed       unused   input  active-high
+        line  16:      unnamed       unused   input  active-high
+        ......							//Part of the pringting information
+</pre></div>
+</div>
+</section>
+<section id="gpioget">
+<h4>3）gpioget<a class="headerlink" href="#gpioget" title="Link to this heading"></a></h4>
+<p><font style="color:rgb(28, 30, 33);">Read GPIO input:</font></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# gpioget gpiochip4 0
+1
+</pre></div>
+</div>
+</section>
+<section id="gpioset">
+<h4>4）gpioset<a class="headerlink" href="#gpioset" title="Link to this heading"></a></h4>
+<p>Set the GPIO level.</p>
+<p>The following uses GPIO3_A7 as an example to test the instruction operations.</p>
+<p>Output:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/sys/class/gpio]# gpioset gpiochip3 7=0		//Set the pin to low level, and the D6 light on the development board will be on.
+[root@ok3568:/sys/class/gpio]# gpioset gpiochip3 7=1		//Set the pin to high level, and the D6 light on the development board is off.
+</pre></div>
+</div>
+<p>Note: Different from the traditional sysfs, by default, gpioset will exit immediately after setting the level. The GPIO state at this time is defined by the hardware and may vary on different products.</p>
+<p>If you need to keep the level at a certain state persistently, please specify the working mode as signal as in the following example.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# gpioset -m signal gpiochip0 0=1
+  //（Press Ctrl+C to stop）
+</pre></div>
+</div>
+</section>
+<section id="gpiomon">
+<h4>6）gpiomon<a class="headerlink" href="#gpiomon" title="Link to this heading"></a></h4>
+<p>Monitor GPIO events.</p>
+<p>Test the pin GPIO3_C1.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# gpiomon gpiochip3 17
+event:  RISING EDGE offset: 17 timestamp: [1722306410.568497882]		//Pin connected to 3.3 V supply
+event: FALLING EDGE offset: 17 timestamp: [1722306410.568556216]		//Pin connected to 3.3 V supply
+ //（Press Ctrl+C to stop）
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
