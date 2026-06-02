@@ -33,7 +33,7 @@ dma            mem          regulator       tpmrm
 
 If this folder does not exist in the system, find >-Device Drivers>-GPIO Support in the kernel configuration and select to compile /sys/class/gpio/... (sysfs interface) into the kernel.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722069835979_31f07985_6067_4a7e_8f8a_43233fbb785d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722069835979_31f07985_6067_4a7e_8f8a_43233fbb785d.png)
 
 #### 2.1.1 Instructions for Using /sys/class/gpio
 
@@ -56,15 +56,15 @@ The naming rule for GPIO is GPIOn\_xy, where x has four forms: A, B, C, and D. I
 
 The calculation formula is as follows:
 
-![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722072304675_3e6d0e60_a0dd_4094_8e5c_c7f8928119c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722072304675_3e6d0e60_a0dd_4094_8e5c_c7f8928119c3.png)
 
 Take GPIO3\_B0 as an example to calculate its GPIO number.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722072476109_6f750090_5d97_4aa8_83ee_345b26b123cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722072476109_6f750090_5d97_4aa8_83ee_345b26b123cc.png)
 
-2）Hardware Principle![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075277293_5f731339_dee2_448d_8e66_79749969ece2.png)
+2）Hardware Principle![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075277293_5f731339_dee2_448d_8e66_79749969ece2.png)
 
-![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075291170_9a50c4d2_a112_4152_b2e0_733639024fd7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075291170_9a50c4d2_a112_4152_b2e0_733639024fd7.png)
 
 You can see that GPIO3\_B0 can control the D9 diode. When GPIO3\_B0 is at a high level, D9 is cut off and does not emit light. When GPIO3\_B0 is at a low level, D9 is turned on and emits light.
 
@@ -85,7 +85,7 @@ gpio104  gpiochip0  gpiochip32   gpiochip64   unexport
 
 When GPIO3\_B0 outputs a high level, D9 does not light up.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722074760568_4c304eb1_ee52_45a6_9517_70b983bca84e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722074760568_4c304eb1_ee52_45a6_9517_70b983bca84e.png)
 
 ```plain
 [root@ok3568:/sys/devices/platform/fe760000.gpio/gpiochip3/gpio/gpio104]# echo 0 > value	    //Set IO to output low level
@@ -95,7 +95,7 @@ When GPIO3\_B0 outputs a high level, D9 does not light up.
 
 When GPIO3\_B0 outputs a low level, D9 lights up.
 
-![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075173860_8f28969f_995d_4cf4_8d1c_a55675901354.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/GPIO/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075173860_8f28969f_995d_4cf4_8d1c_a55675901354.png)
 
 ```plain
 
