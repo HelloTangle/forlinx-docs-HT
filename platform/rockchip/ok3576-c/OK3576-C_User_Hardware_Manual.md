@@ -65,23 +65,23 @@ Target Applications:
 
 **RK3576 Processor Block Diagram**
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1720593601656_0670391a_b653_4230_aede_3ea9e26b9868.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1720593601656_0670391a_b653_4230_aede_3ea9e26b9868.png)
 
 ## 2\. FET3588-C SoM Description
 
 ### 2.1 FET3576-C SoM
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1733456740203_4f819259_1c63_45b2_8917_a806d32b2885.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1733456740203_4f819259_1c63_45b2_8917_a806d32b2885.png)
 
 **Front**
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1733456699798_361c5272_c28d_45c5_8b73_ad736e028066.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1733456699798_361c5272_c28d_45c5_8b73_ad736e028066.png)
 
 **Back**
 
 ### 2.2 FET3576-C SoM Dimension Diagram
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199723643_67bbd894_eb35_4750_86ac_27181de438c4.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199723643_67bbd894_eb35_4750_86ac_27181de438c4.png)
 
 **SoM**
 
@@ -89,15 +89,15 @@ Target Applications:
 
 FET3576-C SoM Dimension Diagram 
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199723926_1b8554b0_e9fd_4294_a0ba_44d3349e636f.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199723926_1b8554b0_e9fd_4294_a0ba_44d3349e636f.png)
 
 **Top Layer Dimension Diagram**
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199724248_c9d3447b_4655_46be_9ad4_38beb6c92363.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199724248_c9d3447b_4655_46be_9ad4_38beb6c92363.png)
 
 **Bottom Layer Dimension Diagram**
 
-Unit：mm![Image](./images/OK3576-C_User_Hardware_Manual/1721199724670_67922326_0c33_478e_af0b_7de83224e418.png)
+Unit：mm![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199724670_67922326_0c33_478e_af0b_7de83224e418.png)
 
 Structural dimensions: 68mm × 50mm, dimensional tolerance ± 0.15 mm; for more detailed dimensions, please refer to the user information DXF structural documents.
 
@@ -109,9 +109,9 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 Please refer to the development board design and use SMT nuts of M2 with a length (L) of 1.5 mm on the carrier board. Please refer to the following figure for the specifications of the SMT nuts.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199724879_e1bbcd19_a64f_483a_8ca0_679afb0b8a85.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199724879_e1bbcd19_a64f_483a_8ca0_679afb0b8a85.png)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199725152_9e128ca2_4ffc_4042_bff0_0c58c7aff308.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199725152_9e128ca2_4ffc_4042_bff0_0c58c7aff308.png)
 
 ### 2.4 Performance Parameters
 
@@ -214,13 +214,13 @@ FET3576-C SoM Interfaces:
 
 #### 2.6.1  FET3576-C SoM Pins Schematic
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199725381_e97fda68_6e24_4204_ae69_0ad984b42cad.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199725381_e97fda68_6e24_4204_ae69_0ad984b42cad.png)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199725678_07499dd7_d923_4ece_9bec_4c925c40b2d6.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199725678_07499dd7_d923_4ece_9bec_4c925c40b2d6.png)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199726107_7ffe2b4b_fcd0_4565_9353_3b1efb04dd28.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199726107_7ffe2b4b_fcd0_4565_9353_3b1efb04dd28.png)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199726448_23bd375a_3ddb_4c27_9b4f_25c420797a6a.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199726448_23bd375a_3ddb_4c27_9b4f_25c420797a6a.png)
 
 #### 2.6.2 FET3576-C SoM Pins Description
 
@@ -1032,15 +1032,15 @@ Please refer to section 3.5 in “Chapter 3. OK3576-C Carrier Board Description�
 
 The connection of OK3576-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1733464938859_de566621_a7ee_4edd_b1b0_898d80a41e62.jpeg)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1733464938859_de566621_a7ee_4edd_b1b0_898d80a41e62.jpeg)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1733464952493_ec45bef4_1f29_4fe3_9e46_c17f3993659b.jpeg)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1733464952493_ec45bef4_1f29_4fe3_9e46_c17f3993659b.jpeg)
 
 ### 3.2 OK3576-C SoM Dimension Diagram
 
 OK3576-C development board and antenna board is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199745059_ff2e0738_1b08_482c_89e1_044c92dccefa.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199745059_ff2e0738_1b08_482c_89e1_044c92dccefa.png)
 
 Carrier board PCB size: 130mm × 190mm. For more detailed dimensions, please refer to the user information DXF file;
 
@@ -1054,7 +1054,7 @@ The antenna board is used for the installation and fixation of 4G and 5G antenna
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×23mm. For more detailed dimensions, please refer to the following figure.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199745766_a366a4ed_569a_4bf9_8fd4_d4273309eb8f.jpeg)![Image](./images/OK3576-C_User_Hardware_Manual/1721199746034_60073a41_4207_4c70_913a_41aee8bdcb6d.jpeg)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199745766_a366a4ed_569a_4bf9_8fd4_d4273309eb8f.jpeg)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199746034_60073a41_4207_4c70_913a_41aee8bdcb6d.jpeg)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -1127,21 +1127,21 @@ The schematic diagram in this chapter is only for the easy reading and may be su
 
 The development board uses a 12V adapter with a DC005 socket. DIP switch S1 is the power switch of the development board. Switch it as silkscreen indicates. A TVS tube is connected in parallel at the subsequent stage of S1 for electrostatic protection, and a fuse F1 is used for over - current protection. D1 cooperates with F1 for reverse - connection protection. VCC12V\_DCIN supplies power to both the SoM and other peripherals on the carrier board.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201751774_8f0d16a1_4b7c_4f4c_83fa_bcd2938e9030.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201751774_8f0d16a1_4b7c_4f4c_83fa_bcd2938e9030.png)
 
 VCC12V\_DCIN is stepped down to VCC\_5V through U3 (DC - DC). VCC\_5V supplies power to other peripherals on the carrier board. (It should be noted that when selecting a 12V - to - 5V DC - DC chip, the output power of the chip should be large enough. It is recommended that the output current be over 6A to ensure sufficient current supply for the subsequent stage.)
 
 After the SoM is normally started with 12V power supply, it outputs a high - level signal through the CARRIER\_BOARD\_EN pin to control U3 to enable the output of VCC\_5V power to supply power to some peripherals on the development board. (The signal level is 3.3V, and the driving capability is a 10K pull - up. If the driving capability required by the enable pin of the enabled device exceeds this range, a buffer or a gate circuit needs to be added to increase the driving capability, ensuring normal power - on of the SoM and the carrier board.)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201762785_128471a6_a74f_4f27_9a2e_2e18a6d1f500.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201762785_128471a6_a74f_4f27_9a2e_2e18a6d1f500.png)
 
 VCC\_5V is stepped down to VCC\_3V3 through U4 (DC - DC). VCC\_3V3 supplies power to some devices on the development board.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201772610_7630fdfd_a1b8_4ce6_adff_7ee928028331.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201772610_7630fdfd_a1b8_4ce6_adff_7ee928028331.png)
 
 VCC\_3V3 is stepped down to VCC\_1V8 through U2 (LDO). VCC\_1V8 supplies power to some devices on the development board.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201782020_4b99d7b6_0835_4ef1_9a88_7be439626779.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201782020_4b99d7b6_0835_4ef1_9a88_7be439626779.png)
 
 **Note:**
 
@@ -1153,11 +1153,11 @@ VCC\_3V3 is stepped down to VCC\_1V8 through U2 (LDO). VCC\_1V8 supplies power t
 
 RESET\_L is SoM resetting signal input connected to the key for convenient debugging
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201789558_11b99632_bfc0_42ed_97ef_04c08ac8aaaf.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201789558_11b99632_bfc0_42ed_97ef_04c08ac8aaaf.png)
 
 PWRON\_L is an On/Off signal input connected to the key for convenient debugging
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201797858_4d5fa53c_86e5_4842_b22f_061c06ef68bc.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201797858_4d5fa53c_86e5_4842_b22f_061c06ef68bc.png)
 
 #### 3.5.3 Boot Configuration
 
@@ -1198,7 +1198,7 @@ Table 3.5.3.1 Boot Sequence Configuration Table
 SARADC\_VIN0\_BOOT on SoM is 10K pull-up, so the SoM defaults to start from eMMC The pull-down resistor can be added to the carrier board to achieve other boot sequences. According to the above Config1  
 settings, the SARADC\_VIN0\_BOOT is connected to GND via the touch key to achieve Maskrom mode.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201812443_75639444_b4a1_4617_b923_3b34d6378034.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201812443_75639444_b4a1_4617_b923_3b34d6378034.png)
 
 SARADC\_ VIN1 is used to enter the recovery state due to a short circuit to the ground, and the SoM pulls it up  
 to a 1.8V power supply using a 10K resistor. On OK3576-C, the key array adopts a parallel type, which can adjust  
@@ -1206,7 +1206,7 @@ the input key value by increasing or decreasing the keys and adjusting the propo
 resistor to achieve multi-key input to meet customer product requirements; It is recommended in the design that  
 any two key values must be greater than ± 35, i.e. the center voltage difference must be greater than 123mV. The principle is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201820385_84e45d78_8398_4284_bc6a_116e2ea78d6d.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201820385_84e45d78_8398_4284_bc6a_116e2ea78d6d.png)
 
 **Note:**
 
@@ -1223,7 +1223,7 @@ SDMMC 0 \_ DET \_ L (PIN: P3 \_ 90) (default function is SDMMC \_ DET): Determin
 
 The JTAG function and the SDMMC function of the FET3576 are multiplexed , and the function of the IOMUX is switched through the SDMMC0 \_ DET \_ L pin, so the pin also needs to be configured before power-on, otherwise, no output of the JTAG function will affect the debugging in the boot phase. No output from SDMMC0 will affect the SDMMC0 boot function.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199746968_31a0ba65_3cf8_430b_9802_8456f1540d06.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199746968_31a0ba65_3cf8_430b_9802_8456f1540d06.png)
 
 1. If the pin is detected to be high level, the corresponding IO is switched to JTAG function;
 2. When this pin detects low level (Most SD cards inserted will pull down this pin, if not need special treatment), the corresponding IO switches to SDMMC0 function;
@@ -1253,14 +1253,14 @@ Table 3.5.5.1 FET3576 JTAG Debug
 
 The JTAG of RK3576 has two multiplexing modes. Among them, JTAG\_TCK\_M0/JTAG\_TMS\_M0 is located in the VCCIO1 domain and shares the IOMUX with SDMMC0; JTAG\_TCK\_M1/JTAG\_TMS\_M1 is located in the PMUIO1 domain and is multiplexed with UART\_Debug - UART0\_M0. The IOMUX multiplexing situation is shown in the figure below:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199747347_cfe2f817_3baa_4f5a_a336_290e0a729450.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199747347_cfe2f817_3baa_4f5a_a336_290e0a729450.png)
 
 The UART Debug of FET3576 uses UART0\_TX\_M0\_DEBUG (P2\_7)/UART0\_RX\_M0\_DEBUG (P2\_9) by default. UART Debug signal needs to be connected with 100ohm resistor in series, if plug-in is used, and TVS tube  
 needs to be added near the plug-in position.
 
 To facilitate user debugging, OK3576-C uses a USB to UART chip to convert the UART signal into a USB signal and leads it out through a Type-C socket. Users can connect OK3576-C P16 to PC with USB Type-A to UAB Type-C cable and install a CP2102 driver. The schematic is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201867275_68baad27_5cec_4f00_baa7_97b0c39bb54c.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721201870860_85940f31_576a_4273_adae_6f580311ea22.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721201875033_c136cb7b_66f9_493f_aacc_165c9fc08c00.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201867275_68baad27_5cec_4f00_baa7_97b0c39bb54c.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201870860_85940f31_576a_4273_adae_6f580311ea22.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201875033_c136cb7b_66f9_493f_aacc_165c9fc08c00.png)
 
 **Note:**
 
@@ -1272,13 +1272,13 @@ To facilitate user debugging, OK3576-C uses a USB to UART chip to convert the UA
 
 To introduce more diverse interfaces, the enable and reset signals of the carrier board are completed by the IIC to IO chip U5. At the same time, the U5 spare part of IO is led by P17 to facilitate user expansion. The principle is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201881601_4662d734_d2fd_451d_80cc_bcc0f1fec066.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721201886109_bd9362fa_fb61_419e_992a_895d40989028.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201881601_4662d734_d2fd_451d_80cc_bcc0f1fec066.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201886109_bd9362fa_fb61_419e_992a_895d40989028.png)
 
 #### 3.5.7 SARADC
 
 SARADC \_ VIN2/VIN4/VIN5/VIN6/VIN7 are led out through P18; R371 is a variable resistor, and SARADC \_ VIN2/VIN4/VIN5/VIN6/VIN7 is short-circuited with pins 4, 6, 8 and 10 of P18. When the resistance of the R371 variable resistor is adjusted, the voltage change can be read by the ADC. As shown in the figure below:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721201901837_ac8103e9_d74e_4116_ab0b_662e85c48db9.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721201901837_ac8103e9_d74e_4116_ab0b_662e85c48db9.png)
 
 **Note: When using the SARADC\_VINx, 1nF capacitor must be added near the pin to eliminate jitter.**
 
@@ -1286,7 +1286,7 @@ SARADC \_ VIN2/VIN4/VIN5/VIN6/VIN7 are led out through P18; R371 is a variable r
 
 The carrier board P20 is a TF Card interface, which can support system boot and burn.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202039748_352d8ac8_e509_4294_ab9d_fb75c37235d9.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202045195_edf162fa_27b5_4aac_94b7_78525498828b.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202039748_352d8ac8_e509_4294_ab9d_fb75c37235d9.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202045195_edf162fa_27b5_4aac_94b7_78525498828b.png)
 
 **Note:**
 
@@ -1298,13 +1298,13 @@ The carrier board P20 is a TF Card interface, which can support system boot and 
 
 The OK3576-C provides an on-board external RTC function for more accurate timing and lower power consumption. As shown in the figure below:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202057366_35d8ae77_2bc0_493d_baa6_06aedee55494.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202057366_35d8ae77_2bc0_493d_baa6_06aedee55494.png)
 
 #### 3.5.10 Ethernet Circuit
 
 The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led out via RJ45.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202067447_8980d1a7_e5dd_4ae8_a521_9f0b5d81a322.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202074386_8a00c3e7_214e_4476_8e8b_3dc95daaf12d.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202067447_8980d1a7_e5dd_4ae8_a521_9f0b5d81a322.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202074386_8a00c3e7_214e_4476_8e8b_3dc95daaf12d.png)
 
 **Note: The following table shows the RK3576 RGMII/RMII interface design:**
 
@@ -1351,25 +1351,25 @@ OK3576-C supports 2 x RS485 interfaces.
 
 RS485 transceiver chip U8/U9; transceiver chip signal is TDH341S485S, quarantine withstand voltage up to 5000VDC, bus electrostatic protection capability up to 15 kV (HBM), > 25Kv/us transient immunity. Meanwhile, the OK3576-C carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202087352_0400e8b5_6e6f_40ef_859c_3edb71a3575c.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202087352_0400e8b5_6e6f_40ef_859c_3edb71a3575c.png)
 
 #### 3.5.12 CAN Interface
 
 The OK3576-C has two CAN transceiver chips U10 and U11 on board, and the transceiver chip signal is TDH541SCANFD, with isolation withstand voltage up to 5000VDC, bus static protection up to 15kV (HBM), and transient immunity >25Kv/us. Meanwhile, the OK357-C carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202096016_d2fbac03_0537_4352_a5a8_d71e04c06471.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202096016_d2fbac03_0537_4352_a5a8_d71e04c06471.png)
 
 #### 3.5.13 Audio
 
 The OK3576-C has an I2S interface Codec chip U31 on board, which supports MIC input, headphone output, and 1W 8Ω speaker output. The principle shown as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202106750_8143d666_b6b1_4f10_b434_b85c234ec6b9.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202106750_8143d666_b6b1_4f10_b434_b85c234ec6b9.png)
 
 #### 3.5.14 4G\&5G Interface
 
 The OK3576-C integrates an M.2 Key-B interface that is compatible with 4G and 5G modules. Since 4G and 5G modules have different power supply voltages, we need to dip S2 to select the corresponding power supply voltage.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202119929_1cd3de75_6490_4bbd_af19_e4439150b9df.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202119929_1cd3de75_6490_4bbd_af19_e4439150b9df.png)
 
 #### 3.5.15 USB2.0/USB3.0\_A/Type - C USB3.0 Circuit
 
@@ -1379,17 +1379,17 @@ The RK3576 chip has two built-in USB3 OTG controllers, both of which are embedde
 
 USB3.2 Gen1x1 OTG0/DP1.4 forms a Combo PHY. The internal multiplexing diagram of the USB3 OTG0 controller and the PHY is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199749403_c919cbe6_c1e1_4069_9b1b_967b039ca5e8.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199749403_c919cbe6_c1e1_4069_9b1b_967b039ca5e8.png)
 
 The USB3 OTG0 controller supports SS/HS/FS/LS, and the embedded USB2.0 (HS/FS/LS) signal uses USB2.0 OTG PHY. The signal name is shown in the red box in the figure below; RK3576 uses this interface for Fireware Download by default. Please reserve this interface in the application.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1735804342116_2dd1e32f_eccf_4125_9764_dee9d1ec2981.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1735804342116_2dd1e32f_eccf_4125_9764_dee9d1ec2981.png)
 
 **Note: USB2\_OTG0\_DP/USB2\_OTG0\_DM support Firmware Download. If this interface is not used in the product, it must be reserved during the debugging and production process. Note: USB2\_OTG0\_VBUSDET must also be connected!**
 
 The SS signal (5Gbps) of USB 3.2 is multiplexed with DP1.4, and the Combo PHY of USB/DP is used; the signal is shown in the red box in the figure below.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199749954_f8cb831b_0c53_4f8e_b8ab_698dd73da5b4.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199749954_f8cb831b_0c53_4f8e_b8ab_698dd73da5b4.png)
 
 Since the USB3 OTG and USB2.0 OTG are the same USB3 controller, the USB3 and USB2.0 OTG can only do Device or HOST at the same time, not USB3 OTG for HOST, USB2.0 OTG for Device or USB3 OTG for Device and USB2.0 OTG to do HOST.
 
@@ -1399,23 +1399,23 @@ This USB3/DP1.4 Combo PHY supports inter-Lane switching (SWAP), so a TYPEC stand
 
 Configuration I: Type-C 4Lane (with DP function)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199750214_784ef4f2_cd92_48f7_a2f7_6fb9d1ade09a.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199750214_784ef4f2_cd92_48f7_a2f7_6fb9d1ade09a.png)
 
 Configuration II: USB2.0 OTG+DP1.4 4Lane(Swap OFF)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199750576_7b815bee_410a_4b1a_a090_70399bdf21e3.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199750576_7b815bee_410a_4b1a_a090_70399bdf21e3.png)
 
 Configuration III: USB2.0 OTG+DP1.4 4Lane(Swap ON)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199750805_b58f70e5_7c73_4601_aabe_543b544778d8.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199750805_b58f70e5_7c73_4601_aabe_543b544778d8.png)
 
 Configuration IV: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap OFF)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199751194_8ade452f_cd52_4726_b814_44611043dd94.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199751194_8ade452f_cd52_4726_b814_44611043dd94.png)
 
 Configuration V: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap ON)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199751492_e286b0e5_02c1_4e07_adc6_c020d9e6df67.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199751492_e286b0e5_02c1_4e07_adc6_c020d9e6df67.png)
 
 **Note: The RK3576 supports firmware download from the USB3 \_ OTG0 \_ SSRX1P/N and USB3 \_ OTG0 \_ SSTX1P/N signals of the USB 3.2 Gen1x1 OTG0 interface. When it is necessary to support USB3.0 firmware upgrade and 2Lane DP, the solution of USB3.2 Gen1x1 OTG0 + DP 2Lane (Swap ON) must be used.**
 
@@ -1423,15 +1423,15 @@ Configuration V: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap ON)
 
 Comb PHY1 is composed of PCIE1/SATA1/USB3 OTG1. The internal multiplexing diagram of USB3 OTG1 controller and PHY is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199751928_51d12731_e560_4d7b_a52a_c681951a05e9.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199751928_51d12731_e560_4d7b_a52a_c681951a05e9.png)
 
 The USB3 OTG1 controller supports SS/HS/FS/LS and is embedded with USB2.0 (HS/FS/LS) signals to form PCIE1/SATA1/USB3 OTG1 COMBO PHY1; the pin lay out is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199752262_aab6facb_5535_40f1_a7f8_d5b7b7bc0364.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199752262_aab6facb_5535_40f1_a7f8_d5b7b7bc0364.png)
 
 The pin assignment of USB20 OTG1 is shown in the following figure:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1735804357399_24df6f6f_007d_4f4d_9c55_255988d5d756.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1735804357399_24df6f6f_007d_4f4d_9c55_255988d5d756.png)
 
 Since the OTG1 of USB3 and the OTG1 of USB2.0 are the same controller of USB3, they can only be used as Device or HOST at the same time, and the OTG of USB3 cannot be used as HOST, USB2.0 OTG as Device or USB3 OTG as Device and USB2.0 OTG as HOST.
 
@@ -1441,15 +1441,15 @@ There are several application modes for USB3 OTG1 in the COMBO PHY1 of PCIE1/SAT
 
 Configuration I: USB3.2 Gen1x1 OTG1
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199752841_aed730f1_62db_4d12_8a38_52fb8a1cf90c.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199752841_aed730f1_62db_4d12_8a38_52fb8a1cf90c.png)
 
 Configuration II: USB2 OTG1
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199753203_2d61f0bb_3af6_43af_8758_b77777ecff50.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199753203_2d61f0bb_3af6_43af_8758_b77777ecff50.png)
 
 Configuration III: USB2/USB3 is not used. See the PCIE and SATA chapter for the specific application of PCIE and SATA.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199753594_efb29133_8ec0_4630_8581_5b8ee4c453a6.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199753594_efb29133_8ec0_4630_8581_5b8ee4c453a6.png)
 
 A USB HUB chip is used on the OK3576-C development board to convert a single channel USB2.0/USB3.0 \_ HOST into four channels, wherein 3 x USB3.0 are respectively connected to 3 x Type-A interfaces for using, and each channel can provide the maximum current output of 1A and has the current limiting switch protection function. The remaining 1 x USB3.0 is provided to the 4G \& 5G module
 
@@ -1457,15 +1457,15 @@ On the OK3576 - C carrier board, a standard Type - C USB 3.0 full - function int
 
 The following figure shows the circuit of the USB3.0 HUB:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202138374_a22b9efd_a781_44d3_8876_278dafe21c6b.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202143313_3a9fdba2_8dca_45d3_a91f_3020aa48aa30.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202138374_a22b9efd_a781_44d3_8876_278dafe21c6b.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202143313_3a9fdba2_8dca_45d3_a91f_3020aa48aa30.png)
 
 Use two additional switching power supplies to provide 3.3 V and 1.2 V power for the USB HUB chip: 
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202148663_bb14a6cc_1e0f_4a5d_8f44_a7a26f867490.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202148663_bb14a6cc_1e0f_4a5d_8f44_a7a26f867490.png)
 
 The three USB 3.0 interfaces transferred from the USB HUB chip are all matched with the USB power supply current-limiting switch chip to provide stable power supply and current-limiting protection functions for the Type-A interface:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202158635_ef0e1468_e024_4363_8e6d_d2c53ba1f647.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202163020_6cabe3c4_fd7c_4d11_b012_479783d692ae.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202167712_ebbdcd11_f4a0_49e7_bf68_18d041efb909.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202158635_ef0e1468_e024_4363_8e6d_d2c53ba1f647.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202163020_6cabe3c4_fd7c_4d11_b012_479783d692ae.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202167712_ebbdcd11_f4a0_49e7_bf68_18d041efb909.png)
 
 **Note:** 
 
@@ -1475,11 +1475,11 @@ The three USB 3.0 interfaces transferred from the USB HUB chip are all matched w
 
 The following figure shows the circuit of the Type - C USB 3.0 interface:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202186728_edde3b2b_1bfe_403e_aaa2_a203ee2285ff.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202186728_edde3b2b_1bfe_403e_aaa2_a203ee2285ff.png)
 
 The above figure shows the circuit of the CC protocol chip for the Type - C interface, which is used to support functions such as Type - C reversible plug recognition：
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202200685_dce80cc4_edcf_41fa_bce3_fe484ac8b528.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202200685_dce80cc4_edcf_41fa_bce3_fe484ac8b528.png)
 
 The above figure shows the differential signal circuit and ESD protection devices of the Type - C USB3.0 interface：
 
@@ -1527,15 +1527,15 @@ Support SATA 1.5Gb/s, SATA 3.0Gb/s, SATA 6.0Gb/s speeds;
 
 Support eSATA.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199754911_78d25391_5ff3_45fa_adcd_8998e3113de1.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199754911_78d25391_5ff3_45fa_adcd_8998e3113de1.png)
 
 SATA0 controller uses Comb PHY0 (which is multiplexed with the PCIe0 Controller controller). 
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199755241_e663e6ee_a918_44d4_b0aa_c2ca9bb67198.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199755241_e663e6ee_a918_44d4_b0aa_c2ca9bb67198.png)
 
 SATA1 controller uses Comb PHY1 (which is multiplexed with the PCIe1 Controller and the USB3 \_ OTG1 controller). 
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199755468_bc643117_b981_4cfb_a5ec_047f5e5d00c4.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199755468_bc643117_b981_4cfb_a5ec_047f5e5d00c4.png)
 
 SATA0/1 controller-related control IO are:
 
@@ -1573,25 +1573,25 @@ Combo PHY0, another is PCIe2.1/SATA3.1/USB3.2\_Gen1x1 Combo PHY1.
 
 The mapping diagram between Controller and PHY is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199755793_9a41442f_01a0_4562_bff9_71b57d527988.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199755793_9a41442f_01a0_4562_bff9_71b57d527988.png)
 
 The PCIe0 controller (RC) and the SATA0 controller share the PCIe2.1/SATA3.1 Combo PHY0. The details of the package pins are shown as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199756173_911020bc_f7d8_463c_9304_cd9fd29d3c50.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199756173_911020bc_f7d8_463c_9304_cd9fd29d3c50.png)
 
 PCIe1 Controller (RC), SATA1 Controller, USB3 OTG1 Controller Multiplexing PCIe2.1/SATA 3.1/USB3.2 \_ Gen1x1
 
 Combo PHY1; The package pins are as shown in the following figure:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199756431_5d4d4b0f_091e_488f_9928_f8bdc1483b8d.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199756431_5d4d4b0f_091e_488f_9928_f8bdc1483b8d.png)
 
 PCIE0/1\_REFCLKP/N supports both output and input. By default, it provides output to EP devices, as shown in the following schematic diagram:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199756620_4d3bd48a_0664_46d6_980d_fa970165b429.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199756620_4d3bd48a_0664_46d6_980d_fa970165b429.png)
 
 When PCIE0/1\_REFCLKP/N is used as an input, the schematic diagram is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199756823_3cc4b6a5_4196_4b14_90dc_0f8f1acf2ead.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199756823_3cc4b6a5_4196_4b14_90dc_0f8f1acf2ead.png)
 
 There is a PCIe0 channel on the OK3576 - C development board that is connected to a PCIe x1 slot, supporting the PCIe2.0×1Lane mode.
 
@@ -1599,15 +1599,15 @@ It supports the PCle Gen1 (2.4 GT/s) protocol, and another PCIe1 is multiplexed 
 
 The partial circuit of PCIe0 PCIe2.0×1Lane is as shown in the following figure:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202231740_e6e4b737_4d27_4b68_8db7_75782f9e0379.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202231740_e6e4b737_4d27_4b68_8db7_75782f9e0379.png)
 
 The above figure shows the 12V power supply control circuit for the PCIE interface.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202238663_df64e8e1_d83a_4719_a468_96aefc92538b.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202238663_df64e8e1_d83a_4719_a468_96aefc92538b.png)
 
 The above figure shows the 3.3V power supply and enable control circuit for the PCIE interface. U42 is a step - down chip that converts 5V to 3.3V.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202244991_9a474f67_a819_4c7c_b32b_d96a6dc70390.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202244991_9a474f67_a819_4c7c_b32b_d96a6dc70390.png)
 
 The figure above is the PCIEX1 slot circuit design.
 
@@ -1648,9 +1648,9 @@ The recommended matching design for the PCIe 2.1 interface is shown in the follo
 
 The FET3576 has two MIPI DPHY CSI RX interfaces, both of which support the MIPI V1.2 version. The maximum transmission rate of each channel is 2.5 Gbps.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199758122_2786718e_09bf_4970_9dc8_7353e8d55952.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199758122_2786718e_09bf_4970_9dc8_7353e8d55952.png)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199758407_470d2d79_7334_4371_98dd_79b73b3b74d3.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199758407_470d2d79_7334_4371_98dd_79b73b3b74d3.png)
 
 Supported modes of the MIPI DPHY CSI1/2 RX interfaces:
 
@@ -1661,7 +1661,7 @@ Supported modes of the MIPI DPHY CSI1/2 RX interfaces:
 
 ·The data of MIPI DPHY CSI2\_RX\_D\[1:0] refers to MIPI\_DPHY\_CSI2\_RX\_CLK.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199758787_79ab42f0_e089_4db2_91fa_9003c8de622d.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199758787_79ab42f0_e089_4db2_91fa_9003c8de622d.png)
 
 Supported modes of the MIPI DPHY CSI3/4 RX interfaces: 
 
@@ -1672,7 +1672,7 @@ Supported modes of the MIPI DPHY CSI3/4 RX interfaces:
 
 ·The data of MIPI DPHY CSI4\_RX\_D\[1:0] refers to MIPI\_DPHY\_CSI4\_RX\_CLK.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199759172_54b658d7_1142_4beb_a9b9_c652e4369e07.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199759172_54b658d7_1142_4beb_a9b9_c652e4369e07.png)
 
 **Supported modes of the MIPI\_DCPHY\_CSI\_RX interface:**
 
@@ -1680,7 +1680,7 @@ The FET3576 has 1 x MIPI DCPHY CSI RX Combo PHY. The DPHY supports version V2.0,
 
 In the CPHY mode, there are 3Trios with a maximum transmission rate of 5.7 Gbps per trio.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199759395_33307127_04a8_43c5_b806_0522fbdfa347.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199759395_33307127_04a8_43c5_b806_0522fbdfa347.png)
 
 DPHY and CPHY configuration support: \*\*
 
@@ -1728,7 +1728,7 @@ The maximum video output capabilities are as follows:
 
 VOP and video interface output path diagrams are as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199759959_45e326a1_9929_466e_8fac_cd5697432fa8.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199759959_45e326a1_9929_466e_8fac_cd5697432fa8.png)
 
 OK3576-C development board supports DP/MIPI \_ DSI/HDMI three display output interface.
 
@@ -1744,7 +1744,7 @@ C - PHY: It supports version V1.1. In the C - PHY mode, there are 0/1/2 Trio, an
 
 The MIPI\_CPHY\_TX supports a maximum resolution of 2560x1600@60Hz.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199760259_cfa21d5a_79d1_4ac9_b84d_9fa2af27756f.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199760259_cfa21d5a_79d1_4ac9_b84d_9fa2af27756f.png)
 
 DPHY and CPHY configuration support:
 
@@ -1762,9 +1762,9 @@ MIPI\_CPHY\_TX\_TRIO\[2：0]\_B， MIPI\_CPHY\_TX\_TRIO\[2：0]\_C。
 
 The MIPI\_DSI interface of the OK3576-C development board uses a mode of 1 set of clock channels+4 sets of data channels. The schematic diagram is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199760641_1e606f22_de49_4dd6_8338_f94b39dd59bd.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199760641_1e606f22_de49_4dd6_8338_f94b39dd59bd.png)
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202280645_6aa529d3_edf1_4a68_a449_d58cacdaa72c.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202280645_6aa529d3_edf1_4a68_a449_d58cacdaa72c.png)
 
 **Design Considerations:**
 
@@ -1811,7 +1811,7 @@ The maximum resolution it supports is 4K@60Hz;
 
 It supports RGB/YUV444/YUV422 (Up to 10bit) formats.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199761057_1144a005_83e0_4e23_8fcc_6e9556a05b60.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199761057_1144a005_83e0_4e23_8fcc_6e9556a05b60.png)
 
 RK3576 supports HDMI 2.1 and downward for HDMI 2.0, compatible with HDMI 1.4. Because HDMI 2.1 works in FRL mode and works in TMDS mode, when switching to HDMI 2.0 and below, it will work in TMDS mode, so the AC coupled voltage mode driver is used.
 
@@ -1825,7 +1825,7 @@ When operating in HDMI 2.0 and below, HDMI \_ TX \_ ON \_ H is configured high, 
 
 **<font style="color:#ff0000;">When only HDMI 2.0 and lower modes need to be supported, components Q15, Q16, Q17, and Q18 must not be omitted. It is essential to ensure that the transistors remain non-conductive when the device is powered off, as the HDMI CTS Test ID 7-3 TMDS Voff test requires that the Voff voltage stays within ±10mV of AVcc when the Device Under Test (DUT) is unpowered; otherwise, this test item will fail.</font>**
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202297987_de992835_5881_4d00_ab5d_fc8bedcac83a.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202297987_de992835_5881_4d00_ab5d_fc8bedcac83a.png)
 
 FRL mode: In the traditional TMDS architecture, a separate channel is used to transmit the Clock. But in the FRL architecture, the Clock is embedded in the Data channel, and the Clock is resolved at the Sink side through the Clock Recovery.
 
@@ -1842,7 +1842,7 @@ FRL rate vs. channel relationship:
 
 It supports ARC/eARC. The audio data can be parsed inside the RK3576 through the HDMI\_TX\_SBD\_P/HDMI\_TX\_SBD\_N signals.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202307150_b7f2bdbd_166f_4798_b784_9a17203dd130.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202307150_b7f2bdbd_166f_4798_b784_9a17203dd130.png)
 
 HDMI\_TX\_HPD is the HDMI TX controller multiplexed to a general - purpose GPIO. Its level follows the voltage of the power domain it belongs to. If the power supply voltage of the power domain changes, the power supply of the pull - up resistor in the peripheral circuit must also be adjusted synchronously.
 
@@ -1852,7 +1852,7 @@ The CEC protocol specifies a 3.3V level. However, the protocol requires that the
 
 RK3576 IO Domain Leakage will occur if there is a voltage at IO in the power-down state. For example, the RK3576 is a power failure, and its HDMI cable is in connection to the Sink side (TV or monitor); meanwhile, the CEC at the Sink side has power and leaks through the HDMI cable to the RK3576 IO, which will cause the CEC to leak more than 1.8uA, so an external isolation circuit is necessary. We can not modify the R189 resistance at will, and we need to use 27Kohm, Q19 default, and selection 2SK3018. If needing to change other models, the junction capacitor must be the equivalent, if not, it will not only affect the work but will also affect the certification through.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202320753_38f259c4_2220_40d8_8a1f_ee40277c22ba.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202320753_38f259c4_2220_40d8_8a1f_ee40277c22ba.png)
 
 HDMI-TX-SCL/HDMI-TX-SDA is the I2C/DDC bus of the HDMI TX controller, which is functionally multiplexed onto a regular GPIO. The level varies with the voltage of the power domain, and the power supply voltage of the power domain changes. The pull-up resistor of the peripheral circuit must also be synchronously adjusted.
 
@@ -1864,7 +1864,7 @@ The D6 diode cannot be removed and is used to prevent leakage from the Sink side
 
 1K in series between MOS gate for SDA signal level conversion and power supply; A 100pF is connected in parallel between the MOS gate and source to improve the timing and can not be removed.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202333285_d419ab16_f2ea_4ce5_b17d_249c05787ea7.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202333285_d419ab16_f2ea_4ce5_b17d_249c05787ea7.png)
 
 HDMI holder Pin18 voltage needs to be kept between 4.8-5.3V, 1uF decoupling capacitor needs to be placed on the pin, which must not be deleted, and the layout is placed close to the HDMI holder pin.
 
@@ -1902,15 +1902,15 @@ The RK3576 supports a DP 1.4 TX PHY (combined with USB3 OTG0), with a maximum ou
 
 ·Supports Multi Stream Transport(MST);
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199761941_a3bc3a45_f2c9_4024_9350_e0a0e32aaf13.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199761941_a3bc3a45_f2c9_4024_9350_e0a0e32aaf13.png)
 
 ·Supports two modes: Swap on and Swap off;
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199762249_be61200b_5c45_485e_83fc_3c3a92e83cb3.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199762249_be61200b_5c45_485e_83fc_3c3a92e83cb3.png)
 
 ·Supports 3 - channel MST (Multi - Stream Transport) display. The maximum capabilities of the MST for triple - screen different display are: 4096x2160@60Hz, 2560x1600@60Hz, and 1920x1080@60Hz.
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721199762544_9dab7aad_2307_4119_827c_052673fd9e9b.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199762544_9dab7aad_2307_4119_827c_052673fd9e9b.png)
 
 Please refer to section 3.5.15 for the USB pin multiplexing.
 
@@ -1937,7 +1937,7 @@ Please refer to section 3.5.15 for the USB pin multiplexing.
 
 The OK3576 - C board is equipped with a Haihua AW - CM358SM WIFI \& BT module, which supports WIFI 2.4G/5G and Bluetooth 5.0. The WIFI/BT antennas are led out through SMA interfaces, and the SDIO, PDM, and UART interfaces are connected to the main controller. The schematic is as follows:
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202359630_dd0cc4f3_fde7_40ce_a1d5_5092fe45265c.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202368754_6ce7b290_8751_4095_91f9_64d2c4b65b6d.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202359630_dd0cc4f3_fde7_40ce_a1d5_5092fe45265c.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202368754_6ce7b290_8751_4095_91f9_64d2c4b65b6d.png)
 
 **Note:**
 
@@ -1975,13 +1975,13 @@ SoM Connector Dimension:
 
 A=21.52mm, B=19.6mm, C=3.2mm, Contacts=100
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1720593594270_2f3a8c1f_8bbd_47bf_94dc_b40e4caf90ca.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1720593594270_2f3a8c1f_8bbd_47bf_94dc_b40e4caf90ca.png)
 
 Carrier board Connector Dimension:
 
 A=22.6mm, B=19.6mm, C=3.2mm, D=1.45mm, Contacts=100
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1720593594609_450a473a_6dd0_40f8_b83f_ba358030292f.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1720593594609_450a473a_6dd0_40f8_b83f_ba358030292f.png)
 
 Table 1. Linux system power consumption
 
@@ -2002,7 +2002,7 @@ Table 1. Linux system power consumption
 **3. Standby power: The current value in the power-on interface after startup multiplied by the power supply voltage;**
 **4. Power consumption is for reference only.**
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202497766_6cd40972_6e14_4fb7_87e6_c8ce3ea7d662.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202503901_87b7a821_411b_4fa6_8699_c630c51f72ab.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202510322_2a09a9be_398d_4ed4_9008_33577d403111.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202515344_74ef1fc3_a58b_41da_9d7b_5410cc0ba9eb.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202521283_59e66750_4742_475a_987c_1ecb9645a0fa.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202526484_faf4ae72_40a4_43c0_8ecb_be7972823b48.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202531751_a1fb6b32_5f11_4461_9524_611092751a89.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202537316_20ba5d44_ba45_4012_9c00_cc6e288fb336.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202541259_98cbfc41_35b1_4bd6_b37b_b69a9f03be6e.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202545576_5474d0ba_e918_457a_8603_47cae5ec8c60.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202550616_be59f1df_5d26_4745_9ca8_d20bd1810bf9.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202555786_2a8b6938_e6da_4707_8ec8_3d13fd5550ae.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202560395_cc2a8ca7_9693_4c58_91f6_c6ae3ba5b628.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202565905_2b791e97_81c1_4564_a31e_e136a9fa58da.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202570526_541ed216_c5f5_4e96_b85d_dbedc4714863.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202575346_49db14b2_5ace_48ed_a80b_feee12eb666b.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202581041_938c01c0_b986_4431_98d7_8efab07cf602.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202586705_41cde625_2184_463f_ba3d_48247cf83ec2.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202591441_c5f53746_00e5_4690_a88f_51fa87e83292.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202596564_48011e43_55b8_45f2_83ee_c61b54f07f67.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202497766_6cd40972_6e14_4fb7_87e6_c8ce3ea7d662.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202503901_87b7a821_411b_4fa6_8699_c630c51f72ab.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202510322_2a09a9be_398d_4ed4_9008_33577d403111.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202515344_74ef1fc3_a58b_41da_9d7b_5410cc0ba9eb.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202521283_59e66750_4742_475a_987c_1ecb9645a0fa.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202526484_faf4ae72_40a4_43c0_8ecb_be7972823b48.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202531751_a1fb6b32_5f11_4461_9524_611092751a89.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202537316_20ba5d44_ba45_4012_9c00_cc6e288fb336.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202541259_98cbfc41_35b1_4bd6_b37b_b69a9f03be6e.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202545576_5474d0ba_e918_457a_8603_47cae5ec8c60.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202550616_be59f1df_5d26_4745_9ca8_d20bd1810bf9.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202555786_2a8b6938_e6da_4707_8ec8_3d13fd5550ae.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202560395_cc2a8ca7_9693_4c58_91f6_c6ae3ba5b628.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202565905_2b791e97_81c1_4564_a31e_e136a9fa58da.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202570526_541ed216_c5f5_4e96_b85d_dbedc4714863.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202575346_49db14b2_5ace_48ed_a80b_feee12eb666b.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202581041_938c01c0_b986_4431_98d7_8efab07cf602.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202586705_41cde625_2184_463f_ba3d_48247cf83ec2.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202591441_c5f53746_00e5_4690_a88f_51fa87e83292.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202596564_48011e43_55b8_45f2_83ee_c61b54f07f67.png)
 
 The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. In order to meet the normal work of the SoM, the minimum system includes the SoM power supply, the system programming circuit, and the debugging serial circuit.
 
@@ -2039,13 +2039,13 @@ SoM Connector Dimension:
 
 A=21.52mm, B=19.6mm, C=3.2mm, Contacts=100
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1720593594270_2f3a8c1f_8bbd_47bf_94dc_b40e4caf90ca.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1720593594270_2f3a8c1f_8bbd_47bf_94dc_b40e4caf90ca.png)
 
 Carrier board Connector Dimension:
 
 A=22.6mm, B=19.6mm, C=3.2mm, D=1.45mm, Contacts=100
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1720593594609_450a473a_6dd0_40f8_b83f_ba358030292f.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1720593594609_450a473a_6dd0_40f8_b83f_ba358030292f.png)
 
 ## 6\. OK3576-C Development Board Power Consumption Table
 
@@ -2080,6 +2080,6 @@ Table2. Android System Consumption
 
 ## 7\. Minimum System Schematic
 
-![Image](./images/OK3576-C_User_Hardware_Manual/1721202497766_6cd40972_6e14_4fb7_87e6_c8ce3ea7d662.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202503901_87b7a821_411b_4fa6_8699_c630c51f72ab.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202510322_2a09a9be_398d_4ed4_9008_33577d403111.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202515344_74ef1fc3_a58b_41da_9d7b_5410cc0ba9eb.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202521283_59e66750_4742_475a_987c_1ecb9645a0fa.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202526484_faf4ae72_40a4_43c0_8ecb_be7972823b48.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202531751_a1fb6b32_5f11_4461_9524_611092751a89.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202537316_20ba5d44_ba45_4012_9c00_cc6e288fb336.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202541259_98cbfc41_35b1_4bd6_b37b_b69a9f03be6e.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202545576_5474d0ba_e918_457a_8603_47cae5ec8c60.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202550616_be59f1df_5d26_4745_9ca8_d20bd1810bf9.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202555786_2a8b6938_e6da_4707_8ec8_3d13fd5550ae.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202560395_cc2a8ca7_9693_4c58_91f6_c6ae3ba5b628.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202565905_2b791e97_81c1_4564_a31e_e136a9fa58da.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202570526_541ed216_c5f5_4e96_b85d_dbedc4714863.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202575346_49db14b2_5ace_48ed_a80b_feee12eb666b.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202581041_938c01c0_b986_4431_98d7_8efab07cf602.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202586705_41cde625_2184_463f_ba3d_48247cf83ec2.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202591441_c5f53746_00e5_4690_a88f_51fa87e83292.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202596564_48011e43_55b8_45f2_83ee_c61b54f07f67.png)
+![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202497766_6cd40972_6e14_4fb7_87e6_c8ce3ea7d662.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202503901_87b7a821_411b_4fa6_8699_c630c51f72ab.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202510322_2a09a9be_398d_4ed4_9008_33577d403111.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202515344_74ef1fc3_a58b_41da_9d7b_5410cc0ba9eb.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202521283_59e66750_4742_475a_987c_1ecb9645a0fa.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202526484_faf4ae72_40a4_43c0_8ecb_be7972823b48.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202531751_a1fb6b32_5f11_4461_9524_611092751a89.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202537316_20ba5d44_ba45_4012_9c00_cc6e288fb336.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202541259_98cbfc41_35b1_4bd6_b37b_b69a9f03be6e.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202545576_5474d0ba_e918_457a_8603_47cae5ec8c60.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202550616_be59f1df_5d26_4745_9ca8_d20bd1810bf9.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202555786_2a8b6938_e6da_4707_8ec8_3d13fd5550ae.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202560395_cc2a8ca7_9693_4c58_91f6_c6ae3ba5b628.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202565905_2b791e97_81c1_4564_a31e_e136a9fa58da.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202570526_541ed216_c5f5_4e96_b85d_dbedc4714863.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202575346_49db14b2_5ace_48ed_a80b_feee12eb666b.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202581041_938c01c0_b986_4431_98d7_8efab07cf602.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202586705_41cde625_2184_463f_ba3d_48247cf83ec2.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202591441_c5f53746_00e5_4690_a88f_51fa87e83292.png)![Image](https://cdn.embedsbc.com/docs/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721202596564_48011e43_55b8_45f2_83ee_c61b54f07f67.png)
 
 The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. In order to meet the normal work of the SoM, the minimum system includes the SoM power supply, the system programming circuit, and the debugging serial circuit.
