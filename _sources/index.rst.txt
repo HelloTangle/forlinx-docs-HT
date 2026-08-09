@@ -65,56 +65,6 @@ Rockchip Series
 
 
 
-NXP Series
-================
-
-
-.. raw:: html
-
-   <div class="products-container">
-
-   <div class="product-card">
-     <a href="nxp/okmx8mpq-c/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/nxp/OKMX8MP-C.png" alt="OKMX8MP-C" class="product-image" />
-     </a>
-     <h3 class="product-title">OKMX8MP-C</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/product/fetmx8mp-c-system-on-module-119.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
-       <a href="nxp/okmx8mpq-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
-   </div>
-
-   <div class="product-card">
-     <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/nxp/OK-MX8MPQ-SMARC.png" alt="OK-MX8MPQ-SMARC" class="product-image" />
-     </a>
-     <h3 class="product-title">OK-MX8MPQ-SMARC</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
-       <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
-   </div>
-
-   <div class="product-card">
-     <a href="nxp/ok1046a-c2/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/nxp/OK1046A-C2.png" alt="OK1046A-C2" class="product-image" />
-     </a>
-     <h3 class="product-title">OK1046A-C2</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/product/ls1046a-system-on-module-21.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
-       <a href="nxp/ok1046a-c2/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
-   </div>
-
-
-
-
-   </div>
-
-
-
-
-
 
 
 Contact Us
