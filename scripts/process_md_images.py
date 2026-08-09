@@ -15,7 +15,7 @@ ROOT_DIR = Path('.')
 # 统一打包的临时收件箱，给 GitHub Actions 稍后上传使用
 TEMP_UPLOAD_DIR = Path('./_temp_upload') 
 # 飞凌官网后台服务器对外公开访问的图片 URL 前缀
-SERVER_BASE_URL = "https://www.forlinx.net/docs_assets/images" 
+SERVER_BASE_URL = "https://cdn.embedsbc.com/docs" 
 
 # 改进的正则匹配：支持带尖括号 <...>、title 以及含空格的路径
 IMG_REGEX = re.compile(r'!\[.*?\]\(\s*<?(?P<url>[^)\s]+(?:\s[^)]*)?)>?\s*\)')
@@ -97,10 +97,15 @@ def process_md_file(md_path: Path):
         img_name = get_clean_filename(img_url)
         save_path = target_dir / img_name
         
+
         # 将 Windows 的反斜杠 \ 转换为 URL 标准的正斜杠 /
         url_path = str(relative_dir).replace('\\', '/')
-        # 计算出这幅图在 1:1 镜像下【理应具备的最完美 URL】
-        perfect_server_url = f"{SERVER_BASE_URL}/{url_path}/{md_name}/{img_name}"
+        
+        # 🌟 关键修正：如果是根目录下的文件，去掉 '.' 路径
+        if url_path == '.':
+            perfect_server_url = f"{SERVER_BASE_URL}/{md_name}/{img_name}"
+        else:
+            perfect_server_url = f"{SERVER_BASE_URL}/{url_path}/{md_name}/{img_name}"
 
         # 🌟 3. 升级版智能锁：不仅要看域名，还要看路径对不对！
         if img_url == perfect_server_url:

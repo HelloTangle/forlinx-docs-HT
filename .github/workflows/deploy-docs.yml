@@ -76,19 +76,24 @@ jobs:
             fi
           done <<< "$CHANGED_MD_FILES"
 
-    # 🌟 6️⃣ 核心新增：将 4层架构图片文件夹 极速穿越到飞凌后台服务器
-    - name: 🚀 Sync Images to Forlinx Server
-      uses: appleboy/scp-action@master
+
+    # 🌟 6️⃣ 核心修改：将图片极速同步到 Cloudflare R2
+    - name: 🚀 Sync Images to Cloudflare R2
       # 安全锁：只有 Python 真的提取了图片（生成了临时文件夹），才执行上传
       if: hashFiles('_temp_upload/**') != '' 
-      with:
-        host: ${{ secrets.SERVER_HOST }}
-        username: ${{ secrets.SERVER_USERNAME }}
-        key: ${{ secrets.SERVER_SSH_KEY }}
-        port: 22000
-        source: "./_temp_upload/*"
-        target: "/home/forlinx/www/docs_assets/images" # 👈 请确保这是飞凌服务器真实的物理路径
-        strip_components: 1
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: auto
+      run: |
+        aws s3 sync ./_temp_upload s3://embedsbc-images/docs/ \
+          --endpoint-url https://${{ secrets.CF_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+          --exclude "*" \
+          --include "*.png" \
+          --include "*.jpg" \
+          --include "*.jpeg" \
+          --include "*.gif" \
+          --include "*.webp"
 
     # 🌟 7️⃣ 核心修改：将修改了链接的 Markdown 文件提交回仓库，并带上防死循环标识
     - name: 📝 Commit and push MD changes
@@ -136,6 +141,7 @@ jobs:
           fi
         done
 
+
     # 1️⃣1️⃣ 生成总 sitemap_index.xml
     - name: Generate sitemap_index.xml
       run: |
@@ -146,7 +152,8 @@ jobs:
           if [ -f "$sm" ]; then
             relpath=${sm#docs_build/}
             echo "  <sitemap>" >> docs_build/sitemap_index.xml
-            echo "    <loc>https://hellotangle.github.io/forlinx-docs-HT/$relpath</loc>" >> docs_build/sitemap_index.xml
+            # 🌟 关键修改：将原有的 hellotangle.github.io 替换为你的专属子域名
+            echo "    <loc>https://docs.embedsbc.com/$relpath</loc>" >> docs_build/sitemap_index.xml
             echo "  </sitemap>" >> docs_build/sitemap_index.xml
           fi
         done
