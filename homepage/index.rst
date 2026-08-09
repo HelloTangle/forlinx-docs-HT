@@ -85,7 +85,7 @@ Hardware Reviews & Video Essays
 
 ----
 
-About embedSBC 
+About embedSBC
 ===============
 
 Delivering hardcore engineering insights, cross-platform migration strategies, and technical documentation for the global embedded community. 
