@@ -1,4 +1,4 @@
-Welcome to embedSBC
+Welcome to EmbedSBC
 ====================
 
 .. raw:: html
