@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # 授予写入权限，以便将改写后的 MD 文件 push 回仓库
+      pages: write
+      id-token: write
 
     steps:
     # 1️⃣ Checkout 仓库
@@ -167,11 +169,17 @@ jobs:
           echo "✅ robots.txt added"
         fi
         
-    # 1️⃣3️⃣ 部署到 GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
+    # 1️⃣3️⃣ 固化 CNAME 域名配置
+    - name: Setup Custom Domain
+      run: echo "docs.embedsbc.com" > docs_build/CNAME
+
+    # 1️⃣4️⃣ 将编译好的静态文件打包为 Artifact
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs_build
-        publish_branch: gh-pages
-        cname: docs.embedsbc.com
+        path: './docs_build'
+
+    # 1️⃣5️⃣ 原生部署到 GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
