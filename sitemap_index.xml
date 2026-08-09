@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://hellotangle.github.io/forlinx-docs-HT/nxp/ls-development-manual/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3568-c/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3576-c/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3588-c/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://hellotangle.github.io/forlinx-docs-HT/rockchip/rk-development-manual/sitemap.xml</loc>
+    <loc>https://docs.embedsbc.com/rockchip/ok3576-c/sitemap.xml</loc>
   </sitemap>
 </sitemapindex>
