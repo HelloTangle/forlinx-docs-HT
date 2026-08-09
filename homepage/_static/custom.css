@@ -1,9 +1,10 @@
 /* Google Fonts 引入，必须放最前面 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&family=Fira+Code&display=swap');
 
-/* 左上角搜索栏背景色 */
+/* 🌟 修改点 1：主题色调整（可选） 
+   目前是飞凌主蓝 #005bac。如果 embedSBC 有自己的品牌色（比如科技黑、极客绿或深空灰），可以在这里全局替换 */
 .wy-side-nav-search {
-  background-color: #005bac !important; /* 飞凌主蓝 */
+  background-color: #005bac !important; 
 }
 
 /* 搜索栏中版本号字体颜色 */
@@ -19,7 +20,7 @@
 
 /* 扩展主内容区域宽度 */
 .wy-nav-content {
-  max-width: 1200px; /* 默认800px，可调1000~1400px */
+  max-width: 1200px;
 }
 
 /* 正文字体，主体区域和容器统一 */
@@ -31,12 +32,7 @@ body, .rst-content, .wy-nav-content {
 }
 
 /* 标题统一字体设定 */
-.rst-content h1,
-.rst-content h2,
-.rst-content h3,
-.rst-content h4,
-.rst-content h5,
-.rst-content h6 {
+.rst-content h1, .rst-content h2, .rst-content h3, .rst-content h4, .rst-content h5, .rst-content h6 {
   font-family: 'Montserrat', 'Lato', sans-serif !important;
   font-weight: 600;
   white-space: normal !important;
@@ -47,395 +43,260 @@ body, .rst-content, .wy-nav-content {
 }
 
 /* 分级颜色设置 */
-.rst-content h1 {
-  color: #0071e3 !important; 
-}
-
-.rst-content h2 {
-  color: #2c2c2c !important;  
-}
-
-.rst-content h3 {
-  color: #2c2c2c !important;
-}
-
-
-
-
+.rst-content h1 { color: #0071e3 !important; }
+.rst-content h2 { color: #2c2c2c !important; }
+.rst-content h3 { color: #2c2c2c !important; }
 
 /* 链接样式 */
 a {
   color: #0071e3;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
 /* 正文内页面目录（Table of Contents）字体 */
-.rst-content .toctree-wrapper,
-.rst-content .toctree-wrapper ul,
-.rst-content .toctree-wrapper li,
-.rst-content .toctree-wrapper a {
+.rst-content .toctree-wrapper, .rst-content .toctree-wrapper ul, .rst-content .toctree-wrapper li, .rst-content .toctree-wrapper a {
   font-family: 'Lato', Arial, sans-serif !important;
-  font-size: 16px !important;             /* 字号适中 */
-  color: #333333 !important;              /* 深灰，接近苹果正文主色 */
+  font-size: 16px !important;            
+  color: #333333 !important;              
   line-height: 1.5 !important;
   text-decoration: none !important;
 }
-
-/* 鼠标悬浮时链接颜色 */
-.rst-content .toctree-wrapper a:hover {
-  color: #0071e3 !important;     
-}
-
-/* 正文内页面目录标题 */
+.rst-content .toctree-wrapper a:hover { color: #0071e3 !important; }
 .rst-content .toctree-wrapper > p {
   font-family: 'Montserrat', 'Lato', sans-serif !important;
   font-weight: 600 !important;
   font-size: 24px !important;
-  color: #0071e3 !important;             
+  color: #0071e3 !important;            
   margin-bottom: 0.5em !important;
 }
 
-/* 禁止页面横向滚动（防止内容撑出屏幕） */
-body {
-  overflow-x: hidden;
-}
+/* 禁止页面横向滚动 */
+body { overflow-x: hidden; }
 
-
-/* 移动端优化：主内容宽度铺满屏幕，避免横向滚动 */
+/* 移动端优化 */
 @media (max-width: 768px) {
   .wy-nav-content {
     max-width: 100% !important;
     padding: 1em !important;
     box-sizing: border-box;
   }
-
-  /* 优化目录标题字号 */
-  .rst-content .toctree-wrapper > p {
-    font-size: 18px !important;
-  }
-
-  /* 优化目录链接字号 */
-  .rst-content .toctree-wrapper a {
-    font-size: 14px !important;
-  }
-
-  /* 确保代码块不会溢出横向 */
-  pre {
-    overflow-x: auto;
-  }
+  .rst-content .toctree-wrapper > p { font-size: 18px !important; }
+  .rst-content .toctree-wrapper a { font-size: 14px !important; }
+  pre { overflow-x: auto; }
 }
 
 
-
-
-/* 容器：多列横向排列，自动换行 */
-.products-container {
-  display: flex;
-  flex-wrap: wrap;
+/* ================== 🌟 修改点 2：将原有的 Product 样式重构为 News 资讯流样式 ================== */
+/* 容器：采用更现代的 Grid 网格布局，自动适配屏幕 */
+.news-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
-  justify-content: flex-start;
   padding: 20px 0;
 }
 
-/* 单个卡片 */
-.product-card {
-  width: 345px;
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+/* 单个资讯卡片 */
+.news-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
   overflow: hidden;
-  font-family: 'Lato', Arial, sans-serif !important;
-  text-align: center;
-  background: white;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
 }
 
-/* 图片 */
-.product-image {
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 资讯封面图 */
+.news-thumbnail {
   width: 100%;
-  height: 280px;
+  height: 200px; /* 固定高度，防止卡片参差不齐 */
   object-fit: cover;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.news-card:hover .news-thumbnail {
+  opacity: 0.9;
 }
 
-.product-image:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 8px 15px rgba(0,0,0,0.2));
-}
-
-/* 标题 */
-.product-title {
-  margin: 16px 0 12px;
-  font-size: 1.25rem;
-  color: #222;
-  font-weight: 700;
-}
-
-/* 按钮组 */
-.btn-group {
+/* 资讯文字内容区 */
+.news-content {
+  padding: 20px;
+  flex-grow: 1;
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  padding: 12px 16px 16px; /* 上左右下内边距，左右改成16px */
-  width: 100%;
-  background: #f8f9fa;
-  box-sizing: border-box; /* 保证 padding 不撑破卡片宽度 */
+  flex-direction: column;
 }
 
-
-.btn {
-  flex: 1;
-  margin: 0 4px;
-  padding: 10px 0;
-  border-radius: 8px;
+.news-date, .news-category {
+  font-size: 0.85em;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.news-title {
+  font-size: 1.25rem !important;
+  color: #24292e !important;
+  margin: 0 0 12px 0 !important;
+  line-height: 1.4 !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.news-excerpt {
+  color: #586069;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1; /* 让 Read More 按钮沉底对齐 */
+}
+
+.link-more {
+  color: #0071e3;
+  font-weight: 600;
+  font-size: 0.95em;
+  text-transform: uppercase;
+}
+
+
+/* ================== 🌟 修改点 3：视频评测版块专属样式 ================== */
+.video-essay-section {
+  padding: 20px 0;
+}
+.video-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+.video-cover {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.video-card:hover .video-cover {
+  opacity: 0.5;
+}
+.video-info {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  max-width: 80%;
+}
+.video-info h3 {
   color: white !important;
-  text-decoration: none;
-  user-select: none;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  font-size: 1.8rem !important;
+  margin-bottom: 10px !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
-
-
-/* 官网按钮 */
-.btn-website,
-.btn-website:hover,
-.btn-website:active,
-.btn-website:focus {
-  background-color: #007bff;
+.btn-watch {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 24px;
+  background-color: #ff0000; /* YouTube 红 */
+  color: white !important;
+  border-radius: 6px;
+  font-weight: bold;
 }
+.btn-watch:hover { background-color: #cc0000; text-decoration: none; }
 
-.btn-website:hover {
-  background-color: #0056b3;
+
+/* ================== 🌟 修改点 4：暗色主题适配类名同步更新 ================== */
+.theme-dark .news-card {
+  background-color: #1e1e1e !important; 
+  border-color: #333 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
 }
-
-/* 文档按钮 */
-.btn-doc,
-.btn-doc:hover,
-.btn-doc:active,
-.btn-doc:focus {
-  background-color: #6c757d;
-}
-
-.btn-doc:hover {
-  background-color: #545b62;
-}
+.theme-dark .news-title { color: #f5f5f5 !important; }
+.theme-dark .news-date, .theme-dark .news-category { color: #999; }
+.theme-dark .news-excerpt { color: #bbb; }
+.theme-dark .link-more { color: #4da3ff; }
+.theme-dark .news-thumbnail { filter: brightness(0.85); }
 
 
-
-/* 移动端适配 */
-@media (max-width: 768px) {
-  .products-container {
-    justify-content: center;
-  }
-  .product-card {
-    width: 90vw;
-  }
-  .product-image {
-    height: auto;
-  }
-  .btn-group {
-    gap: 12px;
-  }
-  .btn {
-    flex: none;
-    padding: 10px 24px;
-    min-width: 120px;
-  }
-}
-
-
-
-/* ======================= 暗色主题适配：产品卡 ======================= */
-.theme-dark .product-card {
-  background-color: #1e1e1e !important; /* 柔和深灰背景 */
-  color: #e0e0e0 !important;            /* 浅灰文字，保持对比度 */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.6); /* 略深阴影 */
-}
-
-.theme-dark .product-title {
-  color: #f5f5f5 !important;  /* 保持标题清晰 */
-}
-
-.theme-dark .btn-group {
-  background-color: #2a2a2a !important; /* 按钮组区域略深背景 */
-  border-top: 1px solid #333 !important;
-}
-
-.theme-dark .btn {
-  box-shadow: 0 3px 8px rgba(255,255,255,0.05);
-}
-
-/* 图片在暗色模式下稍提亮 */
-.theme-dark .product-image:hover {
-  filter: brightness(1.15) drop-shadow(0 8px 15px rgba(255,255,255,0.1));
-}
-
-
-
-
-
-
-/* ================== banner 容器（基础） ================== */
-.banner {
+/* ================== 🌟 修改点 5：更新 Banner 类名以匹配新闻站 ================== */
+.banner-news {
   position: relative;
   width: 100%;
-  min-height: 500px;  /* PC 高度 */
-  height: 50vh;       /* 移动端自适应 */
+  min-height: 400px;  /* 资讯站不需要像官网产品图那么高 */
+  border-radius: 12px; /* 给 banner 加个圆角显得更极客 */
   background: url('images/banner/banner-bg.png') center/cover no-repeat;
   overflow: hidden;
+  margin-bottom: 40px;
 }
-
-/* 文字和按钮放在左侧 */
-.banner-content-left {
+.banner-content {
   position: absolute;
-  top: 50%;
-  left: 60px; /* 距离左边 60px，可调整 */
-  transform: translateY(-50%);
+  bottom: 40px;
+  left: 40px;
   max-width: 600px;
   color: white;
-  text-align: left;
   z-index: 2;
-  padding: 0 20px;
 }
-
-/* 半透明遮罩，让文字更清晰 */
-.banner::before {
+.banner-news::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.1);
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
   z-index: 1;
 }
-.banner-content-left h1 {
-  font-size: 3rem;
+.category-tag {
+  background: #0071e3;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.banner-content h1 {
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
   color: white !important;
 }
-.banner-content-left p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-  color: #F3F4F6 !important; /* p 为灰白色 */
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #e0e0e0 !important;
 }
-
-
-
-.btn-banner {
-  background-color: #ff7f00 !important;
-  color: white !important;
+.btn-read-more {
+  background-color: white !important;
+  color: #24292e !important;
   font-weight: 600;
-  padding: 12px 30px;
+  padding: 10px 24px;
   border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none !important;
-  outline: none !important;
 }
-.btn-banner:active,
-.btn-banner:focus {
-  color: white !important;
-  background-color: #ff7f00 !important;
-  text-decoration: none !important;
-  outline: none !important;
-}
+.btn-read-more:hover { background-color: #f0f0f0 !important; }
 
-
-/* 响应式优化 */
-@media (max-width: 1200px) {
-  .banner-content-left h1 { font-size: 2.2rem; }
-  .banner-content-left p { font-size: 1rem; }
-}
 @media (max-width: 768px) {
-  .banner {
-    height: 50vh;          /* 移动端自适应高度 */
-    min-height: 300px;     /* 保证不太小 */
-    background-size: cover; /* 显示完整图片 */
-    background-position: 60% center;
-  }
-  .banner-content-left {
-    left: 10%;
-    max-width: 80%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .banner-content-left h1 { font-size: 1.8rem; }
-  .banner-content-left p { font-size: 0.9rem; }
-  .btn-banner { padding: 10px 20px; font-size: 0.9rem; }
+  .banner-content { left: 20px; bottom: 20px; max-width: 90%; }
+  .banner-content h1 { font-size: 1.8rem; }
+  .video-info h3 { font-size: 1.3rem !important; }
 }
 
-
-/* 页脚社交图标，去掉下划线 */
-.forlinx-footer-social a {
-  text-decoration: none !important;
-}
-
-
-
-
-  /* =====================================================
-   RTD 移动端顶部右上角三横杠固定 
-   ===================================================== */
 
 /* =====================================================
-   RTD 移动端：目录打开时正文等比例缩小 
+   RTD 移动端：目录打开时正文等比例缩小 (保留不动)
    ===================================================== */
-
-   @media (max-width: 768px) {
-    /* 1. 顶部导航条保持固定 */
-    .wy-nav-top {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    /* 2. 汉堡图标固定样式 */
-    .wy-nav-top .fa-bars {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 10000;
-    }
-
-    /* 3. 侧边栏宽度设为 35% */
-    .wy-nav-side {
-        width: 35% !important;
-        transition: left 0.3s ease; /* 平滑滑出 */
-    }
-
-    /* 4. 核心逻辑：正文等比例缩小 */
-    .wy-nav-content-wrap {
-        transition: transform 0.3s ease, left 0.3s ease; /* 缩放动画 */
-        transform-origin: right top !important;
-        background-color: #fcfcfc;      /* 确保缩小后背景不穿透 */
-    }
-
-    /* 当目录打开时 (.shift 激活) */
+@media (max-width: 768px) {
+    .wy-nav-top { position: fixed !important; top: 0; left: 0; right: 0; z-index: 9999; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .wy-nav-top .fa-bars { position: fixed; top: 10px; right: 10px; z-index: 10000; }
+    .wy-nav-side { width: 35% !important; transition: left 0.3s ease; }
+    .wy-nav-content-wrap { transition: transform 0.3s ease, left 0.3s ease; transform-origin: right top !important; background-color: #fcfcfc; }
     .wy-nav-content-wrap.shift {
-        /* 1. left: 35% 将容器整体右移 
-           2. scale(0.65) 将内容等比例缩小到 65% 
-           (1 - 0.35 = 0.65，刚好让缩小后的内容贴合目录)
-        */
         left: 0 !important;
         transform: scale(0.65) !important;
-        
-        /* 视觉优化：给缩小后的页面加点投影，增加层次感 */
         box-shadow: -10px 0 20px rgba(0,0,0,0.2);
-        
-        
         height: 153.85vh !important;
         overflow-y: auto !important;
     }
