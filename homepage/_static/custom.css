@@ -116,7 +116,7 @@ body { overflow-x: hidden; }
 .news-card a {
   display: block !important;
   width: 100% !important;
-  height: 170px !important;
+  height: 200px !important;
   overflow: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -125,9 +125,9 @@ body { overflow-x: hidden; }
 
 img.news-thumbnail {
   width: 100% !important;
-  height: 170px !important;
-  min-height: 170px !important; 
-  max-height: 170px !important; 
+  height: 200px !important;
+  min-height: 200px !important; 
+  max-height: 200px !important; 
   object-fit: cover !important;
   display: block !important;
   margin: 0 !important;
@@ -171,14 +171,37 @@ img.news-thumbnail {
   line-height: 1.5 !important;
   margin-top: 0 !important;
   margin-bottom: 16px !important; /* 防止 Sphinx 默认段落边距撑爆高度 */
-  flex-grow: 1; /* 让 Read More 按钮沉底对齐 */
+
 }
 
+/* ================== 🌟 阅读全文按钮（实体按钮样式） ================== */
 .link-more {
-  color: #0071e3;
-  font-weight: 600;
+  align-self: flex-start !important; /* 按钮靠左对齐，不强制拉伸满整个宽度 */
+  margin-top: auto !important;       /* 依然保留这个核心魔法，强制推到卡片最底部 */
+  
+  /* 按钮外观设置 */
+  background-color: #0071e3 !important; /* 科技蓝背景 */
+  color: #ffffff !important;            /* 纯白文字 */
+  padding: 8px 20px !important;         /* 上下 8px，左右 20px 的舒适内边距 */
+  border-radius: 6px !important;        /* 6px 的精致圆角 */
+  
+  /* 字体排版 */
   font-size: 0.85em !important;
+  font-weight: 600 !important;
   text-transform: uppercase;
+  text-decoration: none !important;     /* 强制去除原生主题可能自带的下划线 */
+  
+  /* 动画过渡 */
+  transition: all 0.3s ease !important; 
+  border: 1px solid transparent !important; /* 预留边框位置防止悬浮时抖动 */
+}
+
+/* 按钮的鼠标悬浮交互效果 */
+.link-more:hover {
+  background-color: #005bb5 !important; /* 悬浮时按钮颜色稍微加深 */
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3) !important; /* 增加一层柔和的蓝色投影 */
+  transform: translateY(-2px) !important; /* 鼠标放上去时，按钮会微微向上浮动一点点 */
 }
 
 /* ================== 🌟 修改点 3：视频评测版块专属样式 ================== */
