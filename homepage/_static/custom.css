@@ -114,12 +114,10 @@ body { overflow-x: hidden; }
 
 /* 资讯封面图 */
 
-/* 资讯封面图及超链接容器（强力锁死尺寸版） */
-
 .news-card a {
   display: block !important;
   width: 100% !important;
-  height: 220px !important;
+  height: 170px !important;
   overflow: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -128,9 +126,9 @@ body { overflow-x: hidden; }
 
 img.news-thumbnail {
   width: 100% !important;
-  height: 220px !important;
-  min-height: 220px !important; 
-  max-height: 220px !important; 
+  height: 170px !important;
+  min-height: 170px !important; 
+  max-height: 170px !important; 
   object-fit: cover !important;
   display: block !important;
   margin: 0 !important;
