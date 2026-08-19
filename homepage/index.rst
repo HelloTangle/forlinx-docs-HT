@@ -98,7 +98,7 @@ Latest Tech Insights
 
 ----
 
-About EmbedSBC
+About EmbedSBC 
 ===============
 
 Delivering hardcore engineering insights, cross-platform migration strategies, and technical documentation for the global embedded community. 
