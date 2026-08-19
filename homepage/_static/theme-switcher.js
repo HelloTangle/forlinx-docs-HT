@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     function updateButtonLabel() {
         const btn = document.getElementById("theme-switcher-btn");
         if (!btn) return;
-        btn.textContent = currentTheme === "light" ? "🌙 Dark Mode" : "🌞 Light Mode";
+        btn.textContent = currentTheme === "light" ? "🌙 Dark" : "🌞 Light";
     }
 
     // ------------------- 创建切换按钮 -------------------
