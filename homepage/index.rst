@@ -6,10 +6,10 @@ Welcome to EmbedSBC
   <!-- 🌟 顶部头条 Banner (Hero Section) -->
   <section class="banner-news">
     <div class="banner-content">
-      <span class="category-tag">Featured</span>
-      <h1>Unveiling the UP4 Universal SoM Standard</h1>
-      <p>Exploring the next generation of pin-to-pin compatible system-on-modules. Discover how cross-platform migration is reshaping industrial edge computing.</p>
-      <a href="articles/up4-standard/index.html" class="btn-read-more">Read Full Story</a>
+      <span class="category-tag">Welcome</span>
+      <h1>Master Your Embedded Hardware Design</h1>
+      <p>Delivering hardcore engineering insights, hardware architecture analysis, and cross-platform migration strategies for the global embedded community.</p>
+      <a href="about/index.html" class="btn-read-more">Discover embedSBC</a>
     </div>
   </section>
 
@@ -31,7 +31,7 @@ Latest Tech Insights
 
    <script>
    document.addEventListener("DOMContentLoaded", function() {
-       // WordPress REST API 地址：获取最新3篇文章，_embed 用于获取特色图片(缩略图)数据
+       // WordPress REST API 地址：获取最新9篇文章，_embed 用于获取特色图片(缩略图)数据
        const apiUrl = 'https://embedsbc.com/wp-json/wp/v2/posts?_embed&per_page=9';
        
        fetch(apiUrl)
@@ -94,24 +94,6 @@ Latest Tech Insights
 
 
 
-----
-
-Hardware Reviews & Video Essays
-================================
-
-.. raw:: html
-
-   <div class="video-essay-section">
-     <div class="video-card">
-        <!-- 可以在这里放置 YouTube 视频封面图或直接嵌入 iframe -->
-        <img src="_static/images/video_covers/robotics_essay.jpg" alt="Robotics Video Essay" class="video-cover" />
-        <div class="video-info">
-          <h3>The Evolution of Humanoid Robotics</h3>
-          <p>Analyzing the kinematic frameworks and control systems powering modern bipedal robots.</p>
-          <a href="https://youtube.com/..." target="_blank" class="btn-watch">Watch on YouTube</a>
-        </div>
-     </div>
-   </div>
 
 
 ----
