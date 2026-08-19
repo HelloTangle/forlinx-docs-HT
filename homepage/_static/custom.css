@@ -227,7 +227,7 @@ body { overflow-x: hidden; }
   width: 100%;
   min-height: 400px;  /* 资讯站不需要像官网产品图那么高 */
   border-radius: 12px; /* 给 banner 加个圆角显得更极客 */
-  background: url('images/banner/banner-bg.png') center/cover no-repeat;
+  background: url('images/banner/banner-bg.webp') center/cover no-repeat;
   overflow: hidden;
   margin-bottom: 40px;
 }
