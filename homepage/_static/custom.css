@@ -112,8 +112,7 @@ body { overflow-x: hidden; }
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
-/* 资讯封面图 */
-
+/* 资讯封面图及超链接容器（强力锁死高度至 170px） */
 .news-card a {
   display: block !important;
   width: 100% !important;
@@ -140,46 +139,47 @@ img.news-thumbnail {
   opacity: 0.9;
 }
 
-/* 资讯文字内容区 */
+/* 资讯文字内容区（已全方位压缩四周留白） */
 .news-content {
-  padding: 20px;
+  padding: 16px 16px 20px 16px !important; /* 缩小内边距 */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
 .news-date, .news-category {
-  font-size: 0.85em;
+  font-size: 0.8rem !important; /* 稍微缩小字体 */
   color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-top: 0 !important;
+  margin-bottom: 6px !important; /* 压缩底部间距 */
 }
 
 .news-title {
-  font-size: 1.25rem !important;
+  font-size: 1.1rem !important; /* 稍微缩小标题 */
   color: #24292e !important;
-  margin: 0 0 12px 0 !important;
-  line-height: 1.4 !important;
+  margin: 0 0 8px 0 !important; /* 压缩底部间距 */
+  line-height: 1.3 !important;
   font-family: 'Montserrat', sans-serif !important;
 }
 
 .news-excerpt {
   color: #586069;
-  font-size: 0.95em;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 0.9rem !important; /* 稍微缩小摘要 */
+  line-height: 1.5 !important;
+  margin-top: 0 !important;
+  margin-bottom: 16px !important; /* 防止 Sphinx 默认段落边距撑爆高度 */
   flex-grow: 1; /* 让 Read More 按钮沉底对齐 */
 }
 
 .link-more {
   color: #0071e3;
   font-weight: 600;
-  font-size: 0.95em;
+  font-size: 0.85em !important;
   text-transform: uppercase;
 }
-
 
 /* ================== 🌟 修改点 3：视频评测版块专属样式 ================== */
 .video-essay-section {

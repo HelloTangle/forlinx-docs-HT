@@ -9,7 +9,7 @@ Welcome to EmbedSBC
       <span class="category-tag">Welcome</span>
       <h1>Master Your Embedded Hardware Design</h1>
       <p>Delivering hardcore engineering insights, hardware architecture analysis, and cross-platform migration strategies for the global embedded community.</p>
-      <a href="https://www.embedsbc.com/" class="btn-read-more" target="_blank">Discover embedSBC</a>
+      <a href="https://www.embedsbc.com/" class="btn-read-more" target="_blank">Discover EmbedSBC</a>
     </div>
   </section>
 
