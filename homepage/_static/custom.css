@@ -244,7 +244,7 @@ body { overflow-x: hidden; }
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
   z-index: 1;
 }
 .category-tag {
@@ -269,14 +269,25 @@ body { overflow-x: hidden; }
   margin-bottom: 25px;
   color: #e0e0e0 !important;
 }
+
+
 .btn-read-more {
   background-color: white !important;
   color: #24292e !important;
   font-weight: 600;
   padding: 10px 24px;
   border-radius: 6px;
+  text-decoration: none !important; /* 去除默认状态下的下划线 */
+  border-bottom: none !important;   /* 防止部分主题用底部边框模拟下划线 */
+  display: inline-block;            /* 确保 padding 正常生效 */
 }
-.btn-read-more:hover { background-color: #f0f0f0 !important; }
+
+.btn-read-more:hover { 
+  background-color: #f0f0f0 !important; 
+  text-decoration: none !important; /* 确保鼠标悬停时也没有下划线 */
+  border-bottom: none !important; 
+}
+
 
 @media (max-width: 768px) {
   .banner-content { left: 20px; bottom: 20px; max-width: 90%; }
