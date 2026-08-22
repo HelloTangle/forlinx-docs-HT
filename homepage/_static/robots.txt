@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.embedsbc.com/sitemap.xml
+Sitemap: https://docs.embedsbc.com/sitemap_index.xml

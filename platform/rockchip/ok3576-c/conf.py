@@ -2,21 +2,29 @@
 
 import os
 import sys
+from datetime import datetime
+
 sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Forlinx Embedded RK3576 Documentation'
-author = 'Forlinx Embedded'
-copyright = 'Forlinx Embedded'
+# 👇 已全部替换为 EmbedSBC
+project = 'EmbedSBC RK3576 Documentation'
+author = 'EmbedSBC'
+copyright = f'{datetime.now().year}, EmbedSBC'
+
 # -- General configuration ---------------------------------------------------
 
 extensions = [
     'myst_parser',         # 支持 Markdown
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
-html_baseurl = "https://forlinxembedded.github.io/rockchip/ok3576-c/"
 
+# 👇 关键修改：Sitemap 的绝对路径基准必须是 embedsbc 的域名！
+html_baseurl = "https://docs.embedsbc.com/rockchip/ok3576-c/"
+
+# 👇 防止 Sitemap 生成带版本号和语言的错误路径
+sitemap_url_scheme = "{link}"
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -32,9 +40,10 @@ html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
-# Logo (如果有，放在 _static 目录)
-html_logo = '_static/forlinx-logo.png'
-html_favicon = '_static/forlinx.png'
+# 👇 确保调用的是 embedsbc 的 logo
+html_logo = '_static/embedsbc-logo.png'
+html_favicon = '_static/embedsbc.png'
+
 html_theme_options = {
     'logo_only': True,
 }
@@ -43,15 +52,7 @@ html_css_files = [
     'theme-switcher.css',
 ]
 
-html_sidebars = {
-    '**': [
-        'globaltoc.html',
-        'relations.html',
-        'sourcelink.html',
-        'searchbox.html',
-        'footer.html',  # 👈 关键：显式加载我们自定义的 footer 模板
-    ]
-}
+# 注意：已删除 html_sidebars 字典，请通过 _templates/layout.html 覆盖底部
 
 html_show_sourcelink = False
 

@@ -50,6 +50,5 @@ html_show_sourcelink = False
 # --- SEO 与抓取配置 ---
 html_baseurl = 'https://docs.embedsbc.com/'
 sitemap_url_scheme = "{link}"
-html_extra_path = ['robots.txt']
 
 # 注：已删除不支持的 html_sidebars 字典，请通过 _templates/layout.html 覆盖底部
