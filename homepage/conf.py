@@ -1,15 +1,19 @@
 import os
 import sys
+from datetime import datetime
+
 sys.path.insert(0, os.path.abspath('.'))
 
-project = 'Forlinx Embedded Documentation'
-author = 'Forlinx Embedded'
-copyright = 'Forlinx Embedded'
+# --- 基础信息：已全部替换为 EmbedSBC ---
+project = 'EmbedSBC Documentation'
+author = 'EmbedSBC'
+copyright = f'{datetime.now().year}, EmbedSBC'
 
+# --- 插件配置 ---
 extensions = [
     'myst_parser',
+    'sphinx_sitemap',  # 启用 sitemap 生成以配合 SEO
 ]
-
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -19,44 +23,33 @@ source_suffix = {
     '.md': 'markdown',
 }
 
+# --- 主题与 UI 配置 ---
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 html_css_files = [
     'custom.css',
-    'theme-switcher.css',  # 亮暗模式 CSS
+    'theme-switcher.css',
 ]
 
-# Logo 文件放在 _static 文件夹，确保路径正确
+html_js_files = [
+    'theme-switcher.js',
+    'logo-link.js',
+]
+
 html_logo = '_static/embedsbc-logo.png'
 html_favicon = '_static/embedsbc.png'
 
-# 主题选项，根据需要调整
 html_theme_options = {
     'logo_only': True,
     "style_nav_header_background": "#2980B9",
-    # 可选：自定义颜色模式开关
-    "default_dark_mode": False,  # 默认浅色，可改为 True
-
-}
-
-
-html_sidebars = {
-    '**': [
-        'globaltoc.html',
-        'relations.html',
-        'sourcelink.html',
-        'searchbox.html',
-        'footer.html',  # 👈 关键：显式加载我们自定义的 footer 模板
-    ]
 }
 
 html_show_sourcelink = False
 
+# --- SEO 与抓取配置 ---
+html_baseurl = 'https://docs.embedsbc.com/'
+sitemap_url_scheme = "{link}"
+html_extra_path = ['robots.txt']
 
-
-# 引入自定义 JS 文件
-html_js_files = [
-    'theme-switcher.js',   # 主题切换逻辑
-    'logo-link.js',        # logo 跳转逻辑 
-]
+# 注：已删除不支持的 html_sidebars 字典，请通过 _templates/layout.html 覆盖底部
