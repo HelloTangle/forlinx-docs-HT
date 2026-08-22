@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         for (let i = segments.length; i >= 1; i--) {
             let candidate = "/" + segments.slice(0, i).join("/") + "/";
-            let testPath = candidate + "_static/forlinx-logo.png";
+            let testPath = candidate + "_static/embedsbc-logo.png";
 
             try {
                 let response = await fetch(testPath, { method: "HEAD" });
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         const logo = document.querySelector(".wy-side-nav-search img");
         if (logo) {
-            const lightLogo = projectBase + "_static/forlinx-logo.png";
-            const darkLogo = projectBase + "_static/forlinx-logo-dark.png";
+            const lightLogo = projectBase + "_static/embedsbc-logo.png";
+            const darkLogo = projectBase + "_static/embedsbc-logo-dark.png";
 
             if (theme === "dark") {
                 const testImg = new Image();
