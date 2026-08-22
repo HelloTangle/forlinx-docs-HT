@@ -1,13 +1,8 @@
 .. note::
 
-   📌 To return to the **main Forlinx documentation site**, visit:
+   📌 **Explore More Embedded Architectures**
 
-   `Forlinx Documentation Main Page <https://forlinxembedded.github.io/>`_
-
-   🔗 Official product overview:
-   
-   `FET3576-C System On Module <https://www.forlinx.net/product/rk3576-c-system-on-module-156.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
-
+   Return to the `EmbedSBC Documentation Hub <https://docs.embedsbc.com/>`_ for cross-platform migration strategies, or visit our main site for deep-dive hardware insights: `EmbedSBC.com <https://www.embedsbc.com/>`_
 
 ====================
 OK3576-C Manual
@@ -42,19 +37,17 @@ APPLICATION NOTE
    :maxdepth: 2
 
 
-
 ===========
 Contact Us
 ===========
 
-If you have any questions, please contact us at:
+If you have any questions, require architecture consulting, or wish to discuss technical insights, please reach out:
 
-- **Contact Sales**: `sales@forlinx.com <mailto:sales@forlinx.com>`_
-- **Technical Support**: `support@forlinx.com <mailto:support@forlinx.com>`_
-- **Website**: `www.forlinx.net <https://www.forlinx.net>`_
+- **Consulting & Inquiries**: `jason@embedsbc.com <mailto:jason@embedsbc.com>`_
+- **Website**: `www.embedsbc.com <https://www.embedsbc.com/>`_
 
 ----
 
-*Thank you for choosing Forlinx Embedded. We're committed to supporting your development journey.*
+*Thank you for reading EmbedSBC. We are committed to delivering the insights and strategies that drive your embedded projects forward.*
 
 ----
